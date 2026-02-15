@@ -17579,10 +17579,8 @@ Eltern: Fess Peter, Henn Julianna
 
 HEGEL
 
-<1353> HEGEL Georg
-
-
-*um 1805 NS † 20.08.1881 Feketitsch
+<1353> 
+HEGEL Georg *um 1805 NS † 20.08.1881 Feketitsch
 aus Schowe nach Feketitsch gesiedelt
 oo
 SCHÄFER Maria
@@ -39676,8 +39674,8 @@ PETER Maria
 oo 01.02.1894 Tscherwenka Oster Johann < 2635
 SCHMAUDER
 
-<3072> SCHMAUDER Jakob
-*um 1891
+<3072> 
+SCHMAUDER Jakob *um 1891
 
 # siehe Auswanderer nach USA
 oo 29.06.1912 Cuyahoga, OH
@@ -46647,7 +46645,8 @@ SOHL Katharina ev. < 3435.8
 Eltern: Sohl Georg, Tauss Maria Elisabetha
 1. Tauss Michael * 18.11.1902
 oo Haller Anna > 3630
-<3623> TAUSS Jakob
+<3623> 
+TAUSS Jakob 
 *um 1878 † Lager Jarek ?
 Wohnort in Alt Schowe: Kutzuraer Gasse
 <3624>
