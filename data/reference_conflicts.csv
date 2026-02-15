@@ -1,0 +1,17 @@
+source_table,source_record_id,source_item,ref_type,ref,issue,details
+children,1858,child 1 marriage 1,forward,3885,no_back_ref_no_name_match,Expected back ref 1858.1 not found. Primary: NA NA Child: Klein Susanna Spouse: NA
+children,3709,child 4 marriage 2,forward,3504,no_back_ref_no_name_match,Expected back ref 3709.4 not found. Primary: STEG Heinrich Child: Trissler Elisabetha Spouse: NA
+spouses,1135,spouse 1,back,45.5,ref_child_not_found,Child 5 not found in record 45
+spouses,2015,spouse 1,back,2905.6,ref_child_not_found,Child 6 not found in record 2905
+spouses,2069,spouse 1,back,45.7,name_mismatch,Spouse: BASTIAN Elisabetha Child: Bastian Philippina
+spouses,2949,spouse 1,back,3784.4,name_mismatch,Spouse: WALTER Katharina Child: Walter Katherina
+spouses,3103,spouse 1,back,1540.3,ref_child_not_found,Child 3 not found in record 1540
+spouses,3231,spouse 1,back,3861.4,ref_child_not_found,Child 4 not found in record 3861
+spouses,3268,spouse 1,back,2980.3,name_mismatch,Spouse: SAUER Rosina Child: Sauer Theresia
+spouses,3355,spouse 1,back,1125.4,ref_child_not_found,Child 4 not found in record 1125
+spouses,3373,spouse 1,back,812.7,ref_child_not_found,Child 7 not found in record 812
+spouses,3393,spouse 1,back,2029.1,name_mismatch,Spouse: KRIEGER Theresia Child: Krieger Johann
+spouses,3414,spouse 1,back,3004.1,ref_child_not_found,Child 1 not found in record 3004
+spouses,3535,spouse 1,back,1271.1,ref_child_not_found,Child 1 not found in record 1271
+spouses,3662,spouse 1,back,1289.2,ref_child_not_found,Child 2 not found in record 1289
+spouses,4184,spouse 1,back,1348.2,ref_child_not_found,Child 2 not found in record 1348

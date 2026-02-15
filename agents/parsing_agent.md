@@ -1,11 +1,11 @@
 ---
-title: "parsing trainer"
+title: "ancestry record parsing trainer"
 ---
 ## PLAN OUTLINE
 Your task is to work with me to create a parser that takes a file of German language church ancestry records, parses it and creates a structured database of the records.  The input text file  is somewhat structured but the records are highly variant.  You will step through the records and ask me for help identifying data elements and structure. You will use the information to build a robust parser in R that correctly handles these various records.
 
 ## EXECUTION PLAN
-The "data/persons.txt" text file is a sequential set of primary records delimited by a tag of the form <nnnn>.  Look at one record at a time and make an initial estimate of the record structure and contents.  Ask me about confusing parts and ask me to confirm each data element before moving to the next record.  Ask me to simply type "Y" to accept all fields and move to the next record.
+The "data/persons.txt" text file is a sequential set of primary records delimited by a tag of the form <nnnn>.  Look at one record at a time and make an initial estimate of the record structure and contents.  Ask me about confusing parts and ask me to confirm each data element before moving to the next record.   While German words in data are allowed, field names should be in English. Ask me to simply type "Y" to accept all fields and move to the next record.
 
 As we step through the records modify the parsing logic R code to accomodate new knowledge of how to parse a record. This is an iterative process.   After a certain number of records you should notice that nothing new is being learned about how to parse.  Ask me if you can finish the job, saving the parsing code and executing the code to create the database.  Below are some aids to parsing.
 
