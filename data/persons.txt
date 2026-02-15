@@ -211,7 +211,8 @@ SCHMIDT Katharina ref. > 3142.6
 Eltern: Schmidt Michael, Sperzel Eva
 BAMBACH
 
-<21> nach Korrektur unbesetzt
+<21> 
+nach Korrektur unbesetzt
 <22>
 BAMBACH Wilhelm
 oo
@@ -301,7 +302,7 @@ oo 06.11.1915 Cuyahoga, OH
 WALTER Margaretha * 09.08.1896 † 06.12.1953 OH > 3784.1
 Eltern: Walter Daniel, Staudt Katharina
 1. Banyai Johanna *um 1916
-oo 25.03.1939 Cuyahoga, OH Mc. Creary Joseph G. > 2363
+oo 25.03.1939 Cuyahoga, OH McCreary Joseph G. > 2363
 2. Banyai Katharina * 20.12.1917 Cleveland, OH
 oo 22.08.1939 Cuyahoga, OH Kolbe Elroy > 1923
 3. Banyai Peter F. * 30.01.1924 Cuyahoga, OH
@@ -7128,7 +7129,8 @@ oo 02.06.1934 Cuyahoga, OH Grumbach Johann
 # siehe Auswanderer nach USA
 FAUL
 
-<568> FAUL Johann Jakob
+<568> 
+FAUL Johann Jakob
 * 06.09.1799 Kis Ker † 07.07.1849 Kis Ker
 oo 22.11.1829 Kis Ker
 FALKENSTEIN Katharina Margaretha
@@ -11437,7 +11439,7 @@ Eltern: Lehmann Johann, Hetzel Katharina
 GREILING
 
 <891>
-Greiling Johann
+GREILING Johann
 oo
 SCHEER Rosalia
 
@@ -17243,7 +17245,8 @@ FALKENSTEIN Katharina
 oo Popp Nikolaus > 2727
 HAUSER
 
-<1329> HAUSER Philipp
+<1329> 
+HAUSER Philipp
 oo
 TRUMPF Katharina
 *um 1835 † 01.12.1918 Feketitsch
@@ -22742,7 +22745,8 @@ oo 07.01.1834 Neu Werbas Jung Philipp > 1756
 
 JEIZEL
 
-<1734> JEIZEL Georg
+<1734> 
+JEIZEL Georg
 oo
 NONNENMACHER Katharina ev.
 *um 1798 † 15.10.1849 NS b. 17.10.1839 (†mit 51J)
@@ -26429,7 +26433,10 @@ TESCHNER Katharina
 * 04.10.1896 † zw. 1972‐1980 Schwetzingen
 1. Krieger Heinrich * 16.09.1913
 oo Bolz Eva > 2043
-<2024> nach Korrektur unbesetzt
+
+<2024>
+nach Korrektur unbesetzt
+
 <2025>
 KRIEGER Peter
 
@@ -27527,7 +27534,7 @@ Eltern: Haller Christian, Scherer Maria Elisabetha
 LEBOGYI?
 
 <2114>
-LEBOGYI? Johann
+LEBOGYI Johann
 oo
 HOBLER Christina ref. *um 1803 † 21.11.1829 NS b. 23.11.1829 (†mit 26J)
 
@@ -30661,15 +30668,15 @@ Eltern: Haller Peter, Fechter Eva
 Mc.CREARY
 
 <2362>
-Mc. CREARY Joseph G.
+MCCREARY Joseph G.
 oo
-Mc. COMBS Margaret
+MCCOMBS Margaret
 
-1. Mc. Creary Joseph G. *um 1911 New Castle
+1. McCreary Joseph G. *um 1911 New Castle
 oo 25.03.1939 Cleveland Banyai Johanna > 2363
 <2363>
-Mc. CREARY Joseph G. *um 1911 New Castle < 2362.1
-Eltern: Mc. Creary Joseph G., Mc. Combs Margaret
+MCCREARY Joseph G. *um 1911 New Castle < 2362.1
+Eltern: McCreary Joseph G., McCombs Margaret
 oo 25.03.1939 Cleveland, OH
 BANYAI Johanna *um 1917 < 27.1
 Eltern: Banyai Peter, Walter Margaretha
@@ -38546,7 +38553,8 @@ Eltern: Fechter Johann, Geiss Elisabetha
 
 SCHADE
 
-<2990> SCHADE Heinrich
+<2990> 
+SCHADE Heinrich
 o‐o
 
 1. Schade Maria Elisabetha *um 1827 Torschau
@@ -52834,7 +52842,7 @@ Eltern: Metzger Michael, Weinz Rosalia
 1. Wolf Friedrich * 04.08.1905
 oo 25.09.1926 Cuyahoga, OH Koller Elisabetha > 4094
 <4088>
-Wolf Johanna
+WOLF Johanna
 * 20.09.1925
 Tv. Wolf NN., Reitenbach NN.
 

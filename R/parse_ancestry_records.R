@@ -410,20 +410,18 @@ split_into_records <- function(file_path) {
 
 #' Parse a single record into structured data
 #' @param record List with record_id and raw_text
-#' @return List with parsed record data
+#' @return List with parsed record data, or NULL for empty/deleted records
 parse_record <- function(record) {
   record_id <- record$record_id
   text <- record$raw_text
 
-  # Check for empty/deleted record
-  if (str_detect(text, "nach Korrektur unbesetzt") || str_squish(text) == "") {
-    return(list(
-      record_id = record_id,
-      status = "empty",
-      primary = NULL,
-      spouses = list(),
-      children = list()
-    ))
+  # Check for empty/deleted record (including typo variant "Korektur")
+  # Return NULL to exclude from all output
+  if (
+    str_detect(text, regex("nach Kor+ektur unbesetzt", ignore_case = TRUE)) ||
+      str_squish(text) == ""
+  ) {
+    return(NULL)
   }
 
   # Apply substitutions
@@ -1022,16 +1020,17 @@ parse_person_line <- function(line) {
 # =============================================================================
 
 #' Convert parsed records to tidy data frames
-#' @param parsed_records List of parsed records
+#' @param parsed_records List of parsed records (may contain NULLs for empty records)
 #' @return List of data frames (persons, marriages, children)
 records_to_dataframes <- function(parsed_records) {
+  # Remove NULL entries (empty/deleted records marked "nach Korrektur unbesetzt")
+  parsed_records <- compact(parsed_records)
+
   # Primary persons table
   persons <- map_dfr(parsed_records, function(rec) {
-    if (rec$status == "empty" || is.null(rec$primary$surname)) {
-      return(tibble(
-        record_id = rec$record_id,
-        status = "empty"
-      ))
+    # Skip records with no surname parsed (empty records)
+    if (is.null(rec$primary$surname)) {
+      return(tibble())
     }
 
     p <- rec$primary
@@ -1065,7 +1064,7 @@ records_to_dataframes <- function(parsed_records) {
 
   # Spouses table
   spouses <- map_dfr(parsed_records, function(rec) {
-    if (rec$status == "empty" || length(rec$spouses) == 0) {
+    if (length(rec$spouses) == 0) {
       return(tibble())
     }
 
@@ -1098,7 +1097,7 @@ records_to_dataframes <- function(parsed_records) {
 
   # Children table
   children <- map_dfr(parsed_records, function(rec) {
-    if (rec$status == "empty" || length(rec$children) == 0) {
+    if (length(rec$children) == 0) {
       return(tibble())
     }
 
@@ -1640,6 +1639,16 @@ parse_ancestry_file <- function(file_path) {
 
   message("Parsing records...")
   parsed <- map(records, parse_record, .progress = TRUE)
+
+  # Count and report excluded records (marked "nach Korrektur unbesetzt")
+  n_excluded <- sum(sapply(parsed, is.null))
+  if (n_excluded > 0) {
+    message(paste(
+      "Excluded",
+      n_excluded,
+      "empty records (nach Korrektur unbesetzt)"
+    ))
+  }
 
   message("Converting to data frames...")
   dataframes <- records_to_dataframes(parsed)

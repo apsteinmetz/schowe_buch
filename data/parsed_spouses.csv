@@ -2511,7 +2511,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2359,1,marriage,1912-10-23,"Cuyahoga, OH",NA,HÄUSER,Katharina,Reformed,1893-10-04,Alt Schowe,NA,NA,NA,1893-10-08,NA,Ries Friedrich,Häuser Katharina,forward,2883.2,NA,FALSE
 2360,1,marriage,NA,NA,NA,HÄUSER,Katharina,NA,1902-11-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2361,1,marriage,1919-03-15,"Cleveland, OH",NA,HALLER,Pauline,NA,1900-10-19,NA,1989-03-27,"Cleveland, OH",NA,NA,NA,Haller Peter,Fechter Eva,back,1147.2,NA,TRUE
-2362,1,marriage,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+2362,1,marriage,NA,NA,NA,MCCOMBS,Margaret,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2363,1,marriage,1939-03-25,"Cleveland, OH",NA,BANYAI,Johanna,NA,ABT 1917,NA,NA,NA,NA,NA,NA,Banyai Peter,Walter Margaretha,back,27.1,NA,TRUE
 2364,1,marriage,NA,NA,NA,LITZENBERGER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2365,1,marriage,NA,NA,NA,BECKER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
