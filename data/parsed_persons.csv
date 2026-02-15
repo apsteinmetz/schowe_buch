@@ -566,7 +566,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 565,parsed,FALKENSTEIN,Jakob,NA,NA,ABT 1912,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 566,parsed,FALKENSTEIN,Samuel,NA,NA,1825-11-11,Alt,1897-12-30,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 567,parsed,FATH,Friedrich,NA,NA,1885-07-30,NA,1962-06-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA; siehe Auswanderer nach USA; siehe Auswanderer nach USA; siehe Auswanderer nach USA
-568,parsed,FAUL,Johann Jakob,NA,NA,1799-09-06,Kis,1849-07-07,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+568,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 569,parsed,FAUL,Georg,NA,NA,ABT 1843,Kis,NA,NA,NA,NA,NA,NA,NA,NA,NA,Faul Johann Jakob,Falkenstein Katharina Margaretha,NA,NA,back,568.1,
 570,parsed,FAUST,Anton,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 571,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -751,7 +751,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 750,parsed,GEISS,Jakob,NA,Reformed,1863-07-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1863-07-31,NA,Geiss Josef,Werle Julianna,NA,NA,back,744.2,siehe Auswanderer nach USA; siehe Auswanderer nach USA; siehe Auswanderer nach USA
 751,parsed,GEISS,Katharina,NA,Reformed,1869-08-20,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,21.8.1869,NA,Geiss Johann Friedrich,Konrad Maria Elisabetha,NA,NA,back,745.1,
 752,parsed,GEISS,Friedrich,NA,Reformed,1876-08-26,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,1876-08-27,NA,Geiss Johann,Welker Eva,NA,NA,back,747.2,siehe Auswanderer nach USA; siehe Auswanderer nach USA
-753,parsed,GEISS,JosefSchneider,NA,Reformed,1891-01-27,Neu Schowe,1943-07-10,"Lake, OH und",NA,NA,NA,NA,NA,1.2.1891,NA,Geiss Josef,Eisenlöffel Katharina,NA,NA,back,749.1,siehe Auswanderer nach USA
+753,parsed,GEISS,JosefSchneider,NA,Reformed,1891-01-27,Neu Schowe,1943-07-10,NA,NA,NA,NA,NA,NA,1.2.1891,NA,Geiss Josef,Eisenlöffel Katharina,NA,NA,back,749.1,siehe Auswanderer nach USA
 754,parsed,GEISS,Jakob,NA,Reformed,1894-03-16,Neu Schowe,1962-01-10,"Cleveland, OH",NA,NA,NA,NA,NA,1794-03-26,NA,Geiss Jakob,Hetzel Elisabetha,NA,NA,back,750.4,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 755,parsed,GEISS,Stefan,NA,NA,1896-03-23,NA,1950-06-08,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,Geiss Josef,Eisenlöffel Katharina,NA,NA,back,749.2,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 756,parsed,GEISS,Johann,NA,NA,1905-03-15,Schowe,1968,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -865,7 +865,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 864,parsed,GRAMMES,Adam,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Grammes Jakob,Haller Katharina,NA,NA,forward,865.1,
 865,parsed,GRAMMES,Jakob,NA,NA,ABT 1768,NA,ABT 1817,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 866,parsed,GRAMMES,Adam,NA,NA,ABT 1807,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3465,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 867,parsed,GRATZ,Georg,NA,NA,ABT 1820,NA,1864-04-15,Tscherwenka,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 868,parsed,GRATZ,Daniel,NA,NA,1850-04-11,Tscherwenka,NA,NA,NA,NA,NA,NA,NA,NA,NA,Gratz Georg,Emich Christina,NA,NA,back,867.1,
 869,parsed,GRAU,Josef,NA,NA,1893-10-07,Franzjosefsfeld,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA
@@ -875,7 +874,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 873,parsed,GREIFENSTEIN,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 874,parsed,GREIFENSTEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 875,parsed,GREIFENSTEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-878,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 876,parsed,GREIFENSTEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 877,parsed,GREIFENSTEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 878,parsed,GREIFENSTEIN,Peter,NA,Evangelical,ABT 1813,NA,1885-02-01,Alt Schowe,NA,NA,NA,1885-02-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -935,7 +933,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 932,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 933,parsed,GUTWEIN,Friedrich,NA,Evangelical,1871-05-02,Alt Schowe,1948-07-24,"Austinburg, OH",NA,NA,NA,NA,NA,1871-05-02,NA,Gutwein Peter,Hetzel Salomea,NA,NA,back,924.4,siehe Auswanderer nach USA; siehe Auswanderer nach USA; siehe Auswanderer nach USA
 934,parsed,GUTWEIN,Peter,NA,Evangelical,1877-07-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1877-07-31,NA,Gutwein Konrad,Göttel Maria Philippina,NA,NA,back,926.5,
-935,parsed,GUTWEIN,Philipp,NA,NA,1882-08-03,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1882-08-06,NA,Hetzel Friedrich,Rieth Elisabetha,NA,NA,back,928.1,
+935,parsed,GUTWEIN,Philipp,NA,NA,1877-08-17,Sekitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,Gutwein Philipp,Scheer Magdalena,NA,NA,back,928.1,
 936,parsed,GUTWEIN,Johann,NA,Evangelical,1878-07-17,Neu Schowe,1945-09-16,Lager Jarek,NA,NA,NA,NA,NA,1878-07-18,NA,Gutwein Peter,Hetzel Salomea,NA,NA,back,924.7,
 937,parsed,GUTWEIN,Michael,NA,Evangelical,1879-12-02,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1879-12-03,NA,Gutwein Adam,Lenhardt Katharina,NA,NA,back,930.3,
 938,parsed,GUTWEIN,Stefan,NA,Evangelical,1883-04-03,Neu Schowe,1956-03-08,"Cleveland, OH",NA,NA,NA,NA,NA,1883-04-05,NA,Gutwein Peter,Hetzel Salomea,NA,NA,back,924.9,siehe Auswanderer nach USA; siehe Auswanderer nach USA
@@ -1272,8 +1270,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1269,parsed,HARICH,Peter,NA,NA,1905-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Harich Peter,Hillrich Johanna,NA,NA,back,1265.1,
 1270,parsed,HARICH,Peter Ludwig,NA,NA,1908-03-17,USA,1988-02-22,"Euclid, OH",NA,NA,NA,NA,NA,NA,NA,Harich Johann,Welker Elisabetha,NA,NA,back,1264.2,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 1271,parsed,HARTMANN,JohannLehrer,NA,Reformed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1272,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-1275,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1272,parsed,HARTMANN,JohannLehrer,NA,Reformed,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1273,parsed,HARTMANN,Nikolaus,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1274,parsed,HARTMANN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -1331,7 +1327,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1326,parsed,HAUG,Jakob,NA,NA,1909-07-15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Haug UNKNOWN,Bolz Margaretha Katharina,NA,NA,back,1296.1,
 1327,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1328,parsed,HAUPERT,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1329,parsed,HAUSER,Philipp,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+1329,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1330,parsed,HAUSER,Philipp,NA,NA,1858-08-06,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,Hauser Philipp,Trumpf Katharina,NA,NA,back,1329.1,
 1331,parsed,HAUSKNECHT,"Johann, aus Bulkes",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Bulkes,NA,NA,NA,
 1332,parsed,HAUSKNECHT,Christian,NA,NA,ABT 1828,Bulkes,NA,NA,NA,NA,NA,NA,NA,NA,NA,Hausknecht Johann,Roth Sofia,NA,NA,back,1331.1,
@@ -1355,7 +1351,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1350,parsed,HEDRICH,Michael Taglöhner,NA,NA,ABT 1821,NA,1883-05-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1351,parsed,HEDRICH,Michael,NA,Reformed,1846-12-22,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1946-12-23,NA,Hedrich Michael,Schäfer Katharina Dorothea,NA,NA,back,1350.2,
 1352,parsed,HEDRICH,AdamHandwerker,NA,Reformed,1877-11-12,Neu Schowe,1945-08-08,Lager Jarek,NA,NA,NA,NA,NA,1877-11-13,NA,Hedrich Michael,Bergmann Elisabetha,NA,NA,back,1351.4,siehe Auswanderer nach USA; siehe Auswanderer nach USA
-1353,parsed,HEGEL,Georg,NA,NA,ABT 1805,Neu Schowe,1881-08-20,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+1353,parsed,BIRT,,NA,NA,ABT 1805,Neu Schowe,1881-08-20,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1354,parsed,HEIL,Adam,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1355,parsed,HEIL,Friedrich,NA,NA,NA,NA,BEF 1861,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1356,parsed,HEIL,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -1419,7 +1415,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1414,parsed,HEINZ,Jakob,NA,NA,1913-09-02,NA,2001-02-25,"Westlake, OH",NA,NA,NA,NA,NA,NA,NA,Heinz Jakob,Hetzel Elisabetha,NA,NA,back,1406.2,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 1415,parsed,HEINZ,Johann,NA,NA,1918-08-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1416,parsed,HEINZ,Martin,NA,NA,1929-02-10,NA,2010-03-24,Schwaikheim,NA,NA,NA,NA,NA,NA,NA,Heinz Adam,Wolf Philippina,NA,NA,back,1409.1,
-1417,parsed,HEINZ,Adam,NA,NA,1931-09-15,NA,2002-10-08,Waiblingen,NA,NA,NA,NA,NA,NA,NA,Heinz Adam,Wolf Philippina,NA,NA,back,1409.2,
+1417,parsed,HEINZ,Adam,NA,NA,1931-09-15,NA,2002-10-08,NA,NA,NA,NA,NA,NA,NA,NA,Heinz Adam,Wolf Philippina,NA,NA,back,1409.2,
 1418,parsed,HEIPP,Christoph Stefan,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1419,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1420,parsed,HEIPP,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -1466,7 +1462,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1461,parsed,HETZEL,Friedrich Bauer,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1462,parsed,HETZEL,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1463,parsed,HETZEL,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1465,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1464,parsed,HETZEL,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1465,parsed,HETZEL,Georg,Schmied,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1466,parsed,HETZEL,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -1583,7 +1578,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1577,parsed,HOBLER,Valentin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1578,parsed,HOBLER,Valentin,NA,Reformed,ABT 1794,NA,1830-08-27,Neu Schowe,NA,NA,NA,1830-08-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1579,parsed,HOBLER,Michael,NA,Reformed,1864-07-31,Neu Schowe,1892-01-20,Neu Schowe,NA,NA,NA,1892-01-21,NA,1864-08-01,NA,Hobler Johann,Ruppel Susanna,NA,NA,back,1576.5,
-1580,parsed,HOBLER,Michael,NA,Reformed,ABT 1894,Beschka,1962-11-07,"Cleveland, OH",NA,NA,NA,NA,NA,1887-06-21,NA,Feth Friedrich,Lepold Magdalena,NA,NA,back,1579.1,siehe Auswanderer nach USA; siehe Auswanderer nach USA
+1580,parsed,HOBLER,Michael,NA,Reformed,1887-06-19,Neu Schowe,1958-11-21,"Cleveland, OH",NA,NA,NA,NA,NA,1887-06-21,NA,Hobler Michael,Albus Magdalena,NA,NA,back,1579.1,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 1581,parsed,HOEGER,Joseph,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA
 1582,parsed,HOF,Rosina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1583,parsed,HOF,Phiipp Jakob,NA,Reformed,ABT 1782,NA,1829-11-16,Neu Schowe,NA,NA,NA,1829-11-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -1593,9 +1588,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1587,parsed,HOFFMANN,Adam,NA,NA,NA,NA,BEF 1849,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1588,parsed,HOFFMANN,Adam,NA,NA,NA,NA,BEF 1844,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1589,parsed,HOFFMANN,Christian,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1590,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1590,parsed,HOFFMANN,Christian,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Hoffmann Friedrich,Schmidt Elisabetha,NA,NA,forward,1594.1,
-1589,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1591,parsed,HOFFMANN,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1592,parsed,HOFFMANN,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,1585.1,
 1593,parsed,HOFFMANN,GeorgTaglöhner,NA,Reformed,ABT 1805,NA,1869-04-07,Neu Schowe,NA,NA,NA,1869-04-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -1739,7 +1732,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1731,parsed,JAKI,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1732,parsed,JAKI,Michael,NA,Evangelical,1850-12,Vinkovci,NA,NA,NA,NA,NA,NA,NA,NA,NA,Jaki Friedrich,Strack Christina,NA,NA,back,1731.1,
 1733,parsed,JAKOBI,Karl,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1734,parsed,JEIZEL,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+1734,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1735,parsed,JOHLER,Jakob,NA,NA,NA,NA,BEF 1850,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1736,parsed,JOHLER,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1737,parsed,JOSZT,Nikolaus,NA,NA,1882-10-30,NA,1941-01-09,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA; siehe Auswanderer nach USA
@@ -1869,9 +1862,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1861,parsed,KLEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1862,parsed,KLEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1863,parsed,KLEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1862,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1864,parsed,KLEIN,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1862,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1865,parsed,KLEIN,Wilhelm,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Klein Peter,Urschel Elisabetha,NA,NA,forward,1870.1,
 1866,parsed,KLEIN,Johann Christian Hufschmied,NA,NA,1687-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1867,parsed,KLEIN,Andreas Schmiedemeister,NA,NA,ABT 1713,NA,ABT 1797,NA,NA,NA,NA,NA,NA,NA,NA,Klein Johann Christian,Schnurr Anna Kunigunde,NA,NA,back,1866.1,
@@ -1917,7 +1908,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 1907,parsed,KLINGLER,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1908,parsed,KLINGLER,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1909,parsed,KOCH,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-1910,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 1910,parsed,KOCH,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1911,parsed,KOCH,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 1912,parsed,KOCH,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -2426,7 +2416,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 2415,parsed,METZGER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2416,parsed,METZGER,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2417,parsed,METZGER,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-2419,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2418,parsed,METZGER,Jakob,NA,Reformed,1779-02,Rheinpfalzer,1856-07-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2419,parsed,METZGER,Peter,NA,Reformed,ABT 1782,NA,ABT 1835,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2420,parsed,METZGER,Heinrich Jakob,NA,Reformed,1805-12-04,NA,1870-12-11,Neu Schowe,NA,NA,NA,1870-12-12,NA,NA,NA,Metzger Jakob,Wiesenecker Elisabetha,NA,NA,back,2418.1,
@@ -2590,7 +2579,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 2578,parsed,MÜLLER,Josef,NA,NA,ABT 1904,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Müller UNKNOWN,Lenz Maria,NA,NA,back,2502.1,
 2579,parsed,MÜLLER,Josef,NA,NA,ABT 1906,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2580,parsed,MÜLLER,Josef,NA,NA,ABT 1906,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-2581,parsed,MÜLLER,Adam,NA,NA,1908-01-09,NA,1981,Fellbach,NA,NA,NA,NA,NA,NA,NA,Müller Adam,Brausch Magdalena,NA,NA,back,2565.1,
+2581,parsed,MÜLLER,Adam,NA,NA,1908-01-09,NA,1981,NA,NA,NA,NA,NA,NA,NA,NA,Müller Adam,Brausch Magdalena,NA,NA,back,2565.1,
 2582,parsed,MÜLLER,Rudolf,NA,NA,1908-01-15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Müller Jakob,Hüttenberger Christina,NA,NA,back,2556.1,
 2583,parsed,MÜLLER,Johann,NA,NA,1909-01-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Müller Johann,Krieger Elisabetha,NA,NA,back,2567.1,
 2584,parsed,MÜLLER,Jakob,NA,NA,1909-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -2758,7 +2747,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 2746,parsed,POTH,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2747,parsed,POTH,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2748,parsed,POTH,Johann,NA,NA,NA,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-2745,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2749,parsed,POTH,Michael,NA,NA,NA,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2750,parsed,POTH,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2751,parsed,POTH,Philipp,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Poth Adam,Stützer Margaretha,NA,NA,NA,NA,
@@ -2786,7 +2774,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 2773,parsed,POTH,Georg,NA,NA,ABT 1867,Kutzura,NA,NA,NA,NA,NA,NA,NA,NA,NA,Poth Johann,Scherer Elisabetha,NA,NA,back,2747.2,
 2774,parsed,POTH,Stefan,NA,Reformed,1869-02-16,Neu Schowe,1906-08-08,"Cleveland, OH",NA,NA,NA,NA,NA,1869-02-18,NA,Poth Adam,Haller Sofia,NA,NA,back,2764.5,siehe Auswanderer nach USA
 2775,parsed,POTH,Adam,NA,Reformed,1869-05-02,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,1869-05-03,NA,Poth Johann,Orschied Elisabetha,NA,NA,back,2745.7,
-2776,parsed,POTH,Johann,NA,Reformed,1883-11-24,Neu Schowe,ABT 1958,Neureut,NA,NA,NA,NA,NA,1883-11-25,NA,Poth Johann,Geyer Philippina,NA,NA,back,2768.2,
+2776,parsed,POTH,Johann,NA,Reformed,1883-11-24,Neu Schowe,ABT 1958,NA,NA,NA,NA,NA,NA,1883-11-25,NA,Poth Johann,Geyer Philippina,NA,NA,back,2768.2,
 2777,parsed,POTH,Nikolaus,NA,NA,1885-11-10,NA,1940-05-19,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,Poth Adam,Reitenbach Christina,NA,NA,back,2736.1,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 2778,parsed,POTH,Ludwig,NA,NA,ABT 1896,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2779,parsed,POTH,Nikolaus,NA,NA,1898-09-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Gefallene und Vermisste im 2.Weltkrieg
@@ -2989,7 +2977,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 2976,parsed,SAUER,Philipp,NA,Evangelical,ABT 1800,NA,1866-06-05,Neu Schowe,NA,NA,NA,1866-06-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 2977,parsed,SAUER,Ludwig,NA,Evangelical,ABT 1805,Neu Schowe,1864-02-01,Neu Schowe,NA,NA,NA,1864-02-03,NA,NA,NA,Sauer Konrad,Muntsch Elisabetha,NA,NA,back,2974.1,
 2978,parsed,SAUER,Jakob,NA,Evangelical,ABT 1807,NA,1849-06-26,Neu Schowe,NA,NA,NA,1849-06-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-2979,parsed,SAUER,Jakob,NA,Evangelical,ABT 1829,NA,1877-02-13,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,Sauer Philipp,Becker Katharina,NA,NA,back,2976.2,
+2979,parsed,SAUER,Jakob,NA,Evangelical,ABT 1829,NA,1877-02-13,Alt Schowe,NA,NA,NA,1877-02-15,NA,NA,NA,Sauer Philipp,Becker Katharina,NA,NA,back,2976.2,
 2980,parsed,SAUER,Johann Christian,Müller,NA,ABT 1841,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Sauer Philipp,Becker Katharina,NA,NA,NA,NA,
 2981,parsed,SAUER,Philipp Jakob,NA,Evangelical,1849-01-01,Neu Schowe,NA,NA,NA,NA,NA,1863-12-23,NA,1849-01-01,NA,Sauer Andreas,Müller Elisabetha,NA,NA,NA,NA,
 2982,parsed,SAUER,Johann,NA,NA,ABT 1852,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Sauer Jakob,Einz Katharina,NA,NA,back,2979.2,
@@ -3000,7 +2988,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 2987,parsed,SAUER,Adam,NA,Evangelical,1875-06-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1875-06-27,NA,Sauer Philipp Jakob,Fechter Salomea Christina,NA,NA,back,2981.2,siehe Auswanderer nach USA
 2988,parsed,SAUER,Andreas,NA,NA,ABT 1893,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Sauer Andreas,Brücker Katharina,NA,NA,back,2985.1,
 2989,parsed,SAUER,Adam,NA,NA,1906-09-25,NA,1975-08-30,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,Sauer Adam,Geist Katharina,NA,NA,back,2987.2,siehe Auswanderer nach USA; siehe Auswanderer nach USA
-2990,parsed,SCHADE,Heinrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+2990,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2991,parsed,SCHAEF,Hans,NA,NA,1924-05-25,NA,2007-06-07,"North Olmsted, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA
 2992,parsed,SCHAFFER,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA
 2993,parsed,SCHALLER,Friedrich,NA,NA,NA,NA,BEF 1849,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,2994.1,
@@ -3014,9 +3002,8 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3001,parsed,SCHELKEN,Peter Kaspar,NA,NA,1770-11-12,NA,1849-09-13,Neuwerbas,NA,NA,NA,NA,NA,NA,NA,Schelken Peter,Gerhard Anna Maria,NA,NA,back,3000.1,
 3002,parsed,SCHELKEN,Peter,NA,Evangelical,ABT 1823,NA,1895-08-20,Neu Schowe,NA,NA,NA,1894-08-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3003,parsed,SCHELL,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3004,parsed,SCHEPP,Georg,NA,NA,1803-10-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3005,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-3005,parsed,SCHEPP,Georg,NA,Reformed,1803-10,Uj,1856-07-30,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3004,parsed,SCHEPP,Georg,NA,NA,1803-10-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,3005,
+3005,parsed,SCHEPP,Georg,NA,Reformed,1803-10,Uj,1856-07-30,Neu Schowe,NA,NA,NA,1856-07-31,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3006,parsed,SCHERER,Adam,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3007,parsed,SCHERER,Andreas Taglöhner,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3008,parsed,SCHERER,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3055,7 +3042,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3041,parsed,SCHERER,Michael,NA,Reformed,1879-06-15,Alt Schowe,1978,"Cuyahoga, OH",NA,NA,NA,NA,NA,1879-06-16,NA,Scherer Philipp,Geyer Elisabetha,NA,NA,back,3029.7,siehe Auswanderer nach USA
 3042,parsed,SCHERER,Adam,NA,Reformed,1884-04-13,Neu Schowe,1946-04-03,Lager Jarek,NA,NA,NA,NA,NA,1884-04-17,NA,Scherer Josef,Brücker Elisabetha,NA,NA,back,3034.1,
 3043,parsed,SCHERER,Friedrich,NA,Reformed,1884-06-07,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1884-06-12,NA,Scherer Johann Jakob,Wahl Eva,NA,NA,back,3032.8,siehe Auswanderer nach USA
-3044,parsed,SCHERER,Katharina,NA,Reformed,1884-07-29,Neu Schowe,ABT 1956,Fellbach,NA,NA,NA,NA,NA,1884-07-30,NA,Scherer Johann,Bender Elisabetha,NA,NA,back,3033.2,
+3044,parsed,SCHERER,Katharina,NA,Reformed,1884-07-29,Neu Schowe,ABT 1956,NA,NA,NA,NA,NA,NA,1884-07-30,NA,Scherer Johann,Bender Elisabetha,NA,NA,back,3033.2,
 3045,parsed,SCHERER,Jakob,NA,Reformed,1888-10-28,Neu Schowe,1984,Cleveland,NA,NA,NA,NA,NA,1888-10-31,NA,Scherer Jakob,Schnur Karolina,NA,NA,back,3035.2,siehe Auswanderer nach USA
 3046,parsed,SCHERER,Georg,NA,Reformed,1891-11-23,Neu Schowe,1964,"Cuyahoga, OH",NA,NA,NA,NA,NA,1891-11-26,NA,Scherer Johann,Hillrich Magdalena,NA,NA,back,3013.1,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 3047,parsed,SCHERER,Philipp,NA,NA,1897-05-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Scherer Philipp,Licht Magdalena,NA,NA,back,3039.2,
@@ -3083,7 +3070,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3069,parsed,SCHLARB,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3070,parsed,SCHLARB,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3071,parsed,SCHLEINIG,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3072,parsed,SCHMAUDER,Jakob,NA,NA,ABT 1891,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA; siehe Auswanderer nach USA
+3072,parsed,BIRT,,NA,NA,ABT 1891,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 3073,parsed,SCHMAUDER,Martin,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3074,parsed,SCHMEHL,Salomon,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3075,parsed,SCHMIDT,Adam,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3133,14 +3120,14 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3119,parsed,SCHMIDT,Philippina,NA,Reformed,ABT 1777,NA,1829-11-23,Neu Schowe,NA,NA,NA,1829-11-25,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3120,parsed,SCHMIDT,Jakob,NA,NA,ABT 1789,NA,1856-03-28,Alt Schowe,NA,NA,NA,1856-03-30,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3121,parsed,SCHMIDT,Andreas,NA,NA,1789-05-17,Kis,1850-08-16,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3122,parsed,SCHMIDT,Heinrich,NA,Reformed,ABT 1807,NA,1849-07-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3122,parsed,SCHMIDT,Heinrich,NA,Reformed,ABT 1807,NA,1849-07-18,Neu Schowe,NA,NA,NA,1849-07-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3123,parsed,SCHMIDT,Christian,NA,NA,1810-10-06,NA,1860-12-21,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3124,parsed,SCHMIDT,Jakob,NA,Evangelical,ABT 1815,NA,1878-01-14,Alt Schowe,NA,NA,NA,1878-01-15,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3125,parsed,SCHMIDT,Karl,NA,NA,ABT 1816,Kis,1889-01-05,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3126,parsed,SCHMIDT,Nikolaus,NA,Evangelical,ABT 1818,NA,1862-11-20,Alt Schowe,NA,NA,NA,1862-11-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3127,parsed,SCHMIDT,Philipp Jakob,NA,Evangelical,ABT 1819,NA,1861-07-19,Alt Schowe,NA,NA,NA,1861-07-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3128,parsed,SCHMIDT,Jakob,NA,Evangelical,ABT 1821,NA,1871-02-27,Alt Schowe,NA,NA,NA,1871-03-01,NA,NA,NA,Schmidt Michael,Frey Dorothea,NA,NA,back,3095.1,
-3129,parsed,SCHMIDT,Friedrich,NA,Evangelical,ABT 1822,NA,1874-02-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3129,parsed,SCHMIDT,Friedrich,NA,Evangelical,ABT 1822,NA,1874-02-18,Neu Schowe,NA,NA,NA,1874-02-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3130,parsed,SCHMIDT,Adam,NA,NA,ABT 1823,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmidt Philipp,Gerhard Margaretha,NA,NA,back,3107.3,
 3131,parsed,SCHMIDT,Adam,NA,NA,1824-03-14,Neu Schowe,1868-09-02,Alt Ker,NA,NA,NA,NA,NA,NA,NA,Schmidt Andreas,Grammes Elisabetha,NA,NA,back,3121.2,
 3132,parsed,SCHMIDT,Jakob,NA,Evangelical,ABT 1828,NA,1873-05-01,Neu Schowe,NA,NA,NA,1873-05-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3152,7 +3139,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3138,parsed,SCHMIDT,Johann Taglöhner,NA,NA,ABT 1836,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmidt Michael,Hieronimus Elisabetha,NA,NA,back,3094.1,
 3139,parsed,SCHMIDT,Michael,NA,NA,ABT 1837,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmidt Jakob,Fröhlich Christina,NA,NA,back,3124.1,
 3140,parsed,SCHMIDT,Philipp,NA,Evangelical,ABT 1838,Kis,1866-10-28,Neu Schowe,NA,NA,NA,1866-10-29,NA,NA,NA,Schmidt Heinrich,Sutter Katharina,NA,NA,back,3085.1,
-3141,parsed,SCHMIDT,GeorgSeiler,NA,Reformed,ABT 1839,NA,1886-11-30,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,Schmidt Adam,Poth Katharina,NA,NA,back,3075.2,siehe Auswanderer nach USA
+3141,parsed,SCHMIDT,GeorgSeiler,NA,Reformed,ABT 1839,NA,1886-11-30,Alt Schowe,NA,NA,NA,1886-12-02,NA,NA,NA,Schmidt Adam,Poth Katharina,NA,NA,back,3075.2,siehe Auswanderer nach USA
 3142,parsed,SCHMIDT,Michael,NA,NA,1838-11-05,NA,ABT 1911,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3143,parsed,SCHMIDT,Jakob,NA,NA,ABT 1841,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmidt Jakob,Fröhlich Christina,NA,NA,back,3124.2,
 3144,parsed,SCHMIDT,Heinrich,NA,NA,1842-12-10,Alt,1908-11-06,Alt Ker,NA,NA,NA,NA,NA,NA,NA,Schmidt Karl,Schmidt Katharina,NA,NA,back,3125.1,
@@ -3190,8 +3177,8 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3176,parsed,SCHMOLL,Karl,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3177,parsed,SCHMOLL,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3178,parsed,SCHMOLL,Johann Peter,NA,NA,ABT 1799,NA,ABT 1865,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3179,parsed,SCHMOLL,Heinrich,NA,Reformed,1821-01-08,Torschau,1882-05-06,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,Schmoll Johann Adam,Mayer Katharina,NA,NA,back,3175.1,
-3180,parsed,SCHMOLL,Karl,NA,Reformed,ABT 1831,Torschau,1894-01-22,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,Schmoll Johann Peter,Eng Maria Elisabetha,NA,NA,back,3178.1,
+3179,parsed,SCHMOLL,Heinrich,NA,Reformed,1821-01-08,Torschau,1882-05-06,Neu Schowe,NA,NA,NA,1882-05-07,NA,NA,NA,Schmoll Johann Adam,Mayer Katharina,NA,NA,back,3175.1,
+3180,parsed,SCHMOLL,Karl,NA,Reformed,ABT 1831,Torschau,1894-01-22,Alt Schowe,NA,NA,NA,1894-01-24,NA,NA,NA,Schmoll Johann Peter,Eng Maria Elisabetha,NA,NA,back,3178.1,
 3181,parsed,SCHMOLL,Jakob,NA,NA,ABT 1841,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmoll Jakob,Schmidt Dorothea,NA,NA,back,3174.1,
 3182,parsed,SCHMOLL,Peter,NA,NA,ABT 1846,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmoll Jakob,Schmidt Dorothea,NA,NA,back,3174.2,
 3183,parsed,SCHMOLL,Nikolaus,NA,NA,ABT 1852,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schmoll Jakob,Schmidt Dorothea,NA,NA,back,3174.3,
@@ -3231,7 +3218,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3217,parsed,SCHNEIDER,Michael,NA,NA,1805-12-08,NA,1857-03-08,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3218,parsed,SCHNEIDER,PhilippTaglöhner,NA,Reformed,1808-09,Neu Schowe,1871-12-17,Neu Schowe,NA,NA,NA,1871-12-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3219,parsed,SCHNEIDER,Heinrich,NA,NA,1812-07-10,Kis,1891-03-30,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3220,parsed,SCHNEIDER,Heinrich,NA,NA,1812-12-14,Sekitsch,1848-02-25,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3221,parsed,SCHNEIDER,Philipp,NA,NA,ABT 1817,Neu Schowe,1890-05-10,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3222,parsed,SCHNEIDER,Jakob,NA,Reformed,ABT 1823,NA,1850-07-12,Neu Schowe,NA,NA,NA,1850-07-13,NA,NA,NA,Schneider Georg,Schmidt Margaretha,NA,NA,back,3202.1,
 3223,parsed,SCHNEIDER,Paul,NA,NA,1831-03-14,Neuwerbas,1891-12-30,Neuwerbas,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3279,7 +3265,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3265,parsed,SCHNUR,Johann,NA,NA,ABT 1853,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schnur Heinrich,Hetzel Margaretha,NA,NA,back,3250.1,
 3266,parsed,SCHNUR,Friedrich,NA,NA,ABT 1854,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Schnur Bartholomeus,Krieger Maria Philippina,NA,NA,back,3247.8,
 3267,parsed,SCHNUR,Bertalan,NA,Reformed,1864-06-26,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,27.6.1864,NA,Schnur Peter,Kruttschnitt Susanna,NA,NA,back,3261.2,
-3268,parsed,SCHNUR,Stefan,NA,Reformed,1866-01-25,Neu Schowe,1946-10-29,"Cleveland, OH",NA,NA,NA,NA,NA,1866-01-27,NA,Schnur Johann,Brücker Elisabetha,NA,NA,back,3260.4,siehe Auswanderer nach USA; siehe Auswanderer nach USA; siehe Auswanderer nach USA
+3268,parsed,SCHNUR,Stefan,NA,Reformed,1866-01-25,Neu Schowe,1946-10-29,"Cleveland, OH",NA,NA,NA,NA,NA,1866-01-27,NA,Schnur Johann,Brücker Elisabetha,NA,NA,back,3260.4,"siehe Auswanderer nach USA; Geburtseintrag als Theresia, bei MARR Rosina, in USA auch Rosina; siehe Auswanderer nach USA; siehe Auswanderer nach USA"
 3269,parsed,SCHNUR,Johann,NA,Reformed,1872-08-22,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1872-08-23,NA,Schnur Johann,Hillrich Margaretha,NA,NA,back,3262.2,siehe Auswanderer nach USA
 3270,parsed,SCHNUR,Adam,NA,NA,ABT 1875,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3271,parsed,SCHNUR,Peter,NA,Reformed,1875-01-16,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1875-01-18,NA,Schnur Johann,Hillrich Margaretha,NA,NA,back,3262.3,siehe Auswanderer nach USA; siehe Auswanderer nah USA
@@ -3515,7 +3501,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3501,parsed,STEG,Friedrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3502,parsed,STEG,Johannes,NA,NA,1796-03-26,Kis,1854-05-04,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3503,parsed,STEG,Georg,NA,NA,ABT 1824,Alt,NA,NA,NA,NA,NA,NA,NA,NA,NA,Steg Johannes,Eisenlöffel Anna Christina,NA,NA,back,3502.1,
-3504,parsed,STEG,Heinrich,NA,NA,1833-07-27,NA,1899-10-20,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3504,parsed,STEG,Heinrich,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3505,parsed,STEG,Heinrich,NA,NA,1854-04-09,Alt,NA,NA,NA,NA,NA,NA,NA,NA,NA,Steg Georg,Schmidt Elisabetha,NA,NA,back,3503.1,
 3506,parsed,STEHLI,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3507,parsed,STEHLI,Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3530,8 +3516,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3516,parsed,STEINMETZ,Philipp Taglöhner,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3517,parsed,STEINMETZ,Philipp,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3518,parsed,STEINMETZ,Philipp,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3516,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-3517,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 3519,parsed,STEINMETZ,Philipp,NA,Reformed,ABT 1803,Torschau,1849-09-14,Neu Schowe,NA,NA,NA,1849-09-15,NA,NA,NA,NA,NA,NA,NA,back,3510.1,
 3520,parsed,STEINMETZ,Peter,NA,Reformed,1806-05,NA,1875-07-31,Neu Schowe,NA,NA,NA,1875-08-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3521,parsed,STEINMETZ,Friedrich JakobWeber,NA,Reformed,1830-09-11,Neu Schowe,1859-05-10,Neu Schowe,NA,NA,NA,1859-05-12,NA,13.9.1830,NA,Steinmetz Peter,Schmidt Katharina,NA,NA,back,3520.2,
@@ -3588,9 +3572,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3572,parsed,STÜTZER,Friedrich,NA,NA,1902-06-12,NA,1971-08-27,"San Diego, CA",NA,NA,NA,NA,NA,NA,NA,Stützer Friedrich,Stützer Elisabetha,NA,NA,back,3571.1,siehe Auswanderer nach USA; siehe Auswanderer nach USA
 3573,parsed,SVETICS,Michael,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3574,parsed,SVETICS,Georg Reservesoldat,NA,NA,ABT 1829,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Svetics Michael,Findelfeld Rosalia,NA,NA,back,3573.1,
-3575,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 3575,parsed,SVETICS,JakobTaglöhner,NA,Reformed,ABT 1832,NA,1864-05-02,Neu Schowe,NA,NA,NA,1864-05-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3574,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 3576,parsed,SVETICS,Sofia,NA,Reformed,1863-09-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,19.9.1863,NA,Svetics Jakob,Orschied Katharina,NA,NA,back,3575.4,
 3577,parsed,SVETICS,David,NA,Reformed,1886-10-20,Neu Schowe,1928-05-25,OH,NA,NA,NA,NA,NA,1886-10-24,NA,NA,NA,NA,NA,back,3576.1,siehe Auswanderer nach USA
 3578,parsed,SZEBEL,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3638,7 +3620,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3620,parsed,TAUSS,Friedrich,NA,Evangelical,1871-11-27,Alt Schowe,ABT 1958,"Cleveland, OH",NA,NA,NA,NA,NA,1871-11-27,NA,Tauss Michael,Haller Katharina Elisabetha,NA,NA,back,3594.4,siehe Auswanderer nach USA; siehe Auswanderer nach USA; siehe Auswanderer nach USA
 3621,parsed,TAUSS,Jakob,NA,Evangelical,1875-12-04,Alt Schowe,1945-09-06,Lager Jarek,NA,NA,NA,NA,NA,1875-12-06,NA,Tauss Jakob,Haller Katharina,NA,NA,back,3610.3,
 3622,parsed,TAUSS,Johann,NA,Evangelical,1877-02-24,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1877-02-25,NA,Tauss Michael,Tauss Elisabetha,NA,NA,back,3612.2,
-3623,parsed,TAUSS,Jakob,NA,NA,ABT 1878,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3623,parsed,BIRT,,NA,NA,ABT 1878,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3624,parsed,TAUSS,Ferdinand,NA,Evangelical,1880-02-06,Neu Schowe,1941-04-26,"Mayfield Heigths, OH",NA,NA,NA,NA,NA,1880-02-07,NA,Tauss Jakob,Brücker Rosalia,NA,NA,back,3592.5,siehe Auswanderer nach USA
 3625,parsed,TAUSS,Michael,NA,Evangelical,1884-02-18,Neu Schowe,1947-01-26,NA,NA,NA,NA,NA,NA,1884-02-20,NA,Tauss Michael,Tauss Elisabetha,NA,NA,back,3612.4,
 3626,parsed,TAUSS,Christian,NA,Evangelical,1885-04-23,Alt Schowe,1949-05-28,Sulmingen,NA,NA,NA,NA,NA,1885-04-26,NA,Tauss Christian,Klein Johanna,NA,NA,back,3614.4,
@@ -3745,8 +3727,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3727,parsed,TRUMPLER,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3728,parsed,TRUMPLER,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3729,parsed,TRUMPLER,Jakob,NA,Evangelical,ABT 1776,NA,1843-08-18,Neu Schowe,NA,NA,NA,1843-08-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3725,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-3726,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 3730,parsed,TUSSING,Daniel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3731,parsed,TUSSING,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3732,parsed,TUSSING,Johann Jakob,NA,NA,1797-08-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3835,7 +3815,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3815,parsed,WEBER,Philipp,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3816,parsed,WEBER,Nikolaus,NA,NA,ABT 1759,NA,ABT 1824,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3817,parsed,WEBER,Johann,NA,NA,ABT 1817,Kutzura,1878-06-28,Alt Schowe,NA,NA,NA,1878-06-30,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3818,parsed,WEBER,Friedrich,NA,Reformed,ABT 1823,NA,1849-07-06,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,Weber Heinrich,Schmidt Katharina,NA,NA,back,3810.1,
+3818,parsed,WEBER,Friedrich,NA,Reformed,ABT 1823,NA,1849-07-06,Neu Schowe,NA,NA,NA,1849-07-07,NA,NA,NA,Weber Heinrich,Schmidt Katharina,NA,NA,back,3810.1,
 3819,parsed,WEBER,DanielTaglöhner,NA,Reformed,1823-10,NA,1865-04-19,Neu Schowe,NA,NA,NA,1865-04-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3820,parsed,WEBER,Wilhelm,NA,Evangelical,ABT 1827,Alt Schowe,1884-02-16,Alt Schowe,NA,NA,NA,1884-02-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3821,parsed,WEBER,Nikolaus,NA,NA,ABT 1829,Torschau,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -3855,7 +3835,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3835,parsed,WEBER,Philipp,NA,NA,1904-06-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,3830.1,
 3836,parsed,WECKL,Konrad,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3837,parsed,WEICHINGEL,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3838,parsed,WEICHINGEL,JakobBauer,NA,Evangelical,ABT 1816,Neu,1873-10-15,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3838,parsed,WEICHINGEL,JakobBauer,NA,Evangelical,ABT 1816,Neu,1873-10-15,Neu Schowe,NA,NA,NA,1873-10-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3839,parsed,WEICHINGEL,Jakob,NA,Reformed,1856-01-16,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1856-01-17,NA,Weichingel Jakob,Mersch Elisabetha,NA,NA,back,3838.7,
 3840,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 3841,parsed,WEICHINGEL,Jakob,NA,NA,1911-04-24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Weichingel UNKNOWN,Ilg Elisabetha,NA,NA,back,3837.1,
@@ -3877,14 +3857,12 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3857,parsed,WEINZ,Johann,NA,Evangelical,ABT 1802,NA,1856-09-01,Neu Schowe,NA,NA,NA,1836-09-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3858,parsed,WEINZ,Johann Adam,NA,Evangelical,ABT 1806,NA,1870-07-24,Neu Schowe,NA,NA,NA,1870-07-26,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3859,parsed,WEINZ,Peter,NA,Evangelical,ABT 1811,Neu Schowe,1880-10-20,Neu Schowe,NA,NA,NA,1880-10-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3861,parsed,KRUTTSCHNITT,Susanna,NA,Evangelical,ABT 1829,Neu Schowe,1874-11-20,Neu Schowe,NA,NA,NA,1874-11-22,NA,NA,NA,Kruttschnitt Gottfried,Webel Katharina,NA,NA,back,2052.5,
 3860,parsed,WEINZ,Philipp,NA,Evangelical,ABT 1814,NA,1874-04-18,Neu Schowe,NA,NA,NA,1874-04-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3861,parsed,WEINZ,Jakob,NA,Evangelical,ABT 1826,Neu Schowe,1886-01-20,Neu Schowe,NA,NA,NA,1886-01-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3859,parsed,KRUTTSCHNITT,Rosalia,NA,NA,ABT 1830,NA,1891-12-02,Neu Schowe,NA,NA,NA,1891-12-03,NA,NA,NA,Kruttschnitt Gottfried,Webel Katharina,NA,NA,back,2052.6,
 3862,parsed,WEINZ,Jakob,NA,NA,ABT 1829,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Weinz Adam,Diek Margaretha,NA,NA,back,3848.3,
 3863,parsed,WEINZ,Adam,NA,Evangelical,ABT 1833,NA,1878-04-12,Neu Schowe,NA,NA,NA,1878-04-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3864,parsed,WEINZ,Wilhelm,NA,Evangelical,ABT 1835,Neu Schowe,1893-06-04,Neu Schowe,NA,NA,NA,1893-06-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3865,parsed,WEINZ,Peter,NA,Evangelical,1836-05-24,Neu Schowe,1878-03-27,Neu Schowe,NA,NA,NA,NA,NA,1836-05-25,NA,Weinz Johann Adam,Welker Maria Julianna,NA,NA,back,3858.3,
+3865,parsed,WEINZ,Peter,NA,Evangelical,1836-05-24,Neu Schowe,1878-03-27,Neu Schowe,NA,NA,NA,1878-03-28,NA,1836-05-25,NA,Weinz Johann Adam,Welker Maria Julianna,NA,NA,back,3858.3,
 3866,parsed,WEINZ,Peter,NA,Evangelical,ABT 1841,NA,1892-05-06,Neu Schowe,NA,NA,NA,1892-05-08,NA,NA,NA,Weinz Peter,Meister Charlotte,NA,NA,back,3853.2,
 3867,parsed,WEINZ,JohannMüller,NA,Evangelical,ABT 1843,NA,1892-02-07,Neu Schowe,NA,NA,NA,1892-02-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3868,parsed,WEINZ,Rosalia,NA,Evangelical,1850-11-12,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1850-11-14,NA,Weinz Jakob,Kruttschnitt Rosalia,NA,NA,back,3861.1,
@@ -3904,7 +3882,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3882,parsed,WEINZ,Philipp,NA,Evangelical,1893-03-08,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1893-03-12,NA,Weinz Josef,Harfmann Katharina,NA,NA,back,3871.5,
 3883,parsed,WEINZ,Peter Dr.,NA,NA,ABT 1899,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Weinz Peter,Heil Katharina,NA,NA,back,3875.3,
 3884,parsed,WEINZ,Friedrich,NA,NA,1899-09-29,NA,1976-03-06,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA
-3885,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+3885,parsed,WEINZ,Peter,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3886,parsed,WEINZ,Jakob,NA,NA,1908-10-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3887,parsed,WEINZ,Adam,NA,NA,1910-02-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Weinz Jakob,Wenz Katharina,NA,NA,back,3881.1,
 3888,parsed,WEINZ,Jakob,NA,Evangelical,1912-01-04,NA,1977-08-22,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,siehe Auswanderer nach USA; siehe Auswanderer nach USA
@@ -3953,7 +3931,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3931,parsed,WELKER,,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3932,parsed,WELKER,Nikolaus,NA,Reformed,ABT 1798,NA,1830-04-13,Neu Schowe,NA,NA,NA,1830-04-15,NA,NA,NA,Welker Nikolaus,Lepold Anna Maria,NA,NA,back,3929.1,
 3933,parsed,WELKER,Johann Wilhelm,NA,Reformed,ABT 1806,NA,1856-05-01,Neu Schowe,NA,NA,NA,1856-05-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3934,parsed,WELKER,Jakob,NA,Reformed,ABT 1818,NA,1872-12-21,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,Welker Nikolaus,Richter Katharina,NA,NA,back,3932.1,
+3934,parsed,WELKER,Jakob,NA,Reformed,ABT 1818,NA,1872-12-21,Neu Schowe,NA,NA,NA,1872-12-23,NA,NA,NA,Welker Nikolaus,Richter Katharina,NA,NA,back,3932.1,
 3935,parsed,WELKER,Johann,NA,NA,ABT 1820,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3936,parsed,WELKER,Peter,NA,NA,1823-06-27,Alt,1881-09-01,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3937,parsed,WELKER,WilhelmTaglöhner,NA,Reformed,1827-04-23,NA,1862-11-14,Neu Schowe,NA,NA,NA,1862-11-16,NA,NA,NA,Welker Johann Wilhelm,Haller Julianna,NA,NA,back,3933.1,
@@ -3987,7 +3965,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3965,parsed,WERLE,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3966,parsed,WERLE,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3967,parsed,WERLE,Johann,NA,Reformed,ABT 1789,Deutschland/,1862-02-26,Neu Schowe,NA,NA,NA,1862-02-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3968,parsed,WERLE,Philipp,NA,Reformed,ABT 1812,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3968,parsed,WERLE,Philipp,NA,Reformed,ABT 1812,NA,NA,NA,NA,NA,NA,1885-01-26,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3969,parsed,WERLE,Heinrich,NA,Evangelical,ABT 1819,NA,1849-07-08,Neu Schowe,NA,NA,NA,1849-07-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3970,parsed,WERLE,Johann,NA,NA,1819-04-09,NA,1861-04-24,Neu Schowe,NA,NA,NA,1861-04-25,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3971,parsed,WERLE,Heinrich,NA,NA,1837-01-30,Bulkes,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
@@ -4018,7 +3996,7 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 3996,parsed,WERNER,Wilhelm,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3997,parsed,WERNER,Mathias,NA,Evangelical,ABT 1807,NA,1848-10-05,Neu Schowe,NA,NA,NA,1848-10-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 3998,parsed,WERNER,Philipp,NA,Evangelical,ABT 1808,NA,1848-09-11,Neu Schowe,NA,NA,NA,1848-09-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-3999,parsed,WERNER,David,NA,Evangelical,ABT 1810,NA,1866-09-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
+3999,parsed,WERNER,David,NA,Evangelical,ABT 1810,NA,1866-09-29,Neu Schowe,NA,NA,NA,1866-10-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 4000,parsed,WERNER,Michael,NA,Evangelical,1826-10-15,Alt Schowe,1863-09-22,Neu Schowe,NA,NA,NA,1863-09-24,NA,NA,NA,Werner Georg,Welker Magdalena,NA,NA,back,3985.3,
 4001,parsed,WERNER,Heinrich,NA,Evangelical,ABT 1831,NA,1880-10-23,Neu Schowe,NA,NA,NA,1880-10-24,NA,NA,NA,Werner Philipp,Kirchner Elisabetha,NA,NA,back,3998.1,
 4002,parsed,WERNER,Gottfried,NA,Evangelical,1836-01-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1836-11-19,NA,Werner Philipp,Kirchner Elisabetha,NA,NA,back,3998.2,
@@ -4096,7 +4074,6 @@ record_id,status,surname,given_name,occupation,religion,birth_date,birth_place,d
 4074,parsed,WOLF,Philipp,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 4075,parsed,WOLF,Wenzel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 4076,parsed,WOLF,Jakob,NA,Evangelical,ABT 1802,NA,1871-10-19,Neu Schowe,NA,NA,NA,1871-10-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,
-4070,empty,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 4077,parsed,WOLF,Adam,NA,Evangelical,ABT 1826,NA,1874-10-31,Neu Schowe,NA,NA,NA,1874-11-02,NA,NA,NA,Wolf Jakob,Schneider Margaretha,NA,NA,back,4076.2,
 4078,parsed,WOLF,Michael,NA,Evangelical,ABT 1828,Jarek,1849-05-19,Neu Schowe,NA,NA,NA,1849-05-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,
 4079,parsed,WOLF,Johann Christian,NA,Evangelical,1835-01-11,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,1835-01-13,NA,Wolf Jakob,Schneider Margaretha,NA,NA,back,4076.3,

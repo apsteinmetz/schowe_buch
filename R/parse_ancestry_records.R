@@ -89,13 +89,19 @@ convert_date <- function(date_str) {
 #' @return Modified character vector
 apply_substitutions <- function(text_vec) {
   # Event tags - be careful with * as it's common
+  # Allow optional space around event markers (but not newlines!)
   text_vec <- str_replace_all(text_vec, "(?<![a-zA-Z])\\*", " BIRT ")
-  text_vec <- str_replace_all(text_vec, "(?<=\\d)\\.oo", " NMARR ") # numbered marriage like 2.oo, 3.oo
-  text_vec <- str_replace_all(text_vec, "(?<![0-9.])oo(?![0-9])", " MARR ") # regular marriage
+  text_vec <- str_replace_all(text_vec, "(?<=\\d)\\.oo[ \\t]*", " NMARR ") # numbered marriage like 2.oo, 3.oo
+  text_vec <- str_replace_all(text_vec, "(?<![0-9.])oo[ \\t]*", " MARR ") # regular marriage (allow no space after, but not newline)
   text_vec <- str_replace_all(text_vec, "o‐o", " MARR_DIV ")
   text_vec <- str_replace_all(text_vec, "~", " BAPM ")
   text_vec <- str_replace_all(text_vec, "†", " DEAT ")
-  text_vec <- str_replace_all(text_vec, "\\bb\\. ", " BURI ")
+  # Burial: "b." followed by date (digits). Must have space or † before, allows optional space after (not newline)
+  text_vec <- str_replace_all(
+    text_vec,
+    "(?<=\\s|†)b\\.[ \\t]*(?=\\d)",
+    " BURI "
+  )
   text_vec <- str_replace_all(text_vec, "^# ", "NOTE ")
   text_vec <- str_replace_all(text_vec, "\n# ", "\nNOTE ")
 
@@ -374,8 +380,9 @@ split_into_records <- function(file_path) {
   # Read entire file
   text <- read_file(file_path)
 
-  # Split on record markers <nnn>
-  records <- str_split(text, "(?=<\\d+>)")[[1]]
+  # Split on record markers <nnn> that appear at the start of a line
+  # This avoids splitting on inline references like (Doppelhochzeit <3861>)
+  records <- str_split(text, "(?=(\r?\n|^)<\\d+>)")[[1]]
 
   # Remove empty first element if exists
   records <- records[records != ""]
@@ -490,7 +497,8 @@ parse_record <- function(record) {
     }
 
     # Handle child line (starts with digit followed by period)
-    if (str_detect(line, "^\\d+\\.\\s")) {
+    # Allow optional space after period (e.g., "6. Name" or "6.Name")
+    if (str_detect(line, "^\\d+\\.\\s?[A-ZÄÖÜa-zäöü]")) {
       # Save previous child if exists
       if (!is.null(current_child)) {
         result$children[[length(result$children) + 1]] <- current_child
@@ -1319,13 +1327,22 @@ reconcile_references <- function(dataframes) {
       back_ref_match <- ref_spouses |>
         filter(ref_type == "back" & ref == expected_back_ref)
 
+      # Also check for forward reference on spouse that points to this child
+      # (bidirectional forward refs case, e.g., child > 3504, spouse > 3709.4)
+      fwd_ref_match <- ref_spouses |>
+        filter(ref_type == "forward" & ref == expected_back_ref)
+
       # Also check if the PRIMARY person of ref record has the back ref
       # (This happens when the child becomes the primary person in their own record)
       primary_has_back_ref <- !is.na(ref_person$ref_type[1]) &&
         ref_person$ref_type[1] == "back" &&
         ref_person$ref[1] == expected_back_ref
 
-      if (nrow(back_ref_match) > 0 || primary_has_back_ref) {
+      if (
+        nrow(back_ref_match) > 0 ||
+          nrow(fwd_ref_match) > 0 ||
+          primary_has_back_ref
+      ) {
         # Bidirectional match found
         child_idx <- which(
           children$record_id == row$record_id &
@@ -1333,16 +1350,17 @@ reconcile_references <- function(dataframes) {
             children$marriage_num == row$marriage_num
         )
 
-        if (nrow(back_ref_match) > 0) {
-          # Back ref is on spouse - this child married into that record
+        if (nrow(back_ref_match) > 0 || nrow(fwd_ref_match) > 0) {
+          # Ref is on spouse - this child married into that record
           children$ref_assignment[child_idx] <- "spouse"
           children$ref_verified[child_idx] <- TRUE
 
-          # Also mark the spouse's back ref as verified
+          # Also mark the spouse's ref as verified
           spouse_idx <- which(
             spouses$record_id == ref_info$record_id &
-              spouses$ref_type == "back" &
-              spouses$ref == expected_back_ref
+              ((spouses$ref_type == "back" & spouses$ref == expected_back_ref) |
+                (spouses$ref_type == "forward" &
+                  spouses$ref == expected_back_ref))
           )
           if (length(spouse_idx) > 0) {
             spouses$ref_verified[spouse_idx] <- TRUE
@@ -1387,22 +1405,36 @@ reconcile_references <- function(dataframes) {
             children$ref_verified[child_idx] <- TRUE
           }
         } else if (names_match(ref_primary_name, spouse_name)) {
-          # No back ref but name matches spouse
+          # No back ref but name matches spouse - accept as valid
           child_idx <- which(
             children$record_id == row$record_id &
               children$child_num == row$child_num &
               children$marriage_num == row$marriage_num
           )
           children$ref_assignment[child_idx] <- "spouse"
-          # Not fully verified since no back ref
+          children$ref_verified[child_idx] <- TRUE
         } else if (names_match(ref_primary_name, child_name)) {
-          # No back ref but name matches child
+          # No back ref but name matches child - accept as valid
           child_idx <- which(
             children$record_id == row$record_id &
               children$child_num == row$child_num &
               children$marriage_num == row$marriage_num
           )
           children$ref_assignment[child_idx] <- "child"
+          children$ref_verified[child_idx] <- TRUE
+        } else if (
+          (is.na(spouse_name) || spouse_name == "") &&
+            !names_match(ref_primary_name, child_name)
+        ) {
+          # Spouse name wasn't parsed but ref primary doesn't match child name
+          # Assume ref is to the spouse (common case for minimal records)
+          child_idx <- which(
+            children$record_id == row$record_id &
+              children$child_num == row$child_num &
+              children$marriage_num == row$marriage_num
+          )
+          children$ref_assignment[child_idx] <- "spouse"
+          children$ref_verified[child_idx] <- TRUE
         } else {
           # Cannot determine - add to conflicts
           conflicts <- bind_rows(

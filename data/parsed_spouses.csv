@@ -144,7 +144,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 141,1,marriage,NA,NA,NA,NEUMANN,Christina,Evangelical,ABT 1839,NA,1873-10-02,Alt Schowe,1873-10-04,NA,NA,NA,NA,NA,NA,NA,FALSE
 142,1,marriage,1885-04-26,Neu Schowe,"Philipp Jung, Jakob Schmoll",HALLER,Maria Anna,Evangelical,1851-03-11,Neu Schowe,NA,NA,NA,1851-03-13,NA,Haller Philipp,Hoffmann Margaretha,forward,1033.4,NA,FALSE
 143,1,marriage,1877-12-16,Neu Schowe,"Heinrich Becker, Philipp Seil",DIETRICH,Katharina,Evangelical,ABT 1853,NA,1890-08-19,Neu Schowe,1890-08-21,NA,NA,Dietrich Valentin,Liebmann Luise,forward,476.2,NA,FALSE
-144,1,marriage,1884-03-11,Neu Schowe,"Andreas Staudt, Heinrich Becker",REITENBACH,Katharina,NA,ABT 1865,Alt,NA,NA,NA,NA,NA,Reitenbach Christian,Dickenscheid UNKNOWN,forward,2800.1,NA,FALSE
+144,1,marriage,1884-03-11,Neu Schowe,"Andreas Staudt, Heinrich Becker",REITENBACH,Katharina,NA,ABT 1865,Alt,NA,NA,NA,NA,NA,Reitenbach Christian,Dickenscheid UNKNOWN,forward,2800.1,NA,TRUE
 145,1,marriage,NA,NA,NA,JUNG,Eva,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 146,1,marriage,NA,NA,NA,GABEL,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 146,2,marriage,NA,NA,NA,GABEL,Maria Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -221,7 +221,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 208,1,marriage,1878-02-03,Neu Schowe,"Johann Toth, Jakob Haller",TESCHNER,Susanna,Evangelical,1861-11-18,Neu Schowe,NA,NA,NA,1861-11-19,NA,Teschner Wilhelm,Brausch Katharina,forward,3651.1,NA,FALSE
 209,1,marriage,1879-08-21,Alt Ker,"Sandor Hoffmann, Heinrich Roller",WERLE,Elisabetha,NA,1859-05-29,Alt,1912-12-15,NA,NA,NA,NA,Werle Heinrich,Roth Barbara,forward,3971.1,NA,FALSE
 210,1,marriage,1879-11-20,Neu Schowe,"Peter Haller, Josef KriegerMÜLLER Elisabetha RELI_REF > 2496.3",NA,NA,NA,1859-07-31,Neu Schowe,NA,NA,NA,1859-08-01,NA,Müller Johann Friedrich,Geyer Elisabetha,NA,NA,NA,FALSE
-211,1,marriage,1882-11-28,Neu Schowe,"Jakob Haug, Johann Hartmann",GEYER,Elisabetha,Reformed,1867-07-23,Neu Schowe,1888-01-07,Neu Schowe,1888-01-09,1867-07-24,NA,Geyer Stefan,Müller Katharina,forward,792.1,NA,FALSE
+211,1,marriage,1882-11-28,Neu Schowe,"Jakob Haug, Johann Hartmann",GEYER,Elisabetha,Reformed,1867-07-23,Neu Schowe,1888-01-07,Neu Schowe,1888-01-09,1867-07-24,NA,Geyer Stefan,Müller Katharina,forward,792.1,NA,TRUE
 211,2,marriage,1888-10-21,Neu Schowe,"Josef Bolz, Jakob Welker",BRÜCKER,Anna,Reformed,1873-01-10,Neu Schowe,1945-07-26,Lager Jarek,NA,1873-01-11,NA,Brücker Philipp,Welker Eva,forward,336.1,NA,FALSE
 212,1,marriage,1893-06-22,Alt Schowe,"Johann Dietrich, Christian Schmidt",DIETRICH,Margaretha,NA,ABT 1866,Kis,NA,NA,NA,NA,NA,Dietrich Valentin,Eidenmüller Margaretha,forward,474.1,NA,FALSE
 213,1,marriage,NA,NA,NA,DIETRICH,Johanna,NA,1868-04-15,Kis,NA,NA,NA,NA,NA,Dietrich Jakob,Meder Katharina,forward,477.1,NA,FALSE
@@ -428,7 +428,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 401,1,marriage,1951-06-05,"Cuyahoga, OH",NA,LICHT,Katharina,NA,1916-08-05,NA,2011-04-04,"Cleveland, OH",NA,NA,NA,Licht Heinrich,Zeiner Katharina,forward,2270.2,NA,FALSE
 402,1,marriage,NA,NA,NA,SAUER,Johanna,NA,1913-10-01,NA,1968,Pfullingen,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 403,1,marriage,NA,NA,NA,HALLER,Theresia,NA,1910-06-17,NA,NA,NA,NA,NA,NA,Haller Johann,Lepold Margaretha,back,1175.1,NA,TRUE
-404,1,marriage,1936-03-21,"Cuyahoga, OH",NA,SCHMAUDER,Elisabetha,NA,ABT 1915,Ohio,NA,NA,NA,NA,NA,Schmauder Jakob,Umstadt Katharina,forward,3072.1,NA,FALSE
+404,1,marriage,1936-03-21,"Cuyahoga, OH",NA,SCHMAUDER,Elisabetha,NA,ABT 1915,Ohio,NA,NA,NA,NA,NA,Schmauder Jakob,Umstadt Katharina,forward,3072.1,NA,TRUE
 405,1,marriage,NA,NA,NA,FECHTER,Elisabetha,NA,ABT 1919,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 406,1,marriage,NA,NA,NA,TESCHNER,Theresia,NA,ABT 1920,NA,NA,NA,NA,NA,NA,Teschner Michael,Lepold Elisabetha,forward,3665.1,NA,FALSE
 407,1,marriage,NA,NA,NA,KLEIN,Katharina,NA,1922-06-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -477,7 +477,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 448,1,marriage,NA,NA,NA,WEINZ,Anna,Evangelical,1890-11-08,Neu Schowe,1956-11-07,"Cleveland, OH",NA,1890-11-11,NA,Weinz Philipp,Schmidt Elisabetha,forward,3872.5,NA,FALSE
 449,1,marriage,NA,NA,NA,MEISTER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 450,1,marriage,1925-04-11,"Cuyahoga, OH",NA,HEIL,Philippina,NA,1905-02-18,NA,1980,"Cleveland, OH",NA,NA,NA,Heil Jakob,Klein Elisabetha,forward,1373.4,NA,FALSE
-451,1,marriage,1931-09-22,"Cuyahoga, OH",NA,SEHNE,Katharina,NA,ABT 1914,NA,NA,NA,NA,NA,NA,Sehne Simon,Schmidt Julianna,forward,3350.1,NA,FALSE
+451,1,marriage,1931-09-22,"Cuyahoga, OH",NA,SEHNE,Katharina,NA,ABT 1914,NA,NA,NA,NA,NA,NA,Sehne Simon,Schmidt Julianna,forward,3350.1,NA,TRUE
 452,1,marriage,1940-05-18,"Cuyahoga, OH",NA,BAUMERT,Anna,NA,ABT 1917,NA,ABT 1996,"Cleveland, OH",NA,NA,NA,Baumert Frank,Stohl Theresia,back,69.1,NA,TRUE
 453,1,marriage,NA,NA,NA,LITTMANN,Theresia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 454,1,marriage,NA,NA,NA,WEBER,Rosina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -499,7 +499,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 468,1,marriage,1861-10-14,Kula,NA,ZIEGLER,Eva,NA,ABT 1840,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 469,1,marriage,1883-03-11,Neu Schowe,"Sandor Kolozsvary, Günther Siegmund",HARTMANN,Irma,Reformed,1863-10-11,Neu Schowe,NA,NA,NA,1863-10-15,NA,Hartmann Johann,Müller Christina,forward,1276.1,NA,FALSE
 470,1,marriage,NA,NA,NA,HALLER,Philippina,Reformed,1867-08-15,Neu Schowe,NA,NA,NA,1867-08-16,NA,Haller Michael,Haller Margaretha,forward,1087.5,NA,FALSE
-471,1,marriage,NA,NA,NA,HALLER,Katharina,NA,ABT 1884,Alt Schowe,1965-06-24,"Detroit, MI",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+471,1,marriage,NA,NA,NA,HALLER,Katharina,NA,ABT 1884,Alt Schowe,1965-06-24,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 472,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 473,1,marriage,NA,NA,NA,MAYER,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 474,1,marriage,NA,NA,NA,EIDENMÜLLER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -571,7 +571,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 538,1,marriage,NA,NA,NA,HETZEL,Elisabetha,NA,ABT 1915,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 539,1,marriage,NA,NA,NA,JUNG,Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 540,1,marriage,NA,NA,NA,KINZINGER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-542,1,marriage,1886-11-21,Alt Ker,"Philipp Sehne, Andreas Staudt",SEHNE,Dorothea,NA,1865-01-12,Kis,NA,NA,NA,NA,NA,Sehne Johann,Litzenberger Christina,forward,3339.1,NA,FALSE
+542,1,marriage,1886-11-21,Alt Ker,"Philipp Sehne, Andreas Staudt",SEHNE,Dorothea,NA,1865-01-12,Kis,NA,NA,NA,NA,NA,Sehne Johann,Litzenberger Christina,forward,3339.1,NA,TRUE
 543,1,marriage,NA,NA,NA,EDER,Elisabetha,NA,1884-11-04,NA,1960,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 544,1,marriage,NA,NA,NA,GUTWEIN,Magdalena,NA,1909-03-11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 545,1,marriage,NA,NA,NA,ZINK,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -614,7 +614,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 579,1,marriage,1880-09-22,Neu Schowe,"Heinrich Pataki, Ludwig Hetzel",HEIL,Johanna,NA,ABT 1853,Neu Schowe,NA,NA,NA,NA,NA,Heil Georg,Hetzel Susanna,forward,1357.3,NA,FALSE
 580,1,marriage,1878-01-20,Neu Schowe,"Daniel Pataki, Johann Riegel",BECKER,Rosina,Evangelical,1860-10-04,Alt Schowe,1886-05-23,Neu Schowe,1886-05-24,1860-10-05,NA,Becker Heinrich,Ruppel Katharina,back,96.6,NA,TRUE
 580,2,marriage,1886-11-28,Neu Schowe,"Georg Wolf, Johann Febel",WOLF,Rosina,NA,ABT 1867,NA,NA,NA,NA,NA,NA,Wolf Johann Christian,Fess Elisabetha,forward,4079.4,NA,FALSE
-581,1,marriage,1879-11-30,Neu Schowe,"Georg Febel, Johann Hoffmann",PETRI,Christina,Evangelical,1858-10-02,Alt Schowe,NA,NA,NA,1858-10-03,NA,Petri Philipp,Trissler Katharina,forward,2685.2,NA,FALSE
+581,1,marriage,1879-11-30,Neu Schowe,"Georg Febel, Johann Hoffmann",PETRI,Christina,Evangelical,1858-10-02,Alt Schowe,NA,NA,NA,1858-10-03,NA,Petri Philipp,Trissler Katharina,forward,2685.2,NA,TRUE
 582,1,marriage,1882-01-01,Neu Schowe,"Jakob Haug, Jakob Febel",STEINMETZ,Elisabetha,Reformed,1863-04-20,Neu Schowe,NA,NA,NA,1863-04-21,NA,Steinmetz Philipp,Hindenlang Katharina,forward,3515.4,NA,FALSE
 583,1,marriage,1884-01-07,Neu Schowe,"Josef Geiss, Wilhelm Weintz",SAUER,Eva,Evangelical,1860-12-25,Neu Schowe,NA,NA,NA,1880-12-26,NA,Sauer Philipp,Roth Katharina,forward,2975.3,NA,FALSE
 584,1,marriage,NA,NA,NA,TIEFENTHÄLER,Elisabetha,Evangelical,1882-07-07,Neu Schowe,1945-11-28,Lager Jarek,NA,1882-07-09,NA,Tiefenthäler Johann,Hetzel Julianna,forward,3685.2,NA,FALSE
@@ -650,7 +650,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 610,2,marriage,1844-04-09,Neu Schowe,"Georg Scherer, Peter Fechter",HOFFMANN,Susanna,Reformed,ABT 1826,NA,1887-07-21,Neu Schowe,1887-07-23,NA,NA,Hoffmann Adam,Scholl Susanna,forward,1587.1,NA,FALSE
 611,1,marriage,NA,NA,NA,FECHTER,Elisabetha,Evangelical,ABT 1845,NA,1878-03-17,Neu Schowe,1878-03-19,NA,NA,NA,NA,NA,NA,NA,FALSE
 611,2,marriage,1878-06-02,Neu Schowe,"Johann Palfi, Stefan Selig",PETRI,Magdalena,NA,ABT 1856,Neu Schowe,NA,NA,NA,NA,NA,Petri Karl,Morgenstern Magdalena,forward,2684.7,NA,FALSE
-612,1,marriage,1868-06-16,Neu Schowe,"Michael Brücker, Ignatius Horoste (Dr.)",SAUER,Maria Elisabetha,Evangelical,1851-04-05,Neu Schowe,1879-06-04,Neu Schowe,1875-06-06,1951-04-06,NA,Sauer Andreas Müller Elisabetha,NA,forward,2972.2,NA,FALSE
+612,1,marriage,1868-06-16,Neu Schowe,"Michael Brücker, Ignatius Horoste (Dr.)",SAUER,Maria Elisabetha,Evangelical,1851-04-05,Neu Schowe,1879-06-04,Neu Schowe,1875-06-06,1951-04-06,NA,Sauer Andreas Müller Elisabetha,NA,forward,2972.2,NA,TRUE
 612,2,marriage,1879-11-23,Sekitsch,NA,NEUMANN,Barbara,Evangelical,1859-01-17,Sekitsch,1892-01-03,Neu Schowe,1892-01-04,NA,NA,NA,NA,NA,NA,NA,FALSE
 613,1,marriage,1891-06-14,Alt Ker,"Jakob Petri, Adam Schmidt",GANTER,Katharina,NA,1869-02-13,Alt,1892-04-20,Alt Ker,NA,NA,NA,Ganter Heinrich,Haller Magdalena,forward,733.1,NA,FALSE
 613,2,marriage,1892-12-11,Neu Schowe,"Jakob Häuser, Johann Toth",MÜLLER,Rosina,Reformed,1874-10-19,Neu Schowe,1949-04-20,"Cleveland, OH",NA,1874-10-20,NA,Müller Josef,Haller Elisabetha,forward,2525.4,NA,FALSE
@@ -683,7 +683,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 641,1,marriage,1848-01-16,Neu Schowe,"Franz Haller, Karl Weiss",WEISS,Philippina,NA,NA,NA,NA,NA,NA,NA,NA,Weiss Konrad,Frank Elisabetha,forward,3895.2,NA,FALSE
 642,1,marriage,NA,NA,NA,HEIL,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 643,1,marriage,NA,NA,NA,GEYER,Elisabetha,NA,1927-03-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-644,1,marriage,NA,NA,NA,FESS,Margaretha,Reformed,1886-06-13,Alt Schowe,1968,NA,NA,14.6.1886,NA,Fess Friedrich,Finitzer Salomea,forward,648.4,NA,FALSE
+644,1,marriage,NA,NA,NA,FESS,Margaretha,Reformed,1886-06-13,Alt Schowe,1968,NA,NA,14.6.1886,NA,Fess Friedrich,Finitzer Salomea,forward,648.4,NA,TRUE
 645,1,marriage,NA,Neu Schowe,NA,STEINMETZ,Philippina,Evangelical,ABT 1800,NA,1874-05-15,Neu Schowe,1874-05-16,NA,NA,NA,NA,NA,NA,NA,FALSE
 646,1,marriage,NA,NA,NA,WELKER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 647,1,marriage,1874-01-04,Neu Schowe,"Josef Heinz, Johann Fess",WEINZ,Eva,Evangelical,ABT 1853,Neu Schowe,1885-03-14,Neu Schowe,1885-03-16,NA,NA,Weinz Johann,Einz Charlotte,forward,3851.4,NA,FALSE
@@ -747,7 +747,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 703,1,marriage,NA,NA,NA,WERNER,Katharina,NA,1918-02-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 704,1,marriage,1894-10-28,Sekitsch,NA,BURGER,Sofia,Evangelical,1870-07-08,Neu Schowe,1942-04-08,Sekitsch,NA,1870-07-10,NA,Burger Wilhelm,Weinz Elisabetha,back,420.6,NA,TRUE
 705,1,marriage,NA,NA,NA,BURGER,Maria Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-706,1,marriage,1815-11-09,Sekitsch,NA,HALLER,Elisabetha,NA,1794-11-18,Neu Schowe,1877-03-29,Sekitsch,NA,NA,NA,Haller Michael,Mathy Sophia,forward,1001.1,NA,FALSE
+706,1,marriage,1815-11-09,Sekitsch,NA,HALLER,Elisabetha,NA,1794-11-18,Neu Schowe,1877-03-29,Sekitsch,NA,NA,NA,Haller Michael,Mathy Sophia,forward,1001.1,NA,TRUE
 707,1,marriage,NA,NA,NA,GERBER,Theresia,NA,1835-02-12,Sekitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 707,2,marriage,NA,NA,NA,KARBINER,Magdalena,NA,ABT 1843,Sekitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 708,1,marriage,NA,NA,NA,NEU,Margaretha,NA,ABT 1878,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -765,7 +765,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 717,1,marriage,NA,NA,NA,NA,Eva,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 718,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 719,1,marriage,NA,NA,NA,FRANK,Maria Sophia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-721,1,marriage,NA,NA,NA,GERBER,Christina Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,765.1,NA,FALSE
+721,1,marriage,NA,NA,NA,GERBER,Christina Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,765.1,NA,TRUE
 722,1,marriage,NA,NA,NA,MARTIN,Ethel,NA,1931-08-10,NA,NA,NA,NA,NA,NA,Martin Jakob,Wolf Katharina,forward,2328.1,NA,FALSE
 723,1,marriage,NA,NA,NA,KAISER,Luisa,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 724,1,marriage,1893-08-13,Neu Schowe,"Georg Fussgänger, August Oexle",PALFI,Ethel,NA,ABT 1874,Neu,NA,NA,NA,NA,NA,Palfi Johann,Burg Elisabetha,forward,2644.1,NA,FALSE
@@ -808,7 +808,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 754,1,marriage,NA,NA,NA,KRUTTSCHNITT,Magdalena,NA,1899-01-07,NA,1975,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 755,1,marriage,NA,NA,NA,HALLER,Helene,NA,1897-04-15,NA,1931-01-31,"Cleveland, OH",NA,NA,NA,Haller Jakob,Geiss Elisabetha,forward,976.1,NA,FALSE
 757,1,marriage,NA,NA,NA,HETZEL,Elisabetha,NA,1905-10-30,Schowe,1972,Winnenden,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-758,1,marriage,NA,NA,NA,HALLER,Eva,NA,1915-02-02,NA,1999-02-23,Lakew,NA,NA,NA,Haller Georg,Weinz Elisabetha,forward,1167.1,NA,FALSE
+758,1,marriage,NA,NA,NA,HALLER,Eva,NA,1915-02-02,NA,1999-02-23,Lakew,NA,NA,NA,Haller Georg,Weinz Elisabetha,forward,1167.1,NA,TRUE
 759,1,marriage,1951-11-10,"Cuyahoga, OH",NA,WEINZ,Philippina,Evangelical,1927-04-13,NA,2007-05-19,"Cuyahoga, OH",NA,NA,NA,Weinz Friedrich,Ladi Elisabetha,forward,3884.3,NA,FALSE
 760,1,marriage,1951-02-28,"Cuyahoga, OH",NA,WALZ,Helene,NA,1928-04-06,NA,NA,NA,NA,NA,NA,Walz John Louis,Haller Elisabetha,forward,3802.1,NA,FALSE
 761,1,marriage,NA,NA,NA,WERLE,Susanna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -842,7 +842,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 786,2,marriage,1850-01-02,Neu Schowe,"Jakob Geyer, Johann Werle",SCHELKEN,Katharina,Evangelical,ABT 1813,Neu,1894-07-09,Neu Schowe,1894-07-10,NA,NA,NA,NA,NA,NA,NA,FALSE
 787,1,marriage,NA,NA,NA,MOHR,Margaretha Theresia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 788,1,marriage,NA,NA,NA,HALLER,Christina,Evangelical,1892-02-08,Neu Schowe,NA,NA,NA,1892-02-10,NA,Haller Josef,Jung Katharina,forward,1143.1,NA,FALSE
-789,1,marriage,NA,NA,NA,HETZEL,Katharina,Evangelical,1864-09-03,Neu Schowe,1945-07-31,Lager Jarek,NA,1864-09-07,NA,Hetzel Peter,Grammes Elisabetha,forward,1482.5,NA,FALSE
+789,1,marriage,NA,NA,NA,HETZEL,Katharina,Evangelical,1864-09-03,Neu Schowe,1945-07-31,Lager Jarek,NA,1864-09-07,NA,Hetzel Peter,Grammes Elisabetha,forward,1482.5,NA,TRUE
 790,1,marriage,NA,NA,NA,NA,Rosina,NA,ABT 1876,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 791,1,marriage,NA,NA,NA,HALLER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 792,1,marriage,NA,NA,NA,MÜLLER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -872,7 +872,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 811,2,marriage,1886-02-24,Neu Schowe,"Adam Schmidt, Ludwig Geyer",GEYER,Christina,Reformed,ABT 1856,Neu Schowe,1894-04-24,Neu Schowe,1894-04-25,NA,NA,NA,NA,NA,NA,NA,FALSE
 812,1,marriage,1861-09-03,Neu Schowe,"Jakob Geyer,Johann Jung",NEHLICH,Elisabetha,NA,ABT 1843,Bulkes,NA,NA,NA,NA,NA,Nehlich Karl,Binder Elisabetha,forward,2597.1,NA,FALSE
 813,1,marriage,NA,NA,NA,WERTH,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-814,1,marriage,1870-01-02,Neu Schowe,"Johann Geyer, Michael Geyer",SCHNEIDER,Margaretha,Reformed,1850-01-26,Neu Schowe,NA,NA,NA,1850-01-27,NA,Schneider Friedrich,Häuser Elisabetha,forward,3199.4,NA,FALSE
+814,1,marriage,1870-01-02,Neu Schowe,"Johann Geyer, Michael Geyer",SCHNEIDER,Margaretha,Reformed,1850-01-26,Neu Schowe,NA,NA,NA,1850-01-27,NA,Schneider Friedrich,Häuser Elisabetha,forward,3199.4,NA,TRUE
 815,1,marriage,1871-01-08,Neu Sivatz,"Nikolaus Poth, Jakob Geyer",KOHLENBERGER,Susanna,NA,ABT 1851,Neu,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 816,1,marriage,1872-04-23,Neu Schowe,"Johann Poth, Friedrich Geyer",POTH,Katharina,Reformed,1856-03-18,Neu Schowe,NA,NA,NA,1856-03-10,NA,Poth Nikolaus,Schmidt Wilhelmina,forward,2762.7,NA,FALSE
 817,1,marriage,1871-12-26,Neu Schowe,"Ludwig Haller, Jakob HallerMÜLLER Johanna BIRT ABT 1856",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -936,7 +936,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 872,1,marriage,NA,NA,NA,BECKER,Anna Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 873,1,marriage,NA,NA,NA,HAMMEL,Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 874,1,marriage,NA,NA,NA,HAMMEL,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-878,1,marriage,NA,NA,NA,HÄMMLER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+875,1,marriage,NA,NA,NA,HÄMMLER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 876,1,marriage,NA,NA,NA,HENICH,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 877,1,marriage,NA,NA,NA,SCHALLER,Sofia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 878,1,marriage,NA,NA,NA,HÄMMLER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -953,7 +953,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 888,1,marriage,NA,NA,NA,DEMAND,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 889,1,marriage,1867-01-27,Neu Schowe,"Wilhelm Wack, Johann Weiss",WEISS,Elisabetha,NA,ABT 1844,Neu Schowe,1872-12-31,Neu Schowe,1873-01-02,NA,NA,Weiss Peter,Lenz Maria Elisabetha,forward,3898.5,NA,FALSE
 889,2,marriage,1873-03-02,Neu Schowe,"Jakob Haller, Ferdinand Meister",KURZ,Elisabetha,NA,ABT 1853,Feketitsch,NA,NA,NA,NA,NA,Kurz Philipp,Antoni Katharina,forward,2076.2,NA,FALSE
-890,1,marriage,1912-11-09,"Cuyahoga, OH",NA,LEHMANN,Christina,Evangelical,1892-10-04,Neu Schowe,NA,NA,NA,1892-10-06,NA,Lehmann Johann,Hetzel Katharina,forward,2122.9,NA,FALSE
+890,1,marriage,1912-11-09,"Cuyahoga, OH",NA,LEHMANN,Christina,Evangelical,1892-10-04,Neu Schowe,NA,NA,NA,1892-10-06,NA,Lehmann Johann,Hetzel Katharina,forward,2122.9,NA,TRUE
 891,1,marriage,NA,NA,NA,SCHEER,Rosalia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 892,1,marriage,NA,NA,NA,NA,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,3743,NA,FALSE
 893,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1003,10 +1003,13 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 933,1,marriage,1895-04-28,Neu Schowe,"Karl Jung, Samuel Poth",HALLER,Margaretha,Reformed,1872-02-12,Neu Schowe,NA,NA,NA,1872-02-13,NA,Haller Heinrich,Brücker Elisabetha,forward,1085.8,NA,FALSE
 933,2,marriage,NA,NA,NA,NADICH,Susanna,Reformed,1881-05-04,Neu Schowe,1960-06-25,"Geneva, Ashtabula, OH",NA,1881-05-08,NA,Nadich Martin,Schick Susanna,forward,2590.3,NA,FALSE
 934,1,marriage,NA,NA,NA,SCHMIDT,Katharina Elisabetha,Evangelical,1879-12-10,Neu Schowe,1946-01-23,Lager Jarek,NA,1879-12-12,NA,Schmidt Adam,Klein Elisabetha,forward,3145.1,NA,FALSE
+935,1,marriage,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+935,2,marriage,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+935,3,marriage,NA,NA,NA,HETZEL,Eva,Reformed,1882-08-03,Neu Schowe,NA,NA,NA,1882-08-06,NA,Hetzel Friedrich,Rieth Elisabetha,forward,1504.6,NA,FALSE
 936,1,marriage,NA,NA,NA,WEICHINGEL,Elisabetha,Reformed,1881-02-14,Neu Schowe,1945-05-18,Lager Jarek,NA,1881-02-15,NA,Weichingel Jakob,Ilg Elisabetha,forward,3839.3,NA,FALSE
 937,1,marriage,NA,NA,NA,WERNER,Christina,Reformed,1882-09-12,Neu Schowe,NA,NA,NA,1882-09-17,NA,Werner Josef,Lenhardt Margaretha,forward,4012.2,NA,FALSE
 938,1,marriage,NA,NA,NA,WEINZ,Theresia,NA,1889-07-27,Neu Schowe,ABT 1946,"Cleveland, OH",NA,1889-07-30,NA,Weinz Josef,Weinz Katharina,forward,3871.4,NA,FALSE
-939,1,marriage,NA,NA,NA,NADICH,Magdalena,Reformed,1889-04-29,Neu Schowe,NA,NA,NA,1889-05-01,NA,Nadich Martin,Schick Susanna,forward,2590.6,NA,FALSE
+939,1,marriage,NA,NA,NA,NADICH,Magdalena,Reformed,1889-04-29,Neu Schowe,NA,NA,NA,1889-05-01,NA,Nadich Martin,Schick Susanna,forward,2590.6,NA,TRUE
 940,1,marriage,NA,NA,NA,BECKER,Katharina,NA,1904-10-08,Alt Schowe,1985-06-27,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 941,1,marriage,NA,NA,NA,HALLER,Katharina,NA,1905-03-10,Schowe,1984-12-17,"Parma, OH",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 942,1,marriage,1925-06-06,"Cuyahoga, OH",NA,BINDER,Christina,NA,1902-11-01,NA,1993-10-22,"Cleveland, OH",NA,NA,NA,Binder Johann,Wagner Sofia,back,172.5,NA,TRUE
@@ -1172,7 +1175,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1092,2,marriage,1861-10-27,Neu Schowe,"Friedrich Haller, Andreas Müller",KRIEGER,Wilhelmina,NA,ABT 1843,Neu Schowe,NA,NA,NA,NA,NA,Krieger Jakob,Lehr Eva,forward,2001.5,NA,FALSE
 1093,1,marriage,1861-09-24,Neu Schowe,"Michael Brücker, Jakob Welker",HALLER,Elisabetha,NA,ABT 1844,NA,NA,NA,NA,NA,NA,Haller Peter,Brücker Rosalia,back,1058.4,NA,TRUE
 1094,1,marriage,1862-03-23,Neu Schowe,"Karl Petri , Philipp Haller",HEIL,Christina,NA,ABT 1844,Neu Schowe,NA,NA,NA,NA,NA,Heil Georg,Hetzel Susanna,forward,1357.1,NA,FALSE
-1095,1,marriage,1863-03-29,Neu Schowe,Karl Petri und Peter Haller,SELIG,Katharina Christina,Evangelical,1843-02-05,Neu Schowe,1882-10-26,Neu Schowe,1882-10-27,1843-02-07,NA,Selig Stefan,Petri Elisabetha,forward,3402.2,NA,FALSE
+1095,1,marriage,1863-03-29,Neu Schowe,Karl Petri und Peter Haller,SELIG,Katharina Christina,Evangelical,1843-02-05,Neu Schowe,1882-10-26,Neu Schowe,1882-10-27,1843-02-07,NA,Selig Stefan,Petri Elisabetha,forward,3402.2,NA,TRUE
 1095,2,marriage,1883-02-11,Neu Schowe,"Johann Hobler, Peter Weintz",MÜLLER,Elisabetha,NA,ABT 1843,Alt Schowe,NA,NA,NA,NA,NA,Müller Johann,Ruppel Maria,forward,2511.2,NA,FALSE
 1096,1,marriage,1868-03-22,Neu Schowe,"Philipp Haller, Jakob Porz",PORTZ,Elisabetha Katharina,Reformed,1849-11-16,Neu Schowe,NA,NA,NA,1849-11-17,NA,Portz Philipp,Lenz Philippina,forward,2731.3,NA,FALSE
 1097,1,marriage,1866-11-25,Neu Schowe,"Jakob Hauer, Jakob Haller",SELIG,Elisabetha,Evangelical,1848-05-12,Neu Schowe,NA,NA,NA,1848-05-13,NA,Selig Johann,Haller Katharina,forward,3403.4,NA,FALSE
@@ -1212,12 +1215,12 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1126,1,marriage,1886-02-14,Neu Schowe,"Jakob Werth, Jakob Welker",SOHL,Johanna Katharina,Evangelical,1869-02-28,Neu Schowe,NA,NA,NA,1869-02-28,NA,Sohl Georg,Tauss Maria Elisabetha,forward,3435.6,NA,FALSE
 1127,1,marriage,1887-11-27,Neu Schowe,"Jakob Hetzel, Adam Hetzel",HETZEL,Margaretha,Evangelical,1867-07-18,Neu Schowe,NA,NA,NA,1867-07-19,NA,Hetzel Michael,Hetzel Katharina,forward,1500.1,NA,FALSE
 1128,1,marriage,1885-11-22,Neu Schowe,"Friedrich Bolz, Georg HallerSTÜTZER Barbara > 3570.1",NA,NA,NA,1865-07-01,Kis,NA,NA,NA,NA,NA,Stützer Johann Adam,Demont Rosina Theresia,NA,NA,NA,FALSE
-1129,1,marriage,1888-11-18,Neu Schowe,"Peter Haller, Philipp Jung",JUNG,Susanna,Evangelical,1872-09-27,Neu Schowe,1945-06-11,Lager Jarek,NA,1872-09-27,NA,Jung Jakob,Weissenbach Susanna,forward,1763.4,NA,FALSE
+1129,1,marriage,1888-11-18,Neu Schowe,"Peter Haller, Philipp Jung",JUNG,Susanna,Evangelical,1872-09-27,Neu Schowe,1945-06-11,Lager Jarek,NA,1872-09-27,NA,Jung Jakob,Weissenbach Susanna,forward,1763.4,NA,TRUE
 1130,1,marriage,1888-01-15,Neu Schowe,"Stefan Haller, Peter Will",STRASSBURGER,Elisabetha,NA,ABT 1868,Kutzura,NA,NA,NA,NA,NA,Strassburger Andreas Will Philippina,NA,forward,3536.1,NA,FALSE
 1131,1,marriage,1885-05-03,Neu Schowe,"Johann Hartmann, Daniel Teschner",TESCHNER,Rosina,Evangelical,1867-12-28,Neu Schowe,NA,NA,NA,1867-12-29,NA,Teschner Georg,Meister Rosina,forward,3648.6,NA,FALSE
 1132,1,marriage,1891-03-30,Neu Schowe,"Karl Jung, Johann Poth",PATAKI,Elisabetha,Reformed,1873-09-17,Neu Schowe,1945-02-08,Lager Jarek,NA,1873-09-18,NA,Pataki Daniel,Hauer Elisabetha,forward,2652.10,NA,FALSE
 1134,1,marriage,1892-01-21,Neu Schowe,"Peter Taus, Jakob Hetzel",HETZEL,Johanna,Evangelical,1874-04-22,Neu Schowe,NA,NA,NA,1874-04-24,NA,Hetzel Michael,Hetzel Katharina,forward,1500.4,NA,FALSE
-1135,1,marriage,1892-06-12,Neu Schowe,"Philipp Brücker, Peter Fess",BASTIAN,Katharina,NA,1869-01-02,Neu Schowe,NA,NA,NA,1862-02-26,NA,Bastian Christian,Urschel Elisabetha,back,45.5,NA,FALSE
+1135,1,marriage,1892-06-12,Neu Schowe,"Philipp Brücker, Peter Fess",BASTIAN,Katharina,NA,1869-01-02,Neu Schowe,NA,NA,NA,1862-02-26,NA,Bastian Christian,Urschel Elisabetha,back,45.6,NA,TRUE
 1136,1,marriage,1893-02-03,Neu Schowe,"Michael Haller, Johann Banyai",ISELE,Katharina,Evangelical,1867-04-24,Neu Schowe,NA,NA,NA,1867-04-24,NA,Isele Michael,Spring Julianna Maria,forward,1728.2,NA,FALSE
 1138,1,marriage,1891-11-01,Neu Schowe,"Johann Palfy, Adam Heil",SCHMOLL,Magdalena,Reformed,1871-08-17,Neu Schowe,NA,NA,NA,1871-08-18,NA,Schmoll Peter,Brücker Magdalena,forward,3182.1,NA,FALSE
 1139,1,marriage,1888-02-22,Neu Schowe,"Adam Rieth, Friedrich Müller",ALBUS,Katharina,NA,ABT 1871,Nadal,1945-02-04,Lager Jarek,NA,NA,NA,Albus Christian,Geyer Magdalena,back,7.2,NA,TRUE
@@ -1357,7 +1360,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1268,1,marriage,NA,NA,NA,SCHMIDT,Elisabetha,NA,1904-07-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1269,1,marriage,NA,NA,NA,HILLRICH,Elisabetha,NA,1908-04-22,NA,1946-02-03,Lager Jarek,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1270,1,marriage,1931-12-21,"Cuyahoga, OH",NA,REIN,Elisabetha Barbara,NA,1913-07-28,NA,1995-02-14,"Cleveland, OH",NA,NA,NA,Rein Michael,Haller Margaretha,forward,2794.1,NA,FALSE
-1275,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1271,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1272,1,marriage,NA,NA,NA,HEDRICH,Susanna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1273,1,marriage,1849-12-04,Alt Ker,NA,FALKENSTEIN,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1274,1,marriage,NA,NA,NA,LEIDEMANN,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1446,7 +1449,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1354,2,marriage,NA,NA,NA,LIEBMANN,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1355,1,marriage,NA,NA,NA,DÖRNER,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1356,1,marriage,NA,NA,NA,BAYER,Karolina,Evangelical,ABT 1823,NA,1892-07-27,Neu Schowe,1892-07-28,NA,NA,NA,NA,NA,NA,NA,FALSE
-1357,1,marriage,1843-11-28,Neu Schowe,"Georg Hetzel, Jakob Krieger",HETZEL,Susanna,Evangelical,ABT 1826,NA,1891-10-29,Neu Schowe,1891-10-30,NA,NA,Hetzel Peter,Mayer Katharina Elisabetha,forward,1481.2,NA,FALSE
+1357,1,marriage,1843-11-28,Neu Schowe,"Georg Hetzel, Jakob Krieger",HETZEL,Susanna,Evangelical,ABT 1826,NA,1891-10-29,Neu Schowe,1891-10-30,NA,NA,Hetzel Peter,Mayer Katharina Elisabetha,forward,1481.2,NA,TRUE
 1358,1,marriage,1850-02-05,Neu Schowe,"Jakob Haller, Ludwig Ziwich",KLAUS,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,Klaus Philipp,Treib Magdalena,forward,1851.1,NA,FALSE
 1359,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1361,1,marriage,NA,NA,NA,RIES,Katharina,NA,ABT 1885,NA,ABT 1946,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1509,7 +1512,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1414,1,marriage,1938-05-21,"Cuyahoga, OH",NA,TAUSS,Elisabetha,NA,1917-05-15,NA,1988,OH,NA,NA,NA,Tauss Peter,Kruttschnitt Magdalena,forward,3628.1,NA,FALSE
 1415,1,marriage,NA,NA,NA,LICHT,Magdalena,NA,1920-06-05,NA,NA,NA,NA,NA,NA,Licht Friedrich,Einz Katharina,forward,2269.1,NA,FALSE
 1416,1,marriage,NA,NA,NA,SEIL,Magdalena,NA,1934-09-20,NA,NA,NA,NA,NA,NA,Seil Adam,Klein Christina,forward,3394.1,NA,FALSE
-1417,1,marriage,NA,NA,NA,GOLZE,Ursula,NA,1932-08-22,NA,2010-08-22,Waiblingen,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1417,1,marriage,NA,NA,NA,GOLZE,Ursula,NA,1932-08-22,NA,2010-08-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1418,1,marriage,NA,NA,NA,LAMNEK,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1420,1,marriage,NA,NA,NA,SCHERER,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1421,1,marriage,1850-12-05,Neu Schowe,"Peter Weintz, Johann Spertzel",EVA,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,Eva Adam,Klein Elisabetha,back,551.1,NA,TRUE
@@ -1556,7 +1559,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1460,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1461,1,marriage,NA,NA,NA,ZÖLLNER,Eva Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1462,1,marriage,1843-12-05,Neu Schowe,"Peter Hetzel, Peter Klein",LENHARDT,Elisabetha,Evangelical,ABT 1819,NA,1849-06-14,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1465,1,marriage,NA,NA,NA,HALLER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1463,1,marriage,NA,NA,NA,HALLER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1464,1,marriage,NA,NA,NA,ZÖLLNER,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1465,1,marriage,1836-11-10,Neu Schowe,"Michael Tauß, Peter Hetzel",MENSINGER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,Mensinger Michael,Mohr Anna Elisabetha,forward,2392.1,NA,FALSE
 1466,1,marriage,1849-08-12,Neu Schowe,"Ludwig Hetzel, Philipp Weinz",WEINZ,Katharina,Evangelical,ABT 1827,NA,1890-12-11,Neu Schowe,1890-12-12,NA,NA,Weinz Johann Adam,Welker Maria Julianna,forward,3858.2,NA,FALSE
@@ -1601,7 +1604,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1500,1,marriage,1867-02-10,Neu Schowe,"Ludwig Hetzel, Heinrich Jung",HETZEL,Katharina,NA,ABT 1847,Neu Schowe,NA,NA,NA,NA,NA,Hetzel Adam,Eisenlöffel Johanna,back,1488.4,NA,TRUE
 1501,1,marriage,1867-12-15,Neu Schowe,"Philipp Weinz, Jakob Haller",WEINZ,Johanna,Evangelical,1849-12-30,Neu Schowe,NA,NA,NA,1849-12-31,NA,Weinz Peter,Kruttschnitt Susanna,forward,3859.1,NA,FALSE
 1502,1,marriage,1870-01-09,Neu Schowe,"Michael Hetzel, Josef Kruttschnitt",SCHMIDT,Katharina,Evangelical,1848-01-26,Neu Schowe,NA,NA,NA,1849-01-28,NA,Schmidt Nikolaus,Kruttschnitt Christina,forward,3097.2,NA,FALSE
-1503,1,marriage,1880-02-22,Neu Schowe,"Johann Stützer, Philipp Scherer",SCHLARB,Katharina,NA,ABT 1851,Torschau,NA,NA,NA,NA,NA,Schlarb Peter,Schmidt Helene,forward,3070.1,NA,FALSE
+1503,1,marriage,1880-02-22,Neu Schowe,"Johann Stützer, Philipp Scherer",SCHLARB,Katharina,NA,ABT 1851,Torschau,NA,NA,NA,NA,NA,Schlarb Peter,Schmidt Helene,forward,3070.1,NA,TRUE
 1504,1,marriage,1871-01-08,NA,"Heinrich Rieth, Jakob Mohr (ohne weitere Angaben)",RIETH,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1505,1,marriage,1879-12-28,Neu Schowe,"Friedrich Hetzel, Heinrich Pataki",ORTH,Margaretha,Reformed,1858-08-29,Neu Schowe,NA,NA,NA,1858-08-30,NA,Orth Jakob,Hamm Julianna,forward,2625.2,NA,FALSE
 1506,1,marriage,1874-02-01,NA,NA,HALLER,Elisabetha,NA,1857-05-12,Neu Schowe,1935-04-12,Neu Werbas,NA,NA,NA,NA,NA,back,972.1,NA,TRUE
@@ -1658,7 +1661,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1557,1,marriage,NA,NA,NA,SEIL,Johanna,NA,1922-07-29,NA,NA,NA,NA,NA,NA,Seil Adam,Tauss Elisabetha,forward,3387.1,NA,FALSE
 1558,1,marriage,NA,NA,NA,ZIWICH,Theresia,NA,1923-04-06,NA,NA,NA,NA,NA,NA,Ziwich Daniel,Weber Theresia,forward,4169.1,NA,FALSE
 1559,1,marriage,1953-06-06,"Cuyahoga, OH",NA,PETERS,Irma,NA,1932-10-05,Littauen,NA,NA,NA,NA,NA,Peters Johann,Both Adeline,forward,2675.1,NA,FALSE
-1560,1,marriage,NA,NA,NA,KURZ,Barbara,NA,1844-12-08,Kis,NA,NA,NA,NA,NA,Kurz Philipp,Antoni Katharina,forward,2076.1,NA,FALSE
+1560,1,marriage,NA,NA,NA,KURZ,Barbara,NA,1844-12-08,Kis,NA,NA,NA,NA,NA,Kurz Philipp,Antoni Katharina,forward,2076.1,NA,TRUE
 1561,1,marriage,1865-11-16,Sekitsch,NA,KURZ,Barbara,NA,1844-12-08,Kis,NA,NA,NA,NA,NA,Kurz Philipp,Antoni Katharina,forward,2076.1,NA,FALSE
 1562,1,marriage,1865-01-15,Neu Schowe,NA,KONRAD,Elisabetha,NA,ABT 1839,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1563,1,marriage,1836-12-28,Neu Schowe,"Gaspar Hauer, Jakob Trumpler",ZIMMER,Margaretha,Evangelical,ABT 1818,NA,1876-11-28,Neu Schowe,1876-11-30,NA,NA,Zimmer Johann,Hissung Magdalena,forward,4130.1,NA,FALSE
@@ -1679,6 +1682,8 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1577,1,marriage,NA,NA,NA,MAUS,Christina,NA,NA,NA,NA,NA,NA,NA,NA,Maus Paul,Herzog Dorothea,forward,2338.3,NA,FALSE
 1578,1,marriage,NA,NA,NA,POTH,Anna Sarah,Reformed,ABT 1803,NA,1848-06-14,Neu Schowe,1848-06-16,NA,NA,Poth Jakob,Mandel Katharina,forward,2754.3,NA,FALSE
 1579,1,marriage,1886-08-22,Neu Schowe,"Heinrich Schneider, Josef Geyer",ALBUS,Magdalena,NA,1867-01-22,Neu,NA,NA,NA,NA,NA,Albus Christian,Geyer Magdalena,back,7.1,NA,TRUE
+1580,1,marriage,1913-10-26,NA,NA,KLINK,Ethel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1580,2,marriage,1922-09-05,"Cuyahoga, OH",NA,FETH,Berta,NA,ABT 1894,Beschka,1962-11-07,"Cleveland, OH",NA,NA,NA,Feth Friedrich,Lepold Magdalena,NA,NA,NA,FALSE
 1581,1,marriage,NA,NA,NA,DECH,Anna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1582,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1583,1,marriage,NA,NA,NA,MENSINGER,Regina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1687,8 +1692,8 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1586,1,marriage,1831-01-11,Neu Schowe,"Kaspar Haug, Georg Scherer",METZGER,Anna Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,2411.1,NA,FALSE
 1587,1,marriage,NA,NA,NA,SCHOLL,Susanna,Evangelical,ABT 1789,NA,1849-01-27,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1588,1,marriage,NA,NA,NA,SCHUFF,Magdalena,Evangelical,1791-11-10,NA,1844-01-03,Neu Schowe,1844-01-05,NA,NA,NA,NA,NA,NA,NA,FALSE
-1590,1,marriage,NA,NA,NA,KARIUS,Philippina,NA,ABT 1837,NA,1873-04-14,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1589,1,marriage,NA,NA,NA,KARIUS,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1589,1,marriage,NA,NA,NA,KARIUS,Philippina,NA,ABT 1837,NA,1873-04-14,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1590,1,marriage,NA,NA,NA,KARIUS,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1591,1,marriage,NA,NA,NA,FIX,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1592,1,marriage,1850-12-26,Neu Schowe,"Nikolaus Haller, Johann Häuser",SCHMIDT,Maria Rosina,Reformed,1831-10-28,Neu Schowe,NA,NA,NA,1831-10-29,NA,Schmidt Georg,Rieth Margaretha,forward,3082.4,NA,FALSE
 1593,1,marriage,NA,NA,NA,SCHMIDT,Rosalia,NA,ABT 1831,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1707,7 +1712,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1601,2,marriage,1864-02-23,Neu Schowe,"Daniel Pataki, Johann Brücker",BRÜCKER,Christina,Reformed,1845-01-10,Neu Schowe,1895-09-22,Neu Schowe,1895-09-24,1845-01-11,NA,Brücker Philipp,Haller Magdalena,back,324.1,NA,TRUE
 1602,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1602,2,marriage,NA,NA,NA,SCHMIDT,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1603,1,marriage,1881-11-27,Neu Schowe,"Michael Ziwich, Stefan Haller",HÄUSER,Elisabetha,NA,ABT 1860,Neu Schowe,NA,NA,NA,NA,NA,Häuser Adam,Binder Christina,forward,1660.1,NA,FALSE
+1603,1,marriage,1881-11-27,Neu Schowe,"Michael Ziwich, Stefan Haller",HÄUSER,Elisabetha,NA,ABT 1860,Neu Schowe,NA,NA,NA,NA,NA,Häuser Adam,Binder Christina,forward,1660.1,NA,TRUE
 1603,2,marriage,NA,NA,NA,BERGMANN,Johanna,Evangelical,1870-12-14,Neu Schowe,NA,NA,NA,1870-12-15,NA,Bergmann Philipp,Mayer Johanna,back,151.6,NA,TRUE
 1604,1,marriage,1886-11-14,Neu Schowe,"Adam Schmidt, Jakob Hetzel",SCHNEIDER,Barbara,Reformed,1850-02-10,Neu Schowe,NA,NA,NA,1850-02-11,NA,Schneider Jakob,Weinz Sofia,forward,3222.2,NA,FALSE
 1605,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1830,7 +1835,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1712,1,marriage,1885-11-15,Neu Schowe,"Johann Poth, Georg Ilg",SCHERER,Katharina,Reformed,1862-09-01,Neu Schowe,1891-08-28,Neu Schowe,1891-08-29,1862-09-02,NA,Scherer Adam,Haller Magdalena,forward,3026.1,NA,FALSE
 1712,2,marriage,1891-11-22,Neu Schowe,"Stefan Haller, Georg Scherer",SCHERER,Rosalia,NA,1875-10-03,Neu Schowe,NA,Neu Schowe,NA,1875-10-04,NA,Scherer Adam,Haller Magdalena,forward,3026.6,NA,FALSE
 1713,1,marriage,1884-04-27,Neu Schowe,"Gottfried Teschner, Michael Geyer",GEYER,Magdalena,Reformed,1864-02-15,Neu Schowe,NA,NA,NA,1864-02-16,NA,Geyer Georg Jakob,Bissinger Elisabetha,back,803.6,NA,TRUE
-1714,1,marriage,1890-02-09,Neu Schowe,"Johann Poth, Michael Schmidt",MÜLLER,Philippina,Reformed,1871-02-17,Neu Schowe,NA,NA,NA,1871-02-18,NA,Müller Jakob,Haller Elisabetha,forward,2492.8,NA,FALSE
+1714,1,marriage,1890-02-09,Neu Schowe,"Johann Poth, Michael Schmidt",MÜLLER,Philippina,Reformed,1871-02-17,Neu Schowe,NA,NA,NA,1871-02-18,NA,Müller Jakob,Haller Elisabetha,forward,2492.8,NA,TRUE
 1715,1,marriage,1889-09-22,Neu Schowe,"Michael Tauss, Johann Ilg",HILLRICH,Julianna,Evangelical,1867-11-09,Neu Schowe,1945-06-20,Lager Jarek,NA,1867-11-11,NA,Hillrich Jakob,Häuser Julianna,back,1565.2,NA,TRUE
 1716,1,marriage,1893-04-16,Neu Schowe,"Johann Elschläger, Johann Haller",HALLER,Christina,Evangelical,1876-12-08,Neu Schowe,1945-09-15,Lager Jarek,NA,1876-12-09,NA,Haller Peter,Hamm Christina,back,1024.5,NA,TRUE
 1717,1,marriage,NA,NA,NA,HEIL,Karolina Katharina,Evangelical,1881-12-20,Neu Schowe,1963-02-10,"Cleveland, OH",NA,1881-12-22,NA,Heil Andreas Müller Katharina,NA,back,1369.2,NA,TRUE
@@ -1844,7 +1849,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1725,1,marriage,NA,NA,NA,BECKER,Käthe,NA,1921-07-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1726,1,marriage,NA,NA,NA,KOSZT,Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1727,1,marriage,1859-01-23,Neu Schowe,"Christoph Lenz, Friedrich Geyer",GEYER,Katharina,NA,ABT 1840,Neu Schowe,NA,NA,NA,NA,NA,Geyer Michael,Eisenlöffel Rosina,back,785.5,NA,TRUE
-1728,1,marriage,1862-10-30,Neu Schowe,"Ferdinand Meister, Karl Schnur",SPRING,Julianna Maria,Evangelical,1838-02-08,Neu Schowe,NA,NA,NA,1838-02-10,NA,Spring Wilhelm,Heckel Maria,forward,3490.3,NA,FALSE
+1728,1,marriage,1862-10-30,Neu Schowe,"Ferdinand Meister, Karl Schnur",SPRING,Julianna Maria,Evangelical,1838-02-08,Neu Schowe,NA,NA,NA,1838-02-10,NA,Spring Wilhelm,Heckel Maria,forward,3490.3,NA,TRUE
 1729,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1730,1,marriage,NA,NA,NA,WELKER,Theresia,Reformed,1878-10-03,Neu Schowe,NA,NA,NA,1878-10-04,NA,Welker Heinrich,Weissenbach Katharina,back,3941.4,NA,TRUE
 1731,1,marriage,NA,NA,NA,STRACK,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1869,7 +1874,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1750,1,marriage,1848-11-28,Neu Schowe,"Philipp Brücker, Jakob Gerber",BIEBER,Margaretha,NA,NA,Alt Schowe,NA,NA,NA,NA,NA,Bieber Georg,Brücker Gertrude,back,158.1,NA,TRUE
 1751,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1752,1,marriage,NA,NA,NA,WOHL,Elisabetha,Reformed,ABT 1786,NA,1869-05-08,NA,1869-05-09,NA,NA,Wohl Johann,Hoch Elisabetha Margaretha,NA,NA,NA,FALSE
-1753,1,marriage,NA,Neu Schowe,NA,TESCHNER,Katharina,Evangelical,ABT 1793,NA,1868-01-18,Neu Schowe,1868-01-20,NA,NA,Teschner Gottfried,Pless Elisabetha,forward,3644.2,NA,FALSE
+1753,1,marriage,NA,Neu Schowe,NA,TESCHNER,Katharina,Evangelical,ABT 1793,NA,1868-01-18,Neu Schowe,1868-01-20,NA,NA,Teschner Gottfried,Pless Elisabetha,forward,3644.2,NA,TRUE
 1754,1,marriage,1826-03-30,NA,NA,LIEBMANN,Christina Katharina,NA,1805-05-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1755,1,marriage,NA,NA,NA,BARTH,Elisabetha,NA,ABT 1806,NA,1859-01-25,Neu Schowe,NA,NA,NA,Barth Friedrich,Senkel Elisabetha,back,35.1,NA,TRUE
 1755,2,marriage,1859-08-21,Neu Schowe,"Christian Tauß, Jakob Lepold",WERNER,Philippina,Evangelical,ABT 1810,NA,1869-04-16,Neu Schowe,1869-04-18,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1936,7 +1941,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1808,1,marriage,1816-11-26,Neu Werbas,NA,HEINZ,Katharina,NA,NA,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,back,1390.1,NA,TRUE
 1809,1,marriage,1849-12-02,"WITN Valentin Rain, Peter Heiser","Valentin Rain, Peter Heiser",DIK,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,Dik Christian,Brand Christina,back,485.1,NA,TRUE
 1810,1,marriage,NA,NA,NA,GEYER,Eva,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1810,2,marriage,NA,NA,NA,OSWALD,Katharina Elisabetha,Evangelical,1836-12-12,Neu Schowe,NA,NA,NA,1836-12-13,NA,Oswald Heinrich,Weichingel Christina,forward,2638.2,NA,FALSE
+1810,2,marriage,NA,NA,NA,OSWALD,Katharina Elisabetha,Evangelical,1836-12-12,Neu Schowe,NA,NA,NA,1836-12-13,NA,Oswald Heinrich,Weichingel Christina,forward,2638.2,NA,TRUE
 1811,1,marriage,NA,NA,NA,ORSCHIED,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1812,1,marriage,NA,Neu Pasua,NA,BAUER,Margaretha,Evangelical,1869-02-12,Alt Schowe,1946-11-02,NA,NA,1869-02-12,NA,Bauer Jakob,Lauterer Margaretha,back,56.3,NA,TRUE
 1813,1,marriage,NA,Neu Pasua,NA,BAUER,Margaretha,Evangelical,1869-02-12,Alt Schowe,1946-11-02,NA,NA,12.2.1869,NA,Bauer Jakob,Lauterer Margaretha,back,56.3,NA,TRUE
@@ -1992,8 +1997,8 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1860,1,marriage,NA,NA,NA,HAUER,Elisabetha,Evangelical,1893-09-21,Neu Schowe,ABT 1957,Spaichingen,NA,1893-08-24,NA,Hauer Jakob,Krieger Philippina,back,1286.2,NA,TRUE
 1861,1,marriage,NA,NA,NA,GLASS,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1862,1,marriage,NA,NA,NA,BRÜCKER,Salomea,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1862,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1862,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1863,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+1864,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1865,1,marriage,NA,NA,NA,SELIG,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1866,1,marriage,1709-02-12,NA,NA,SCHNURR,Anna Kunigunde,NA,1685-03-19,NA,1762-12-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1867,1,marriage,NA,NA,NA,KRATZ,Amalie,NA,ABT 1713,NA,ABT 1751,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2025,7 +2030,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1890,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1891,1,marriage,1892-09-18,Neu Schowe,"Jakob Klein, Christian Tauss",ILG,Katharina,Evangelical,1873-10-20,Neu Schowe,NA,NA,NA,1873-10-21,NA,Ilg Johann Georg,Weiss Christina Magdalena,back,1707.4,NA,TRUE
 1892,1,marriage,1894-05-01,Sekitsch,NA,ROTH,Katharina Susanna,NA,1874-06-27,Sekitsch,NA,NA,NA,NA,NA,Roth Christian,Bock Katharina Elisabetha,back,2916.1,NA,TRUE
-1893,1,marriage,NA,NA,NA,KRIEGER,Katharina,Reformed,1882-04-04,Alt Schowe,NA,NA,NA,1882-04-07,NA,Krieger Josef,Brücker Magdalena,forward,2011.2,NA,FALSE
+1893,1,marriage,NA,NA,NA,KRIEGER,Katharina,Reformed,1882-04-04,Alt Schowe,NA,NA,NA,1882-04-07,NA,Krieger Josef,Brücker Magdalena,forward,2011.2,NA,TRUE
 1894,1,marriage,1906-05-20,"Cuyahoga, OH",NA,STRUNG,Elisabetha,Reformed,1887-11-29,Neu Schowe,1937-12-02,"Cleveland, OH",NA,1887-12-02,NA,Strung Friedrich,Pataki Katharina,forward,3552.1,NA,FALSE
 1895,1,marriage,NA,NA,NA,KLEIN,Dorothea,NA,1894-02-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1896,1,marriage,NA,NA,NA,BRÜCKER,Christina,Reformed,1894-10-15,Alt Schowe,1968,Schwaikheim,NA,1894-10-19,NA,Brücker Philipp,Ziwich Johanna,back,356.3,NA,TRUE
@@ -2041,7 +2046,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1906,1,marriage,NA,NA,NA,WURST,Henriette,Evangelical,ABT 1818,NA,1851-03-25,Neu Schowe,1851-03-25,NA,NA,NA,NA,NA,NA,NA,FALSE
 1907,1,marriage,1837-03-14,Neu Schowe,Jakob Schäfer und Georg Gutwein,POPP,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,Popp Friedrich,Dech Christina,forward,2724.1,NA,FALSE
 1908,1,marriage,NA,NA,NA,KEMERER,Theresia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1910,1,marriage,1850-11-03,Neu Schowe,"Johann Werle, Heinrich Oswald",MAJOVSKY,Anna,NA,NA,NA,NA,NA,NA,NA,NA,Majovsky Philipp,Stump Elisabetha,forward,2320.1,NA,FALSE
+1909,1,marriage,1850-11-03,Neu Schowe,"Johann Werle, Heinrich Oswald",MAJOVSKY,Anna,NA,NA,NA,NA,NA,NA,NA,NA,Majovsky Philipp,Stump Elisabetha,forward,2320.1,NA,FALSE
 1910,1,marriage,NA,NA,NA,GEIGER,Magdalena,Evangelical,ABT 1818,NA,1850-10-05,Neu Schowe,7.10.1850,NA,NA,NA,NA,NA,NA,NA,FALSE
 1911,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1912,1,marriage,NA,NA,NA,HESS,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2076,7 +2081,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 1938,1,marriage,NA,NA,NA,HAUG,Elisabetha,Reformed,1895-01-14,Neu Schowe,NA,NA,NA,1895-01-27,NA,Haug Andreas Haller Elisabetha,NA,back,1315.1,NA,TRUE
 1939,1,marriage,NA,NA,NA,WERTH,Anna,Evangelical,1893-01-08,Neu Schowe,1968-08-23,"Parma, OH",NA,1893-01-15,NA,Werth Jakob,Heil Elisabetha,forward,4035.6,NA,FALSE
 1940,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1941,1,marriage,1830-02-02,Neu Schowe,"Johann Poth, Johann Werle",NAGEL,Marie Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,Nagel Philipp,Ritzmann Philippina,forward,2591.1,NA,FALSE
+1941,1,marriage,1830-02-02,Neu Schowe,"Johann Poth, Johann Werle",NAGEL,Marie Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,Nagel Philipp,Ritzmann Philippina,forward,2591.1,NA,TRUE
 1942,1,marriage,NA,NA,NA,SPINNER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1943,1,marriage,1843-01-10,Neu Schowe,"Johann Werle, Adam Morgenstern",SCHMIDT,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1944,1,marriage,NA,NA,NA,HIERONIMUS,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2154,7 +2159,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2013,1,marriage,NA,NA,NA,HAUG,Elisabetha,Reformed,1859-12-17,Neu Schowe,1886-01-03,Neu Schowe,1886-01-05,1859-12-16,NA,Haug Andreas Haller Maria Katharina,NA,back,1307.1,NA,TRUE
 2013,2,marriage,NA,NA,NA,BIEBER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2014,1,marriage,1886-05-09,Neu Schowe,"Jakob Tauss, Peter Schmoll, Michael Brücker",KLEIN,Susanna,Reformed,1867-08-30,Neu Schowe,NA,NA,NA,1867-09-01,NA,Klein Adam,Licht Eva,back,1878.7,NA,TRUE
-2015,1,marriage,1886-10-17,Neu Schowe,"Jakob Krieger, Lenard Tiefenthäler",RIETH,Theresia,Reformed,1864-09-03,Neu Schowe,1945-07-01,Lager Jarek,NA,1864-09-04,NA,Rieth Johann Adam,Brücker Maria,back,2905.6,NA,FALSE
+2015,1,marriage,1886-10-17,Neu Schowe,"Jakob Krieger, Lenard Tiefenthäler",RIETH,Theresia,Reformed,1864-09-03,Neu Schowe,1945-07-01,Lager Jarek,NA,1864-09-04,NA,Rieth Johann Adam,Brücker Maria,back,2905.6,NA,TRUE
 2016,1,marriage,1884-03-13,"WITN Jakob Brücker, Peter Haller","Jakob Brücker, Peter Haller",HALLER,Salomea,NA,ABT 1867,NA,NA,NA,NA,NA,NA,Haller Friedrich,Brücker Katharina,NA,NA,NA,FALSE
 2017,1,marriage,1888-10-07,Neu Schowe,"Jakob Haller, Johann EhlschlegerMÜLLER Elisabetha RELI_REF > 2492.6",NA,NA,NA,1866-12-25,Neu Schowe,NA,NA,NA,1866-12-26,NA,Müller Jakob,Haller Elisabetha,NA,NA,NA,FALSE
 2018,1,marriage,NA,NA,NA,SCHMIDT,Katharina,NA,1868-09-21,Kis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2207,7 +2212,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2066,1,marriage,1887-02-09,Neu Schowe,"Josef Finitzer, Bertalan Schnur",HOFFMANN,Elisabetha,Reformed,1864-06-07,Alt Schowe,NA,NA,NA,1864-06-08,NA,Hoffmann Adam,Schmidt Katharina,back,1600.2,NA,TRUE
 2067,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2068,1,marriage,1892-01-03,Neu Schowe,"Adam Haller, Adam Klein",RIEGEL,Magdalena,Reformed,1874-05-12,Neu Schowe,NA,NA,NA,1874-05-13,NA,Riegel Philipp,Geyer Magdalena,forward,2844.1,NA,FALSE
-2069,1,marriage,1892-06-12,Neu Schowe,"Adam Schmidt, Philipp Koller",BASTIAN,Elisabetha,NA,1871-11-05,Neu Schowe,NA,NA,NA,1871-11-06,NA,Bastian Christian,Urschel Elisabetha,back,45.7,NA,FALSE
+2069,1,marriage,1892-06-12,Neu Schowe,"Adam Schmidt, Philipp Koller",BASTIAN,Elisabetha,NA,1871-11-05,Neu Schowe,NA,NA,NA,1871-11-06,NA,Bastian Christian,Urschel Elisabetha,back,45.8,NA,TRUE
 2070,1,marriage,1892-05-01,Neu Schowe,"Johann Petri, Adam Klein sen.",ZIWICH,Magdalena,Evangelical,1874-06-23,Alt Schowe,NA,NA,NA,1874-06-24,NA,Ziwich Ludwig,Treib Christina,forward,4159.1,NA,FALSE
 2071,1,marriage,1911-03-05,"Cuyahoga, OH",NA,FEBEL,Johanna Maria,Reformed,1893-01-28,Neu Schowe,1984-05-23,"Parma, OH",NA,1893-02-03,NA,Febel Michael,Heil Johanna,back,579.7,NA,TRUE
 2072,1,marriage,1913-12-07,"Cuyahoga, OH",NA,KRUTTSCHNITT,Elisabetha,NA,1896-04-13,NA,1992-05-06,"Brunswick, Medina, OH",NA,NA,NA,Kruttschnitt Michael,Boest Elisa,back,2056.1,NA,TRUE
@@ -2240,7 +2245,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2097,1,marriage,NA,NA,NA,KLEIN,Elisabetha,NA,1910-05-30,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2098,1,marriage,NA,NA,NA,KLAR,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2099,1,marriage,NA,NA,NA,NA,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-2100,1,marriage,1876-03-05,Neu Schowe,"Jakob Wohl, Friedrich Reiter",LÖSCH,Katharina,Evangelical,1850-01-18,Neu Schowe,NA,NA,NA,1850-01-18,NA,Lösch Peter,Trumpler Katharina,forward,2312.3,NA,FALSE
+2100,1,marriage,1876-03-05,Neu Schowe,"Jakob Wohl, Friedrich Reiter",LÖSCH,Katharina,Evangelical,1850-01-18,Neu Schowe,NA,NA,NA,1850-01-18,NA,Lösch Peter,Trumpler Katharina,forward,2312.3,NA,TRUE
 2102,1,marriage,NA,NA,NA,RUSITSCHKA,Elisabetha,NA,1892-12-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2104,1,marriage,1805-12-15,Neu Werbas,NA,GEISS,Maria Magdalena,NA,1780-09,NA,1849-01-28,Neu Werbas,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2105,1,marriage,1952-07-30,"Cuyahoga, OH",NA,BOLZ,Elisabetha,NA,1910-09-22,OH,1985-05-29,"Chardon, Geauga, OH",NA,NA,NA,Bolz Johann,Ries Katharina,back,220.3,NA,TRUE
@@ -2300,7 +2305,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2157,1,marriage,NA,NA,NA,SCHERER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2158,1,marriage,NA,NA,NA,SCHERER,Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2159,1,marriage,NA,NA,NA,WOLF,Ottilia,Reformed,ABT 1821,Torschau,1856-08-02,Neu Schowe,1856-08-03,NA,NA,NA,NA,NA,NA,NA,FALSE
-2160,1,marriage,NA,NA,NA,LICHT,Julianna,Reformed,ABT 1804,NA,1849-06-29,Neu Schowe,1849-06-30,NA,NA,Licht Wilhelm,UNKNOWN Elisabetha Katharina,forward,2249.4,NA,FALSE
+2160,1,marriage,NA,NA,NA,LICHT,Julianna,Reformed,ABT 1804,NA,1849-06-29,Neu Schowe,1849-06-30,NA,NA,Licht Wilhelm,UNKNOWN Elisabetha Katharina,forward,2249.4,NA,TRUE
 2161,1,marriage,1859-05-16,Alt Schowe,"Jakob Spieß, Daniel Dietrich",SCHNEIDER,Margaretha,NA,ABT 1819,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2162,1,marriage,NA,NA,NA,FRANK,Maria Elisabetha,Reformed,1801-06,NA,1848-01-05,Neu Schowe,1848-01-07,NA,NA,NA,NA,NA,NA,NA,FALSE
 2163,1,marriage,1851-05-27,Neu Schowe,"Christian Haller, Christian Bastian",BASTIAN,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,Bastian Heinrich,Tauster Katharina,back,40.1,NA,TRUE
@@ -2434,7 +2439,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2289,1,marriage,NA,NA,NA,GEYER,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2290,1,marriage,NA,NA,NA,ADER,Margaretha,Evangelical,ABT 1806,NA,1871-04-03,Neu Schowe,1871-03-03,NA,NA,NA,NA,NA,NA,NA,FALSE
 2291,1,marriage,1824-11-30,Neu Schowe,NA,BRÜCKER,Maria Katharina,NA,1804-04-30,NA,NA,NA,NA,NA,NA,Brücker Johann Michael,Hoch Elisabetha Margaretha,back,309.1,NA,TRUE
-2292,1,marriage,1850-10-27,Neu Schowe,"Johann Bolz, Karl Schock",SCHNEIDER,Katharina,NA,ABT 1831,Neu Schowe,NA,NA,NA,NA,NA,Schneider Georg,Schmidt Margaretha,forward,3202.2,NA,FALSE
+2292,1,marriage,1850-10-27,Neu Schowe,"Johann Bolz, Karl Schock",SCHNEIDER,Katharina,NA,ABT 1831,Neu Schowe,NA,NA,NA,NA,NA,Schneider Georg,Schmidt Margaretha,forward,3202.2,NA,TRUE
 2293,1,marriage,NA,NA,NA,BRÜCKER,Elisabetha,NA,1903-04-19,NA,1972,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2294,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2295,1,marriage,NA,NA,NA,NA,Sabina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2488,7 +2493,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2340,2,marriage,1874-05-13,Neu Schowe,"Jakob Haller, Jakob Lepold",HUBER,Katharina,Reformed,ABT 1831,Neu,1892-09-29,Neu Schowe,1892-10-01,NA,NA,NA,NA,NA,NA,NA,FALSE
 2341,1,marriage,NA,NA,NA,ILG,Karolina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2342,1,marriage,NA,NA,NA,ZENTZ,Katharina,Evangelical,1788-08,NA,1848-02-25,Neu Schowe,1848-02-27,NA,NA,NA,NA,NA,NA,NA,FALSE
-2343,1,marriage,1830-01-28,Neu Schowe,"Michael Leopold, Karl Riegel",RIEGEL,Christina,NA,NA,NA,NA,NA,NA,NA,NA,Riegel Emanuel,Spiess Maria,forward,2834.1,NA,FALSE
+2343,1,marriage,1830-01-28,Neu Schowe,"Michael Leopold, Karl Riegel",RIEGEL,Christina,NA,NA,NA,NA,NA,NA,NA,NA,Riegel Emanuel,Spiess Maria,forward,2834.1,NA,TRUE
 2344,1,marriage,1849-08-15,Neu Schowe,"Christoph Lenz, Matthias Kost",SCHMIDT,Elisabetha,Reformed,1826-01,Neu Schowe,1877-11-27,Neu Videk,1877-11-29,NA,NA,Schmidt Georg,Rieth Margaretha,forward,3082.1,NA,FALSE
 2345,1,marriage,1850-06-23,Neu Schowe,"Michael Hetzel, Philipp Ilg",JUNG,Wilhelmina,NA,NA,NA,NA,NA,NA,NA,NA,Jung Georg,Teschner Katharina,back,1753.2,NA,TRUE
 2346,1,marriage,NA,NA,NA,SCHMIDT,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2559,7 +2564,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2414,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2415,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2416,1,marriage,NA,NA,NA,PATAKI,Katharina,Reformed,1886-11-22,Neu Schowe,ABT 1948,Beutelsbach,NA,1886-11-25,NA,Pataki Karl,Seil Philippina Wilhelmina,forward,2655.1,NA,FALSE
-2419,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+2417,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2418,1,marriage,NA,NA,NA,WIESENECKER,Elisabetha,NA,ABT 1776,NA,NA,NA,1856-07-20,NA,NA,NA,NA,NA,NA,NA,FALSE
 2419,1,marriage,NA,NA,NA,RUMPF,Judith Elisabetha Barbara,Reformed,1787-02-08,Neu,1848-02-13,Neu Schowe,NA,1848-02-14,NA,NA,NA,NA,NA,NA,FALSE
 2420,1,marriage,1827-11-27,NA,NA,HALLER,Christina,Reformed,1804-03,NA,1849-04-07,Neu Schowe,1849-04-09,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2703,7 +2708,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2545,2,marriage,1885-10-25,Neu Schowe,"Georg Haller, Philipp Müller",BREITWIESER,Salomea,NA,1864-08-22,Neu,NA,NA,NA,NA,NA,Breitwieser Jakob,Stetzenbach Katharina,back,255.1,NA,TRUE
 2546,1,marriage,1887-02-13,Neu Schowe,"Jakob Müller, Wilhelm Spring",ISELE,Katharina,Evangelical,1867-04-24,Neu Schowe,NA,NA,NA,1867-04-24,NA,Isele Michael,Spring Julianna Maria,back,1728.2,NA,TRUE
 2547,1,marriage,1886-05-23,Neu Schowe,"Adam Seil, Jakob Licht",SEIL,Barbara,Reformed,1863-09-19,Alt Schowe,NA,NA,NA,1863-09-20,NA,Seil Jakob,Licht Dorothea,forward,3367.2,NA,FALSE
-2548,1,marriage,1888-10-28,Neu Schowe,"Ludwig Haller, Jakob Haller",SPIESS,Margaretha,Reformed,1867-09-08,Neu Schowe,NA,NA,NA,1867-09-10,NA,Spiess Johann,Metzger Katharina,forward,3477.5,NA,FALSE
+2548,1,marriage,1888-10-28,Neu Schowe,"Ludwig Haller, Jakob Haller",SPIESS,Margaretha,Reformed,1867-09-08,Neu Schowe,NA,NA,NA,1867-09-10,NA,Spiess Johann,Metzger Katharina,forward,3477.5,NA,TRUE
 2549,1,marriage,1888-10-07,Neu Schowe,"Friedrich Brausch, Philipp Heil",BRAUSCH,Christina,Evangelical,1868-01-13,Neu Schowe,NA,NA,NA,1868-01-14,NA,Brausch Georg,Johler Magdalena,back,250.5,NA,TRUE
 2551,1,marriage,1894-12-02,Neu Schowe,"Adam Geist, Michael Brücker",GEIST,Margaretha,Evangelical,1873-08-08,Neu Schowe,NA,NA,NA,1873-08-09,NA,Geist Adam,Werle Susanna,back,761.6,NA,TRUE
 2552,1,marriage,NA,NA,NA,BAUER,Julianna,NA,ABT 1878,NA,1857-05-15,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2734,7 +2739,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2578,1,marriage,NA,NA,NA,NA,Katharina,NA,1904-08-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2579,1,marriage,NA,NA,NA,NA,Theresia,NA,ABT 1908,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2580,1,marriage,1936-11-07,NA,NA,RIES,Margaretha,NA,BIRT 1906,NA,NA,NA,NA,NA,NA,Ries Friedrich,Häuser Katharina,forward,2883.1,NA,FALSE
-2581,1,marriage,NA,NA,NA,HÄUSER,Elisabetha,NA,1913-07-21,NA,1981,Fellbach,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+2581,1,marriage,NA,NA,NA,HÄUSER,Elisabetha,NA,1913-07-21,NA,1981,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2582,1,marriage,NA,NA,NA,SOHL,Isabella,NA,1914-01-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2583,1,marriage,NA,NA,NA,ORTH,Eva,NA,1909-04-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2584,1,marriage,NA,NA,NA,FEBEL,Katharina,NA,ABT 1909,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2811,7 +2816,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2652,1,marriage,NA,NA,NA,HAUER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2653,1,marriage,1861-10-13,Neu Schowe,"Daniel Febel, Philipp Mohr",ROTH,Christina,NA,ABT 1841,NA,NA,NA,NA,NA,NA,Roth Christian,Werner Philippina,forward,2922.2,NA,FALSE
 2654,1,marriage,1875-10-10,Sekitsch,NA,FREUND,Anna Eva,NA,1861-09-30,Sekitsch,1915-05-22,Sekitsch,NA,NA,NA,Freund Georg,Burger Maria Elisabetha,back,705.1,NA,TRUE
-2655,1,marriage,1886-01-24,Neu Schowe,"Georg Febel, Jakob Seil",SEIL,Philippina Wilhelmina,Reformed,1868-05-16,Alt Schowe,NA,NA,NA,1868-05-17,NA,Seil Philipp,Pataki Sofia,forward,3363.10,NA,FALSE
+2655,1,marriage,1886-01-24,Neu Schowe,"Georg Febel, Jakob Seil",SEIL,Philippina Wilhelmina,Reformed,1868-05-16,Alt Schowe,NA,NA,NA,1868-05-17,NA,Seil Philipp,Pataki Sofia,forward,3363.10,NA,TRUE
 2656,1,marriage,1887-11-20,Neu Schowe,"Friedrich Müller, Johann Hauer",LICHT,Susanna,Reformed,1871-03-12,Alt Schowe,1945-09-15,Lager Jarek,NA,1871-03-13,NA,Licht Jakob,Müller Magdalena,back,2244.2,NA,TRUE
 2657,1,marriage,1892-03-20,Neu Schowe,"Daniel Pataki, Peter Schmidt",BRÜCKER,Margaretha,Reformed,1870-05-23,Neu Schowe,NA,NA,NA,24.5.1870,NA,Brücker Christian,Weber Margaretha,back,325.4,NA,TRUE
 2658,1,marriage,1891-03-30,Neu Schowe,"Karl Jung, Johann Poth",WALZ,Berta,Reformed,1869-08-31,Neu Schowe,NA,NA,NA,1869-09-01,NA,Walz Johann,Koller Eva,forward,3796.1,NA,FALSE
@@ -2930,7 +2935,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2769,1,marriage,1886-02-21,Neu Schowe,"Josef Bolz, Gettfried Teschner",GEYER,Christina,Reformed,1866-01-30,Neu Schowe,NA,NA,NA,1866-02-02,NA,Geyer Georg Jakob,Bissinger Elisabetha,back,803.7,NA,TRUE
 2770,1,marriage,1886-01-31,Neu Schowe,"Friedrich Heil, Peter Heinz",ZIWICH,Magdalena,Evangelical,1867-02-04,Neu Schowe,1945-04-26,Lager Jarek,NA,1867-02-04,NA,Ziwich Philipp,Haller Magdalena,forward,4156.3,NA,FALSE
 2771,1,marriage,1893-01-18,Neu Werbas,NA,KUNZ,Maria,NA,NA,NA,NA,NA,NA,NA,NA,Kunz Philipp,Wurst Karolina,back,2073.1,NA,TRUE
-2772,1,marriage,1891-01-04,Neu Schowe,"Balthasar Spiess, Friedrich Bolz",SPIESS,Susanna,Reformed,1869-12-03,Neu Schowe,NA,NA,NA,1869-12-04,NA,Spiess Johann,Metzger Katharina,forward,3477.6,NA,FALSE
+2772,1,marriage,1891-01-04,Neu Schowe,"Balthasar Spiess, Friedrich Bolz",SPIESS,Susanna,Reformed,1869-12-03,Neu Schowe,NA,NA,NA,1869-12-04,NA,Spiess Johann,Metzger Katharina,forward,3477.6,NA,TRUE
 2773,1,marriage,1892-01-17,Neu Schowe,"Nikolaus Poth, Adam Klein",BRÜCKER,Katharina,Reformed,1874-08-16,Neu Schowe,NA,NA,NA,1874-08-16,NA,Brücker Michael,Hetzel Margaretha,back,342.1,NA,TRUE
 2774,1,marriage,1894-11-25,Neu Schowe,"Johann Poth, Jakob Häuser",HÄUSER,Katharina,Reformed,1878-07-29,Neu Schowe,NA,NA,NA,1878-07-30,NA,Häuser Philipp,Bechtel Elisabetha,back,1668.1,NA,TRUE
 2775,1,marriage,1893-03-12,Neu Werbas,NA,LILLER,Sofia,NA,1871-10-24,Neu,NA,NA,NA,NA,NA,Liller Heinrich,Huth Theresia,back,2285.1,NA,TRUE
@@ -3091,7 +3096,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2923,3,marriage,1911-01-03,Sekitsch,NA,RIEGEL,Philippina,Reformed,1848-11-07,Neu Schowe,NA,NA,NA,1848-11-09,NA,Riegel Johann,Größer Philippina,back,2828.3,NA,TRUE
 2924,1,marriage,1874-01-18,Alt Ker,"Peter Ganter, Simon Jaki",ZIWICH,Margaretha,NA,1854-01-20,Alt,NA,NA,NA,NA,NA,Ziwich Georg Philipp,Jaki Margaretha,forward,4153.1,NA,FALSE
 2925,1,marriage,NA,NA,NA,PETRI,Sidonia Eva,Evangelical,1885-12-22,Neu Schowe,1946-01-05,Lager Jarek,NA,1885-12-26,NA,Petri Johann,Ziwich Magdalena,back,2686.8,NA,TRUE
-2926,1,marriage,1900-02-25,Franzjosefsfeld,NA,SCHMOLL,Susanna,Reformed,1879-09-30,Neu Schowe,1921-12-01,Dugopolje/Bosnien,NA,1879-10-01,NA,Schmoll Johann,Feller Sofia,forward,3185.2,NA,FALSE
+2926,1,marriage,1900-02-25,Franzjosefsfeld,NA,SCHMOLL,Susanna,Reformed,1879-09-30,Neu Schowe,1921-12-01,Dugopolje/Bosnien,NA,1879-10-01,NA,Schmoll Johann,Feller Sofia,forward,3185.2,NA,TRUE
 2927,1,marriage,NA,NA,NA,FECHTER,Sidonia,NA,1911-04-19,NA,2001-08-20,"Phelan, CA",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2928,1,marriage,NA,NA,NA,NA,Anna Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2929,1,marriage,1690-04-13,Fohren,NA,BIER,Maria Salomea,NA,ABT 1670,Fohren,1738-04-06,Fohren,NA,NA,NA,Bier Laux,NN Anna Eva,back,167.1,NA,TRUE
@@ -3115,7 +3120,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2946,2,marriage,1892-04-03,Neu Schowe,"Philipp Schmidt, Karl SchmollSÜTSCH Margaretha > 3582.2",NA,NA,NA,ABT 1865,Kutzura,NA,NA,NA,NA,NA,Sütsch Michael,Burbach Katharina,NA,NA,NA,FALSE
 2947,1,marriage,1891-03-02,Neu Schowe,"Andreas Rusitschka, Johann Weinz",STAUDT,Elisabetha,Evangelical,1867-09-18,Alt Schowe,ABT 1941,"Mansfield, OH",NA,1867-09-19,NA,Staudt Jakob,Lotz Katharina,forward,3496.6,NA,FALSE
 2948,1,marriage,1913-09-28,"Cuyahoga, OH",NA,BRAUCHLER,Christina,NA,ABT 1895,NA,NA,NA,NA,NA,NA,Brauchler Johann,Benz Sarah,back,236.1,NA,TRUE
-2949,1,marriage,1922-04-06,"Cuyahoga, OH",NA,WALTER,Katharina,NA,1903-04-06,NA,1989-09-29,"Avon, Lake, OH",NA,NA,NA,Walter Daniel,Staudt Katharina,back,3784.4,NA,FALSE
+2949,1,marriage,1922-04-06,"Cuyahoga, OH",NA,WALTER,Katharina,NA,1903-04-06,NA,1989-09-29,"Avon, Lake, OH",NA,NA,NA,Walter Daniel,Staudt Katharina,back,3784.4,NA,TRUE
 2950,1,marriage,NA,NA,NA,FEBEL,Christina,NA,1906-04-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2951,1,marriage,NA,NA,NA,SCHADT,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2952,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3151,7 +3156,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 2978,1,marriage,NA,NA,NA,SOHL,Julianna,Evangelical,ABT 1811,NA,1849-06-28,Neu Schowe,1849-06-29,NA,NA,NA,NA,NA,NA,NA,FALSE
 2979,1,marriage,1849-11-28,Neu Schowe,"Andreas Müller, Friedrich Trissler",EINZ,Katharina,NA,ABT 1830,Neu Schowe,NA,NA,NA,NA,NA,Einz Philipp,Haller Sofia,back,517.1,NA,TRUE
 2980,1,marriage,1862-10-19,Neu Schowe,"Philipp Sauer, Karl Petri",KLEIN,Katharina,NA,ABT 1840,NA,NA,NA,NA,NA,NA,Klein Johann Friedrich,Schelken Maria Elisabetha,NA,NA,NA,FALSE
-2981,1,marriage,1868-06-16,Neu Schowe,"Martin Müller, Karl Korell",FECHTER,Salomea Christina,Evangelical,1851-12-25,Neu Schowe,NA,NA,NA,1851-12-26,NA,Fechter Friedrich,Bastian Katharina,back,608.2,NA,TRUE
+2981,1,marriage,1868-06-16,Neu Schowe,"Martin Müller, Karl Korell",FECHTER,Salomea Christina,Evangelical,1851-12-25,Neu Schowe,NA,NA,1891-03-07,1851-12-26,NA,Fechter Friedrich,Bastian Katharina,back,608.2,NA,TRUE
 2982,1,marriage,1881-02-01,Neu Schowe,"Peter Haller, Josef Geiss",SCHOCK,Aloisia,NA,ABT 1853,Neu Schowe,NA,NA,NA,NA,NA,Schock Karl,Bieber Katharina,forward,3285.2,NA,FALSE
 2983,1,marriage,1880-01-17,Neu Schowe,"Stefan Haller, Michael Haller",HALLER,Elisabetha,NA,ABT 1861,NA,NA,NA,NA,NA,NA,Haller Michael,Haller Elisabetha,back,1087.2,NA,TRUE
 2984,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3176,7 +3181,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3002,1,marriage,NA,NA,NA,JUNG,Katharina,Evangelical,ABT 1827,NA,1849-07-04,Neu Schowe,1849-07-05,NA,NA,NA,NA,NA,NA,NA,FALSE
 3002,2,marriage,1849-10-28,"WITN Jakob Metzger, Michael Brücker","Jakob Metzger, Michael Brücker",LEHMANN,Elisabetha Dorothea,Evangelical,ABT 1828,NA,1889-07-16,Neu Schowe,1889-07-17,NA,NA,Lehmann Karl,Herrmann Margaretha,back,2118.1,NA,TRUE
 3003,1,marriage,NA,NA,NA,WOLF,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3005,1,marriage,NA,NA,NA,HALLER,Gertrud,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3004,1,marriage,NA,NA,NA,HALLER,Gertrud,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3005,1,marriage,1829-03-03,Neu Schowe,"Mathias Kraut…?, Peter Braun",BRAUN,Gertrud,NA,ABT 1803,Neu Schowe,1866-03-13,Feketitsch,NA,NA,NA,NA,NA,back,239.1,NA,TRUE
 3006,1,marriage,NA,NA,NA,OPP,Anna Katharina,NA,1772-03-19,NA,1827-05-03,Neuwerbas,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3007,1,marriage,NA,NA,NA,LORENZ,Susanna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3199,7 +3204,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3022,1,marriage,1873-04-16,Neu Schowe,"Jakob Werner, Laurenz Kruttschnitt",RÖDER,Magdalena,NA,ABT 1827,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3023,1,marriage,NA,NA,NA,HELD,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3024,1,marriage,NA,NA,NA,RIEGEL,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3024,2,marriage,NA,NA,NA,SCHERER,Maria Elisabetha,Reformed,1835-02-01,Neuwerbas,1866-03-14,Neu Schowe,NA,NA,NA,Scherer Jakob,Morgenstern Margaretha,back,3020.1,NA,TRUE
+3024,2,marriage,NA,NA,NA,SCHERER,Maria Elisabetha,Reformed,1835-02-01,Neuwerbas,1866-03-14,Neu Schowe,1886-03-15,NA,NA,Scherer Jakob,Morgenstern Margaretha,back,3020.1,NA,TRUE
 3024,3,marriage,NA,NA,NA,HOBLER,Philippina,Reformed,ABT 1822,Alt Schowe,1892-11-10,Alt Schowe,1892-11-12,NA,NA,NA,NA,NA,NA,NA,FALSE
 3025,1,marriage,NA,NA,NA,BASTIAN,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3026,1,marriage,1859-07-05,Neu Schowe,"Andreas Müller, Adam Haller",HALLER,Magdalena,NA,ABT 1841,Neu Schowe,NA,NA,NA,NA,NA,Haller Friedrich,Dietz Christina,back,1050.4,NA,TRUE
@@ -3274,7 +3279,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3092,1,marriage,NA,NA,NA,KOLLER,Katharina,NA,1867-04-26,Kis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3093,1,marriage,NA,NA,NA,SEIL,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3094,1,marriage,NA,NA,NA,HIERONIMUS,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3095,1,marriage,NA,NA,NA,FREY,Dorothea,Evangelical,ABT 1793,Bulkes,1863-06-23,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3095,1,marriage,NA,NA,NA,FREY,Dorothea,Evangelical,ABT 1793,Bulkes,1863-06-23,Alt Schowe,1863-06-25,NA,NA,NA,NA,NA,NA,NA,FALSE
 3096,1,marriage,NA,NA,NA,ROTH,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3097,1,marriage,NA,NA,NA,KRUTTSCHNITT,Christina,Evangelical,ABT 1822,NA,1856-12-06,Neu Schowe,1856-12-08,NA,NA,NA,NA,NA,NA,NA,FALSE
 3098,1,marriage,NA,NA,NA,MÜLLER,Margaretha,NA,1895-02-06,NA,1948-09-26,Vaihingen/Enz,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3282,7 +3287,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3100,1,marriage,NA,NA,NA,SCHNUR,Elisabetha,Reformed,1903-07-06,NA,1988-04-11,"Cleveland, OH",NA,NA,NA,Schnur Friedrich,Jung Elisabetha,forward,3272.1,NA,FALSE
 3101,1,marriage,1836-01-25,Neu Schowe,"Peter Krieger, Georg Schock",ROTH,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,2919.1,NA,TRUE
 3102,1,marriage,NA,NA,NA,MAYER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3103,1,marriage,NA,NA,NA,HETZEL,Eva,NA,ABT 1923,NA,NA,NA,NA,NA,NA,Hetzel Michael,Licht Eva,back,1540.3,NA,FALSE
+3103,1,marriage,NA,NA,NA,HETZEL,Eva,NA,ABT 1923,NA,NA,NA,NA,NA,NA,Hetzel Michael,Licht Eva,back,1540.3,NA,TRUE
 3104,1,marriage,NA,NA,NA,BAYER,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3105,1,marriage,NA,NA,NA,WEBER,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3106,1,marriage,NA,NA,NA,MÜLLER,Barbara,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3358,11 +3363,11 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3176,1,marriage,NA,NA,NA,GRÖSSER,Elisabetha,NA,NA,NA,ABT 1893,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3177,1,marriage,NA,NA,NA,HALLER,Margaretha,NA,ABT 1876,NA,1946-01-24,Lager Jarek,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3178,1,marriage,NA,NA,NA,ENG,Maria Elisabetha,NA,ABT 1800,NA,ABT 1882,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3179,1,marriage,1840-04-10,Torschau,NA,BIERMANN,Susanna,Evangelical,ABT 1822,Torschau,1881-05-04,Neu Schowe,NA,NA,NA,Biermann Jakob Philipp,Knobloch Maria Katharina,back,168.1,NA,TRUE
+3179,1,marriage,1840-04-10,Torschau,NA,BIERMANN,Susanna,Evangelical,ABT 1822,Torschau,1881-05-04,Neu Schowe,1881-05-06,NA,NA,Biermann Jakob Philipp,Knobloch Maria Katharina,back,168.1,NA,TRUE
 3180,1,marriage,NA,NA,NA,GRÖßER,Maria Elisabetha,Reformed,1832-12-17,Torschau,1884-07-11,Alt Schowe,1884-07-12,NA,NA,NA,NA,NA,NA,NA,FALSE
 3180,2,marriage,1884-12-07,Neu Schowe,"Johann Wickert, Josef Werner",SÜTSCH,Rosina,NA,ABT 1855,Kutzura,NA,NA,NA,NA,NA,Sütsch Michael,Burbach Katharina,forward,3582.1,NA,FALSE
-3181,1,marriage,NA,NA,NA,SPENGLER,Katharina,Evangelical,1840-02-24,Feketitsch,1871-12-08,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3181,2,marriage,1872-02-04,Neu Schowe,"Daniel Teschner, Michael Tauss",TESCHNER,Johanna,Evangelical,ABT 1844,Neu Schowe,1888-04-15,Alt Schowe,NA,NA,NA,Teschner Daniel,Engel Christina,forward,3646.6,NA,FALSE
+3181,1,marriage,NA,NA,NA,SPENGLER,Katharina,Evangelical,1840-02-24,Feketitsch,1871-12-08,Alt Schowe,1871-12-10,NA,NA,NA,NA,NA,NA,NA,FALSE
+3181,2,marriage,1872-02-04,Neu Schowe,"Daniel Teschner, Michael Tauss",TESCHNER,Johanna,Evangelical,ABT 1844,Neu Schowe,1888-04-15,Alt Schowe,1888-04-17,NA,NA,Teschner Daniel,Engel Christina,forward,3646.6,NA,FALSE
 3181,3,marriage,1888-11-01,Neu Schowe,"Zuschlag Nikolaus Poth, Jakob Müller",ZUSCHLAG,Elisabetha,NA,ABT 1840,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3182,1,marriage,1870-06-13,Neu Schowe,"Peter Haller, Nikolaus Brücker (ohne weitere Angaben)",BRÜCKER,Magdalena,NA,ABT 1853,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3183,1,marriage,1873-01-14,Neu Schowe,"Michael Brücker, Wilhelm Liebmann",HEIL,Katharina Elisabetha,Evangelical,ABT 1855,NA,1891-11-08,Neu Schowe,1891-11-10,NA,NA,Heil Adam,Liebmann Magdalena,back,1354.3,NA,TRUE
@@ -3403,7 +3408,6 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3218,1,marriage,NA,NA,NA,ORSCHIED,Philippina,Reformed,1817-01-10,NA,1848-11-04,Neu Schowe,1848-11-06,NA,NA,NA,NA,NA,NA,NA,FALSE
 3218,2,marriage,1848-12-26,Neu Schowe,"Adam Häuser, Friedrich Schneider",MÜLLER,Katharina,NA,ABT 1825,Neu Schowe,1898-09-16,Neuwerbas,NA,NA,NA,NA,NA,back,2506.1,NA,TRUE
 3219,1,marriage,NA,NA,NA,ARMBRÜSTER,Katharina,NA,1819-10-12,NA,1880-09-26,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3220,1,marriage,1833-02-12,Sekitsch,NA,HAUSKNECHT,Katharina,NA,ABT 1814,NA,1849-10-12,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3221,1,marriage,NA,NA,NA,GLÖCKNER,Paulina,NA,1822-12-19,Diegelsberg,1887-10-23,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3222,1,marriage,1846-02-24,Neu Schowe,"Jakob Geyer, Christian Haller",WEINZ,Sofia,NA,ABT 1825,NA,NA,NA,NA,NA,NA,NA,NA,forward,3847.1,NA,FALSE
 3223,1,marriage,1870-05-08,Neuwerbas,NA,KRUTTSCHNITT,Margaretha,NA,1846-07-09,Schowe,1900-07-26,Neuwerbas,NA,NA,NA,Kruttschnitt Johann,Krisch Katharina,back,2054.1,NA,TRUE
@@ -3415,7 +3419,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3228,1,marriage,1866-05-08,Neu Schowe,"Friedrich Klein, Philipp Haller",KLEIN,Katharina,NA,ABT 1845,Neu Schowe,NA,NA,NA,NA,NA,Klein Friedrich Jakob,Haug Christina,back,1876.1,NA,TRUE
 3229,1,marriage,1874-05-26,Alt Ker,"Martin Ganter, Peter Hartmann",SCHETTERER,Katharina,NA,ABT 1855,Alt,NA,NA,NA,NA,NA,Schetterer Martin,Sauer Elisabetha,back,3057.1,NA,TRUE
 3230,1,marriage,1877-12-10,Neuwerbas,NA,RIEGEL,Sofia,Reformed,1856-01-08,Neu Schowe,NA,NA,NA,10.1.1856,NA,Riegel Philipp,Scherer Maria Elisabetha,back,2832.8,NA,TRUE
-3231,1,marriage,1883-03-14,Neu Schowe,"Johann Zimmer, Philipp Weinz",WEINZ,Sofia,Evangelical,1856-06-23,Neu Schowe,NA,NA,NA,1856-06-24,NA,Weinz Jakob,Kruttschnitt Rosalia,back,3861.4,NA,FALSE
+3231,1,marriage,1883-03-14,Neu Schowe,"Johann Zimmer, Philipp Weinz",WEINZ,Sofia,Evangelical,1856-06-23,Neu Schowe,NA,NA,NA,1856-06-24,NA,Weinz Jakob,Kruttschnitt Rosalia,back,3861.4,NA,TRUE
 3232,1,marriage,1883-07-08,Kis Ker,NA,RIES,Elisabetha,Evangelical,1863-08-01,Neu Schowe,1912-07-18,Kis Ker,NA,1863-08-02,NA,Ries Christian,Wolf Elisabetha,back,2873.4,NA,TRUE
 3233,1,marriage,NA,NA,NA,FALKENSTEIN,Rosina,NA,1866-10-09,Kis,1935-10-03,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3234,1,marriage,1906-01-18,Alt Ker,"Nikolaus Georg, Jakob Geyer",SCHMIDT,Magdalena,Reformed,1872-05-29,Alt Schowe,NA,NA,NA,1872-05-31,NA,Schmidt Georg,Schmidt Magdalena,back,3141.6,NA,TRUE
@@ -3455,7 +3459,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3265,1,marriage,1878-12-22,Neu Schowe,"Philipp Petri, Karl Burg",JUNG,Margaretha,NA,ABT 1854,Alt Schowe,NA,NA,NA,NA,NA,Jung Philipp,Bieber Margaretha,back,1750.1,NA,TRUE
 3266,1,marriage,1878-04-22,Neu Schowe,"Philipp Jung, Johann Schnur",LEPOLD,Charlotte,NA,ABT 1855,Neu Schowe,NA,NA,NA,NA,NA,Lepold Peter,Hoffmann Charlotte,back,2217.3,NA,TRUE
 3267,1,marriage,1887-10-30,Neu Schowe,"Friedrich Röder, Balthasar Spiess ( genannt Bertalan)",HOFFMANN,Elisabetha,Reformed,1867-06-16,Neu Schowe,NA,NA,NA,1867-06-18,NA,Hoffmann Johann,Herrmann Margaretha,back,1599.2,NA,TRUE
-3268,1,marriage,1890-10-17,Neu Schowe,"Jakob Geyer, Johann Krieger",SAUER,Rosina,Evangelical,1869-08-18,Neu Schowe,1955-03-22,"Cleveland, OH",NA,22.8.1869,NA,Sauer Johann Christian,Klein Katharina,back,2980.3,NA,FALSE
+3268,1,marriage,1890-10-17,Neu Schowe,"Jakob Geyer, Johann Krieger",SAUER,Theresia,Evangelical,1869-08-18,Neu Schowe,1955-03-22,"Cleveland, OH",NA,22.8.1869,NA,Sauer Johann Christian,Klein Katharina,back,2980.3,NA,TRUE
 3269,1,marriage,1893-04-03,Neu Schowe,"Friedrich Brausch, Johann Emich",HETZEL,Katharina,NA,1875-03-03,NA,1945-07-11,Lager Jarek,NA,NA,NA,Hetzel Johann,Schmidt Katharina,back,1502.5,NA,TRUE
 3270,1,marriage,NA,NA,NA,NA,Katharina,NA,ABT 1878,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3271,1,marriage,NA,NA,NA,WEINZ,Philippina,Evangelical,1878-02-19,Neu Schowe,1946-02-16,Lager Jarek,NA,1878-02-21,NA,Weinz Johann,Poth Katharina,forward,3867.7,NA,FALSE
@@ -3472,7 +3476,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3282,1,marriage,NA,NA,NA,SEHNE,Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3283,1,marriage,NA,NA,NA,HALLER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3284,1,marriage,NA,NA,NA,BIEBER,Karolina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3285,1,marriage,1849-12-02,Neu Schowe,"Johann Poth, Philipp Urschel",BIEBER,Katharina,Evangelical,ABT 1829,Alt Schowe,1892-01-26,Neu Schowe,NA,NA,NA,Bieber Georg,Brücker Katharina,back,157.2,NA,TRUE
+3285,1,marriage,1849-12-02,Neu Schowe,"Johann Poth, Philipp Urschel",BIEBER,Katharina,Evangelical,ABT 1829,Alt Schowe,1892-01-26,Neu Schowe,1892-01-27,NA,NA,Bieber Georg,Brücker Katharina,back,157.2,NA,TRUE
 3286,1,marriage,NA,NA,NA,HALLER,Magdalena,Evangelical,ABT 1812,NA,1847-03-06,Neu Schowe,1847-03-08,NA,NA,NA,NA,NA,NA,NA,FALSE
 3286,2,marriage,1848-12-10,Neu Schowe,"Christian Bastian, Jakob Schock",BASTIAN,Margaretha,Evangelical,ABT 1817,NA,1849-07-02,Neu Schowe,1849-07-03,NA,NA,Bastian Adam,Brücker Katharina,back,38.1,NA,TRUE
 3287,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3550,7 +3554,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3351,1,marriage,NA,NA,NA,KRIEGER,Philippina,Evangelical,1886-04-19,Neu Schowe,1967-11-10,"Cleveland, OH",NA,1886-04-20,NA,Krieger Johann,Sperzel Eva,back,2012.2,NA,TRUE
 3352,1,marriage,NA,NA,NA,ENZMINGER,Elisabetha,NA,1890-05-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3353,1,marriage,NA,NA,NA,BOLZ,Elisabetha,NA,1905-07-18,NA,NA,NA,NA,NA,NA,Bolz Adam,Lenz Margaretha,back,216.2,NA,TRUE
-3355,1,marriage,NA,NA,NA,HALLER,Theresia,Reformed,1894-03-30,Neu Schowe,NA,NA,NA,1890-04-04,NA,Haller Christian,Geyer Margaretha,back,1125.4,NA,FALSE
+3355,1,marriage,NA,NA,NA,HALLER,Theresia,Reformed,1894-03-30,Neu Schowe,NA,NA,NA,1890-04-04,NA,Haller Christian,Geyer Margaretha,back,1125.4,NA,TRUE
 3356,1,marriage,NA,NA,NA,LAHM,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3357,1,marriage,NA,NA,NA,NA,Anna Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3358,1,marriage,NA,NA,NA,HOFFMANN,Theresia,NA,ABT 1873,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3559,7 +3563,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3361,1,marriage,NA,NA,NA,SCHELKEN,Anna Elisabetha,Evangelical,1794-05-04,Alt Schowe,1875-09-18,Alt Schowe,1875-09-20,NA,NA,Schelken Peter,Gerhard Anna Maria,back,3000.3,NA,TRUE
 3362,1,marriage,NA,NA,NA,BRAUN,Maria Charlotte,Reformed,1787-12-14,Neuwerbas,1831-02-19,Neu Schowe,1831-02-21,NA,NA,Braun Peter,Hunsinger Maria Susanna,back,244.4,NA,TRUE
 3362,2,marriage,1831-05-02,Neu Schowe,"Johann Göttel, Jakob Klein",SCHELKEN,Maria Elisabetha,Reformed,1809-01,NA,1846-11-25,Neu Schowe,1846-11-27,NA,NA,Schelken Peter Kaspar,Klein Anna Elisabetha,back,3001.1,NA,TRUE
-3363,1,marriage,NA,NA,NA,PORTZ,Katharina Elisabetha,Reformed,1821-07-31,NA,1847-06-19,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3363,1,marriage,NA,NA,NA,PORTZ,Katharina Elisabetha,Reformed,1821-07-31,NA,1847-06-19,Neu Schowe,1847-06-21,NA,NA,NA,NA,NA,NA,NA,FALSE
 3363,2,marriage,1847-10-24,Neu Schowe,"Christian Bastian, Philipp Brücker",PATAKI,Sofia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,2649.1,NA,TRUE
 3364,1,marriage,NA,NA,NA,PLESS,Christina,Evangelical,ABT 1836,NA,1874-02-13,Alt Schowe,1874-02-14,NA,NA,NA,NA,NA,NA,NA,FALSE
 3364,2,marriage,1875-03-11,Neu Schowe,"Philipp Seil, Adam Mayer",MAYER,Johanna,NA,ABT 1843,NA,NA,NA,NA,NA,NA,Mayer Adam,Becker Elisabetha,back,2352.3,NA,TRUE
@@ -3572,7 +3576,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3370,1,marriage,1885-01-11,Neu Schowe,"Jakob Lepold, Peter Hillrich",JUNG,Elisabetha,Evangelical,1864-06-29,Neu Schowe,NA,NA,NA,1864-06-30,NA,Jung Johann,Lepold Carlotte,back,1765.1,NA,TRUE
 3371,1,marriage,1889-12-26,Neu Schowe,"Philipp Klein, Adam Klein sen.",KLEIN,Katharina,Evangelical,1870-04-21,Neu Schowe,1945-09-04,Lager Jarek,NA,22.4.1870,NA,Klein Michael,Klein Karolina,back,1875.12,NA,TRUE
 3372,1,marriage,1887-10-30,Neu Schowe,"Peter Hetzel, Ludwig Hetzel",HALLER,Margaretha Katharina,Evangelical,1865-08-24,Neu Schowe,NA,NA,NA,25.8.1865,NA,Haller Peter,Hamm Christina,back,1024.1,NA,TRUE
-3373,1,marriage,1895-02-10,Neu Schowe,"Adam Seil, Jakob Geyer",GEYER,Rosina,Reformed,1873-02-03,Neu Schowe,1945-12-12,Lager Jarek,NA,5.2.1873,NA,Geyer Ludwig,Nehlich Elisabetha,back,812.7,NA,FALSE
+3373,1,marriage,1895-02-10,Neu Schowe,"Adam Seil, Jakob Geyer",GEYER,Rosina,Reformed,1873-02-03,Neu Schowe,1945-12-12,Lager Jarek,NA,5.2.1873,NA,Geyer Ludwig,Nehlich Elisabetha,back,812.6,NA,TRUE
 3375,1,marriage,1894-12-16,Neu Schowe,"Friedrich Haller, Daniel Pataki",FINITZER,Katharina,Reformed,1877-11-18,Neu Schowe,NA,NA,NA,1877-11-19,NA,Finitzer Johann,Bolz Margaretha,back,667.10,NA,TRUE
 3376,1,marriage,1894-12-26,Neu Schowe,"Johann Finitzer, Ludwig Haller",HOFFMANN,Theresia,Reformed,1877-10-01,Neu Schowe,1945-12-17,Lager Jarek,NA,1877-10-02,NA,Hoffmann Daniel,Brücker Christina,back,1601.8,NA,TRUE
 3377,1,marriage,NA,NA,NA,SEIL,Johanna,Reformed,1881-12-17,Alt Schowe,1945-11-05,Lager Jarek,NA,1881-12-20,NA,Seil Adam,Licht Magdalena,back,3366.12,NA,TRUE
@@ -3584,14 +3588,14 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3383,1,marriage,NA,NA,NA,BRÜCKER,Elisabetha,NA,1898-02-09,NA,1879-11-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3384,1,marriage,NA,NA,NA,JUNG,Theresia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3385,1,marriage,NA,NA,NA,HEINZ,Katharina,NA,1900-05-11,NA,NA,NA,NA,NA,NA,Heinz Heinrich,Haller Elisabetha,back,1404.1,NA,TRUE
-3386,1,marriage,NA,NA,NA,FALKENSTEIN,Christina,NA,1908-06-14,NA,1947-09-17,Schmiden,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3386,1,marriage,NA,NA,NA,FALKENSTEIN,Christina,NA,1908-06-14,NA,1947-09-17,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3387,1,marriage,NA,NA,NA,TAUSS,Elisabetha,NA,NA,NA,1954-12-02,Öffingen,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3388,1,marriage,NA,NA,NA,KLEIN,Theresia,NA,1905-03-01,NA,1977-08-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3389,1,marriage,NA,NA,NA,BRÜCKER,Johanna,NA,1908-11-04,Kis,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3390,1,marriage,NA,NA,NA,HARICH,Eva Christina,NA,1910-08-31,NA,1994-07-28,"Cleveland, OH",NA,NA,NA,Harich Ludwig,Hillrich Eva,back,1267.1,NA,TRUE
 3391,1,marriage,NA,NA,NA,BRÜCKER,Elisabetha,Reformed,1911-12-20,NA,2004-04-13,"Ashland, OH",NA,NA,NA,Brücker Ludwig,Geyer Elisabetha,back,382.1,NA,TRUE
 3392,1,marriage,NA,NA,NA,SEIL,Katharina,NA,ABT 1913,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3393,1,marriage,NA,NA,NA,KRIEGER,Theresia,NA,1913-03-14,NA,1951-08-09,Cleveland,NA,NA,NA,Krieger Johann,Lenhardt Margaretha,back,2029.1,NA,FALSE
+3393,1,marriage,NA,NA,NA,KRIEGER,Theresia,NA,1913-03-14,NA,1951-08-09,Cleveland,NA,NA,NA,Krieger Johann,Lenhardt Margaretha,back,2029.2,NA,TRUE
 3394,1,marriage,NA,NA,NA,KLEIN,Christine,NA,1913-01-05,NA,1968,Schwaikheim,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3395,1,marriage,NA,NA,NA,OTT,Marie,Evangelical,ABT 1789,NA,1848-07-08,Neu Schowe,1848-07-09,NA,NA,NA,NA,NA,NA,NA,FALSE
 3396,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3613,7 +3617,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3411,1,marriage,NA,NA,NA,GEBEL,Susanna,NA,ABT 1827,Neuwerbas,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3412,1,marriage,NA,NA,NA,HOENISCH,Marianne,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3413,1,marriage,1869-11-28,Neu Schowe,"Daniel Menzinger, Johann Hoffmann",HETZEL,Sofia,NA,ABT 1847,Neu Schowe,NA,NA,NA,NA,NA,Hetzel Georg,Mensinger Elisabetha,back,1465.4,NA,TRUE
-3414,1,marriage,NA,NA,NA,SCHEPP,Gertrud,NA,1827-02-17,Neu Schowe,1906-01-29,Sekitsch,NA,NA,NA,Schepp Georg,Haller Gertrud,back,3004.1,NA,FALSE
+3414,1,marriage,NA,NA,NA,SCHEPP,Gertrud,NA,1827-02-17,Neu Schowe,1906-01-29,Sekitsch,NA,NA,NA,Schepp Georg,Haller Gertrud,back,3004.1,NA,TRUE
 3415,1,marriage,1870-01-16,Sekitsch,NA,HEGEL,Margaretha,NA,1847-09-20,Sekitsch,1907-01-10,Sekitsch,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3415,2,marriage,1907-10-04,Sekitsch,NA,WAGNER,Barbara,NA,1840-02-18,Sekitsch,1924-07-03,Sekitsch,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3416,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3709,8 +3713,8 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3501,1,marriage,NA,NA,NA,ALTHEIM,Christina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3502,1,marriage,1814-11-29,Kis Ker,NA,EISENLÖFFEL,Anna Christina,NA,1797-03-14,Kis,1875-08-02,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3503,1,marriage,NA,NA,NA,SCHMIDT,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3504,1,marriage,1855-12-04,Alt Ker,NA,DEMAND,Elisabetha,NA,1838-08-15,NA,1888-01-22,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3504,2,marriage,1892-03-03,Alt Ker,"Heinrich Greifenstein, Christian Schmidt",TRISSLER,Elisabetha,NA,ABT 1839,NA,NA,NA,NA,NA,NA,Trissler Friedrich,Eisenlöffel Philippina,forward,3709.4,NA,FALSE
+3504,1,marriage,1892-03-03,Alt Ker,NA,TRISSLER,Elisabetha,NA,1833-07-27,NA,1899-10-20,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3504,2,marriage,1892-03-03,Alt Ker,"Heinrich Greifenstein, Christian Schmidt",TRISSLER,Elisabetha,NA,ABT 1839,NA,NA,NA,NA,NA,NA,Trissler Friedrich,Eisenlöffel Philippina,forward,3709.4,NA,TRUE
 3505,1,marriage,1877-09-09,Neu Schowe,"Jakob Schmidt, Johann Ilg",ILG,Eva,Evangelical,ABT 1861,Neu Schowe,1887-11-24,Neu Schowe,1887-11-25,NA,NA,Ilg Georg,Burghard Margaretha,back,1699.1,NA,TRUE
 3505,2,marriage,1887-12-26,Neu Schowe,"Jakob Licht, Josef Geiss",FINITZER,Rosalia,Reformed,1867-02-04,Neu Schowe,NA,NA,NA,1867-02-08,NA,Finitzer Johann,Dietrich Margaretha,back,674.8,NA,TRUE
 3506,1,marriage,1843-03-07,Neu Schowe,"Georg Petri, Michael BraunGRÖßER Magdalena < 900.1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,Größer Adam,NN Margaretha,NA,NA,NA,FALSE
@@ -3725,7 +3729,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3515,1,marriage,NA,NA,NA,HINDENLANG,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3516,1,marriage,NA,NA,NA,METZGER,Anna Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3517,1,marriage,NA,NA,NA,METZGER,Salomea,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3517,1,marriage,NA,NA,NA,METZGER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3518,1,marriage,NA,NA,NA,METZGER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3519,1,marriage,NA,NA,NA,SCHERER,Maria,NA,NA,NA,NA,NA,NA,NA,NA,Scherer Heinrich,Hüttenberger Sofia Dorothea,back,3018.2,NA,TRUE
 3520,1,marriage,NA,NA,NA,SCHMIDT,Katharina,Evangelical,ABT 1806,NA,1887-03-29,Neu Schowe,1887-03-31,NA,NA,NA,NA,NA,NA,NA,FALSE
 3521,1,marriage,1851-12-11,Neu Schowe,"Jakob Gayer, Gertrude Krieger",LITZENBERGER,Eva,NA,ABT 1833,NA,NA,NA,NA,NA,NA,Litzenberger Johann,Brücker Maria Katharina,back,2291.1,NA,TRUE
@@ -3742,7 +3746,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3532,1,marriage,NA,NA,NA,MATTER,Christina,NA,NA,NA,1899-10-02,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3533,1,marriage,1882-06-06,Alt Ker,"Johann Riegel, Valentin Riegel",DECH,Katharina,Evangelical,1865-06-07,Neu Schowe,1902-11-18,Alt Ker,NA,1865-06-08,NA,Dech Nikolaus,Meister Katharina,back,443.1,NA,TRUE
 3534,1,marriage,1942-10-15,"Cuyahoga, OH",NA,ALLGAIER,Julianna,NA,ABT 1902,NA,NA,NA,NA,NA,NA,Allgaier Matthias,Eppler Katharina,back,9.2,NA,TRUE
-3535,1,marriage,1844-03-19,Neu Schowe,NA,HARTMANN,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,1271.1,NA,FALSE
+3535,1,marriage,1844-03-19,Neu Schowe,NA,HARTMANN,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,1271.1,NA,TRUE
 3536,1,marriage,NA,NA,NA,WILL,Philippina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3537,1,marriage,NA,NA,NA,RIES,Helene,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3538,1,marriage,NA,NA,NA,HÜTTENBERGER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3783,8 +3787,8 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3571,1,marriage,NA,NA,NA,STÜTZER,Elisabetha,NA,ABT 1884,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3572,1,marriage,NA,NA,NA,PASTALE,Evelyn,NA,1905-03-28,NA,1985-10-30,"San Diego, CA",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3573,1,marriage,NA,NA,NA,FINDELFELD,Rosalia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3575,1,marriage,1858-11-28,Neu Schowe,"Adam Haller, Karl Schnur ( mit Text: Ehelizenz ....)",WELKER,Julianna,NA,1837-12-19,Neu Schowe,1904-09-04,Alt Ker,NA,NA,NA,Welker Martin,Schnur Margaretha,forward,3926.1,NA,FALSE
-3574,1,marriage,NA,NA,NA,ORSCHIED,Katharina,Reformed,ABT 1831,NA,1872-11-29,Neu Schowe,1872-11-30,NA,NA,NA,NA,NA,NA,NA,FALSE
+3574,1,marriage,1858-11-28,Neu Schowe,"Adam Haller, Karl Schnur ( mit Text: Ehelizenz ....)",WELKER,Julianna,NA,1837-12-19,Neu Schowe,1904-09-04,Alt Ker,NA,NA,NA,Welker Martin,Schnur Margaretha,forward,3926.1,NA,FALSE
+3575,1,marriage,NA,NA,NA,ORSCHIED,Katharina,Reformed,ABT 1831,NA,1872-11-29,Neu Schowe,1872-11-30,NA,NA,NA,NA,NA,NA,NA,FALSE
 3576,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3577,1,marriage,1912-05-25,"Cuyahoga, OH",NA,KEIPERT,Sofia,NA,1895-10-03,NA,1993-05-04,OH,NA,NA,NA,Keipert Johann,Neidert Julianna # siehe Auswanderer nach USA,back,1834.1,NA,TRUE
 3578,1,marriage,NA,NA,NA,KOOS,Elisabetha,Evangelical,ABT 1825,Jarek,1849-06-06,Neu Schowe,1849-06-07,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3874,7 +3878,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3659,1,marriage,1895-09-29,Neu Schowe,"Jakob Teschner, Ludwig Brücker",TESCHNER,Katharina,Evangelical,1877-05-18,Neu Schowe,1945-07-31,Lager Jarek,NA,1877-05-19,NA,Teschner Gottfried,Bolz Katharina,back,3650.8,NA,TRUE
 3660,1,marriage,NA,NA,NA,HAUER,Johanna,Evangelical,1877-06-23,Neu Schowe,1945-10-28,Lager Jarek,NA,1877-06-24,NA,Hauer Jakob,Weinz Johanna,back,1284.7,NA,TRUE
 3661,1,marriage,1921-09-14,"Cuyahoga, OH",NA,GRUMBACH,Katharina,NA,1901-03-24,NA,1991-01-29,"Los Angeles, CA",NA,NA,NA,Grumbach Carl,UNKNOWN Katharina,back,897.2,NA,TRUE
-3662,1,marriage,NA,NA,NA,HAUER,Johanna,Evangelical,1895-03-15,Neu Schowe,NA,NA,NA,24.3.1895,NA,Hauer Peter,Brausch Elisabetha,back,1289.2,NA,FALSE
+3662,1,marriage,NA,NA,NA,HAUER,Johanna,Evangelical,1895-03-15,Neu Schowe,NA,NA,NA,24.3.1895,NA,Hauer Peter,Brausch Elisabetha,back,1289.2,NA,TRUE
 3663,1,marriage,NA,NA,NA,KLEIN,Elisabetha,Evangelical,1895-08-19,Neu Schowe,1972,Waiblingen,NA,25.8.1859,NA,Klein Jakob,Sohl Eva,back,1888.4,NA,TRUE
 3664,1,marriage,NA,NA,NA,OSTER,Elisabetha,NA,1890-08-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3665,1,marriage,NA,NA,NA,LEPOLD,Elisabetha,NA,ABT 1903,NA,ABT 1954,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3962,14 +3966,14 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3740,1,marriage,NA,NA,NA,PAUL,Elisabetha e.,NA,ABT 1793,NA,1868-02-05,Neu Schowe,1868-02-07,NA,NA,NA,NA,NA,NA,NA,FALSE
 3741,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3742,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3743,1,marriage,NA,NA,NA,FESS,Elisabetha,Reformed,ABT 1780,NA,1829-12-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3743,1,marriage,NA,NA,NA,FESS,Elisabetha,Reformed,ABT 1780,NA,1829-12-29,Neu Schowe,1829-12-31,NA,NA,NA,NA,NA,NA,NA,FALSE
 3743,2,marriage,1830-12-28,Neu Schowe,"Nikolaus Fuchs, Peter Klein",NA,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3744,1,marriage,NA,NA,NA,KARGER,Elisabetha,Evangelical,ABT 1768,NA,1849-01-21,Neu Schowe,1849-01-22,NA,NA,NA,NA,NA,NA,NA,FALSE
 3746,1,marriage,NA,NA,NA,GRÖßER,Philippina,Evangelical,ABT 1813,NA,1889-01-07,Neu Schowe,1889-01-09,NA,NA,NA,NA,NA,NA,NA,FALSE
 3747,1,marriage,1862-03-11,Neu Schowe,"Ludwig Hetzel, Wilhelm Brücker",HALLER,Christina,NA,ABT 1846,Neu Schowe,NA,NA,NA,NA,NA,Haller Adam Johann,Scherer Magdalena,back,1061.3,NA,TRUE
 3748,1,marriage,1868-06-28,Neu Schowe,"Ludwig Hetzel, Andreas Klein",HALLER,Christina Margaretha,Evangelical,1851-09-28,Neu Schowe,1872-11-17,Neu Schowe,1872-11-19,1851-09-29,NA,Haller Jakob,Fechter Salomea,back,1060.7,NA,TRUE
 3749,1,marriage,NA,NA,NA,RÖDER,Katharina,NA,1881-02-02,NA,1945-04-08,Lager Jarek,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3750,1,marriage,NA,NA,NA,BARTH,Maria,NA,ABT 1855,Franzfeld,1890-02-16,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3750,1,marriage,NA,NA,NA,BARTH,Maria,NA,ABT 1855,Franzfeld,1890-02-16,Neu Schowe,1890-02-18,NA,NA,NA,NA,NA,NA,NA,FALSE
 3750,2,marriage,1890-10-15,Neu Schowe,"Karl Korbai (Kula), Miklos Molnar (Feketitsch)",HARTMANN,Johanetta,Reformed,1866-06-21,Neu Schowe,1894-07-19,Neu Schowe,1894-07-20,1866-06-22,NA,Hartmann Johann,Müller Christina,back,1276.3,NA,TRUE
 3751,1,marriage,1930-12-28,"Cleveland, OH",NA,BECKER,Helen,NA,ABT 1913,Missouri,ABT 1976,"Cleveland, OH",NA,NA,NA,Becker Stefan,Böhm Philippina,back,112.3,NA,TRUE
 3752,1,marriage,NA,NA,NA,TESCHNER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3997,7 +4001,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3772,1,marriage,NA,NA,NA,TAUSTER,Helene,NA,ABT 1912,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3773,1,marriage,NA,NA,NA,RUSS,Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3774,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3775,1,marriage,NA,NA,NA,BAUER,Angelika,Evangelical,ABT 1783,NA,1848-08-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3775,1,marriage,NA,NA,NA,BAUER,Angelika,Evangelical,ABT 1783,NA,1848-08-25,Neu Schowe,1848-08-27,NA,NA,NA,NA,NA,NA,NA,FALSE
 3776,1,marriage,NA,NA,NA,NA,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3777,1,marriage,NA,NA,NA,ERHARDT,Marie,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3778,1,marriage,NA,NA,NA,RITZMANN,Maria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -4030,7 +4034,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3804,1,marriage,1951-12-29,"Cuyahoga, OH",NA,HOEGER,Hermine,NA,1926-07-02,NA,NA,NA,NA,NA,NA,Hoeger Joseph,Dech Anna,back,1581.1,NA,TRUE
 3805,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3806,1,marriage,NA,NA,NA,LUTZ,Katharina,Evangelical,ABT 1831,NA,1850-10-13,Neu Schowe,1850-10-15,NA,NA,NA,NA,NA,NA,NA,FALSE
-3807,1,marriage,NA,NA,NA,BRÜCKER,Katharina Elisabetha,Evangelical,ABT 1827,NA,1830-07-23,Neu Schowe,1830-07-25,NA,NA,NA,NA,NA,NA,NA,FALSE
+3807,1,marriage,NA,NA,NA,BRÜCKER,Katharina Elisabetha,Evangelical,1806-03,NA,1871-02-24,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3808,1,marriage,NA,NA,NA,GERHARD,Maria Elisabetha,Evangelical,ABT 1775,NA,1837-10-20,Neu Schowe,1837-10-22,NA,NA,Gerhard Philipp,UNKNOWN Maria Magdalena,back,772.2,NA,TRUE
 3809,1,marriage,NA,NA,NA,MÜLLER,Katharina,Evangelical,ABT 1800,NA,1865-02-25,Neu Schowe,1865-02-27,NA,NA,NA,NA,NA,NA,NA,FALSE
 3810,1,marriage,NA,NA,NA,SCHMIDT,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -4083,12 +4087,11 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3856,2,marriage,1836-11-01,Neu Schowe,"Peter Fechter, Valentin Lenhardt",MÜLLER,Katharina Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,Müller Georg,Lenhardt Elisabetha,back,2487.1,NA,TRUE
 3857,1,marriage,NA,NA,NA,PETER,Margaretha,Evangelical,ABT 1807,NA,1836-08-03,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3858,1,marriage,NA,NA,NA,WELKER,Maria Julianna,Evangelical,ABT 1808,NA,1872-04-02,Neu Schowe,1872-04-03,NA,NA,NA,NA,NA,NA,NA,FALSE
-3859,1,marriage,1849-03-25,Neu Schowe,"Johann Siegmund, Peter Weinz (Doppelhochzeit",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3861,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3861,2,marriage,1875-11-24,Neu Schowe,"Georg Sohl, Adam Hetzel",SAUER,Margaretha,Evangelical,ABT 1829,NA,1889-08-25,Neu Schowe,1889-08-26,NA,NA,Sauer Jakob,Sohl Julianna,back,2978.1,NA,TRUE
+3859,1,marriage,1849-03-25,Neu Schowe,"Johann Siegmund, Peter Weinz (Doppelhochzeit <3861>)",KRUTTSCHNITT,Susanna,Evangelical,ABT 1829,Neu Schowe,1874-11-20,Neu Schowe,1874-11-22,NA,NA,Kruttschnitt Gottfried,Webel Katharina,back,2052.5,NA,TRUE
+3859,2,marriage,1875-11-24,Neu Schowe,"Georg Sohl, Adam Hetzel",SAUER,Margaretha,Evangelical,ABT 1829,NA,1889-08-25,Neu Schowe,1889-08-26,NA,NA,Sauer Jakob,Sohl Julianna,back,2978.1,NA,TRUE
 3860,1,marriage,NA,NA,NA,LENHARDT,Elisabetha,Reformed,ABT 1811,Neu Schowe,1885-08-16,Neu Schowe,1885-08-17,NA,NA,NA,NA,NA,NA,NA,FALSE
-3861,1,marriage,NA,NA,NA,BIEBER,Marie,Evangelical,ABT 1827,NA,1849-01-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3861,2,marriage,1849-03-25,Neu Schowe,"Adam Grammes, Adam Weinz (Doppelhochzeit",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,TRUE
+3861,1,marriage,NA,NA,NA,BIEBER,Marie,Evangelical,ABT 1827,NA,1849-01-18,Neu Schowe,1849-01-20,NA,NA,NA,NA,NA,NA,NA,FALSE
+3861,2,marriage,1849-03-25,Neu Schowe,"Adam Grammes, Adam Weinz (Doppelhochzeit <3859>)",KRUTTSCHNITT,Rosalia,NA,ABT 1830,NA,1891-12-02,Neu Schowe,1891-12-03,NA,NA,Kruttschnitt Gottfried,Webel Katharina,back,2052.6,NA,TRUE
 3862,1,marriage,1851-01-09,Neu Schowe,"Peter Weinz, Adam Schmidt",BRAND,Katharina Barbara,NA,ABT 1831,Kutzura,NA,NA,NA,NA,NA,Brand Salomon,Sukart Christina,back,235.1,NA,TRUE
 3863,1,marriage,NA,NA,NA,RASWEILER,Margaretha,NA,ABT 1840,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3864,1,marriage,NA,NA,NA,SELIG,Barbara,Evangelical,1837-01-29,Neu Schowe,1889-07-26,Neu Schowe,1889-07-28,1837-02-01,NA,Selig Stefan,Petri Elisabetha,back,3402.1,NA,TRUE
@@ -4114,6 +4117,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3882,1,marriage,NA,NA,NA,MÜLLER,Johanna,NA,1895-12-28,NA,NA,NA,NA,NA,NA,Müller Philipp,Haller Johanna,back,2557.1,NA,TRUE
 3883,1,marriage,1930-12-03,Neuwerbas,NA,SCHMIDT,Theresia Karolina,NA,ABT 1908,Neuwerbas,NA,NA,NA,NA,NA,Schmidt Jakob,Welker Theresia,back,3088.1,NA,TRUE
 3884,1,marriage,NA,NA,NA,LADI,Elisabetha,Evangelical,1905-03-13,NA,1985,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3885,1,marriage,NA,NA,NA,KLEIN,Susanna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3886,1,marriage,NA,NA,NA,GEYER,Helene,NA,1917-12-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3887,1,marriage,NA,NA,NA,PAUL,Theresia,NA,1912-05-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3888,1,marriage,NA,NA,NA,JUNG,Christina,NA,1913-03-09,NA,2004-08-05,"Parma, OH",NA,NA,NA,Jung UNKNOWN,Schmidt UNKNOWN,back,1745.2,NA,TRUE
@@ -4152,7 +4156,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3920,1,marriage,1830-01-14,Neu Schowe,"Heinrich Haller, Valentin Leonhardt",GÖTTEL,Elisabetha,Reformed,1808-10,Neu Schowe,1881-01-12,Alt Schowe,1891-01-14,NA,NA,NA,NA,back,950.3,NA,TRUE
 3921,1,marriage,NA,NA,NA,STEIGELE,Katharina,NA,ABT 1853,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3922,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3923,1,marriage,NA,NA,NA,BECKER,Salomea,Reformed,ABT 1817,NA,1856-10-24,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3923,1,marriage,NA,NA,NA,BECKER,Salomea,Reformed,ABT 1817,NA,1856-10-24,Neu Schowe,1856-10-25,NA,NA,NA,NA,NA,NA,NA,FALSE
 3924,1,marriage,NA,NA,NA,KIRST,Theresia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3925,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3926,1,marriage,NA,NA,NA,SCHNUR,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -4172,11 +4176,11 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3938,1,marriage,1850-12-01,Neu Schowe,"Jakob Metzger, Andreas LepoldMÜLLER Elisabetha RELI_REF < 2489.1",NA,NA,NA,ABT 1831,Neu Schowe,1881-06-21,Neu Schowe,1881-06-22,NA,NA,NA,NA,NA,NA,NA,FALSE
 3939,1,marriage,1862-01-28,Neu Schowe,"Peter Haller, Michael Brücker",BRÜCKER,Elisabetha,Reformed,1844-06-30,Neu Schowe,NA,NA,NA,1844-07-02,NA,Brücker Friedrich,Braun Christina Margaretha,back,318.4,NA,TRUE
 3939,2,marriage,1870-09-25,Neu Schowe,"Peter Haller, Adaolf Kiss",GEYER,Margaretha,NA,ABT 1853,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3939,3,marriage,1874-04-12,Neu Schowe,"Josef Bolz, Philipp Haller",HAUER,Elisabetha,Evangelical,1850-09-15,Neu Schowe,1878-06-21,Neu Schowe,NA,1850-09-17,NA,Hauer Jakob,Zeiner Elisabeth,back,1282.6,NA,TRUE
+3939,3,marriage,1874-04-12,Neu Schowe,"Josef Bolz, Philipp Haller",HAUER,Elisabetha,Evangelical,1850-09-15,Neu Schowe,1878-06-21,Neu Schowe,1878-06-22,1850-09-17,NA,Hauer Jakob,Zeiner Elisabeth,back,1282.6,NA,TRUE
 3939,4,marriage,1878-07-28,Neu Schowe,"Stefan Selig, Jakob Hauer",SELIG,Johanna,Evangelical,ABT 1840,Neu Schowe,1882-12-27,Neu Schowe,1882-12-29,NA,NA,Selig Johann,Haller Katharina,back,3403.2,NA,TRUE
 3939,5,marriage,1883-06-17,"WITN Christian Trissler, Josef Bolz","Christian Trissler, Josef Bolz",TRISSLER,Johanna,Evangelical,1848-12-11,Neu,NA,NA,NA,1848-12-12,NA,Trissler Friedrich,Eisenlöffel Philippina,back,3709.6,NA,TRUE
 3940,1,marriage,1872-04-21,Neu Schowe,"Adam Ries, Jakob Haller (ohne weitere Angaben)",SCHNEIDER,Barbara,Reformed,1850-02-10,Neu Schowe,NA,NA,NA,1850-02-11,NA,Schneider Jakob,Weinz Sofia,back,3222.2,NA,TRUE
-3941,1,marriage,1873-01-26,Neu Schowe,"Heinrich Rieth, Peter Hauser",LENZ,Elisabetha,NA,1852-04-05,Neu Schowe,1875-11-29,Neu Schowe,NA,NA,NA,Lenz Christoph,Merkel Elisabetha,back,2193.4,NA,TRUE
+3941,1,marriage,1873-01-26,Neu Schowe,"Heinrich Rieth, Peter Hauser",LENZ,Elisabetha,NA,1852-04-05,Neu Schowe,1875-11-29,Neu Schowe,1875-11-30,NA,NA,Lenz Christoph,Merkel Elisabetha,back,2193.4,NA,TRUE
 3941,2,marriage,1876-01-23,Neu Schowe,"Jakob Weissenbach, Heinrich Rieth",WEISSENBACH,Katharina,Evangelical,1858-01-19,Neu Schowe,NA,NA,NA,1858-01-20,NA,Weissenbach Jakob,Nehlich Susanna,back,3916.6,NA,TRUE
 3942,1,marriage,1875-06-27,"WITN Jakob Welker, Daniel Pataki","Jakob Welker, Daniel Pataki",PATAKI,Elisabetha,NA,ABT 1856,NA,NA,NA,NA,NA,NA,Pataki Daniel,Ehebrech Sofia,back,2651.8,NA,TRUE
 3943,1,marriage,1878-02-03,Neu Schowe,"Peter Haller, Philipp Klein",HALLER,Elisabetha,Evangelical,1856-02-23,Neu Schowe,1882-08-27,Neu Schowe,1882-08-28,1856-02-23,NA,Haller Philipp,Hoffmann Margaretha,back,1033.5,NA,TRUE
@@ -4239,8 +4243,8 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 3995,1,marriage,NA,NA,NA,TIMPELFELD,Sofia,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3996,1,marriage,NA,NA,NA,LENZ,Katharina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3998,1,marriage,NA,NA,NA,KIRCHNER,Elisabetha,Evangelical,ABT 1810,NA,1880-04-21,Neu Schowe,1880-04-23,NA,NA,NA,NA,NA,NA,NA,FALSE
-3999,1,marriage,NA,NA,NA,FRITZINGER,Maria Margaretha,Evangelical,ABT 1812,NA,1866-07-04,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-4000,1,marriage,1849-11-25,Neu Schowe,"Michael Brücker, Nikolaus Haller",WEBER,Dorothea,NA,ABT 1833,Bulkes,1880-10-25,Neu Schowe,NA,NA,NA,Weber Peter,Schelken Karolina,back,3813.1,NA,TRUE
+3999,1,marriage,NA,NA,NA,FRITZINGER,Maria Margaretha,Evangelical,ABT 1812,NA,1866-07-04,Neu Schowe,1866-07-06,NA,NA,NA,NA,NA,NA,NA,FALSE
+4000,1,marriage,1849-11-25,Neu Schowe,"Michael Brücker, Nikolaus Haller",WEBER,Dorothea,NA,ABT 1833,Bulkes,1880-10-25,Neu Schowe,1880-10-27,NA,NA,Weber Peter,Schelken Karolina,back,3813.1,NA,TRUE
 4001,1,marriage,1849-12-04,Neu Schowe,"Karl Petri, Peter Weiss",WEINZ,Christina,NA,NA,NA,NA,NA,NA,NA,NA,Weinz Johann,Peter Margaretha,back,3857.1,NA,TRUE
 4002,1,marriage,NA,NA,NA,CHRIST,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4003,1,marriage,1863-08-25,Neu Schowe,"Gottfried Kruttschnitt, Georg Sohl",SCHMIDT,Rosina,Evangelical,ABT 1843,Neu Schowe,1872-08-13,Alt Schowe,1872-08-14,NA,NA,Schmidt Philipp Jakob,Kruttschnitt Sofia,back,3127.2,NA,TRUE
@@ -4323,7 +4327,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 4073,1,marriage,NA,NA,NA,FINK,Maria,NA,ABT 1870,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4074,1,marriage,NA,NA,NA,RÖDER,Magdalena,NA,ABT 1891,NA,1946-07-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4075,1,marriage,NA,NA,NA,ANSCHÜTZ,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-4070,1,marriage,NA,NA,NA,SCHNEIDER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+4076,1,marriage,NA,NA,NA,SCHNEIDER,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4077,1,marriage,1848-03-07,Neu Schowe,"Philipp Sauer, Philipp Schneider",SAUER,Margaretha,Evangelical,ABT 1829,NA,1889-08-25,Neu Schowe,1889-08-26,NA,NA,Sauer Jakob,Sohl Julianna,back,2978.1,NA,TRUE
 4079,1,marriage,NA,NA,NA,FESS,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4081,1,marriage,1873-12-20,Neu Schowe,"Ludwig Hetzel, Adam Hetzel",HETZEL,Salomea,Evangelical,1850-08-11,Neu Schowe,NA,NA,NA,1850-08-12,NA,Hetzel Christian,Hobler Elisabetha,back,1494.2,NA,TRUE
@@ -4347,11 +4351,11 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 4098,1,marriage,NA,NA,NA,EPPLER,Elisabetha,NA,1909-10-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4099,1,marriage,1920-11-25,"Cuyahoga, OH",NA,HEINZ,Elisabetha,NA,ABT 1901,NA,NA,NA,NA,NA,NA,Heinz Peter,Häuser Elisabetha # siehe Auswanderer nach USA,back,1403.2,NA,TRUE
 4100,1,marriage,1859-12-26,Neu Schowe,"Adam Müller, Peter Schelk",LEHR,Barbara,NA,ABT 1837,Neu Schowe,1876-07-07,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-4100,2,marriage,1877-03-06,Neu Schowe,"Georg Müller, Georg Sohl",WEBER,Dorothea EV:,NA,ABT 1833,Bulkes,1880-10-25,Neu Schowe,NA,NA,NA,Weber Peter,Schelken Karolina,back,3813.1,NA,TRUE
+4100,2,marriage,1877-03-06,Neu Schowe,"Georg Müller, Georg Sohl",WEBER,Dorothea EV:,NA,ABT 1833,Bulkes,1880-10-25,Neu Schowe,1880-10-27,NA,NA,Weber Peter,Schelken Karolina,back,3813.1,NA,TRUE
 4101,1,marriage,NA,NA,NA,SCHMIDT,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4102,1,marriage,NA,NA,NA,DIETRICH,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4103,1,marriage,NA,NA,NA,RIES,Elisabetha,NA,ABT 1863,Torschau,ABT 1943,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-4104,1,marriage,NA,NA,NA,BLUMENSCHEIN,Katharina,Evangelical,ABT 1809,NA,1863-01-15,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+4104,1,marriage,NA,NA,NA,BLUMENSCHEIN,Katharina,Evangelical,ABT 1809,NA,1863-01-15,Neu Schowe,1863-01-18,NA,NA,NA,NA,NA,NA,NA,FALSE
 4105,1,marriage,1830-03-16,Neu Schowe,"Christian Ries, Heinrich Groß",ORSCHIED,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,2620.1,NA,TRUE
 4106,1,marriage,NA,NA,NA,RAPP,Margaretha,Evangelical,ABT 1821,NA,1861-01-19,Neu Schowe,1861-01-21,NA,NA,NA,NA,NA,NA,NA,FALSE
 4106,2,marriage,NA,NA,NA,RUß,Julianna,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -4441,7 +4445,7 @@ record_id,spouse_num,marriage_type,marriage_date,marriage_place,witnesses,surnam
 4181,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4182,1,divorced/informal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4183,1,marriage,NA,NA,NA,GEYER,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-4184,1,marriage,NA,NA,NA,HEDRICH,Gertrude,NA,NA,NA,NA,NA,NA,NA,NA,Hedrich Jakob,Gabel Maria Gertrud,back,1348.2,NA,FALSE
+4184,1,marriage,NA,NA,NA,HEDRICH,Gertrude,NA,NA,NA,NA,NA,NA,NA,NA,Hedrich Jakob,Gabel Maria Gertrud,back,1348.2,NA,TRUE
 4185,1,marriage,NA,NA,NA,WENTZ,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4186,1,marriage,NA,NA,NA,WEINZ,Elisabetha,Evangelical,ABT 1825,Neu Schowe,1882-03-14,Neu Schowe,1882-03-15,NA,NA,NA,NA,NA,NA,NA,FALSE
 4187,1,marriage,NA,NA,NA,BASTIAN,Magdalena,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
