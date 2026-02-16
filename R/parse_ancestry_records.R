@@ -8,6 +8,74 @@ library(tidyverse)
 library(stringi)
 
 # =============================================================================
+# LOAD REFERENCE DATA
+# =============================================================================
+
+#' Load occupation list from CSV file
+#' @return Character vector of German occupation names
+load_occupations <- function() {
+  occ_file <- "data/occupations.csv"
+  if (file.exists(occ_file)) {
+    occ_data <- read_csv(occ_file, show_col_types = FALSE)
+    return(occ_data$occupation)
+  } else {
+    # Fallback to hardcoded list if CSV not found
+    warning("Occupations CSV not found, using fallback list")
+    return(c(
+      "Bäcker",
+      "Böttcher",
+      "Buchbinder",
+      "Drechsler",
+      "Fleischer",
+      "Fischer",
+      "Gastwirt",
+      "Gärtner",
+      "Gerber",
+      "Glaser",
+      "Handwerker",
+      "Kaufmann",
+      "Knecht",
+      "Krämer",
+      "Küfer",
+      "Küfner",
+      "Küster",
+      "Landwirt",
+      "Lehrer",
+      "Maler",
+      "Maurer",
+      "Metzger",
+      "Müller",
+      "Notar",
+      "Pfarrer",
+      "Richter",
+      "Sattler",
+      "Schäfer",
+      "Schlosser",
+      "Schmied",
+      "Schmiedemeister",
+      "Schneider",
+      "Schreiner",
+      "Schulze",
+      "Schuhmacher",
+      "Schuster",
+      "Seiler",
+      "Stellmacher",
+      "Tagelöhner",
+      "Taglöhner",
+      "Tischler",
+      "Uhrmacher",
+      "Wagner",
+      "Weber",
+      "Wirt",
+      "Zimmermann"
+    ))
+  }
+}
+
+# Load occupations once at package/script load time
+OCCUPATIONS <- load_occupations()
+
+# =============================================================================
 # HELPER FUNCTIONS
 # =============================================================================
 
@@ -88,12 +156,37 @@ convert_date <- function(date_str) {
 #' @param text_vec Character vector of text lines
 #' @return Modified character vector
 apply_substitutions <- function(text_vec) {
+
+  # ==========================================================================
+  # EARLY PLACE TOKEN SUBSTITUTIONS
+  # Handle unambiguous place patterns first to simplify later parsing
+  # ==========================================================================
+
+
+  # "Kis Ker" is always a place (300+ occurrences)
+  text_vec <- str_replace_all(text_vec, "\\bKis Ker\\b", "PLAC_KISKER")
+
+  # US state pattern: "Word, OH" -> "PLAC_OH_Word"
+
+  # Any word followed by ", OH" is a place (1000+ occurrences)
+  # This handles: Cleveland, OH | Cuyahoga, OH | Lorain, OH etc.
+  text_vec <- str_replace_all(
+    text_vec,
+    "([A-ZÄÖÜa-zäöü]+),\\s*OH\\b",
+    "PLAC_OH_\\1"
+  )
+
+  # ==========================================================================
+  # EVENT TAGS
+  # ==========================================================================
+
   # Event tags - be careful with * as it's common
   # Allow optional space around event markers (but not newlines!)
   text_vec <- str_replace_all(text_vec, "(?<![a-zA-Z])\\*", " BIRT ")
   text_vec <- str_replace_all(text_vec, "(?<=\\d)\\.oo[ \\t]*", " NMARR ") # numbered marriage like 2.oo, 3.oo
+  text_vec <- str_replace_all(text_vec, "(?<=\\d)\\.o‐o", " NMARR_DIV ") # numbered divorced/informal like 2.o-o
   text_vec <- str_replace_all(text_vec, "(?<![0-9.])oo[ \\t]*", " MARR ") # regular marriage (allow no space after, but not newline)
-  text_vec <- str_replace_all(text_vec, "o‐o", " MARR_DIV ")
+  text_vec <- str_replace_all(text_vec, "o‐o", " MARR_DIV ") # divorced/informal marriage
   text_vec <- str_replace_all(text_vec, "~", " BAPM ")
   text_vec <- str_replace_all(text_vec, "†", " DEAT ")
   # Burial: "b." followed by date (digits). Must have space or † before, allows optional space after (not newline)
@@ -121,9 +214,9 @@ apply_substitutions <- function(text_vec) {
   text_vec <- str_replace_all(text_vec, " ref\\.", " RELI_REF ")
   text_vec <- str_replace_all(text_vec, " kath\\.", " RELI_CATH ")
 
-  # Witnesses and godparents
-  text_vec <- str_replace_all(text_vec, " TZ:", " WITN ")
-  text_vec <- str_replace_all(text_vec, " TP:", " GODP ")
+  # Witnesses and godparents - allow at start of line or after space
+  text_vec <- str_replace_all(text_vec, "(^|\\s)TZ:", "\\1WITN ")
+  text_vec <- str_replace_all(text_vec, "(^|\\s)TP:", "\\1GODP ")
 
   # Unknown name
   text_vec <- str_replace_all(text_vec, "\\bNN\\.", " UNKNOWN ")
@@ -210,25 +303,24 @@ parse_name_line <- function(line) {
     line_clean <- str_remove(line_clean, "\\s*RELI_CATH\\s*")
   }
 
-  # Common occupations
-  occupations <- c(
-    "Müller",
-    "Maurer",
-    "Landwirt",
-    "Tagelöhner",
-    "Schmied",
-    "Schuster",
-    "Schneider",
-    "Bäcker",
-    "Wagner",
-    "Zimmermann"
-  )
-
+  # Extract occupation - check with word boundary first, then handle concatenated cases
   occupation <- NA_character_
-  for (occ in occupations) {
-    if (str_detect(line_clean, paste0("\\b", occ, "\\b"))) {
+
+  # Sort occupations by length (longest first) to avoid partial matches
+  sorted_occupations <- OCCUPATIONS[order(-nchar(OCCUPATIONS))]
+
+  for (occ in sorted_occupations) {
+    # First try with word boundary (e.g., "Stefan Landwirt" or "Stefan, Landwirt")
+    if (str_detect(line_clean, paste0("[,\\s]", occ, "(?=\\s|$|,)"))) {
       occupation <- occ
       line_clean <- str_remove(line_clean, paste0(",?\\s*", occ))
+      break
+    }
+    # Then try concatenated case (e.g., "StefanLandwirt" - occupation at end of a word)
+    # Match occupation at end of string or followed by whitespace
+    if (str_detect(line_clean, paste0("(?<=[a-zäöüß])", occ, "(?=\\s|$)"))) {
+      occupation <- occ
+      line_clean <- str_remove(line_clean, paste0("(?<=[a-zäöüß])", occ))
       break
     }
   }
@@ -268,6 +360,68 @@ parse_name_line <- function(line) {
   )
 }
 
+#' Decode place tokens back to readable place names
+#' @param place Place string possibly containing tokens
+#' @return Decoded place name
+decode_place_token <- function(place) {
+  if (is.na(place) || place == "") {
+    return(NA_character_)
+  }
+
+  # Handle PLAC_KISKER
+  if (place == "PLAC_KISKER") {
+    return("Kis Ker")
+  }
+
+  # Handle PLAC_OH_* tokens (e.g., PLAC_OH_Cleveland -> Cleveland, OH)
+  if (str_detect(place, "^PLAC_OH_")) {
+    city <- str_remove(place, "^PLAC_OH_")
+    return(paste0(city, ", OH"))
+  }
+
+  # Handle standard place abbreviations
+  if (place == "PLAC_NS") {
+    return("Neu Schowe")
+  }
+  if (place == "PLAC_AS") {
+    return("Alt Schowe")
+  }
+
+  # Return as-is if no token found
+  place
+}
+
+#' Extract place from a text section, handling place tokens
+#' @param section Text section to extract place from
+#' @param after_date If TRUE, look for place after a date pattern
+#' @return Decoded place name or NA
+extract_place <- function(section, after_date = TRUE) {
+  if (is.na(section)) {
+    return(NA_character_)
+  }
+
+
+  # First check for place tokens (most reliable)
+  place_token <- str_extract(section, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
+  if (!is.na(place_token)) {
+    return(decode_place_token(place_token))
+  }
+
+  # Fall back to pattern matching for non-tokenized places
+  if (after_date) {
+    # Place after a year
+    place <- str_extract(
+      section,
+      "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/,\\-\\s]+(?=\\s+BURI|\\s+BAPM|\\s+\\(|\\s*$)"
+    )
+    if (!is.na(place)) {
+      return(str_squish(place))
+    }
+  }
+
+  NA_character_
+}
+
 #' Extract events from a text line
 #' @param line Text line with event tags
 #' @return List of events with type, date, place
@@ -285,15 +439,7 @@ extract_events <- function(line) {
         birth_section,
         "(ABT\\s+)?\\d{1,2}\\.\\d{2}\\.\\d{4}|(ABT\\s+)?\\d{4}|(ABT\\s+)?\\.\\d{2}\\.\\d{4}|[A-Za-zä]+\\s+\\d{4}"
       )
-      place <- str_extract(birth_section, "PLAC_(NS|AS)")
-      place <- case_when(
-        place == "PLAC_NS" ~ "Neu Schowe",
-        place == "PLAC_AS" ~ "Alt Schowe",
-        TRUE ~ str_extract(
-          birth_section,
-          "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/\\-]+(?=\\s|$)"
-        )
-      )
+      place <- extract_place(birth_section, after_date = TRUE)
       events$birth <- list(
         date = convert_date(str_squish(date_raw %||% "")),
         place = place
@@ -312,14 +458,48 @@ extract_events <- function(line) {
         death_section,
         "(ABT\\s+|BEF\\s+)?\\d{1,2}\\.\\d{2}\\.\\d{4}|(ABT\\s+|BEF\\s+)?\\d{4}"
       )
-      place <- str_extract(death_section, "PLAC_(NS|AS)")
-      place <- case_when(
-        place == "PLAC_NS" ~ "Neu Schowe",
-        place == "PLAC_AS" ~ "Alt Schowe",
-        TRUE ~ str_extract(
+
+      # Extract place - check for tokens first, then patterns
+      place_token <- str_extract(death_section, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
+      if (!is.na(place_token)) {
+        place <- decode_place_token(place_token)
+      } else {
+        # Place after a date (year)
+        place <- str_extract(
           death_section,
           "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/,\\-\\s]+(?=\\s+BURI|\\s+\\(|$)"
         )
+        if (is.na(place) && is.na(date_raw)) {
+          # Place with no date - extract text after DEAT that looks like a place name
+          place <- str_extract(
+            death_section,
+            "(?<=DEAT\\s)[A-ZÄÖÜa-zäöü][A-ZÄÖÜa-zäöü/,\\-\\s]*(?=\\s*$)"
+          )
+        }
+        if (!is.na(place)) {
+          place <- str_squish(place)
+        }
+      }
+
+      age <- extract_age_at_death(death_section)
+      events$death <- list(
+        date = convert_date(str_squish(date_raw %||% "")),
+        place = place,
+        age_years = age$years,
+        age_months = age$months,
+        age_days = age$days
+      )
+    }
+  }
+          death_section,
+          "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/,\\-\\s]+(?=\\s+BURI|\\s+\\(|$)"
+        ),
+        # Place with no date - extract text after DEAT that looks like a place name
+        is.na(date_raw) ~ str_extract(
+          death_section,
+          "(?<=DEAT\\s)[A-ZÄÖÜa-zäöü][A-ZÄÖÜa-zäöü/,\\-\\s]*(?=\\s*$)"
+        ),
+        TRUE ~ NA_character_
       )
       age <- extract_age_at_death(death_section)
       events$death <- list(
@@ -410,17 +590,13 @@ split_into_records <- function(file_path) {
 
 #' Parse a single record into structured data
 #' @param record List with record_id and raw_text
-#' @return List with parsed record data, or NULL for empty/deleted records
+#' @return List with parsed record data, or NULL for empty records
 parse_record <- function(record) {
   record_id <- record$record_id
   text <- record$raw_text
 
-  # Check for empty/deleted record (including typo variant "Korektur")
-  # Return NULL to exclude from all output
-  if (
-    str_detect(text, regex("nach Kor+ektur unbesetzt", ignore_case = TRUE)) ||
-      str_squish(text) == ""
-  ) {
+  # Check for empty record
+  if (str_squish(text) == "") {
     return(NULL)
   }
 
@@ -496,7 +672,11 @@ parse_record <- function(record) {
 
     # Handle child line (starts with digit followed by period)
     # Allow optional space after period (e.g., "6. Name" or "6.Name")
-    if (str_detect(line, "^\\d+\\.\\s?[A-ZÄÖÜa-zäöü]")) {
+    # Exclude lines that are numbered spouse markers (e.g., "2. MARR_DIV" or "2. MARR")
+    if (
+      str_detect(line, "^\\d+\\.\\s?[A-ZÄÖÜa-zäöü]") &&
+        !str_detect(line, "^\\d+\\.\\s*MARR")
+    ) {
       # Save previous child if exists
       if (!is.null(current_child)) {
         result$children[[length(result$children) + 1]] <- current_child
@@ -603,11 +783,11 @@ parse_record <- function(record) {
       next
     }
 
-    # Handle numbered remarriage line for primary person (like "2.oo" or "3.oo")
-    # After substitution, these become "2 NMARR" or "3 NMARR"
+    # Handle numbered remarriage line for primary person (like "2.oo" or "3.oo" or "2.o-o")
+    # After substitution, these become "2 NMARR" or "3 NMARR" or "2 NMARR_DIV"
     # This can appear after children from a previous marriage, so we allow it
     # even when current_context == "child" (it switches context back to spouse)
-    if (str_detect(line, "^\\d+\\s*NMARR")) {
+    if (str_detect(line, "^\\d+\\s*NMARR(_DIV)?")) {
       # Save any pending child before switching to spouse context
       if (!is.null(current_child)) {
         result$children[[length(result$children) + 1]] <- current_child
@@ -618,9 +798,16 @@ parse_record <- function(record) {
       current_spouse_num <- marr_num
       current_context <- "spouse"
 
+      # Determine marriage type based on whether it's NMARR_DIV
+      marr_type <- ifelse(
+        str_detect(line, "NMARR_DIV"),
+        "divorced/informal",
+        "marriage"
+      )
+
       marr_info <- parse_marriage_line(line)
       result$spouses[[current_spouse_num]] <- c(
-        list(spouse_num = current_spouse_num, marriage_type = "marriage"),
+        list(spouse_num = current_spouse_num, marriage_type = marr_type),
         marr_info
       )
 
@@ -750,6 +937,46 @@ parse_record <- function(record) {
       next
     }
 
+    # Handle standalone godparent line (GODP on its own line after child entry)
+    if (str_detect(line, "^GODP\\s") && !is.null(current_child)) {
+      godparents <- str_remove(line, "^GODP\\s+")
+      if (is.null(current_child$baptism)) {
+        current_child$baptism <- list(
+          date = NA_character_,
+          godparents = godparents
+        )
+      } else {
+        current_child$baptism$godparents <- godparents
+      }
+      i <- i + 1
+      next
+    }
+
+    # Check for untagged informational lines that should be captured as notes
+    # Lines like "Wohnort in Schowe: ...", "Wohnort der Familie: ...", etc.
+    # These are lines that don't start with recognized tags or patterns
+    # AND contain recognizable note keywords (Wohnort, letzter, etc.)
+    if (
+      !str_detect(
+        line,
+        "^(BIRT|DEAT|BAPM|BURI|NOTE|MARR|NMARR|MARR_DIV|WITN|GODP|PLAC|RESI|Eltern:|<\\d+>|[A-ZÄÖÜ][A-ZÄÖÜßäöü\\.]*\\s+[A-ZÄÖÜa-zäöüß]|\\d+\\.\\s?[A-ZÄÖÜa-zäöü]|\\d+\\s*NMARR)"
+      ) &&
+        str_squish(line) != "" &&
+        !str_detect(line, "^\\d+\\s*$") &&
+        # Must contain note-like keywords to be treated as a note (not just names/continuation)
+        (str_detect(
+          line,
+          "(Wohnort|letzter|bekannter|Familie|Adresse|Beruf|Anmerkung|siehe|Haus|Gasse|Straße)"
+        ) ||
+          str_detect(line, "^[a-zäöü]"))
+    ) {
+      # Also capture lowercase continuation lines
+      # This is an untagged informational line - add as note
+      result$notes <- c(result$notes, str_squish(line))
+      i <- i + 1
+      next
+    }
+
     # Default: move to next line
     i <- i + 1
   }
@@ -771,9 +998,10 @@ parse_child_line <- function(line, child_num) {
 
   # Extract surname and given name
   # Pattern: Surname Given [religion] [events...]
+  # Allow periods in given name for middle initials (e.g., "Peter F.")
   name_match <- str_match(
     line,
-    "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß\\s]+?)(?=\\s+RELI|\\s+BIRT|\\s+DEAT|\\s+MARR|\\s+BAPM|$)"
+    "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß\\.\\s]+?)(?=\\s+RELI|\\s+BIRT|\\s+DEAT|\\s+MARR|\\s+BAPM|$)"
   )
   if (!is.na(name_match[1, 1])) {
     result$surname <- name_match[1, 2]
@@ -847,19 +1075,51 @@ parse_child_marriage_line <- function(line) {
       "Alt Schowe"
     )
   } else {
-    # Place is between MARR tag and either the date or the spouse name
-    # Format: "1 NMARR Beschka 12.11.1889 Feth Konrad > 655"
-    # or: "1 NMARR Neu Pasua Kauder Wilhelm > 1812" (no date)
+    # Place can be in different positions:
+    # Format 1: "1 NMARR Beschka 12.11.1889 Feth Konrad > 655" (place before date)
+    # Format 2: "MARR 02.04.1953 Cuyahoga, OH Geyer Johanna > 31" (place after date)
+    # Format 3: "1 NMARR Neu Pasua Kauder Wilhelm > 1812" (no date, place before name)
     after_marr <- str_remove(line, "^\\d*\\s*\\.?\\s*N?MARR(_DIV)?\\s*")
 
-    # Try to extract place before the date
     if (!is.na(date_match)) {
-      # Place is everything before the date
+      # Try to extract place before the date first
       place_text <- str_extract(
         after_marr,
         "^[^\\d]+(?=\\d{2}\\.\\d{2}\\.\\d{4})"
       )
-      result$marriage_place <- str_squish(place_text)
+      if (!is.na(place_text) && str_squish(place_text) != "") {
+        result$marriage_place <- str_squish(place_text)
+      } else {
+        # Place is after the date - extract text between date and spouse name
+        # Pattern: date place SpouseSurname SpouseGiven > ref
+        # Place can include commas and state abbreviations (e.g., "Cuyahoga, OH")
+        after_date <- str_remove(
+          after_marr,
+          "^(ABT\\s+|BEF\\s+|BET\\s+)?\\d{2}\\.\\d{2}\\.\\d{4}\\s*"
+        )
+        # Place ends where the spouse name begins - spouse surname starts with capital
+        # and is followed by given name. Place may contain commas, state abbreviations.
+        # Pattern: Place (may include ", ST") SpouseSurname SpouseGiven > ref
+        # Look for the pattern: word(s) possibly with comma, then Surname Given > ref
+        # The place ends at the last comma+space+2-letter-code before the name,
+        # or at the transition from lowercase/abbreviation to uppercase surname
+        place_name_match <- str_match(
+          after_date,
+          "^(.+?,\\s*[A-Z]{2})\\s+([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+)\\s*[><]"
+        )
+        if (!is.na(place_name_match[1, 1])) {
+          result$marriage_place <- str_squish(place_name_match[1, 2])
+        } else {
+          # Try simpler pattern: place without state abbreviation
+          place_name_match <- str_match(
+            after_date,
+            "^([A-ZÄÖÜa-zäöü,\\s]+?)\\s+([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+)\\s*[><]"
+          )
+          if (!is.na(place_name_match[1, 1])) {
+            result$marriage_place <- str_squish(place_name_match[1, 2])
+          }
+        }
+      }
     } else {
       # No date - place is everything before the spouse name (surname + given name before >)
       # Look for the name pattern at the end: Surname Given > ref
@@ -1023,7 +1283,7 @@ parse_person_line <- function(line) {
 #' @param parsed_records List of parsed records (may contain NULLs for empty records)
 #' @return List of data frames (persons, marriages, children)
 records_to_dataframes <- function(parsed_records) {
-  # Remove NULL entries (empty/deleted records marked "nach Korrektur unbesetzt")
+  # Remove NULL entries (empty records)
   parsed_records <- compact(parsed_records)
 
   # Primary persons table
@@ -1126,6 +1386,18 @@ records_to_dataframes <- function(parsed_records) {
       }
 
       # Base child info repeated for each marriage (or once if no marriages)
+      # Build note based on given_name containing Totgeburt (stillborn)
+      child_note <- NA_character_
+      if (
+        !is.null(ch$given_name) &&
+          str_detect(
+            ch$given_name %||% "",
+            regex("Totgeburt", ignore_case = TRUE)
+          )
+      ) {
+        child_note <- "Stillborn"
+      }
+
       base_info <- tibble(
         record_id = rec$record_id,
         child_num = ch$child_num %||% NA_integer_,
@@ -1144,7 +1416,8 @@ records_to_dataframes <- function(parsed_records) {
         godparents = ch$baptism$godparents %||% NA_character_,
         marital_status = ch$marital_status %||% NA_character_,
         ref_type = ch$ref_type %||% NA_character_,
-        ref = ch$ref %||% NA_character_
+        ref = ch$ref %||% NA_character_,
+        note = child_note
       )
 
       bind_cols(
@@ -1640,14 +1913,10 @@ parse_ancestry_file <- function(file_path) {
   message("Parsing records...")
   parsed <- map(records, parse_record, .progress = TRUE)
 
-  # Count and report excluded records (marked "nach Korrektur unbesetzt")
+  # Count and report excluded empty records
   n_excluded <- sum(sapply(parsed, is.null))
   if (n_excluded > 0) {
-    message(paste(
-      "Excluded",
-      n_excluded,
-      "empty records (nach Korrektur unbesetzt)"
-    ))
+    message(paste("Excluded", n_excluded, "empty records"))
   }
 
   message("Converting to data frames...")
