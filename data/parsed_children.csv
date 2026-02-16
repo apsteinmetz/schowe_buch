@@ -17,7 +17,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 9,2,Allgaier,Julianna,NA,ABT 1902,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1922-10-08,"Cuyahoga, OH",Sperzel Jakob,forward,3469,spouse,TRUE
 9,2,Allgaier,Julianna,NA,ABT 1902,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1942-10-15,NA,NA,forward,3534,spouse,TRUE
 9,3,Allgaier,Katharina,NA,1903-06-25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1925-06-13,"Cuyahoga, OH",Fechter Philipp,forward,621,spouse,TRUE
-9,4,Allgaier,Matthias,NA,1905-09-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1932-09-03,"Cuyahoga, OH Wilson",Thelma Florence,forward,10,child,TRUE
+9,4,Allgaier,Matthias,NA,1905-09-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1932-09-03,"Cuyahoga, OH",Wilson Thelma Florence,forward,10,child,TRUE
 11,1,Altner,Rosalia,NA,1836-09-13,Neu Schowe,NA,NA,NA,NA,NA,NA,1836-09-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 11,2,Altner,Franziskus Eduard,NA,1844-05,NA,1856-01-28,Neu Schowe,NA,NA,NA,1856-01-30,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 12,1,Alzner,Therese Hermine,NA,1902-09-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1920-11-27,Schässburg,Hetzel Fritz,forward,1534,spouse,TRUE
@@ -45,7 +45,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 26,7,Banyai,Jakob,NA,ABT 1901,Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 26,8,Banyai,Philipp,NA,1903-06-21,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Bauer Katharina,forward,29,child,TRUE
 26,9,Banyai,Christina,NA,1906-05-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Huik Daniel,forward,1628,spouse,TRUE
-27,1,Banyai,Johanna,NA,ABT 1916,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1939-03-25,NA,NA,forward,2363,spouse,TRUE
+27,1,Banyai,Johanna,NA,ABT 1916,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1939-03-25,"Cuyahoga, OH",NA,forward,2363,spouse,TRUE
 27,2,Banyai,Katharina,NA,1917-12-20,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1939-08-22,"Cuyahoga, OH",Kolbe Elroy,forward,1923,spouse,TRUE
 27,3,Banyai,Peter F.,NA,1924-01-30,"Cuyahoga, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1953-04-02,"Cuyahoga, OH",Geyer Johanna,forward,31,child,TRUE
 28,1,Banyai,Ludwig,NA,ABT 1921,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -100,8 +100,8 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 46,1,Bastian,Berta,NA,1892-12-22,Alt Schowe,1895-01-25,Neu Schowe,NA,NA,NA,1895-01-26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 46,2,Bastian,Katharina,NA,1892-02-02,Alt Schowe,1894-04-02,Neu Schowe,NA,NA,NA,1894-04-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 46,3,Bastian,Elisabetha,Evangelical,1895-02-25,Neu Schowe,NA,NA,NA,NA,NA,NA,1895-03-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-46,4,Bastian,Anna,NA,ABT 1897,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,1897,NA,1,1916-11-04,"Bastian Anna BIRT ABT 1897 MARR 04.11.1916 Cuyahoga, OH",Klein Adam,forward,1897,spouse,TRUE
-46,5,Bastian,Katharina,NA,1898-09-27,NA,1976-11-04,OH,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1917-02-10,NA,NA,NA,NA,NA,FALSE
+46,4,Bastian,Anna,NA,ABT 1897,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,1897,NA,1,1916-11-04,"Cuyahoga, OH",NA,forward,1897,spouse,TRUE
+46,5,Bastian,Katharina,NA,1898-09-27,NA,1976-11-04,OH,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1917-02-10,"Cuyahoga, OH",NA,NA,NA,NA,FALSE
 47,1,Batori,Nikolaus,NA,ABT 1868,Zilah,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1893-06-10,Neu Schowe,Pichler Maria,forward,48,child,TRUE
 49,1,Bauer,Katharina,Evangelical,ABT 1845,NA,1849-06-21,Neu Schowe,NA,NA,NA,1849-06-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 51,1,Bauer,Julianna,NA,1905-07-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1928-06-23,"Cuyahoga, OH",Scherer Michael,forward,3048,spouse,TRUE
@@ -123,9 +123,9 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 64,1,Bauer,Maria,NA,ABT 1920,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,851,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 64,2,Bauer,Theresia,NA,BET 1925,NA,1945-09-08,Lager Jarek,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 65,1,Bauer,Lilli,NA,ABT 1925,NA,1969-03-16,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-69,1,Baumert,Anna,NA,1917-04-21,NA,1996-06-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1940-05-18,NA,NA,NA,NA,NA,FALSE
+69,1,Baumert,Anna,NA,1917-04-21,NA,1996-06-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1940-05-18,"Cuyahoga, OH",NA,NA,NA,NA,FALSE
 70,1,Bechtel,Heinrich,NA,1889-09-15,Torschau,1980-11-06,"Ashtabula, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1910-04-17,"Cuyahoga, OH",Sperzel Katharina,forward,72,child,TRUE
-72,1,Bechtel,Peter,NA,1911-06-17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1934-07-21,NA,NA,forward,73,child,TRUE
+72,1,Bechtel,Peter,NA,1911-06-17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1934-07-21,"Cuyahoga, OH",NA,forward,73,child,TRUE
 74,1,Beck,Magdalena,Evangelical,1879-09-25,Katy/Syrmien,NA,NA,NA,NA,NA,NA,1879-09-26,"Michael Ziwich, Christina Ziwich",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 75,1,Beck,Magdalena,NA,ABT 1877,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1896-02-24,Alt Ker,Haller Peter,forward,1150,spouse,TRUE
 76,1,Beck,Helene,NA,1879-07-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Petschel Peter,forward,2701,spouse,TRUE
@@ -372,11 +372,11 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 172,6,Binder,Johann,NA,ABT 1904,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 172,7,Binder,Katharina,NA,1907-07-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Papke Hermann # siehe Auswanderer,nach USA,forward,2646,spouse,TRUE
 173,1,Binder,Katharina,NA,1900-08-24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Reidl Johann # siehe Auswanderer,nach USA,forward,2787,spouse,TRUE
-173,2,Binder,Johanna,NA,ABT 1903,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1924-04-10,"Cuyahoga, OH,OH",Schnur Peter,forward,3276,spouse,TRUE
+173,2,Binder,Johanna,NA,ABT 1903,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1924-04-10,"Cuyahoga, OH",NA,forward,3276,spouse,TRUE
 173,3,Binder,Jakob,NA,1910-05-31,NA,1990-10-08,"Huron, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-176,1,Bischof,Theresia,NA,ABT 1921,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1940-08-17,NA,NA,forward,597,spouse,TRUE
+176,1,Bischof,Theresia,NA,ABT 1921,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1940-08-17,"Cleveland, OH",NA,forward,597,spouse,TRUE
 177,1,Bischof,Christina,Evangelical,ABT 1848,Jarek,1848-11-06,Neu Schowe,NA,NA,NA,1848-11-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-178,1,Bissinger,Elisabetha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1849-02-04,Neu Schowe,Geyer Georg Jakob,forward,803,spouse,TRUE
+178,1,Bissinger,Elisabetha,NA,NA,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1849-02-04,Neu Schowe,Geyer Georg Jakob,forward,803,spouse,TRUE
 180,1,Bittermann,Jakob,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1850-11-24,Neu Schowe,Gutwein Elisabetha,forward,179,child,TRUE
 181,1,Bittlingmayer,Dorothea,NA,ABT 1864,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1886-02-21,Neu Werbas,Meder Andreas,forward,2371,spouse,TRUE
 181,1,Bittlingmayer,Dorothea,NA,ABT 1864,Feketitsch,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1886-06-27,Neu Schowe,Weinz Stefan,forward,3873,spouse,TRUE
@@ -505,7 +505,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 232,1,Borick,Samuel,NA,1895-02-14,Ratkovci/Ratkovac,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1925-06-06,"Cuyahoga, OH",Fechter Wilhelmina,forward,233,child,TRUE
 233,1,Borick,Viola,NA,ABT 1927,OH,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 235,1,Brand,Katharina Barbara,NA,ABT 1831,Kutzura,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1851-01-09,Neu Schowe,Weinz Jakob,forward,3862,spouse,TRUE
-236,1,Brauchler,Christina,NA,ABT 1895,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1913-09-28,"Cuyahoga, OH,, OH",Rusitschka Georg,forward,2948,spouse,TRUE
+236,1,Brauchler,Christina,NA,ABT 1895,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1913-09-28,"Cuyahoga, OH",NA,forward,2948,spouse,TRUE
 237,1,Braun,Peter,Evangelical,1862-06-28,Alt Schowe,NA,NA,NA,NA,NA,NA,1862-06-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 237,2,Braun,Johann,NA,ABT 1864,Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Berleth Philippina,forward,247,child,TRUE
 239,1,Braun,Gertrud,NA,ABT 1803,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1829-03-03,Neu Schowe,Schepp Georg,forward,3005,spouse,TRUE
@@ -661,8 +661,8 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 304,2,Brücker,Maria Magdalena,NA,1769-02-25,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,ABT 1790,Morgenstern Sebastian,forward,2460,spouse,TRUE
 304,3,NA,NA,NA,1771-03-17,Imsthal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,ABT 1793 Moser,Anna Maria,forward,310,child,TRUE
 304,4,NA,NA,NA,1774-01-14,Imsthal,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,ABT 1794 Matheis,Katharina Barbara,forward,311,child,TRUE
-306,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,back,266,NA,FALSE
-306,2,Brücker,Johann Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,back,275,NA,FALSE
+306,1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Kis Ker,NA,back,266,NA,FALSE
+306,2,Brücker,Johann Georg,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Kis Ker,NA,back,275,NA,FALSE
 306,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Diener Katharina Elisabetha,back,276,NA,FALSE
 306,4,NA,NA,NA,1807-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Urschel,Maria Anna,forward,317,child,TRUE
 306,4,NA,NA,NA,1807-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,Ludwig Sofia Barbara,NA,NA,NA,FALSE
@@ -979,10 +979,10 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 422,3,Burger,Eva,NA,1895-09-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1915-07-20,"Cuyahoga, OH",Heipp Jakob,forward,1430,spouse,TRUE
 422,4,Burger,Jakob,NA,1899-03-17,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1920-11-20,"Cuyahoga, OH",Isele Theresia,forward,425,child,TRUE
 422,5,Burger,Karl,NA,ABT 1903,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1825-01-26,"Cuyahoga, OH",Schlegel Verna,forward,426,child,TRUE
-425,1,Burger,Carl,NA,1921-08-28,OH,1977-09-01,"Geauga County, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+425,1,Burger,Carl,NA,1921-08-28,OH,1977-09-01,"County, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 425,2,Burger,Hilda,NA,ABT 1926,OH,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 425,3,Burger,Gertrude,NA,ABT 1932,OH,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-429,1,Busch,Maria,NA,1908-04-11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,3278,NA,1,1908-04-11,Busch Maria BIRT,NA,forward,3278,spouse,TRUE
+429,1,Busch,Maria,NA,1908-04-11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,3278,NA,1,1908-04-11,"Cuyahoga, OH",NA,forward,3278,spouse,TRUE
 430,1,Böhm,Daniel,Evangelical,1888-01-14,Neu Schowe,1888-02-29,Neu Schowe,NA,NA,NA,1888-03-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 431,1,Böhm,Martin,Evangelical,1863-09-07,Alt Schowe,NA,NA,NA,NA,NA,NA,1863-09-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 432,1,Böhm,Georg,NA,ABT 1841,Jarek,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1863-09-14,Neu Schowe,Welker Margaretha,forward,435,child,TRUE
@@ -1054,13 +1054,13 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 472,1,Dietrich,Margaretha,NA,ABT 1833,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1874-09-06,Neu Schowe,Krieger Ludwig,forward,2005,spouse,TRUE
 473,1,Dietrich,Karolina,NA,ABT 1834,Neudorf,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1858-11-28,Alt Ker,Hubing Philipp,forward,1625,spouse,TRUE
 473,1,Dietrich,Karolina,NA,ABT 1834,Neudorf,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1882-11-19,Alt Ker,Schmidt Andreas,forward,3137,spouse,TRUE
-474,1,Dietrich,Margaretha,NA,ABT 1866,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,212,NA,1,1893-06-22,Alt Schowe,NA,back,212,NA,FALSE
+474,1,Dietrich,Margaretha,NA,ABT 1866,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,back,212,NA,1,1893-06-22,Kis Ker,NA,back,212,NA,FALSE
 475,1,Dietrich,Margaretha,Evangelical,1853-11,Alt Ker,1861-07-04,Neu Schowe,NA,NA,NA,1861-07-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 476,1,Dietrich,Maria Elisabetha,NA,1849-12-07,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1867-11-17,Neu Schowe,Seil Philipp,forward,3368,spouse,TRUE
 476,2,Dietrich,Katharina,NA,ABT 1853,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1877-12-16,Neu Schowe,Bender Christian,back,143,NA,FALSE
 476,2,Dietrich,Katharina,NA,ABT 1853,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,NA,,Link Heinrich,forward,2288,spouse,TRUE
 476,3,Dietrich,Christian,Evangelical,ABT 1857,NA,1871-02-03,Alt Schowe,NA,NA,NA,1871-02-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-476,4,Dietrich,Samuel,NA,1858-12-08,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,479,NA,1,1858-12-08,Neu Schowe,NA,forward,479,child,TRUE
+476,4,Dietrich,Samuel,NA,1858-12-08,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,479,NA,1,1858-12-08,Kis Ker,NA,forward,479,child,TRUE
 476,5,Dietrich,Rosina,NA,ABT 1862,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,1770,NA,1,1882-03-12,Alt Schowe,NA,forward,1770,spouse,TRUE
 476,6,Dietrich,Christian,Evangelical,1872-02-04,Alt Schowe,NA,NA,NA,NA,NA,NA,1872-02-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 477,1,Dietrich,Johanna,NA,1868-04-15,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Bolz Heinrich,back,213,NA,FALSE
@@ -1198,7 +1198,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 565,1,Falkenstein,Philipp,NA,1938-02-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 566,1,Falkenstein,Susanna,NA,ABT 1856,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1885-01-11,Alt Ker,Schmidt Philipp,forward,3151,spouse,TRUE
 567,1,Fath,Katharina,NA,ABT 1908,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1928-05-12,"Cuyahoga, OH",Haller Heinrich,forward,1201,spouse,TRUE
-567,2,Fath,Sophia,NA,1910-09-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1934-06-02,NA,NA,NA,NA,NA,FALSE
+567,2,Fath,Sophia,NA,1910-09-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1934-06-02,"Cuyahoga, OH",Grumbach Johann,NA,NA,NA,FALSE
 568,1,Faul,Georg,NA,ABT 1843,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1867-04-22,Neu Schowe,Teschner Johanna,forward,569,child,TRUE
 569,1,Faul,Johanna,NA,1870-08-05,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1888-06-10,Neu Schowe,Schmoll Jakob,forward,3187,spouse,TRUE
 570,1,Faust,Katharina Elisabetha,Evangelical,1878-04-09,Neu Schowe,NA,NA,NA,NA,NA,NA,1878-04-10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1246,7 +1246,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 580,2,Febel,Heinrich,Reformed,1885-09-22,Neu Schowe,NA,NA,NA,NA,NA,NA,1885-09-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 580,3,Febel,Eva,NA,1887-09-11,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1912-10-03,"Cuyahoga, OH",Febel Philipp,forward,585,spouse,TRUE
 580,4,Febel,Philipp,NA,1889-06-19,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Häuser,Eva Katharina,forward,588,child,TRUE
-580,4,Febel,Philipp,NA,1889-06-19,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1922-03-11,NA,NA,NA,NA,NA,FALSE
+580,4,Febel,Philipp,NA,1889-06-19,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1922-03-11,"Cuyahoga, OH",Werner Christina,NA,NA,NA,FALSE
 580,5,Febel,Adam,NA,1892-03-05,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1915-07-04,"Cuyahoga, OH",Jung Susanna,forward,589,child,TRUE
 581,1,Febel,Elisabetha,Reformed,1880-12-01,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 581,2,Febel,Katharina,Reformed,1884-12-01,Neu Schowe,NA,NA,NA,NA,NA,NA,1884-12-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1263,7 +1263,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 583,4,Febel,Johann,Reformed,1889-01-04,Neu Schowe,NA,NA,NA,NA,NA,NA,1889-01-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 584,1,Febel,Jakob,NA,1909-01-15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Weinz Elisabetha,forward,594,child,TRUE
 586,1,Febel,Johanna,NA,1907-06-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Hetzel Friedrich,forward,1542,spouse,TRUE
-587,1,Febel,Adam,NA,1908-06-01,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1932-07-09,NA,NA,NA,NA,NA,FALSE
+587,1,Febel,Adam,NA,1908-06-01,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1932-07-09,"Cuyahoga, OH",Gutwein Magdalena,NA,NA,NA,FALSE
 587,2,Febel,Michael,NA,1912-04-24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Licht Elisabetha,forward,595,child,TRUE
 589,1,Febel,Jakob,NA,1916-03-20,NA,1916-04-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 589,2,Febel,Adam C.,NA,ABT 1918,OH,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1940-08-17,"Cuyahoga, OH",Bischof Theresia,forward,597,child,TRUE
@@ -1271,7 +1271,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 590,1,Febel,Anna,NA,ABT 1922,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 592,1,Febel,Michael,NA,1931-02-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,Febbo,Phyllis Ann,forward,600,child,TRUE
 594,1,Febel,Philipp,NA,1936-04-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-595,1,Febel,Theresia,NA,1936-04-02,NA,1998-07-31,"Middleburg Heigths, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+595,1,Febel,Theresia,NA,1936-04-02,NA,1998-07-31,"Heigths, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 595,2,Febel,Helene,NA,ABT 1938,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 596,1,Febel,Magdalena,NA,1936-04-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 596,2,Febel,Gerlinde,NA,1942-12-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1615,7 +1615,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 753,2,Geiss,Christian,NA,1919-09-26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1951-11-10,"Cuyahoga, OH",Weinz Philippina,forward,759,child,TRUE
 754,1,Geiss,Josef,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 754,2,Geiss,Helena,NA,1919-10-14,NA,2013-01-05,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-754,3,Geiss,Elisabetha Theresia,NA,1922-02-28,NA,1993-05-26,"Middleburg Heigths, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,FALSE
+754,3,Geiss,Elisabetha Theresia,NA,1922-02-28,NA,1993-05-26,"Heigths, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,NA,NA,FALSE
 755,1,Geiss,Jack,NA,ABT 1913,NA,1961-07-31,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 755,2,Geiss,Steven,NA,1920-03-24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1951-02-28,"Cleveland, OH",Walz Helene,forward,760,child,TRUE
 757,1,Geiss,Karolina,NA,1930-12-31,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -1710,7 +1710,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 792,2,Geyer,Magdalena,NA,1873-09-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1892-01-03,Neu Schowe,Geyer Johann,forward,827,spouse,TRUE
 792,3,Geyer,Stefan,Reformed,1875-09-23,Neu Schowe,NA,NA,NA,NA,NA,NA,1875-09-26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 792,4,Geyer,Jakob,NA,1882-05-17,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Haller Susanna,forward,834,child,TRUE
-792,4,Geyer,Jakob,NA,1882-05-17,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1921-12-24,NA,NA,NA,NA,NA,FALSE
+792,4,Geyer,Jakob,NA,1882-05-17,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1921-12-24,"Cuyahoga, OH",Filippi Magdalena,NA,NA,NA,FALSE
 792,5,Geyer,Christian,Reformed,1887-01-12,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 793,1,Geyer,Johann,NA,ABT 1773,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Haller Magdalena,forward,794,child,TRUE
 793,2,Geyer,Johann Jakob,NA,1791-04-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,ABT 1806 Wohl,Anna Elisabetha,forward,795,child,TRUE
@@ -1867,7 +1867,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 841,2,Geyer,Friedrich,NA,1924-11-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 841,3,Geyer,Elisabetha,NA,1937-08-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 842,1,Geyer,Adam,NA,ABT 1922,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-842,2,Geyer,Johanna,NA,1922-08-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1953-04-02,NA,NA,back,31,NA,FALSE
+842,2,Geyer,Johanna,NA,1922-08-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1953-04-02,"Cuyahoga, OH",NA,back,31,NA,FALSE
 843,1,Geyer,Jakob,NA,1926-12-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 845,1,Geyer,Theresia,NA,1927-07-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 846,1,Geyer,Heinrich,NA,1930-06-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2008,7 +2008,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 930,3,Gutwein,Michael,NA,1879-12-02,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Werner Christina,forward,937,child,TRUE
 931,1,Gutwein,Katharina,NA,ABT 1892,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,1718,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 933,1,Haller,Katharina,Reformed,1893-11-15,Alt Schowe,NA,NA,NA,NA,NA,NA,1893-03-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-933,2,Gutwein,Friedrich,NA,1895-11-30,NA,1957-11-10,"Geneva Ashtabula, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+933,2,Gutwein,Friedrich,NA,1895-11-30,NA,1957-11-10,"Ashtabula, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 933,3,Gutwein,Magdalena,NA,1911-09-26,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1932-07-09,"Cuyahoga, OH",Febel Adam,back,593,NA,FALSE
 934,1,Gutwein,Peter,NA,1901-08-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1925-06-06,"Cuyahoga, OH",Binder Christina,forward,942,child,TRUE
 934,2,Gutwein,Johann,NA,1902-11-10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Heinz Katharina,forward,943,child,TRUE
@@ -2018,7 +2018,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 939,2,Gutwein,Stefan,NA,1913-12-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Scherer Margaretha,forward,947,child,TRUE
 940,1,Gutwein,Jakob,NA,1925-04-29,"Warsaw, Indiana",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 941,1,Gutwein,Katharina,NA,1922-02-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Hetzel Willi,forward,1556,spouse,TRUE
-943,1,Gutwein,Johann,NA,1923-01-15,NA,2008-05-07,"North Olmsted, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+943,1,Gutwein,Johann,NA,1923-01-15,NA,2008-05-07,"Olmsted, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 943,2,Gutwein,Peter,NA,1929-02-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 944,1,Gutwein,Käthe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 944,2,Gutwein,Theresia,NA,1928-07-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2482,7 +2482,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1091,12,Haller,Totgeburt,NA,1883-07-24,Neu Schowe,1883-07-24,Neu Schowe,NA,NA,NA,1883-07-25,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 1091,13,Haller,Totgeburt,NA,1884-09-25,Neu Schowe,1884-09-25,Neu Schowe,NA,NA,NA,1884-09-25,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 1091,14,Haller,Jakob,NA,1885-07-07,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Treib Katharina,forward,1172,child,TRUE
-1091,14,Haller,Jakob,NA,1885-07-07,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1935-09-20,NA,NA,NA,NA,NA,FALSE
+1091,14,Haller,Jakob,NA,1885-07-07,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1935-09-20,"Cuyahoga, OH",Müller Rosina,NA,NA,NA,FALSE
 1091,15,Haller,Margaretha,NA,1887-09-25,Neu Schowe,1888-10-01,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1091,16,Haller,Totgeburt männlich,NA,1890-12-25,Neu Schowe,1890-12-25,Neu Schowe,NA,NA,NA,1890-12-25,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 1091,17,Haller,Totgeburt weiblich,NA,1890-01-08,Neu Schowe,1890-01-08,Neu Schowe,NA,NA,NA,1890-01-08,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2592,7 +2592,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1112,1,Haller,Michael,Reformed,1881-02-19,Neu Schowe,1883-01-11,Neu Schowe,NA,NA,NA,1883-01-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1113,1,Haller,Jakob,NA,1881-09-10,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,1163,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1113,2,Haller,Friedrich,NA,1884-01-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1906-01-15,"Cuyahoga, OH",Rupp Margaretha,forward,1169,child,TRUE
-1113,2,Haller,Friedrich,NA,1884-01-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1921-07-25,NA,NA,NA,NA,NA,FALSE
+1113,2,Haller,Friedrich,NA,1884-01-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1921-07-25,"Cuyahoga, OH",Rikar Philippina,NA,NA,NA,FALSE
 1113,3,Haller,Johann,Evangelical,1886-09-19,Neu Schowe,1886-09-30,Neu Schowe,NA,NA,NA,1886-10-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1114,1,Haller,Katharina,Evangelical,1876-08-16,Neu Schowe,1876-08-30,Neu Schowe,NA,NA,NA,1876-09-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1114,2,Haller,Elisabetha,Evangelical,1881-07-20,Neu Schowe,1881-08-15,Neu Schowe,NA,NA,NA,1881-08-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -2667,7 +2667,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1140,1,Haller,Magdalena Margaretha,Evangelical,1889-11-17,Alt Schowe,1889-12-20,Neu Schowe,NA,NA,NA,1889-12-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1140,2,Haller,Jakob,NA,1891-02-19,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1911-08-05,"Cuyahoga, OH",Weber Theresia,forward,1185,child,TRUE
 1140,3,Haller,Philipp,NA,1894-05-26,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1915-07-28,"Cuyahoga, OH",Horvath Margaretha,forward,1192,child,TRUE
-1140,3,Haller,Philipp,NA,1894-05-26,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1919-11-08,NA,NA,NA,NA,NA,FALSE
+1140,3,Haller,Philipp,NA,1894-05-26,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1919-11-08,"Cuyahoga, OH",Nausner Martha,NA,NA,NA,FALSE
 1141,1,Haller,Katharina,Reformed,1894-07-30,Alt Schowe,NA,NA,NA,NA,NA,NA,1894-08-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1142,1,Haller,Katharina,NA,ABT 1898,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Heipp Christian,forward,1431,spouse,TRUE
 1143,1,Haller,Christina,NA,1892-02-08,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Geyer UNKNOWN,back,788,NA,FALSE
@@ -3238,7 +3238,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1420,7,Heipp,Magdalena,Reformed,1888-03-14,Neu Schowe,1890-01-12,Neu Schowe,NA,NA,NA,1890-11-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1420,8,Heipp,Johann,NA,1889-08-05,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1909-06-01,"Cuyahoga, OH",Dewald Katharina,forward,1429,child,TRUE
 1420,9,Heipp,Jakob,NA,1892-12-11,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1915-07-20,"Cuyahoga, OH",Burger Eva,forward,1430,child,TRUE
-1420,9,Heipp,Jakob,NA,1892-12-11,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1916-07-02,NA,NA,NA,NA,NA,FALSE
+1420,9,Heipp,Jakob,NA,1892-12-11,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1916-07-02,"Cuyahoga, OH",Huber Elisabetha,NA,NA,NA,FALSE
 1420,10,Heipp,Christian,NA,1896-01-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Haller Katharina,forward,1431,child,TRUE
 1420,10,Heipp,Christian,NA,1896-01-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,UNKNOWN Sofia,NA,NA,NA,FALSE
 1421,1,Heipp,Katharina,NA,ABT 1858,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1879-11-23,Neu Schowe,Werner Wilhelm,forward,4011,spouse,TRUE
@@ -3545,7 +3545,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1540,1,Hetzel,Johann,NA,ABT 1919,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1540,2,Hetzel,Michael,NA,ABT 1921,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1540,3,Hetzel,Eva,NA,ABT 1923,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Schmidt Peter,forward,3103,spouse,TRUE
-1542,1,Hetzel,Katharina,NA,1926-07-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1953-01-27,NA,NA,forward,4058,spouse,TRUE
+1542,1,Hetzel,Katharina,NA,1926-07-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1953-01-27,"Cuyahoga, OH",NA,forward,4058,spouse,TRUE
 1543,1,Hetzel,Karolina,NA,1928-03-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1543,2,Hetzel,Hedwig,NA,1936-06-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1543,3,Hetzel,Helmut,NA,1936-06-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3746,7 +3746,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1639,2,Häuser,Katharina,Evangelical,1888-03-18,Alt Schowe,NA,NA,NA,NA,NA,NA,1888-03-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1640,1,Häuser,Johann Friedrich Jakob,Reformed,1831-10-29,Neu Schowe,NA,NA,NA,NA,NA,NA,1831-11-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1641,1,Häuser,Karl,NA,1890-06-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Emich Margaretha,forward,1684,child,TRUE
-1641,1,Häuser,Karl,NA,1890-06-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1928-09-20,NA,NA,NA,NA,NA,FALSE
+1641,1,Häuser,Karl,NA,1890-06-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1928-09-20,"Cuyahoga, OH",Müller Johanna,NA,NA,NA,FALSE
 1643,1,Häuser,Jakob,Reformed,1869-04-28,Neu Schowe,NA,NA,NA,NA,NA,NA,1869-04-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1644,1,Häuser,Christian,Reformed,1866-05-13,Neu Schowe,NA,NA,NA,NA,NA,NA,1866-05-15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1645,1,Häuser,Johann Adam,Reformed,1829-12-01,Neu Schowe,NA,NA,NA,NA,NA,NA,3.12.1829,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -3882,7 +3882,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1682,1,Häuser,Eva,NA,1922-05-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1682,2,Häuser,Johann,NA,1924-11-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1683,1,Häuser,Elisabetha,NA,1925-06-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1686,1,Häuser,Theresia,NA,ABT 1926,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1952-01-19,NA,NA,back,691,NA,FALSE
+1686,1,Häuser,Theresia,NA,ABT 1926,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1952-01-19,"Cuyahoga, OH",NA,back,691,NA,FALSE
 1686,2,Häuser,Adam,Reformed,1933-06-20,NA,2000-08-23,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1689,1,Häuser,Christina,NA,1930-10-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1689,2,Häuser,Elisabetha,NA,1932-10-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -4114,7 +4114,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1778,1,Jung,Philipp,NA,1895-12-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Selig Elisabetha,forward,1787,child,TRUE
 1778,2,Jung,Elisabetha,NA,1904-03-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Lenz Michael,forward,2207,spouse,TRUE
 1779,1,Jung,Adam,NA,1902-07-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Harich Katharina,forward,1788,child,TRUE
-1780,1,Jung,Susanna,NA,1898-09-06,Katy / Syrmien,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1915-07-04,NA,NA,NA,NA,NA,FALSE
+1780,1,Jung,Susanna,NA,1898-09-06,Katy / Syrmien,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1915-07-04,"Cuyahoga, OH",Febel Adam,NA,NA,NA,FALSE
 1780,2,Jung,Theresia,NA,ABT 1901,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Grumbach Carl,NA,NA,NA,FALSE
 1781,1,Jung,Theresia,NA,1904-08-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Bauer Peter,back,65,NA,FALSE
 1782,1,Jung,Peter,NA,ABT 1905,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Heisse Margaretha,forward,1789,child,TRUE
@@ -4169,9 +4169,9 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 1820,2,Keck,Johann,NA,ABT 1910,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1820,3,Keck,Andreas,NA,ABT 1912,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1820,4,Keck,Helene,NA,ABT 1915,Michigan,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-1821,1,Keck,Philipp,NA,1885-11-15,"Pima, AZ, USA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1905-07-31,"1. 31.07.1905 Cuyahoga, OH",Ziegler Theresia,back,1820,NA,FALSE
-1821,1,Keck,Philipp,NA,1885-11-15,"Pima, AZ, USA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1929-12-02,NA,NA,NA,NA,NA,FALSE
-1821,2,Keck,Jakob,NA,ABT 1901,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1927-03-14,NA,NA,NA,NA,NA,FALSE
+1821,1,Keck,Philipp,NA,1885-11-15,"Pima, AZ, USA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1905-07-31,"Cuyahoga, OH",NA,back,1820,NA,FALSE
+1821,1,Keck,Philipp,NA,1885-11-15,"Pima, AZ, USA",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1929-12-02,"County, OH",NA,NA,NA,NA,FALSE
+1821,2,Keck,Jakob,NA,ABT 1901,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1927-03-14,"Cuyahoga, OH",NA,NA,NA,NA,FALSE
 1822,1,Keck,Johann Philipp,Evangelical,1843-09-04,Neu Schowe,1843-09-11,Neu Schowe,NA,NA,NA,1843-09-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1823,1,Keck,Magdalena,Evangelical,1836-08-23,Neu Schowe,NA,NA,NA,NA,NA,NA,1836-08-24,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 1823,2,Keck,Georg,Evangelical,ABT 1839,NA,1843-02-16,Alt Schowe,NA,NA,NA,1843-02-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -4614,7 +4614,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 2015,1,Krieger,Jakob,NA,1887-08-25,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Scherer Katharina,NA,NA,NA,FALSE
 2015,2,Krieger,Johann,Reformed,1893-02-07,Neu Schowe,1894-10-13,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2015,3,Krieger,Elisabetha,NA,1895-04-27,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Poth UNKNOWN,NA,NA,NA,FALSE
-2015,4,Krieger,Karolina,NA,ABT 1897,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1925-03-28,NA,NA,NA,NA,NA,FALSE
+2015,4,Krieger,Karolina,NA,ABT 1897,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1925-03-28,"Cuyahoga, OH",Steinmetz Peter,NA,NA,NA,FALSE
 2016,1,Krieger,Ludwig,NA,1884-10-31,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Teschner Katharina,NA,NA,NA,FALSE
 2016,2,Krieger,Elisabetha,NA,1888-01-23,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Müller Johann,NA,NA,NA,FALSE
 2016,3,Krieger,Katharina,NA,1891-02-17,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Krieger UNKNOWN,NA,NA,NA,FALSE
@@ -4627,7 +4627,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 2018,3,Krieger,Jakob,NA,1893-04-10,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Hoffmann Margaretha,forward,2030,child,TRUE
 2019,1,Krieger,Rosina,NA,1892-08-04,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1913-01-26,"Cuyahoga, OH",Lepold Jakob,forward,2237,spouse,TRUE
 2019,2,Krieger,Philipp,NA,1894-04-16,Neu Schowe,NA,NA,NA,NA,NA,NA,1894-04-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-2019,3,KRIEGER,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,2032,NA,1,1917-02-17,KRIEGER Johann MARR,NA,forward,2032,child,TRUE
+2019,3,KRIEGER,Johann,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,2032,NA,1,1917-02-17,"Cuyahoga, OH",NA,forward,2032,child,TRUE
 2020,1,Krieger,Margaretha,NA,1892-10-26,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Werth UNKNOWN,forward,4032,spouse,TRUE
 2021,1,Krieger,Jakob,NA,1907-05-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Müller Karolina,forward,2039,child,TRUE
 2023,1,Krieger,Heinrich,NA,1913-09-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Bolz Eva,forward,2043,child,TRUE
@@ -4707,7 +4707,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 2064,4,Kruttschnitt,Rosalia,Evangelical,1870-11-08,Alt Schowe,1871-08-05,Alt Schowe,NA,NA,NA,1871-08-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2066,1,Kruttschnitt,Elisabetha,Reformed,1885-06-07,Alt Schowe,1888-12-16,Alt Schowe,NA,NA,NA,1888-12-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2066,2,Kruttschnitt,Eva,Reformed,1886-07-25,Alt Schowe,NA,NA,NA,NA,NA,NA,1886-07-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-2066,3,Kruttschnitt,Peter,NA,1888-08-28,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1911-03-05,"Cuyahoga, OH Febel",Johanna Maria,forward,2071,child,TRUE
+2066,3,Kruttschnitt,Peter,NA,1888-08-28,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1911-03-05,"Cuyahoga, OH",Febel Johanna Maria,forward,2071,child,TRUE
 2066,4,Kruttschnitt,Katharina,Reformed,1890-08-03,Alt Schowe,NA,NA,NA,NA,NA,NA,1890-08-06,"Johann Harich, Johanna Hoffmann",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2066,5,Kruttschnitt,Elisabetha,Evangelical,1895-05-09,Alt Schowe,NA,NA,NA,NA,NA,NA,1895-05-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2067,1,Kruttschnitt,Christina,Evangelical,1885-07-25,Alt Schowe,NA,NA,NA,NA,NA,NA,1885-07-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -5119,7 +5119,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 2242,1,Licht,Philipp,NA,ABT 1861,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1884-11-02,Neu Schowe,Spiess Elisabetha,forward,2257,child,TRUE
 2243,1,Licht,Daniel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1848-02-20,Neu Schowe,Gutwein Katharina,back,2240,NA,FALSE
 2243,1,Licht,Daniel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1849-12-12,Neu Schowe,Schneider Magdalena,NA,NA,NA,FALSE
-2243,1,Licht,Daniel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1873-05-04,NA,NA,NA,NA,NA,FALSE
+2243,1,Licht,Daniel,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1873-05-04,Kis Ker,Federmann Katharina Elisabetha,NA,NA,NA,FALSE
 2244,1,Licht,Jakob,Reformed,1868-03-31,Alt Schowe,1871-04-26,Alt Schowe,NA,NA,NA,1871-04-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2244,2,Licht,Susanna,NA,1871-03-12,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1887-11-20,Neu Schowe,Pataki Daniel,forward,2656,spouse,TRUE
 2244,3,Licht,Elisabetha,Reformed,1875-09-19,Alt Schowe,1876-08-30,Alt Schowe,NA,NA,NA,1876-08-31,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -6293,7 +6293,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 2794,1,Rein,Elisabetha Barbara,NA,1913-07-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Harich Peter Ludwig,back,1270,NA,FALSE
 2795,1,Reinert,Wilhelm,NA,ABT 1850,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1875-06-06,Neu Schowe,Becker Eva,forward,2797,child,TRUE
 2796,1,Reinert,Rosalia,Evangelical,ABT 1838,Jarek,1849-11-18,Neu Schowe,NA,NA,NA,1849-11-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-2798,1,Reiss,Mary,NA,ABT 1888,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,3460,NA,1,1906-11-13,"Reiss Mary BIRT ABT 1888 MARR 13.11.1906 Cuyahoga, OH",Spengler Christian,forward,3460,spouse,TRUE
+2798,1,Reiss,Mary,NA,ABT 1888,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,forward,3460,NA,1,1906-11-13,"Cuyahoga, OH",NA,forward,3460,spouse,TRUE
 2799,1,Reister,Michael,NA,ABT 1938,NA,1945-07-19,Lager Jarek,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2800,1,Reitenbach,Katharina,NA,ABT 1865,Alt Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1884-03-11,Neu Schowe,Bender Philipp,forward,144,spouse,TRUE
 2801,1,Reitenbach,Totgeburt,NA,1881-07-11,Alt Schowe,1881-07-11,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -6396,7 +6396,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 2843,4,Riegel,Eva,Reformed,1876-09-20,Neu Schowe,NA,NA,NA,NA,NA,NA,1876-09-21,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 2843,5,Riegel,Johann,NA,1876-09-20,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Haller Katharina,forward,2851,child,TRUE
 2843,6,Riegel,Helene,Reformed,1880-02-01,Neu Schowe,NA,NA,NA,NA,NA,NA,1880-02-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-2843,7,Riegel,Jakob,NA,1883-01-26,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1908-03-21,NA,NA,NA,NA,NA,FALSE
+2843,7,Riegel,Jakob,NA,1883-01-26,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1908-03-21,"Cuyahoga, OH",Jung Elisabetha,NA,NA,NA,FALSE
 2843,8,Riegel,Totgeburt,NA,1886-05-23,Neu Schowe,1886-05-23,Neu Schowe,NA,NA,NA,1886-05-23,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 2844,1,Riegel,Magdalena,NA,1874-05-12,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1892-01-03,Neu Schowe,Kruttschnitt Peter,back,2068,NA,FALSE
 2844,2,Riegel,Josef,NA,1875-07-20,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Haller Katharina,forward,2849,child,TRUE
@@ -6850,7 +6850,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3039,2,Scherer,Philipp,NA,1897-05-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Schwepler Katharina,forward,3047,child,TRUE
 3040,1,Scherer,Theresia,NA,ABT 1915,NA,ABT 2014,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3040,2,Scherer,Philipp,NA,1904-03-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1927-03-05,"Cuyahoga, OH",Zeig Sofia,forward,3050,child,TRUE
-3040,2,Scherer,Philipp,NA,1904-03-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1946-06-08,NA,NA,NA,NA,NA,FALSE
+3040,2,Scherer,Philipp,NA,1904-03-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1946-06-08,"Medina, OH",Mcgaughey Flora,NA,NA,NA,FALSE
 3040,3,Scherer,Michael,NA,1905-11-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Koch Eva,forward,3052,child,TRUE
 3040,4,Scherer,Susanna,NA,1907-08-11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1924-11-29,"Cuyahoga, OH",Ziegler Nikolaus,forward,4127,spouse,TRUE
 3041,1,Scherer,Michael,NA,1900-12-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1928-06-23,"Cuyahoga, OH",Bauer Julianna,forward,3048,child,TRUE
@@ -7224,7 +7224,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3231,4,Schneider,Rosina,Evangelical,1882-07-05,Neu Schowe,1887-07-17,Neu Schowe,NA,NA,NA,1887-07-19,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3231,5,Schneider,Katharina,Evangelical,1884-10-09,Neu Schowe,NA,NA,NA,NA,NA,NA,1884-10-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3231,6,Schneider,Totgeburt,NA,1886-08-22,Neu Schowe,1886-08-22,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
-3231,7,Schneider,Daniel,NA,1887-07-01,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1935-05-04,"Cuyahoga, OH , OH",Ziegler Ethel,forward,3238,child,TRUE
+3231,7,Schneider,Daniel,NA,1887-07-01,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1935-05-04,"Cuyahoga, OH",NA,forward,3238,child,TRUE
 3231,8,Schneider,Philipp,Evangelical,1889-11-16,Neu Schowe,NA,NA,NA,NA,NA,NA,1889-11-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3231,9,Schneider,Totgeburt weiblich,NA,1895-02-02,Neu Schowe,1895-02-02,Neu Schowe,NA,NA,NA,1895-02-02,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 3236,1,Schneider,Johann,NA,1889-11-15,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Schneider Margaretha,forward,3239,child,TRUE
@@ -7325,7 +7325,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3272,1,Schnur,Elisabetha,NA,1903-07-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Schmidt UNKNOWN,back,3100,NA,FALSE
 3273,1,Schnur,Johann,NA,1903-12-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1925-02-07,"Cuyahoga, OH",Busch Maria,forward,3278,child,TRUE
 3273,2,Schnur,Adam,NA,1906-02-06,NA,1923-02-18,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3273,3,Schnur,Peter,NA,1914-02-20,NA,1999-05-14,"Mayfield Heights, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
+3273,3,Schnur,Peter,NA,1914-02-20,NA,1999-05-14,"Heights, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3277,1,Schnur,Anna,NA,1927-01-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3281,1,Schock,Charlotte,Evangelical,1873-11-09,Alt Schowe,NA,NA,NA,NA,NA,NA,11.3.1873,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3282,1,Schock,Heinrich,Evangelical,ABT 1846,NA,1848-08-31,Neu Schowe,NA,NA,NA,1848-09-01,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -7366,8 +7366,8 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3294,8,Schock,Karl,NA,1881-11-11,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Müller Elisabetha,forward,3298,child,TRUE
 3294,9,Schock,Ludwig,Evangelical,1884-01-20,Alt Schowe,1884-02-10,Alt Schowe,NA,NA,NA,1884-02-11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3294,10,Schock,Peter,NA,1885-03-30,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Schmoll Rosina,forward,3299,child,TRUE
-3294,10,Schock,Peter,NA,1885-03-30,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1917-12-10,NA,NA,NA,NA,NA,FALSE
-3294,10,Schock,Peter,NA,1885-03-30,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1924-02-04,NA,NA,NA,NA,NA,FALSE
+3294,10,Schock,Peter,NA,1885-03-30,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1917-12-10,"Cuyahoga, OH",Litz Magdalena,NA,NA,NA,FALSE
+3294,10,Schock,Peter,NA,1885-03-30,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1924-02-04,"Cuyahoga, OH",Filippi Magdalena,NA,NA,NA,FALSE
 3295,1,Schock,Totgeburt,NA,1881-09-01,Alt Schowe,1881-09-01,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 3295,2,Schock,Margaretha,Reformed,1882-08-31,Alt Schowe,NA,NA,NA,NA,NA,NA,1882-09-03,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3296,1,Schock,Margaretha,Reformed,1887-11-30,Alt Schowe,1889-12-08,Alt Schowe,NA,NA,NA,1889-12-10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -7412,7 +7412,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3334,2,Seebach,Andreas,Reformed,1856-01-08,Neu Schowe,1856-11-01,Neu Schowe,NA,NA,NA,1856-11-02,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3334,3,Seebach,Josef,Reformed,1857-08-16,NA,1858-03-26,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3334,4,Seebach,Katharina,Reformed,1859-01-07,Neu Schowe,NA,NA,NA,NA,NA,NA,1859-01-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3335,1,Sehne,Katharina,NA,ABT 1897,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,".02.1915 Cuyahoga, OH",Wolf Jakob,forward,4092,spouse,TRUE
+3335,1,Sehne,Katharina,NA,ABT 1897,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,"Cuyahoga, OH",NA,forward,4092,spouse,TRUE
 3336,1,Sehne,Johanna Magdalena,Evangelical,1847-12,NA,1856-08-06,Alt Schowe,NA,NA,NA,1856-08-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3336,2,Sehne,Katharina,Evangelical,1850-02-23,Neu Schowe,NA,NA,NA,NA,NA,NA,1850-02-26,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3336,3,Sehne,Katharina Sofia,Evangelical,1851-08-06,Neu Schowe,NA,NA,NA,NA,NA,NA,1851-08-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -7422,7 +7422,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3336,7,Sehne,Margaretha,Evangelical,1862-07-07,Alt Schowe,NA,NA,NA,NA,NA,NA,1862-07-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3336,8,Sehne,Maria,Evangelical,1867-02-10,Alt Schowe,NA,NA,NA,NA,NA,NA,1867-02-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3337,1,Sehne,Karolina,NA,ABT 1878,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Hetzel Heinrich,back,1520,NA,FALSE
-3338,1,Sehne,Philippina,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1850-11-17,Neu Schowe,Kaltenbach Kilian,back,1797,NA,FALSE
+3338,1,Sehne,Philippina,NA,NA,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1850-11-17,Neu Schowe,Kaltenbach Kilian,back,1797,NA,FALSE
 3338,2,Sehne,Andreas,NA,ABT 1827,Torschau,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1844-01-05,Neu Schowe,Schaller Sofia,forward,3342,child,TRUE
 3338,2,Sehne,Andreas,NA,ABT 1827,Torschau,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1867-02-10,Neu Schowe,Szahm Christina,NA,NA,NA,FALSE
 3339,1,Sehne,Dorothea,NA,1865-01-12,Kis Ker,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1886-11-21,Alt Ker,Eppler Johann,forward,542,spouse,TRUE
@@ -7915,7 +7915,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3551,1,Strung,Theresia,NA,1884-01-02,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Brücker Ludwig,back,370,NA,FALSE
 3551,2,Strung,Elisabetha,Reformed,1885-12-27,Neu Schowe,NA,NA,NA,NA,NA,NA,1885-12-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3551,3,Strung,Jakob,NA,1888-10-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Schnur Rosina,forward,3557,child,TRUE
-3551,3,Strung,Jakob,NA,1888-10-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1953-07-11,NA,NA,NA,NA,NA,FALSE
+3551,3,Strung,Jakob,NA,1888-10-18,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1953-07-11,"Cuyahoga, OH",Korell Elisabetha,NA,NA,NA,FALSE
 3551,4,Strung,Heinrich,Evangelical,1893-10-18,Neu Schowe,1895-01-19,Neu Schowe,NA,NA,NA,1895-01-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3552,1,Strung,Elisabetha,NA,1887-11-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1906-05-20,"Cuyahoga, OH",Klein Peter,back,1894,NA,FALSE
 3552,2,Strung,Katharina,Evangelical,1892-05-29,Neu Schowe,1893-10-20,Neu Schowe,NA,NA,NA,1893-10-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -8062,7 +8062,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3619,2,Tauss,Gottfried Stefan,Evangelical,1892-12-05,Neu Schowe,1893-01-15,Neu Schowe,NA,NA,NA,1893-01-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3619,3,Tauss,Elisabetha Margaretha,NA,1895-05-19,Neu Schowe,NA,NA,NA,NA,NA,NA,1895-05-23,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3620,1,Tauss,Peter,NA,1894-10-21,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1916-05-13,"Cuyahoga, OH",Kruttschnitt Magdalena,forward,3628,child,TRUE
-3620,2,Tauss,Katharina,NA,1898-02-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1918-04-13,NA,NA,NA,NA,NA,FALSE
+3620,2,Tauss,Katharina,NA,1898-02-02,"Cleveland, OH",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1918-04-13,"Cuyahoga, OH",Bräutigam Stefan,NA,NA,NA,FALSE
 3621,1,Tauss,Margaretha,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Sohl Peter,back,3442,NA,FALSE
 3621,2,Tauss,Totgeburt weiblich,NA,1895-01-20,Alt Schowe,1895-01-20,Alt Schowe,NA,NA,NA,1895-01-21,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 3622,1,Tauss,Michael,NA,1902-11-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Haller Anna,forward,3630,child,TRUE
@@ -8178,7 +8178,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3683,1,Tiefenthäler,Nikolaus,NA,1870-09-04,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1892-10-23,Neu Schowe,Ziwich Theresia,forward,3689,child,TRUE
 3683,2,Tiefenthäler,Jakob,Reformed,1877-06-04,Neu Schowe,NA,NA,NA,NA,NA,NA,1877-06-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3683,3,Tiefenthäler,Friedrich,NA,1885-08-14,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Stegh Dorothea,forward,3690,child,TRUE
-3683,3,Tiefenthäler,Friedrich,NA,1885-08-14,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1914-01-19,NA,NA,NA,NA,NA,FALSE
+3683,3,Tiefenthäler,Friedrich,NA,1885-08-14,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1914-01-19,"Cuyahoga, OH",Jendes Margaretha,NA,NA,NA,FALSE
 3684,1,Tiefenthäler,Ludwig,Reformed,1875-01-11,Neu Schowe,1875-02-27,Neu Schowe,NA,NA,NA,1875-02-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3685,1,Tiefenthäler,Totgeburt,NA,1880-06-08,Neu Schowe,1880-06-08,Neu Schowe,NA,NA,NA,1880-06-10,NA,NA,NA,NA,NA,Stillborn,NA,NA,NA,NA,NA,NA,NA,FALSE
 3685,2,Tiefenthäler,Elisabetha,NA,1882-07-07,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Febel Georg,back,584,NA,FALSE
@@ -8258,7 +8258,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3710,13,Trissler,Rosalia,Evangelical,1876-10-06,Neu Schowe,1877-02-08,Neu Schowe,NA,NA,NA,1877-02-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3710,14,Trissler,Johann,Evangelical,1878-12-18,Neu Schowe,NA,NA,NA,NA,NA,NA,1878-12-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3711,1,Trissler,Friedrich,NA,1859-02-08,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1879-05-27,Neu Schowe,Haller Katharina,forward,3715,child,TRUE
-3711,1,Trissler,Friedrich,NA,1859-02-08,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1894-04-10,NA,NA,NA,NA,NA,FALSE
+3711,1,Trissler,Friedrich,NA,1859-02-08,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1894-04-10,Kis Ker,Fechter Elisabetha,NA,NA,NA,FALSE
 3711,2,Trissler,Philipp Jakob,Evangelical,1860-12-11,Neu Schowe,1862-04-14,Neu Schowe,NA,NA,NA,NA,NA,"Philipp Sauer, Elisabetha Heil",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3711,3,Trissler,Johanna,Evangelical,1862-09-22,Neu Schowe,1863-01-25,Neu Schowe,NA,NA,NA,1863-01-27,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3711,4,Trissler,Ludwig,Evangelical,1865-03-07,Neu Schowe,1871-04-20,Neu Schowe,NA,NA,NA,1871-04-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -8371,7 +8371,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3777,1,Wallner,Barbara L.,NA,ABT 1931,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1951-09-08,"Cleveland, OH",Weiss Peter,forward,3914,spouse,TRUE
 3778,1,Walter,Margaretha,Evangelical,ABT 1851,NA,1856-11-05,Neu Schowe,NA,NA,NA,1856-11-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3778,2,Walter,Jakob,Evangelical,1859-05-11,Neu Schowe,NA,NA,NA,NA,NA,NA,1859-05-12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3779,1,Walter,Johann,NA,ABT 1910,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1938-07-02,"Cuyahoga, OH Lenhardt",Masria Susanna,forward,3787,child,TRUE
+3779,1,Walter,Johann,NA,ABT 1910,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1938-07-02,"Cuyahoga, OH",Lenhardt Masria Susanna,forward,3787,child,TRUE
 3780,1,Walter,Daniel,NA,1872-08-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Staudt Katharina,forward,3784,child,TRUE
 3781,1,Walter,Rosina,NA,1904-08-16,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1921-04-02,"Cuyahoga, OH",Ziegler Andreas,forward,4126,spouse,TRUE
 3782,1,Walter,Philipp,NA,ABT 1858,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1881-01-01,Neu Schowe,Heil Katharina,forward,3783,child,TRUE
@@ -8698,7 +8698,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3910,5,Weiss,Theresia,NA,1928-01-11,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3910,6,Weiss,Klara,NA,1932-08-13,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3910,7,Weiss,Julianna,NA,1935-04-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-3911,1,Weiss,Peter,NA,1927-01-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1951-09-08,NA,NA,forward,3914,child,TRUE
+3911,1,Weiss,Peter,NA,1927-01-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1951-09-08,"Cuyahoga, OH",NA,forward,3914,child,TRUE
 3912,1,Weiss,Heinrich,NA,ABT 1938,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3912,2,Weiss,Rosemarie,NA,ABT 1941,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3915,1,Jung,Jakob,Evangelical,1860-11-14,NA,NA,NA,NA,NA,NA,NA,1860-11-14,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -8791,7 +8791,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 3941,6,Welker,Peter,Reformed,1883-04-15,Alt Schowe,NA,NA,NA,NA,NA,NA,1883-04-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3942,1,Welker,Jakob,NA,1872-06-13,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1893-07-02,Neu Schowe,Licht Margaretha,forward,3947,child,TRUE
 3942,1,Welker,Jakob,NA,1872-06-13,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,Licht Magdalena,NA,NA,NA,FALSE
-3942,1,Welker,Jakob,NA,1872-06-13,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1922-01-18,NA,NA,NA,NA,NA,FALSE
+3942,1,Welker,Jakob,NA,1872-06-13,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,3,1922-01-18,"Cuyahoga, OH",Demand Elisabetha,NA,NA,NA,FALSE
 3942,2,Welker,Daniel,Reformed,1874-08-07,Neu Schowe,1876-05-21,Neu Schowe,NA,NA,NA,1876-05-22,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 3942,3,Welker,Katharina,NA,1876-12-24,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Hetzel Jakob,back,1525,NA,FALSE
 3942,4,Welker,Elisabetha,NA,1879-03-05,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Harich Johann,back,1264,NA,FALSE
@@ -9089,7 +9089,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 4049,1,Wessinger,Dorothea,NA,ABT 1816,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1837-11-28,Neu Schowe,Schneider Nikolaus,back,3209,NA,FALSE
 4051,1,Wiegand,Rosina,NA,ABT 1895,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1912-12-28,"Cuyahoga, OH",Scherer Georg,back,3046,NA,FALSE
 4051,2,Wiegand,Barbara,NA,1897-11-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Haller Heinrich,back,1190,NA,FALSE
-4051,3,Wiegand,Jakob,NA,1901-08-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1924-08-30,NA,NA,NA,NA,NA,FALSE
+4051,3,Wiegand,Jakob,NA,1901-08-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1924-08-30,"Cuyahoga, OH",NA,NA,NA,NA,FALSE
 4053,1,Wild,Johann,Evangelical,ABT 1894,NA,1894-12-26,Neu Schowe,NA,NA,NA,1894-12-28,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4054,1,Wilson,Thelma Florence,NA,1907-06-22,Elyria,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1932-09-03,Cleveland,Allgaier Matthias,back,10,NA,FALSE
 4055,1,Winter,Johann Heinrich,NA,1787-11-08,Neuwerbas,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1804-01-05,Neuwerbas,Brücker Julianna,forward,4056,child,TRUE
@@ -9165,7 +9165,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 4083,1,Pataki,Georg,Reformed,1881-12-20,Neu Schowe,1884-02-18,Neu Schowe,NA,NA,NA,1884-02-20,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4083,2,Wolf,Philipp,NA,1883-11-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,,Müller Elisabetha,forward,4089,child,TRUE
 4083,3,Wolf,Rosina,Reformed,1886-07-14,Neu Schowe,NA,NA,NA,NA,NA,NA,1886-07-18,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
-4083,4,Wolf,Jakob,NA,1888-12-17,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,".02.1915 Cuyahoga, OH",Sehne Katharina,forward,4092,child,TRUE
+4083,4,Wolf,Jakob,NA,1888-12-17,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,"Cuyahoga, OH",NA,forward,4092,child,TRUE
 4084,1,Wolf,Karolina,NA,1885-01-10,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Werthmann Simon,back,4041,NA,FALSE
 4085,1,Meister,Margaretha,NA,1884-04-10,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
 4085,2,Meister,Adam,Evangelical,1887-04-07,Neu Schowe,1887-07-29,Neu Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE
@@ -9245,7 +9245,7 @@ record_id,child_num,surname,given_name,religion,birth_date,birth_place,death_dat
 4125,1,Ziegler,Theresia,NA,ABT 1887,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1905-07-31,"Cuyahoga, OH",Keck Philipp,back,1820,NA,FALSE
 4125,1,Ziegler,Theresia,NA,ABT 1887,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1929-03-27,NA,Herz Peter,back,1449,NA,FALSE
 4125,2,Ziegler,Andreas,NA,1891-04-22,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,1914-06-21,NA,Kinkel Susanna,forward,4126,child,TRUE
-4125,2,Ziegler,Andreas,NA,1891-04-22,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1921-04-02,NA,NA,NA,NA,NA,FALSE
+4125,2,Ziegler,Andreas,NA,1891-04-22,Alt Schowe,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1921-04-02,"Cuyahoga, OH",Walter Rosina,NA,NA,NA,FALSE
 4125,3,Ziegler,Ethel,NA,ABT 1893,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,Schiller UNKNOWN,back,3067,spouse,TRUE
 4125,3,Ziegler,Ethel,NA,ABT 1893,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,1935-05-04,"Cuyahoga, OH",Schneider Daniel,back,3238,NA,FALSE
 4125,4,Ziegler,Sofia,NA,ABT 1899,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,FALSE

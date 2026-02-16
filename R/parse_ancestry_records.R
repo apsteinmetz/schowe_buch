@@ -156,12 +156,10 @@ convert_date <- function(date_str) {
 #' @param text_vec Character vector of text lines
 #' @return Modified character vector
 apply_substitutions <- function(text_vec) {
-
   # ==========================================================================
   # EARLY PLACE TOKEN SUBSTITUTIONS
   # Handle unambiguous place patterns first to simplify later parsing
   # ==========================================================================
-
 
   # "Kis Ker" is always a place (300+ occurrences)
   text_vec <- str_replace_all(text_vec, "\\bKis Ker\\b", "PLAC_KISKER")
@@ -400,7 +398,6 @@ extract_place <- function(section, after_date = TRUE) {
     return(NA_character_)
   }
 
-
   # First check for place tokens (most reliable)
   place_token <- str_extract(section, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
   if (!is.na(place_token)) {
@@ -460,7 +457,10 @@ extract_events <- function(line) {
       )
 
       # Extract place - check for tokens first, then patterns
-      place_token <- str_extract(death_section, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
+      place_token <- str_extract(
+        death_section,
+        "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)"
+      )
       if (!is.na(place_token)) {
         place <- decode_place_token(place_token)
       } else {
@@ -491,38 +491,17 @@ extract_events <- function(line) {
       )
     }
   }
-          death_section,
-          "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/,\\-\\s]+(?=\\s+BURI|\\s+\\(|$)"
-        ),
-        # Place with no date - extract text after DEAT that looks like a place name
-        is.na(date_raw) ~ str_extract(
-          death_section,
-          "(?<=DEAT\\s)[A-ZÄÖÜa-zäöü][A-ZÄÖÜa-zäöü/,\\-\\s]*(?=\\s*$)"
-        ),
-        TRUE ~ NA_character_
-      )
-      age <- extract_age_at_death(death_section)
-      events$death <- list(
-        date = convert_date(str_squish(date_raw %||% "")),
-        place = str_squish(place),
-        age_years = age$years,
-        age_months = age$months,
-        age_days = age$days
-      )
-    }
-  }
 
   # Burial
   if (str_detect(line, "BURI")) {
     buri_section <- str_extract(line, "BURI\\s+[^BAPM|MARR|NOTE]*")
     if (!is.na(buri_section)) {
       date_raw <- str_extract(buri_section, "\\d{1,2}\\.\\d{2}\\.\\d{4}")
-      place <- str_extract(buri_section, "PLAC_(NS|AS)")
-      place <- case_when(
-        place == "PLAC_NS" ~ "Neu Schowe",
-        place == "PLAC_AS" ~ "Alt Schowe",
-        TRUE ~ NA_character_
+      place_token <- str_extract(
+        buri_section,
+        "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)"
       )
+      place <- decode_place_token(place_token)
       events$burial <- list(
         date = convert_date(str_squish(date_raw %||% "")),
         place = place
@@ -1066,18 +1045,15 @@ parse_child_marriage_line <- function(line) {
   )
   result$marriage_date <- convert_date(date_match)
 
-  # Extract place - check for PLAC_ tags first
-  place <- str_extract(line, "PLAC_(NS|AS)")
-  if (!is.na(place)) {
-    result$marriage_place <- ifelse(
-      place == "PLAC_NS",
-      "Neu Schowe",
-      "Alt Schowe"
-    )
+  # Extract place - check for place tokens first (most reliable)
+  place_token <- str_extract(line, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
+  if (!is.na(place_token)) {
+    result$marriage_place <- decode_place_token(place_token)
   } else {
+    # Fall back to pattern matching for non-tokenized places
     # Place can be in different positions:
     # Format 1: "1 NMARR Beschka 12.11.1889 Feth Konrad > 655" (place before date)
-    # Format 2: "MARR 02.04.1953 Cuyahoga, OH Geyer Johanna > 31" (place after date)
+    # Format 2: "MARR 02.04.1953 PlaceToken Geyer Johanna > 31" (place token after date)
     # Format 3: "1 NMARR Neu Pasua Kauder Wilhelm > 1812" (no date, place before name)
     after_marr <- str_remove(line, "^\\d*\\s*\\.?\\s*N?MARR(_DIV)?\\s*")
 
@@ -1091,18 +1067,11 @@ parse_child_marriage_line <- function(line) {
         result$marriage_place <- str_squish(place_text)
       } else {
         # Place is after the date - extract text between date and spouse name
-        # Pattern: date place SpouseSurname SpouseGiven > ref
-        # Place can include commas and state abbreviations (e.g., "Cuyahoga, OH")
         after_date <- str_remove(
           after_marr,
           "^(ABT\\s+|BEF\\s+|BET\\s+)?\\d{2}\\.\\d{2}\\.\\d{4}\\s*"
         )
-        # Place ends where the spouse name begins - spouse surname starts with capital
-        # and is followed by given name. Place may contain commas, state abbreviations.
-        # Pattern: Place (may include ", ST") SpouseSurname SpouseGiven > ref
-        # Look for the pattern: word(s) possibly with comma, then Surname Given > ref
-        # The place ends at the last comma+space+2-letter-code before the name,
-        # or at the transition from lowercase/abbreviation to uppercase surname
+        # Try pattern: place with state abbreviation, then name
         place_name_match <- str_match(
           after_date,
           "^(.+?,\\s*[A-Z]{2})\\s+([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+)\\s*[><]"
@@ -1122,7 +1091,6 @@ parse_child_marriage_line <- function(line) {
       }
     } else {
       # No date - place is everything before the spouse name (surname + given name before >)
-      # Look for the name pattern at the end: Surname Given > ref
       place_match <- str_match(
         after_marr,
         "^(.*?)([A-ZÄÖÜa-zäöüß]+\\s+[A-ZÄÖÜa-zäöüß]+)\\s*>"
@@ -1135,10 +1103,16 @@ parse_child_marriage_line <- function(line) {
 
   # Extract spouse name - look for name pattern before cross-ref
   # Format: Surname Given [religion] > ref
-  # First clean the line: remove MARR prefix, place (if found), date, and PLAC_ tags
+  # First clean the line: remove MARR prefix, place tokens, date, and PLAC_ tags
   clean_line <- str_remove(line, "^\\d*\\s*\\.?\\s*N?MARR(_DIV)?\\s*")
 
-  # Remove place if it was found
+  # Remove place tokens
+  clean_line <- str_remove_all(
+    clean_line,
+    "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)\\s*"
+  )
+
+  # Remove place if it was found (non-tokenized)
   if (
     !is.null(result$marriage_place) &&
       !is.na(result$marriage_place) &&
@@ -1192,13 +1166,10 @@ parse_marriage_line <- function(line) {
   date_match <- str_extract(line, "\\d{2}\\.\\d{2}\\.\\d{4}")
   result$marriage_date <- convert_date(date_match)
 
-  place <- str_extract(line, "PLAC_(NS|AS)")
-  if (!is.na(place)) {
-    result$marriage_place <- ifelse(
-      place == "PLAC_NS",
-      "Neu Schowe",
-      "Alt Schowe"
-    )
+  # Check for place tokens first
+  place_token <- str_extract(line, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
+  if (!is.na(place_token)) {
+    result$marriage_place <- decode_place_token(place_token)
   } else {
     other_place <- str_extract(
       line,
@@ -1222,13 +1193,10 @@ parse_remarriage_line <- function(line) {
   date_match <- str_extract(line, "\\d{2}\\.\\d{2}\\.\\d{4}")
   result$remarriage_date <- convert_date(date_match)
 
-  place <- str_extract(line, "PLAC_(NS|AS)")
-  if (!is.na(place)) {
-    result$remarriage_place <- ifelse(
-      place == "PLAC_NS",
-      "Neu Schowe",
-      "Alt Schowe"
-    )
+  # Check for place tokens
+  place_token <- str_extract(line, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
+  if (!is.na(place_token)) {
+    result$remarriage_place <- decode_place_token(place_token)
   }
 
   # Extract the new spouse name (after "mit")
