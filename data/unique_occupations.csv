@@ -1,15 +1,20 @@
 occupation,occupation_english
 Bäcker,Baker
+Bauer,Builder
+Binder,Bookbinder
 Böttcher,Cooper
 Buchbinder,Bookbinder
-Drechsler,Turner/Lathe operator
+Drechsler,Lathe operator
 Fleischer,Butcher
+Fleischhauer, Butcher
 Fischer,Fisherman
 Gastwirt,Innkeeper
 Gärtner,Gardener
 Gerber,Tanner
 Glaser,Glazier
 Handwerker,Craftsman
+Händler,Trader
+Hutmacher,Hat Maker
 Kaufmann,Merchant
 Knecht,Farmhand
 Krämer,Grocer
@@ -21,6 +26,7 @@ Lehrer,Teacher
 Maler,Painter
 Maurer,Mason
 Metzger,Butcher
+Musickant,Musician
 Müller,Miller
 Notar,Notary
 Pfarrer,Pastor
@@ -39,9 +45,10 @@ Seiler,Ropemaker
 Stellmacher,Wheelwright
 Tagelöhner,Day laborer
 Taglöhner,Day laborer
+Tagwächter,Day watchman
 Tischler,Carpenter
 Uhrmacher,Watchmaker
 Wagner,Wainwright/Cartwright
 Weber,Weaver
-Wirt,Innkeeper
+Zensor,Censor
 Zimmermann,Carpenter

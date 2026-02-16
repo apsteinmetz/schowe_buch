@@ -3699,7 +3699,7 @@ oo Hetzel Magdalena > 374
 <282>
 BRÜCKER NN.
 oo
-TIEFENTHäLER Magdalena ref. > 3688.1
+TIEFENTHÄLER Magdalena ref. > 3688.1
 
 * 22.10.1891 NS ~ 27.10.1891 TP: Friedrich Tiefenthäler, Magdalena Schmidt
 † zw. 1972‐1980 München
@@ -7420,7 +7420,7 @@ FALKENSTEIN Valentin
 
 * 13.05.1875 Kis Ker
 oo
-EISENLöFFEL Katharina
+EISENLÖFFEL Katharina
 * 03.09.1878 Kis Ker
 1. Falkenstein Valentin * 13.03.1905 Kis Ker
 oo Bolz Elisabetha > 564
@@ -9630,7 +9630,7 @@ Wohnort in Schowe: Lange Gasse 65
 FUSSGÄNGER
 
 <723>
-FUSSGäNGER Traugott Benjamin
+FUSSGÄNGER Traugott Benjamin
 oo
 KAISER Luisa
 
@@ -9638,7 +9638,7 @@ KAISER Luisa
 oo 13.08.1893 NS Palfi Ethel > 724
 
 <724>
-FUSSGäNGER Wilhelm < 723.1
+FUSSGÄNGER Wilhelm < 723.1
 *um 1859 Kassa
 Eltern: Fussgänger Traugott Benjamin, Kaiser Luisa
 oo 13.08.1893 NS TZ: Georg Fussgänger, August Oexle
@@ -10010,7 +10010,7 @@ GEISS Josef *um 1861 † vor 1921
 oo
 
 
-EISENLöFFEL Katharina
+EISENLÖFFEL Katharina
 
 * 17.11.1865 Kis Ker †um 1946 OH
 # siehe Auswanderer nach USA
@@ -11072,7 +11072,7 @@ oo Werner NN. > 3991
 oo NN. Susanna > 835
 4. Geyer Michael ref. * 04.09.1885 NS † 28.07.1893 NS b. 29.07.1893 (†mit 8J)
 ~ 06.09.1885 TP: Michael Schmidt, Elisabetha Geyer
-5. Geyer Christina re. * 22.04.1888 NS † 03.05.1888 NS b. 05.05.1888 (†mit 13T)
+5. Geyer Christina ref. * 22.04.1888 NS † 03.05.1888 NS b. 05.05.1888 (†mit 13T)
 ~ 26.04.1888 TP: Heinrich Link, Christina Wenz
 
 <819>
@@ -11367,7 +11367,7 @@ Eltern: Geyer Georg, Müller Johanna
 Wohnort der Familie in Schowe: Lange Gasse 51
 letzter bekannter Wohnort: Lammersheim
 oo
-TIEFENTHäLER Rosina ref. > 3685.6
+TIEFENTHÄLER Rosina ref. > 3685.6
 * 03.12.1892 NS ~ 04.12.1892 TP: Peter Haller, Rosina Zöllner † zw. 1981‐1986 Lammersheim
 Eltern: Tiefenthäler Johann, Hetzel Julianna
 1. Geyer Jakob * 06.05.1913 oo Seil Karolina > 849
@@ -11512,7 +11512,7 @@ GEYER Josef
 * 14.08.1910 † 02.07.1944 gef. in Frankreich
 
 oo
-TIEFENTHäLER Katharina > 3690.1
+TIEFENTHÄLER Katharina > 3690.1
 *um 1918
 Eltern: Tiefenthäler Friedrich, Jendes Margaretha
 Wohnort der Familie in Schowe: Debrezin‐Gasse 73
@@ -17189,7 +17189,7 @@ oo 05.01.1862 NS Rusitschka Michael > 2945
 4. Harich Jakob ev. * .06.1853 † 23.01.1858 NS b. 25.01.1858 (†mit 4J7M)
 5. Harich Magdalena ev. * .06.1855 † 04.11.1856 NS b. 05.11.1856 (†mit 1J 5M)
 6. Harich Johannes ev. * 15.12.1856 NS ~ 16.12.1956 TP: Christian Heck (ref.),
-Magdalena Vinkovits (rk.)
+Magdalena Vinkovits (kath.)
 7. Harich Elisabetha ev. * 24.01.1859 AS † 13.08.1859 AS b. 15.08.1859 (†mit 7M)
 ~ 25.3.1859 TP: Wilhelm Werner, Katharina Ilg
 8. Harich Philipp * 22.07.1860 AS
@@ -18649,7 +18649,7 @@ ZÖLLNER Katharina ev.
 
 1. Heil Ludwig * 23.12.1838 NS
 oo 15.12.1861 NS Petri Christina > 1365
-2. Heil Johann Adam eb. * 01.04.1850 NS † 19.02.1863 NS b. 21.02.1863 (†mit 12J10M)
+2. Heil Johann Adam ev. * 01.04.1850 NS † 19.02.1863 NS b. 21.02.1863 (†mit 12J10M)
 ~ 02.04.1850 TP: Adam Heil, Elisabetha Schneider
 2.oo 28.11.1858 NS TZ: Adam Hetzel, Franziskus Heil
 EISENLÖFFEL Philippina < 523.1
@@ -23732,7 +23732,7 @@ Eltern: Ilg Johann, Geyer Magdalena
 Wohnort der Familie in Schowe:Lange Gasse 61
 letzter bekannter Wohnort der Familie: Großheppach, Kreis Waiblingen
 oo
-TIEFENTHäLER Theresia ref. > 3688.2
+TIEFENTHÄLER Theresia ref. > 3688.2
 * 30.10.1893 NS ~ 08.11.1893 TP: Jakob Tiefenthäler, Theresia Hütter † zw. 1981‐1986
 Großheppach
 Eltern: Tiefenthäler Jakob, Hütter Magdalena
@@ -25158,7 +25158,7 @@ oo
 EGNER Maria Elisabetha
 
 1. Keck Andreas ev. * 30.05.1837 AS ~ 01.06.1837 TP: Andreas Schmidt, Katharina Keck
-2. Keck Christian ev * 28.12.1843 NS ~ 29.12.1843 TP: Philipp Keck und Katharina
+2. Keck Christian ev. * 28.12.1843 NS ~ 29.12.1843 TP: Philipp Keck und Katharina
 2.oo 30.12.1849 NS TZ: Philipp Keck, Friedrich Egner
 KRON Elisabetha ev. > 2050.1
 *um 1825 Bulkes † 22.12.1850 NS b. 24.12.1850 (†mit 25J)
@@ -26586,7 +26586,7 @@ oo
 WELKER Margaretha < 3948.1
 *um 1908 † 08.10.1945 Lager Jarek (dort ist ihr Name mit Kolter angegeben)
 Eltern: Welker Philipp, Weinz Theresia
-Wohnort der Familie in Schowe: Jakobsdörfchen 2
+Wohnort der Familie in Schowe: Jakobs dörfchen 2
 
 1. Koller Christina
 2. Koller Theresia
@@ -26597,7 +26597,7 @@ KOLTER Georg
 oo
 ILG Katharina
 
-1. Kolter Adam v. * 13.12.1836 NS ~ 15.12.1836 TP: Adam Boltz, Katharina Klein
+1. Kolter Adam ev. * 13.12.1836 NS ~ 15.12.1836 TP: Adam Boltz, Katharina Klein
 
 <1935>
 KOLTER Anton, ref. Müller
@@ -27157,7 +27157,7 @@ KRIEGER Jakob > 2003.1
 Eltern: Krieger Jakob, Zöllner Barbara
 Eltern durch HNr. 84 ermittelt
 oo
-TIEFENTHäLER Elisabetha
+TIEFENTHÄLER Elisabetha
 
 1. Krieger Jakob ref. * 16.10.1867 NS † 20.12.1867 NS b. 21.12.1867 (†mit 2M)
 ~ 18.10.1867 TP: Nikolaus Tiefenthäler, Katharina Krieger
@@ -29048,7 +29048,7 @@ Lehr Barbara oo wieder 26.12.1859 NS Wächter Nikolaus > 4100
 
 
 <2122>
-LEHMANN Johann ev < 2119.4
+LEHMANN Johann ev. < 2119.4
 
 * 01.08.1850 NS ~ 02.08.1850 TP: Johann Sperzel, Elisabetha Lehmann
 Eltern: Lehmann Philipp, Lepold Margaretha
@@ -34444,7 +34444,7 @@ Eltern: Heinz Christian, Bauer Elisabetha
 
 4. Müller Christian ev. * 12.08.1870 AS † 24.10.1870 AS b. 26.10.1870 (†mit 2M)
 ~ 14.08.1870 TP: Adam Heiser, Susanna Müller
-5. Müller Johann eb. * 30.06.1873 AS † 21.07.1873 AS b. 22.07.1873 (†mit 20T)
+5. Müller Johann ev. * 30.06.1873 AS † 21.07.1873 AS b. 22.07.1873 (†mit 20T)
 ~ 30.06.1873 TP: Laurentius Krutschnitt, Katharina Becker
 6. Müller Katharina ev. * 30.06.1873 AS ~ 30.06.1873 TP: Laurentius Krutschnitt,
 Katharina Becker
@@ -47147,7 +47147,7 @@ SPIESS Johann < 3484.1
 Eltern: Spiess Jakob, Weber Magdalena
 Wohnort in Schowe: Alleegasse 25
 oo
-TIEFENTHäLER Katharina
+TIEFENTHÄLER Katharina
 * 24.01.1900
 letzter bekannter Wohnort mit Sohn Jakob: Rottenbuch, Kreis Schongau
 1. Spiess Jakob * 07.06.1924
@@ -48031,7 +48031,7 @@ oo 22.04.1883 NS Lenhardt Elisabetha > 3551
 Elisabetha Ries
 7. Strung Friedrich * 15.10.1865 NS
 oo 28.11.1886 NS Pataki Katharina > 3552
-8. Strung Peter eb. * 05.01.1868 NS † 06.01.1868 NS b. 08.01.1868 (†mit 2T)
+8. Strung Peter ev. * 05.01.1868 NS † 06.01.1868 NS b. 08.01.1868 (†mit 2T)
 ~ 05.01.1868 TP: Peter Jung, Elisabetha Ross
 9. Strung Heinrich * 11.01.1869 NS
 oo 24.04.1892 NS Wenz Christina > 3553
@@ -49666,7 +49666,7 @@ KOSSUTH Johanna
 *um 1809 † 03.02.1883 Neuwerbas
 aus Papio St. Martin
 
-3. Tessenyi Dezsö ev *um 1846 † 30.08.1849 NS b. 31.08.1849 (†mit 3 ½ J)
+3. Tessenyi Dezsö ev. *um 1846 † 30.08.1849 NS b. 31.08.1849 (†mit 3 ½ J)
 THALHEIMER
 
 <3667>
@@ -49980,7 +49980,7 @@ oo Ilg Johann < 1719
 oo Schwepler Magdalena > 3691
 
 <3689>
-TIEFENTHäLER Nikolaus ref. < 3683.1
+TIEFENTHÄLER Nikolaus ref. < 3683.1
 
 * 04.09.1870 NS ~ 05.09.1870 TP: Johann Finitzer, Elisabetha Weber † 14.03.1929 Cleveland, OH
 Eltern: Tiefenthäler Nikolaus, Krieger Elisabetha
@@ -49995,7 +49995,7 @@ Eltern: Ziwich Michael, Heinz Magdalena
 1. Tiefenthäler Totgeburt männlich * 02.08.1894 NS † 02.08.1894 NS b. 02.08.1894
 
 <3690>
-TIEFENTHäLER Friedrich ref. < 3683.3
+TIEFENTHÄLER Friedrich ref. < 3683.3
 * 14.08.1885 NS ~ 16.8.1885 TP: Friedrich Tiefenthäler, Elisabetha Haller † 06.04.1946 Lager Jarek
 Eltern: Tiefenthäler Nikolaus, Krieger Elisabetha
 Wohnort der Familie in Schowe: Debrezin‐Gasse 73
@@ -50013,7 +50013,7 @@ JENDES Margaretha
 oo Geyer Josef < 848
 
 <3691>
-TIEFENTHäLER Jakob < 3688.3
+TIEFENTHÄLER Jakob < 3688.3
 
 * 07.10.1895 † zw. 1968‐1972 Bad Schwalbach
 Eltern: Tiefenthäler Jakob, Hütter Magdalena
@@ -50654,7 +50654,7 @@ Katharina Wenz
 URSCHEL Michael
 † vor 1836
 oo
-PAUL Elisabetha e.
+PAUL Elisabetha ev.
 *um 1793 † 05.02.1868 NS b. 07.02.1868 (†mit 75J)
 
 1. Urschel Jakob
@@ -56697,7 +56697,7 @@ ZIWICH Philipp ev. < 4156.2
 * 22.03.1865 NS ~ 22.03.1865 TP: Heinrich Jung, Christina Lepold
 Eltern: Ziwich Philipp, Haller Magdalena
 oo 23.02.1888 Kis Ker
-EIDENMüLLER Katharina < 505.1
+EIDENMÜLLER Katharina < 505.1
 * 20.04.1869 Kis Ker † 07.10.1945 Lager Jarek
 Eltern: Eidenmüller Philipp adam, Schiffmann Friederike
 Wohnort der Familie in Schowe: Hauptgasse 16
