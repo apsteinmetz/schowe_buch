@@ -2,78 +2,263 @@
 # Schowe Ancestry Records Parser
 # =============================================================================
 # Parses German church ancestry records from persons.txt into structured data
+# Uses canonical lists for accurate extraction of names, places, occupations
 # =============================================================================
 
 library(tidyverse)
 library(stringi)
 
 # =============================================================================
-# LOAD REFERENCE DATA
+# LOAD CANONICAL REFERENCE DATA
 # =============================================================================
 
-#' Load occupation list from CSV file
+#' Load canonical given names from CSV
+#' @return Character vector of given names
+load_given_names <- function() {
+  file <- "data/unique_given_names.csv"
+  if (file.exists(file)) {
+    data <- read_csv(file, show_col_types = FALSE)
+    return(data$given_name)
+  }
+  warning("Given names CSV not found")
+  character(0)
+}
+
+#' Load canonical surnames from CSV
+#' @return Character vector of surnames (uppercase)
+load_surnames <- function() {
+  file <- "data/unique_surnames.csv"
+  if (file.exists(file)) {
+    data <- read_csv(file, show_col_types = FALSE)
+    return(data$surname)
+  }
+  warning("Surnames CSV not found")
+  character(0)
+}
+
+#' Load canonical place names from CSV
+#' @return Character vector of place names
+load_places <- function() {
+  file <- "data/unique_places.csv"
+  if (file.exists(file)) {
+    data <- read_csv(file, show_col_types = FALSE)
+    # Filter out invalid entries (dates, witnesses, etc.)
+    places <- data$place_name
+    # Remove entries that start with dates, ABT, WITN, GODP, etc.
+    places <- places[!is.na(places) & places != ""]
+    places <- places[!str_detect(places, "^(ABT|BEF|BET|WITN|GODP|\\.|\\d)")]
+    places <- places[!str_detect(places, "^(als |aus |der |von |während )")]
+    places <- places[!str_detect(places, "(Witwe|BIRT|MARR|#|siehe)")]
+    return(places)
+  }
+  warning("Places CSV not found")
+  character(0)
+}
+
+#' Load canonical occupations from CSV
 #' @return Character vector of German occupation names
 load_occupations <- function() {
-  occ_file <- "data/unique_occupations.csv"
+  file <- "data/unique_occupations.csv"
+  if (file.exists(file)) {
+    data <- read_csv(file, show_col_types = FALSE)
+    return(data$occupation)
+  }
+  # Fallback to old file location
+  occ_file <- "data/occupations.csv"
   if (file.exists(occ_file)) {
     occ_data <- read_csv(occ_file, show_col_types = FALSE)
     return(occ_data$occupation)
-  } else {
-    # Fallback to hardcoded list if CSV not found
-    warning("Occupations CSV not found, using fallback list")
-    return(c(
-      "Bäcker",
-      "Böttcher",
-      "Buchbinder",
-      "Drechsler",
-      "Fleischer",
-      "Fischer",
-      "Gastwirt",
-      "Gärtner",
-      "Gerber",
-      "Glaser",
-      "Handwerker",
-      "Kaufmann",
-      "Knecht",
-      "Krämer",
-      "Küfer",
-      "Küfner",
-      "Küster",
-      "Landwirt",
-      "Lehrer",
-      "Maler",
-      "Maurer",
-      "Metzger",
-      "Müller",
-      "Notar",
-      "Pfarrer",
-      "Richter",
-      "Sattler",
-      "Schäfer",
-      "Schlosser",
-      "Schmied",
-      "Schmiedemeister",
-      "Schneider",
-      "Schreiner",
-      "Schulze",
-      "Schuhmacher",
-      "Schuster",
-      "Seiler",
-      "Stellmacher",
-      "Tagelöhner",
-      "Taglöhner",
-      "Tischler",
-      "Uhrmacher",
-      "Wagner",
-      "Weber",
-      "Wirt",
-      "Zimmermann"
-    ))
   }
+  warning("Occupations CSV not found")
+  character(0)
 }
 
-# Load occupations once at package/script load time
+# Load all canonical lists once at script load time
+GIVEN_NAMES <- load_given_names()
+SURNAMES <- load_surnames()
+PLACES <- load_places()
 OCCUPATIONS <- load_occupations()
+
+# Create lookup sets for fast matching
+GIVEN_NAMES_SET <- set_names(rep(TRUE, length(GIVEN_NAMES)), GIVEN_NAMES)
+# Surnames stored uppercase, create both upper and title case versions
+SURNAMES_UPPER <- SURNAMES
+SURNAMES_TITLE <- str_to_title(SURNAMES)
+SURNAMES_SET <- set_names(
+  rep(TRUE, length(SURNAMES) * 2),
+  c(SURNAMES_UPPER, SURNAMES_TITLE)
+)
+PLACES_SET <- set_names(rep(TRUE, length(PLACES)), PLACES)
+OCCUPATIONS_SET <- set_names(rep(TRUE, length(OCCUPATIONS)), OCCUPATIONS)
+
+# Sort by length (longest first) for greedy matching
+GIVEN_NAMES_SORTED <- GIVEN_NAMES[order(-nchar(GIVEN_NAMES))]
+SURNAMES_SORTED <- unique(c(SURNAMES_UPPER, SURNAMES_TITLE))[
+  order(-nchar(unique(c(SURNAMES_UPPER, SURNAMES_TITLE))))
+]
+PLACES_SORTED <- PLACES[order(-nchar(PLACES))]
+OCCUPATIONS_SORTED <- OCCUPATIONS[order(-nchar(OCCUPATIONS))]
+
+message(paste(
+  "Loaded canonical lists:",
+  length(GIVEN_NAMES),
+  "given names,",
+  length(SURNAMES),
+  "surnames,",
+  length(PLACES),
+  "places,",
+  length(OCCUPATIONS),
+  "occupations"
+))
+
+# =============================================================================
+# CANONICAL MATCHING FUNCTIONS
+# =============================================================================
+
+#' Find a canonical surname in text (case-insensitive)
+#' @param text Text to search
+#' @return List with surname (uppercase) and position, or NULL if not found
+find_canonical_surname <- function(text) {
+  if (is.na(text) || text == "") {
+    return(NULL)
+  }
+
+  for (surname in SURNAMES_SORTED) {
+    # Create pattern that matches the surname with word boundaries
+    # Match both uppercase and title case versions
+    pattern <- paste0("\\b", surname, "\\b")
+    match <- str_locate(text, regex(pattern, ignore_case = FALSE))
+    if (!is.na(match[1, 1])) {
+      # Return the uppercase canonical form
+      matched_text <- str_sub(text, match[1, 1], match[1, 2])
+      canonical <- toupper(matched_text)
+      # Verify it's in our canonical list
+      if (canonical %in% SURNAMES_UPPER) {
+        return(list(
+          surname = canonical,
+          start = match[1, 1],
+          end = match[1, 2],
+          matched = matched_text
+        ))
+      }
+    }
+  }
+  NULL
+}
+
+#' Find a canonical given name in text
+#' @param text Text to search
+#' @param after_pos Start searching after this position (optional)
+#' @return List with given_name and position, or NULL if not found
+find_canonical_given_name <- function(text, after_pos = 0) {
+  if (is.na(text) || text == "") {
+    return(NULL)
+  }
+
+  search_text <- if (after_pos > 0) str_sub(text, after_pos + 1) else text
+  offset <- if (after_pos > 0) after_pos else 0
+
+  for (given in GIVEN_NAMES_SORTED) {
+    pattern <- paste0("\\b", fixed(given), "\\b")
+    # Use fixed matching for given names (exact match)
+    match <- str_locate(search_text, paste0("\\b", given, "\\b"))
+    if (!is.na(match[1, 1])) {
+      return(list(
+        given_name = given,
+        start = match[1, 1] + offset,
+        end = match[1, 2] + offset
+      ))
+    }
+  }
+  NULL
+}
+
+#' Find a canonical place in text
+#' @param text Text to search
+#' @return List with place and position, or NULL if not found
+find_canonical_place <- function(text) {
+  if (is.na(text) || text == "") {
+    return(NULL)
+  }
+
+  for (place in PLACES_SORTED) {
+    if (nchar(place) < 2) {
+      next
+    } # Skip very short entries
+    pattern <- paste0("\\b", place, "\\b")
+    # Use fixed = FALSE for regex word boundaries
+    match <- str_locate(text, regex(pattern, ignore_case = FALSE))
+    if (!is.na(match[1, 1])) {
+      return(list(
+        place = place,
+        start = match[1, 1],
+        end = match[1, 2]
+      ))
+    }
+  }
+  NULL
+}
+
+#' Find all canonical places in text
+#' @param text Text to search
+#' @return Character vector of places found
+find_all_canonical_places <- function(text) {
+  if (is.na(text) || text == "") {
+    return(character(0))
+  }
+
+  places_found <- character(0)
+  for (place in PLACES_SORTED) {
+    if (nchar(place) < 2) {
+      next
+    }
+    if (str_detect(text, paste0("\\b", place, "\\b"))) {
+      places_found <- c(places_found, place)
+    }
+  }
+  unique(places_found)
+}
+
+#' Find a canonical occupation in text
+#' @param text Text to search
+#' @param surname_known If TRUE, occupation after given name is certain
+#' @return List with occupation and position, or NULL if not found
+find_canonical_occupation <- function(text, surname_known = FALSE) {
+  if (is.na(text) || text == "") {
+    return(NULL)
+  }
+
+  for (occ in OCCUPATIONS_SORTED) {
+    pattern <- paste0("\\b", occ, "\\b")
+    match <- str_locate(text, pattern)
+    if (!is.na(match[1, 1])) {
+      # If surname is known, this is definitely an occupation
+      # If not, we need to check if it could be a surname
+      matched_occ <- occ
+      if (!surname_known) {
+        # Check if this word is also a surname
+        occ_upper <- toupper(occ)
+        if (occ_upper %in% SURNAMES_UPPER) {
+          # Ambiguous - could be surname or occupation
+          # Return with a flag
+          return(list(
+            occupation = occ,
+            start = match[1, 1],
+            end = match[1, 2],
+            ambiguous = TRUE
+          ))
+        }
+      }
+      return(list(
+        occupation = occ,
+        start = match[1, 1],
+        end = match[1, 2],
+        ambiguous = FALSE
+      ))
+    }
+  }
+  NULL
+}
 
 # =============================================================================
 # HELPER FUNCTIONS
@@ -173,6 +358,26 @@ apply_substitutions <- function(text_vec) {
     "([A-ZÄÖÜa-zäöü]+),\\s*OH\\b",
     "PLAC_OH_\\1"
   )
+
+  # ==========================================================================
+  # HANDLE "vermisst" (MISSING) PATTERN
+  # "† vermisst" means missing, presumed dead - treat following place as death place
+  # ==========================================================================
+
+  # Convert "† vermisst in/bei/auf Place" to "DEAT MISSING Place"
+  text_vec <- str_replace_all(
+    text_vec,
+    "†\\s*vermisst\\s+(in|bei|auf|während)\\s+",
+    " DEAT MISSING "
+  )
+  # Convert standalone "† vermisst Place" to "DEAT MISSING Place"
+  text_vec <- str_replace_all(
+    text_vec,
+    "†\\s*vermisst\\s+(?=[A-ZÄÖÜa-z])",
+    " DEAT MISSING "
+  )
+  # Convert "† vermisst" alone to "DEAT MISSING"
+  text_vec <- str_replace_all(text_vec, "†\\s*vermisst\\b", " DEAT MISSING ")
 
   # ==========================================================================
   # EVENT TAGS
@@ -282,6 +487,7 @@ extract_cross_ref <- function(text) {
 }
 
 #' Parse a name line (SURNAME Given_name [occupation] [religion])
+#' Uses canonical lists for accurate extraction
 #' @param line Name line text
 #' @return List with surname, given_name, occupation, religion
 parse_name_line <- function(line) {
@@ -301,48 +507,79 @@ parse_name_line <- function(line) {
     line_clean <- str_remove(line_clean, "\\s*RELI_CATH\\s*")
   }
 
-  # Extract occupation - check with word boundary first, then handle concatenated cases
+  # ==========================================================================
+  # USE CANONICAL LISTS FOR EXTRACTION
+  # ==========================================================================
+
+  surname <- NA_character_
+  given_name <- NA_character_
   occupation <- NA_character_
 
-  # Sort occupations by length (longest first) to avoid partial matches
-  sorted_occupations <- OCCUPATIONS[order(-nchar(OCCUPATIONS))]
+  # Step 1: Find canonical surname
+  surname_match <- find_canonical_surname(line_clean)
+  if (!is.null(surname_match)) {
+    surname <- surname_match$surname
 
-  for (occ in sorted_occupations) {
-    # First try with word boundary (e.g., "Stefan Landwirt" or "Stefan, Landwirt")
-    if (str_detect(line_clean, paste0("[,\\s]", occ, "(?=\\s|$|,)"))) {
-      occupation <- occ
-      line_clean <- str_remove(line_clean, paste0(",?\\s*", occ))
-      break
+    # Step 2: Find canonical given name (after surname)
+    remaining_text <- str_sub(line_clean, surname_match$end + 1)
+    given_match <- find_canonical_given_name(remaining_text)
+    if (!is.null(given_match)) {
+      given_name <- given_match$given_name
+
+      # Step 3: Look for occupation (surname is known, so no ambiguity)
+      occ_match <- find_canonical_occupation(
+        remaining_text,
+        surname_known = TRUE
+      )
+      if (!is.null(occ_match) && !occ_match$ambiguous) {
+        occupation <- occ_match$occupation
+      }
+    } else {
+      # No canonical given name found - extract text after surname
+      # Remove event tags and extract remaining text
+      remaining_clean <- str_remove_all(
+        remaining_text,
+        "\\s*(BIRT|DEAT|BAPM|MARR|BURI|PLAC_NS|PLAC_AS|RESI_NS|RESI_AS|ABT|BEF|BET|NOTE|WITN|GODP|UNKNOWN|MISSING).*$"
+      )
+      given_name <- str_squish(remaining_clean)
     }
-    # Then try concatenated case (e.g., "StefanLandwirt" - occupation at end of a word)
-    # Match occupation at end of string or followed by whitespace
-    if (str_detect(line_clean, paste0("(?<=[a-zäöüß])", occ, "(?=\\s|$)"))) {
-      occupation <- occ
-      line_clean <- str_remove(line_clean, paste0("(?<=[a-zäöüß])", occ))
-      break
-    }
-  }
-
-  # Extract surname (uppercase) and given name
-  # Pattern: SURNAME Given_name(s)
-  # Note: surname may contain lowercase umlauts due to OCR quirks (e.g., "GRößER", "FUSSGäNGER")
-  name_match <- str_match(
-    line_clean,
-    "^([A-ZÄÖÜ][A-ZÄÖÜßäöü\\.]+)\\s+(.+?)\\s*$"
-  )
-
-  if (!is.na(name_match[1, 1])) {
-    surname <- name_match[1, 2]
-    given_name <- str_squish(name_match[1, 3])
-    # Remove any remaining tags from given name
-    given_name <- str_remove_all(
-      given_name,
-      "\\s*(BIRT|DEAT|BAPM|MARR|BURI|PLAC_NS|PLAC_AS|RESI_NS|RESI_AS|ABT|BEF|BET|NOTE|WITN|GODP|UNKNOWN).*$"
-    )
-    given_name <- str_squish(given_name)
   } else {
-    surname <- NA_character_
-    given_name <- str_squish(line_clean)
+    # ==========================================================================
+    # FALLBACK: Original regex-based extraction
+    # ==========================================================================
+
+    # Extract occupation using canonical list
+    sorted_occupations <- OCCUPATIONS_SORTED
+    for (occ in sorted_occupations) {
+      if (str_detect(line_clean, paste0("[,\\s]", occ, "(?=\\s|$|,)"))) {
+        occupation <- occ
+        line_clean <- str_remove(line_clean, paste0(",?\\s*", occ))
+        break
+      }
+      if (str_detect(line_clean, paste0("(?<=[a-zäöüß])", occ, "(?=\\s|$)"))) {
+        occupation <- occ
+        line_clean <- str_remove(line_clean, paste0("(?<=[a-zäöüß])", occ))
+        break
+      }
+    }
+
+    # Extract surname (uppercase) and given name using regex
+    name_match <- str_match(
+      line_clean,
+      "^([A-ZÄÖÜ][A-ZÄÖÜßäöü\\.]+)\\s+(.+?)\\s*$"
+    )
+
+    if (!is.na(name_match[1, 1])) {
+      surname <- name_match[1, 2]
+      given_name <- str_squish(name_match[1, 3])
+      given_name <- str_remove_all(
+        given_name,
+        "\\s*(BIRT|DEAT|BAPM|MARR|BURI|PLAC_NS|PLAC_AS|RESI_NS|RESI_AS|ABT|BEF|BET|NOTE|WITN|GODP|UNKNOWN|MISSING).*$"
+      )
+      given_name <- str_squish(given_name)
+    } else {
+      given_name <- str_squish(line_clean)
+    }
   }
 
   # Handle UNKNOWN surname
@@ -390,6 +627,7 @@ decode_place_token <- function(place) {
 }
 
 #' Extract place from a text section, handling place tokens
+#' Uses canonical place lookup for accuracy
 #' @param section Text section to extract place from
 #' @param after_date If TRUE, look for place after a date pattern
 #' @return Decoded place name or NA
@@ -404,22 +642,17 @@ extract_place <- function(section, after_date = TRUE) {
     return(decode_place_token(place_token))
   }
 
-  # Fall back to pattern matching for non-tokenized places
-  if (after_date) {
-    # Place after a year
-    place <- str_extract(
-      section,
-      "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/,\\-\\s]+(?=\\s+BURI|\\s+BAPM|\\s+\\(|\\s*$)"
-    )
-    if (!is.na(place)) {
-      return(str_squish(place))
-    }
+  # Use canonical place lookup
+  place_match <- find_canonical_place(section)
+  if (!is.null(place_match)) {
+    return(place_match$place)
   }
 
   NA_character_
 }
 
 #' Extract events from a text line
+#' Uses canonical place lists for accurate extraction
 #' @param line Text line with event tags
 #' @return List of events with type, date, place
 extract_events <- function(line) {
@@ -436,7 +669,22 @@ extract_events <- function(line) {
         birth_section,
         "(ABT\\s+)?\\d{1,2}\\.\\d{2}\\.\\d{4}|(ABT\\s+)?\\d{4}|(ABT\\s+)?\\.\\d{2}\\.\\d{4}|[A-Za-zä]+\\s+\\d{4}"
       )
-      place <- extract_place(birth_section, after_date = TRUE)
+
+      # Use canonical place lookup first
+      place <- NA_character_
+      place_token <- str_extract(
+        birth_section,
+        "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)"
+      )
+      if (!is.na(place_token)) {
+        place <- decode_place_token(place_token)
+      } else {
+        place_match <- find_canonical_place(birth_section)
+        if (!is.null(place_match)) {
+          place <- place_match$place
+        }
+      }
+
       events$birth <- list(
         date = convert_date(str_squish(date_raw %||% "")),
         place = place
@@ -451,12 +699,19 @@ extract_events <- function(line) {
       "DEAT\\s+.*?(?=\\s+BAPM|\\s+BURI|\\s+MARR|\\s+NOTE|$)"
     )
     if (!is.na(death_section)) {
+      # Check for MISSING flag (vermisst)
+      is_missing <- str_detect(death_section, "MISSING")
+      if (is_missing) {
+        death_section <- str_remove(death_section, "\\s*MISSING\\s*")
+      }
+
       date_raw <- str_extract(
         death_section,
         "(ABT\\s+|BEF\\s+)?\\d{1,2}\\.\\d{2}\\.\\d{4}|(ABT\\s+|BEF\\s+)?\\d{4}"
       )
 
-      # Extract place - check for tokens first, then patterns
+      # Extract place - check for tokens first, then use canonical lookup
+      place <- NA_character_
       place_token <- str_extract(
         death_section,
         "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)"
@@ -464,20 +719,10 @@ extract_events <- function(line) {
       if (!is.na(place_token)) {
         place <- decode_place_token(place_token)
       } else {
-        # Place after a date (year)
-        place <- str_extract(
-          death_section,
-          "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü/,\\-\\s]+(?=\\s+BURI|\\s+\\(|$)"
-        )
-        if (is.na(place) && is.na(date_raw)) {
-          # Place with no date - extract text after DEAT that looks like a place name
-          place <- str_extract(
-            death_section,
-            "(?<=DEAT\\s)[A-ZÄÖÜa-zäöü][A-ZÄÖÜa-zäöü/,\\-\\s]*(?=\\s*$)"
-          )
-        }
-        if (!is.na(place)) {
-          place <- str_squish(place)
+        # Use canonical place lookup
+        place_match <- find_canonical_place(death_section)
+        if (!is.null(place_match)) {
+          place <- place_match$place
         }
       }
 
@@ -487,7 +732,8 @@ extract_events <- function(line) {
         place = place,
         age_years = age$years,
         age_months = age$months,
-        age_days = age$days
+        age_days = age$days,
+        missing = is_missing
       )
     }
   }
@@ -497,11 +743,21 @@ extract_events <- function(line) {
     buri_section <- str_extract(line, "BURI\\s+[^BAPM|MARR|NOTE]*")
     if (!is.na(buri_section)) {
       date_raw <- str_extract(buri_section, "\\d{1,2}\\.\\d{2}\\.\\d{4}")
+
+      place <- NA_character_
       place_token <- str_extract(
         buri_section,
         "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)"
       )
-      place <- decode_place_token(place_token)
+      if (!is.na(place_token)) {
+        place <- decode_place_token(place_token)
+      } else {
+        place_match <- find_canonical_place(buri_section)
+        if (!is.null(place_match)) {
+          place <- place_match$place
+        }
+      }
+
       events$burial <- list(
         date = convert_date(str_squish(date_raw %||% "")),
         place = place
@@ -969,22 +1225,47 @@ parse_record <- function(record) {
 }
 
 #' Parse a child line
+#' Uses canonical lists for accurate extraction
 #' @param line Child line text (without the number prefix)
 #' @param child_num Child number
 #' @return List with child data
 parse_child_line <- function(line, child_num) {
   result <- list(child_num = child_num)
 
-  # Extract surname and given name
-  # Pattern: Surname Given [religion] [events...]
-  # Allow periods in given name for middle initials (e.g., "Peter F.")
-  name_match <- str_match(
-    line,
-    "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß\\.\\s]+?)(?=\\s+RELI|\\s+BIRT|\\s+DEAT|\\s+MARR|\\s+BAPM|$)"
-  )
-  if (!is.na(name_match[1, 1])) {
-    result$surname <- name_match[1, 2]
-    result$given_name <- str_squish(name_match[1, 3])
+  # ==========================================================================
+  # USE CANONICAL LISTS FOR NAME EXTRACTION
+  # ==========================================================================
+
+  # Try canonical surname first
+  surname_match <- find_canonical_surname(line)
+  if (!is.null(surname_match)) {
+    result$surname <- surname_match$surname
+
+    # Look for given name after surname
+    remaining <- str_sub(line, surname_match$end + 1)
+    given_match <- find_canonical_given_name(remaining)
+    if (!is.null(given_match)) {
+      result$given_name <- given_match$given_name
+    } else {
+      # Extract text up to first event tag
+      given_text <- str_extract(
+        remaining,
+        "^\\s*([A-ZÄÖÜa-zäöüß\\.\\s]+?)(?=\\s+RELI|\\s+BIRT|\\s+DEAT|\\s+MARR|\\s+BAPM|$)"
+      )
+      if (!is.na(given_text)) {
+        result$given_name <- str_squish(given_text)
+      }
+    }
+  } else {
+    # Fallback: original regex pattern
+    name_match <- str_match(
+      line,
+      "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß\\.\\s]+?)(?=\\s+RELI|\\s+BIRT|\\s+DEAT|\\s+MARR|\\s+BAPM|$)"
+    )
+    if (!is.na(name_match[1, 1])) {
+      result$surname <- name_match[1, 2]
+      result$given_name <- str_squish(name_match[1, 3])
+    }
   }
 
   # Extract religion
@@ -996,7 +1277,7 @@ parse_child_line <- function(line, child_num) {
     result$religion <- "Catholic"
   }
 
-  # Extract events
+  # Extract events (uses canonical place lookup)
   events <- extract_events(line)
   result <- c(result, events)
 
@@ -1022,13 +1303,13 @@ parse_child_line <- function(line, child_num) {
 }
 
 #' Parse a child marriage line
+#' Uses canonical lists for accurate place and name extraction
 #' @param line Marriage line text
 #' @return List with marriage details
 parse_child_marriage_line <- function(line) {
   result <- list()
 
   # Check for numbered marriage (handles "1 NMARR", "2 NMARR", "3 NMARR" etc)
-  # After substitution, "1.oo" becomes "1 NMARR", "2.oo" becomes "2 NMARR"
   marr_num <- str_extract(line, "^\\d+(?=\\s*\\.?\\s*N?MARR)")
   if (!is.na(marr_num)) {
     result$marriage_num <- as.integer(marr_num)
@@ -1037,114 +1318,100 @@ parse_child_marriage_line <- function(line) {
   }
 
   # Extract date (including ABT/BEF/BET prefixes)
-  # Date may appear anywhere in the line, not necessarily right after MARR tag
-  # Format: dd.mm.yyyy (with optional prefix)
   date_match <- str_extract(
     line,
     "(ABT\\s+|BEF\\s+|BET\\s+)?\\d{2}\\.\\d{2}\\.\\d{4}"
   )
   result$marriage_date <- convert_date(date_match)
 
-  # Extract place - check for place tokens first (most reliable)
+  # ==========================================================================
+  # USE CANONICAL LISTS FOR PLACE EXTRACTION
+  # ==========================================================================
+
+  result$marriage_place <- NA_character_
+
+  # Check for place tokens first
   place_token <- str_extract(line, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
   if (!is.na(place_token)) {
     result$marriage_place <- decode_place_token(place_token)
   } else {
-    # Fall back to pattern matching for non-tokenized places
-    # Place can be in different positions:
-    # Format 1: "1 NMARR Beschka 12.11.1889 Feth Konrad > 655" (place before date)
-    # Format 2: "MARR 02.04.1953 PlaceToken Geyer Johanna > 31" (place token after date)
-    # Format 3: "1 NMARR Neu Pasua Kauder Wilhelm > 1812" (no date, place before name)
-    after_marr <- str_remove(line, "^\\d*\\s*\\.?\\s*N?MARR(_DIV)?\\s*")
-
-    if (!is.na(date_match)) {
-      # Try to extract place before the date first
-      place_text <- str_extract(
-        after_marr,
-        "^[^\\d]+(?=\\d{2}\\.\\d{2}\\.\\d{4})"
-      )
-      if (!is.na(place_text) && str_squish(place_text) != "") {
-        result$marriage_place <- str_squish(place_text)
-      } else {
-        # Place is after the date - extract text between date and spouse name
-        after_date <- str_remove(
-          after_marr,
-          "^(ABT\\s+|BEF\\s+|BET\\s+)?\\d{2}\\.\\d{2}\\.\\d{4}\\s*"
-        )
-        # Try pattern: place with state abbreviation, then name
-        place_name_match <- str_match(
-          after_date,
-          "^(.+?,\\s*[A-Z]{2})\\s+([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+)\\s*[><]"
-        )
-        if (!is.na(place_name_match[1, 1])) {
-          result$marriage_place <- str_squish(place_name_match[1, 2])
-        } else {
-          # Try simpler pattern: place without state abbreviation
-          place_name_match <- str_match(
-            after_date,
-            "^([A-ZÄÖÜa-zäöü,\\s]+?)\\s+([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+)\\s*[><]"
-          )
-          if (!is.na(place_name_match[1, 1])) {
-            result$marriage_place <- str_squish(place_name_match[1, 2])
-          }
-        }
-      }
-    } else {
-      # No date - place is everything before the spouse name (surname + given name before >)
-      place_match <- str_match(
-        after_marr,
-        "^(.*?)([A-ZÄÖÜa-zäöüß]+\\s+[A-ZÄÖÜa-zäöüß]+)\\s*>"
-      )
-      if (!is.na(place_match[1, 1])) {
-        result$marriage_place <- str_squish(place_match[1, 2])
-      }
+    # Use canonical place lookup
+    place_match <- find_canonical_place(line)
+    if (!is.null(place_match)) {
+      result$marriage_place <- place_match$place
     }
   }
 
-  # Extract spouse name - look for name pattern before cross-ref
-  # Format: Surname Given [religion] > ref
-  # First clean the line: remove MARR prefix, place tokens, date, and PLAC_ tags
-  clean_line <- str_remove(line, "^\\d*\\s*\\.?\\s*N?MARR(_DIV)?\\s*")
+  # ==========================================================================
+  # USE CANONICAL LISTS FOR SPOUSE NAME EXTRACTION
+  # ==========================================================================
 
-  # Remove place tokens
+  # Clean line for name extraction
+  clean_line <- str_remove(line, "^\\d*\\s*\\.?\\s*N?MARR(_DIV)?\\s*")
   clean_line <- str_remove_all(
     clean_line,
     "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)\\s*"
   )
-
-  # Remove place if it was found (non-tokenized)
-  if (
-    !is.null(result$marriage_place) &&
-      !is.na(result$marriage_place) &&
-      result$marriage_place != ""
-  ) {
-    clean_line <- str_remove(clean_line, fixed(result$marriage_place))
-  }
-
-  # Remove date
   clean_line <- str_remove(
     clean_line,
     "(ABT\\s+|BEF\\s+|BET\\s+)?\\d{2}\\.\\d{2}\\.\\d{4}\\s*"
   )
-  clean_line <- str_remove(clean_line, "PLAC_(NS|AS)\\s*")
+
+  # Remove place if found
+  if (!is.na(result$marriage_place) && result$marriage_place != "") {
+    clean_line <- str_remove(clean_line, fixed(result$marriage_place))
+  }
   clean_line <- str_squish(clean_line)
 
-  # Now extract spouse name: Surname Given [religion] > ref
-  name_match <- str_match(
-    clean_line,
-    "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+(?:\\s+[A-ZÄÖÜa-zäöüß]+)?)(?:\\s+(?:ref\\.?|ev\\.?|RELI_\\w+))?\\s*[><]"
-  )
-  if (!is.na(name_match[1, 1])) {
-    result$spouse_name <- paste(name_match[1, 2], name_match[1, 3])
+  # Try canonical surname lookup
+  spouse_surname <- NA_character_
+  spouse_given <- NA_character_
+
+  surname_match <- find_canonical_surname(clean_line)
+  if (!is.null(surname_match)) {
+    spouse_surname <- surname_match$surname
+
+    # Look for given name after surname
+    remaining <- str_sub(clean_line, surname_match$end + 1)
+    given_match <- find_canonical_given_name(remaining)
+    if (!is.null(given_match)) {
+      spouse_given <- given_match$given_name
+    } else {
+      # Extract first word(s) before > or end
+      given_text <- str_extract(
+        remaining,
+        "^\\s*([A-ZÄÖÜa-zäöüß]+)(?:\\s+[A-ZÄÖÜa-zäöüß]+)?"
+      )
+      if (!is.na(given_text)) {
+        spouse_given <- str_squish(given_text)
+      }
+    }
   } else {
-    # Try without cross-ref (name at end of line)
+    # Fallback: regex pattern
     name_match <- str_match(
       clean_line,
-      "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+(?:\\s+[A-ZÄÖÜa-zäöüß]+)?)(?:\\s+(?:ref\\.?|ev\\.?|RELI_\\w+))?\\s*$"
+      "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+(?:\\s+[A-ZÄÖÜa-zäöüß]+)?)(?:\\s+(?:ref\\.?|ev\\.?|RELI_\\w+))?\\s*[><]"
     )
     if (!is.na(name_match[1, 1])) {
-      result$spouse_name <- paste(name_match[1, 2], name_match[1, 3])
+      spouse_surname <- name_match[1, 2]
+      spouse_given <- name_match[1, 3]
+    } else {
+      # Try without cross-ref
+      name_match <- str_match(
+        clean_line,
+        "^([A-ZÄÖÜa-zäöüß]+)\\s+([A-ZÄÖÜa-zäöüß]+(?:\\s+[A-ZÄÖÜa-zäöüß]+)?)(?:\\s+(?:ref\\.?|ev\\.?|RELI_\\w+))?\\s*$"
+      )
+      if (!is.na(name_match[1, 1])) {
+        spouse_surname <- name_match[1, 2]
+        spouse_given <- name_match[1, 3]
+      }
     }
+  }
+
+  if (!is.na(spouse_surname) && !is.na(spouse_given)) {
+    result$spouse_name <- paste(spouse_surname, spouse_given)
+  } else if (!is.na(spouse_surname)) {
+    result$spouse_name <- spouse_surname
   }
 
   # Extract cross-reference
@@ -1158,6 +1425,7 @@ parse_child_marriage_line <- function(line) {
 }
 
 #' Parse a marriage line with date/place/witnesses
+#' Uses canonical place lookup for accuracy
 #' @param line Marriage line
 #' @return List with marriage details
 parse_marriage_line <- function(line) {
@@ -1171,11 +1439,18 @@ parse_marriage_line <- function(line) {
   if (!is.na(place_token)) {
     result$marriage_place <- decode_place_token(place_token)
   } else {
-    other_place <- str_extract(
-      line,
-      "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü,/\\-\\s]+?(?=\\s+WITN|\\s*$)"
-    )
-    result$marriage_place <- str_squish(other_place)
+    # Use canonical place lookup
+    place_match <- find_canonical_place(line)
+    if (!is.null(place_match)) {
+      result$marriage_place <- place_match$place
+    } else {
+      # Fallback: regex extraction
+      other_place <- str_extract(
+        line,
+        "(?<=\\d{4}\\s)[A-ZÄÖÜa-zäöü,/\\-\\s]+?(?=\\s+WITN|\\s*$)"
+      )
+      result$marriage_place <- str_squish(other_place)
+    }
   }
 
   witnesses <- str_extract(line, "(?<=WITN\\s).+$")
@@ -1185,6 +1460,7 @@ parse_marriage_line <- function(line) {
 }
 
 #' Parse a remarriage line
+#' Uses canonical place lookup for accuracy
 #' @param line Remarriage line text
 #' @return List with remarriage details
 parse_remarriage_line <- function(line) {
@@ -1197,6 +1473,12 @@ parse_remarriage_line <- function(line) {
   place_token <- str_extract(line, "PLAC_(NS|AS|KISKER|OH_[A-ZÄÖÜa-zäöü]+)")
   if (!is.na(place_token)) {
     result$remarriage_place <- decode_place_token(place_token)
+  } else {
+    # Use canonical place lookup
+    place_match <- find_canonical_place(line)
+    if (!is.null(place_match)) {
+      result$remarriage_place <- place_match$place
+    }
   }
 
   # Extract the new spouse name (after "mit")
@@ -1273,6 +1555,7 @@ records_to_dataframes <- function(parsed_records) {
       birth_place = p$birth$place %||% NA_character_,
       death_date = p$death$date %||% NA_character_,
       death_place = p$death$place %||% NA_character_,
+      death_missing = p$death$missing %||% FALSE,
       death_age_years = p$death$age_years %||% NA_integer_,
       death_age_months = p$death$age_months %||% NA_integer_,
       death_age_days = p$death$age_days %||% NA_integer_,
@@ -1311,6 +1594,7 @@ records_to_dataframes <- function(parsed_records) {
         birth_place = sp$birth$place %||% NA_character_,
         death_date = sp$death$date %||% NA_character_,
         death_place = sp$death$place %||% NA_character_,
+        death_missing = sp$death$missing %||% FALSE,
         burial_date = sp$burial$date %||% NA_character_,
         baptism_date = sp$baptism$date %||% NA_character_,
         godparents = sp$baptism$godparents %||% NA_character_,
@@ -1376,6 +1660,7 @@ records_to_dataframes <- function(parsed_records) {
         birth_place = ch$birth$place %||% NA_character_,
         death_date = ch$death$date %||% NA_character_,
         death_place = ch$death$place %||% NA_character_,
+        death_missing = ch$death$missing %||% FALSE,
         death_age_years = ch$death$age_years %||% NA_integer_,
         death_age_months = ch$death$age_months %||% NA_integer_,
         death_age_days = ch$death$age_days %||% NA_integer_,
