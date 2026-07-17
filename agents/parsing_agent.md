@@ -1,11 +1,11 @@
 ---
-title: "ancestry record parsing trainer"
+title: "ancestry record parsing" 
 ---
-## PLAN OUTLINE
-Your task is to work with me to create a parser that takes a file of German language church ancestry records, parses it and creates a structured JSON database of the records for each individual.  The input text file is somewhat structured but the records are highly variant.  
+## GOAL
+Your task is to work with me to create a parser coded in R, using the tidyverse vernacular, that takes a file of German language church ancestry records (aka "Family Book"), parses it and creates a structured JSON database of the records for each individual.  The input text file is somewhat structured but the records are highly variant.  
 
 ## EXECUTION PLAN
-The "data/persons.txt" text file is a sequential set of primary records delimited by a tag of the form <nnnn>.  The records include names, events, dates and places of those events.  The primary record may be considered a family.  Many family recordss are interlinked through marraige or descendents. Look at one record at a time and make an initial estimate of the record structure and contents.  Ask me about confusing parts and ask me to confirm each data element before moving to the next record.   While German words in data are allowed, field names should be in English. Ask me to simply type "Y" to accept all fields and move to the next record.
+The "data/persons.txt" text file is a sequential set of primary records delimited by a tag of the form <nnnn>.  The records include names, events, dates and places of those events.  Each primary record may be considered a family.  Descendents and ancestors are linked two ways, first, by being part of a family record and, second, by being linked by a cross reference to another family record. Many family records are interlinked through marraige or descendents. Look at one record at a time and make an initial estimate of the record structure and contents.  Ask me about confusing parts and ask me to confirm each data element before moving to the next record.   While German words in data are allowed, field names should be in English. Ask me to simply type "Y" to accept all fields and move to the next record.
 
 As we step through the records modify the parsing logic R code to accomodate new knowledge of how to parse a record. This is an iterative process.   After a certain number of records you should notice that nothing new is being learned about how to parse.  Ask me if you can finish the job, saving the parsing code and executing the code to create the database.
 
@@ -13,9 +13,10 @@ Once that is done, randomly select a number of records to validate the work and 
 
 ### Cross references
 
-These are CRITICAL to understanding ancestors and descendants.  Numbers at the end of a line preceeded by < or > represent a link to another primary record in the file. "<" is a back refrerence to an earlier family.  ">" is a forward reference.  A following integer number is a reference to a family.  A number with a decimal portion refers to a child in a family. For example,  "> 34.2" is a reference to the  2nd child or spouse of the 2nd child in the primary record 34 that appears earlier in the file.  Each person record must include the proper cross-reference if it is present in the source file.
+These are CRITICAL to understanding ancestors and descendants.  Numbers at the end of a line preceeded by < or > represent a link to another primary record in the file. "<" is a back refrerence to an earlier family.  ">" is a forward reference.  A following integer number is a reference to a family.  A number with a decimal portion refers to a child in a family. For example,  "< 34.2" is a reference to the  2nd child or spouse of the child in the primary record 34 that appears earlier in the file.  Each person record you create must include the proper cross-reference if it is present in the source file.
 
 After the parsing step is completed resolve the cross references. 
+
 DO NOT finalize a person record until you have resolved any forward or back references.  Test these for validity once all records have been created.
 
 Consider this execution plan my proposal. Before getting started, present your own suggestions for enhancments or improvments to my execution plan.
@@ -45,14 +46,19 @@ These will be followed by some combination of a date, a place and another person
   "oo" Marraige
   "o‐o" Divorce
   "~", Baptism
-  "# " Note
   "†" Death
   "b. " Burial
 
+### Notes
+Notes might be indicated by this tag:
+  "# " Note
+Single lines of text that have no apparent matches to an event or a name can also be considered a note.
+
 ### People who might be mentioned but aren't  linked in record
 These can be treated as FACTs not as individual people so a new record does not have to be created for names associated with these tags.
-"TZ:" witness
-"TP" godparent
+"TZ:" witnesses
+"TP:" godparents
+"Eltern:" parents
  
 #### Date extraction helpers and modifiers
 Dates should be converted to the form yyyy-mm-dd minus whatever portion is missing.  Only the year, for instance.
@@ -67,13 +73,19 @@ date_regex_2 <- paste0("(\\d{4}-\\d{2}-\\d{2})|(ABT \\d{4})")
 "vor " before
 "zw." between
 
-##### Sometimes the age at the event, typically death, is given. If the event date has already been provided it can be ignored as redundant. Here are the identifying regexes.
+##### Age at death
+Sometimes the age at the event, typically death, is given. It will appear at the end of a line. 
+If the event date has already been provided it can be ignored as redundant. Here are the identifying regexes.
 ```
   text_vec <- gsub("\\(†mit (.*?)\\)", "AGE \\1 ", text_vec)
   text_vec <- gsub("([0-9]{1,2})J", "\\1 years ", text_vec)
   text_vec <- gsub("([0-9]{1,2})M", "\\1 months ", text_vec)
   text_vec <- gsub("([0-9]{1,2})T", "\\1 days ", text_vec)
 ```
+
+#### Cause of death
+Occasionally, the cause of death might be given as phrase after the death tag and a date.  These might include "ermordet" (murdered) or "Totgeburt" (stillborn).  
+
 #### Month Names
 months <- c(
     "Januar",
@@ -115,11 +127,15 @@ name_regex <- "([ßÖÜÄA-Z\\.]+ [ßÖÜÄA-Z][öäüa-z]+( [ÖÜÄA-Z][öäüa
 ```
 
 The canonical list of given names is here:
+
 data/unique_given_names.csv
+
 Other words are not given names.
 
 The canonical list of surnames is here:
+
 data/unique_surnames.csv
+
 Other words are not surnnames.
 
 ### Events may or may not be followed by a place where the event happened.
@@ -200,6 +216,8 @@ place_prefixes <- c(
 ```
 
 ### Occupations
-Sometimes the primary person in a family record has their occupation listed after their name.  It can be confusing becuase some names are the same word as an occupation. Surnames are capitalized while occuptations are not.  The canonical list of occupations is in:
+Sometimes the primary person in a family record has their occupation listed after their name.  It can be confusing becuase some names are the same word as an occupation. Surnames are capitalized at the start of a line while occuptations are not.  The canonical list of occupations is in:
+
 data/unique_occupations.csv 
+
 Other words are not occupations.
