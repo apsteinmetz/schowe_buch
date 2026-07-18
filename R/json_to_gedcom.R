@@ -366,10 +366,11 @@ person_lines <- function(p, xref, sex, fams, famc, cid) {
     }
     x <- c(x, lines)
   }
-  # death age when no death event was recorded
-  if (!is.null(p$age_at_death) &&
-      !any(map_chr(p$events %||% list(), "type") == "death")) {
-    x <- c(x, "1 DEAT Y", paste("2 AGE", ged_age(p$age_at_death)))
+  # ensure every person has a death record
+  if (!any(map_chr(p$events %||% list(), "type") == "death")) {
+    deat <- "1 DEAT Y"
+    if (!is.null(p$age_at_death)) deat <- c(deat, paste("2 AGE", ged_age(p$age_at_death)))
+    x <- c(x, deat)
   }
 
   if (!is.null(p$religion))  x <- c(x, paste("1 RELI", p$religion))

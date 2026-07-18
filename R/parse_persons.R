@@ -161,9 +161,38 @@ match_place <- function(txt) {
   if (txt == "") return(list(place = NULL, rest = ""))
   # "City, ST" (US state) first, since city alone may also be a known place
   m <- str_match(txt, "^(\\p{Lu}[\\p{L}.\\- ]*?, [A-Z]{2})\\b,?\\s*(.*)$")
-  if (!is.na(m[1, 1])) return(list(place = m[1, 2], rest = str_trim(m[1, 3])))
+  if (!is.na(m[1, 1])) {
+    rest <- str_trim(m[1, 3])
+    # drop a duplicated trailing state/country abbreviation, e.g.
+    # "Cuyahoga, OH, OH Metzler Jakob" -> place "Cuyahoga, OH"
+    dup <- str_match(rest, "^([A-Z]{1,3}),?\\s*(.*)$")
+    if (!is.na(dup[1, 1]) &&
+        str_detect(m[1, 2], paste0(",\\s*", dup[1, 2], "$"))) {
+      rest <- str_trim(dup[1, 3])
+    }
+    return(list(place = m[1, 2], rest = rest))
+  }
   toks <- str_split_1(txt, "\\s+")
-  for (k in rev(seq_len(min(4, length(toks))))) {
+  n <- min(4, length(toks))
+  # Prefer the *shortest* compound place whose remainder is empty or begins
+  # with a recognizable surname/NN marker. Defends against polluted compound
+  # entries in unique_places.csv (e.g. "Neu Pasua Popp", "F\u00fcllengarten Haller")
+  # that would otherwise swallow a real spouse surname.
+  for (k in seq_len(n)) {
+    cand <- str_remove(paste(toks[1:k], collapse = " "), ",$")
+    if (cand %in% place_set) {
+      after <- str_trim(paste(toks[-(1:k)], collapse = " "))
+      nxt <- str_extract(after, "^[^\\s]+")
+      if (after == "" || str_to_upper(nxt) %in% names(surname_lookup) ||
+          nxt %in% c("NN.", "NN")) {
+        place <- if (cand %in% names(place_abbrev)) place_abbrev[[cand]] else cand
+        return(list(place = place, rest = after))
+      }
+    }
+  }
+  # fall back to the original greedy (longest-match) behavior for cases
+  # where the remainder isn't a recognizable name (e.g. free-text detail)
+  for (k in rev(seq_len(n))) {
     cand <- str_remove(paste(toks[1:k], collapse = " "), ",$")
     if (cand %in% place_set) {
       place <- if (cand %in% names(place_abbrev)) place_abbrev[[cand]] else cand
@@ -219,6 +248,53 @@ new_person <- function(id, family, role, position = NULL) {
   )
 }
 
+# A sequence of tokens that are all capitalized "Title Case" words, ALL-CAPS
+# words of at least 4 letters (as spouse surnames are conventionally
+# written), or NN., reads as a genuine "Surname Given..." name even if the
+# surname isn't in the canonical list yet. German capitalizes common nouns
+# too, and short ALL-CAPS tokens are usually country/state codes (D, OH,
+# ILL, NS, AS, ...), so this heuristic is deliberately narrow: any
+# lowercase-initial word (prepositions, articles, verbs, ...), punctuation,
+# or short ALL-CAPS abbreviation disqualifies the whole sequence.
+looks_like_name_seq <- function(toks) {
+  length(toks) > 0 &&
+    all(str_detect(toks, "^\\p{Lu}[\\p{Ll}]+\\.?$") |
+          str_detect(toks, "^[\\p{Lu}\u00df]{4,}$") |
+          toks %in% c("NN.", "NN"))
+}
+
+# Strip a fully self-contained trailing parenthetical (source citations,
+# marital-status remarks, ...) before scanning for a name -- names in this
+# corpus are never themselves parenthesized, so anything trailing in
+# "(...)" is descriptive text even if it happens to contain name-like words.
+strip_trailing_paren <- function(txt) {
+  m <- str_match(txt, "^(.*?)\\s*(\\([^()]*\\))\\s*$")
+  if (is.na(m[1, 1])) return(list(text = txt, detail = NULL))
+  list(text = str_trim(m[1, 2]), detail = m[1, 3])
+}
+
+# Split a TP:/TZ: attendant list into individual names. A trailing
+# parenthetical that is a remark about the event or the whole list --
+# "(ohne weitere Angaben)", "(beide Eheleute Ww.)", "(Doppelhochzeit ...)",
+# "(dort Altersangabe ...)" -- is detached and returned as `remark` so it
+# never sticks to the last name. Per-person annotations such as
+# "(geb. Hetzel)", "(ev.)", "(Witwe)" stay attached to their name.
+split_attendants <- function(txt) {
+  remark <- NULL
+  # Not anchored to a balanced "(...)": remarks may have unbalanced parens
+  # from line wrapping, e.g. "(beide Eheleute Witwe(r)".
+  m <- str_match(str_trim(txt),
+                 regex(paste0("^(.*?)\\s*(\\(\\s*(?:ohne|beide|keine|dort|",
+                              "mit\\b|Doppelhochzeit).*)$"),
+                       ignore_case = TRUE))
+  if (!is.na(m[1, 1])) {
+    txt <- m[1, 2]
+    remark <- m[1, 3]
+  }
+  nm <- str_split_1(str_trim(txt), ",\\s*") |> str_squish()
+  list(names = nm[nm != ""], remark = remark)
+}
+
 canon_surname <- function(s) {
   if (is.null(s) || is.na(s)) return(NULL)
   hit <- unname(surname_lookup[str_to_upper(s)])
@@ -270,11 +346,31 @@ parse_record <- function(fam, block) {
     if (is.null(surname_from_line) && is.null(p$surname) && !p$surname_unknown) {
       if (length(toks) > 0) { surname_from_line <- toks[1]; toks <- toks[-1] }
     }
+    # A two-word surname (e.g. "Von Sitos", "VON BOLIZFAR"): combine with
+    # the next token when that matches a canonical multi-word surname.
+    if (!is.null(surname_from_line) && length(toks) > 0 &&
+        !str_detect(surname_from_line, "^NN\\.?$")) {
+      combo <- paste(surname_from_line, toks[1])
+      if (str_to_upper(combo) %in% names(surname_lookup)) {
+        surname_from_line <- combo
+        toks <- toks[-1]
+      }
+    }
     if (!is.null(surname_from_line)) {
       if (str_detect(surname_from_line, "^NN\\.?$")) {
         p$surname_unknown <- TRUE
-      } else {
+      } else if (str_to_upper(surname_from_line) %in% names(surname_lookup)) {
         p$surname <- canon_surname(surname_from_line)
+      } else {
+        # Not a canonical surname: the surname field must never gain
+        # fabricated entries (place fragments, note text, prepositions,
+        # uncatalogued real surnames, ...). Leave surname unset but record
+        # the raw text as a note so nothing is silently lost -- it can be
+        # reviewed and, if it is a genuine surname, added to
+        # unique_surnames.csv.
+        p$surname_unknown <- TRUE
+        p$notes <- c(p$notes,
+                     paste0("surname not in canonical list: ", surname_from_line))
       }
     }
     given <- character(); leftover <- character()
@@ -301,12 +397,14 @@ parse_record <- function(fam, block) {
   add_event <- function(id, type, body, remarried = FALSE) {
     p <- persons[[id]]
     ev <- list(type = type, raw = str_squish(body))
-    tz <- str_match(body, "T([PZ]):\\s*(.*)$")
+    tz <- str_match(body, "T([PZ])\\d*(?:[:;]\\s*|\\s+)(.*)$")
     if (!is.na(tz[1, 1])) {
-      nm <- str_split_1(tz[1, 3], ",\\s*") |> str_squish()
-      if (tz[1, 2] == "P") p$godparents <- c(p$godparents, nm)
-      else p$witnesses <- c(p$witnesses, nm)
-      body <- str_remove(body, "T[PZ]:\\s*.*$")
+      att <- split_attendants(tz[1, 3])
+      if (tz[1, 2] == "P") p$godparents <- c(p$godparents, att$names)
+      else p$witnesses <- c(p$witnesses, att$names)
+      if (!is.null(att$remark))
+        p$notes <- c(p$notes, paste0("T", tz[1, 2], " ", att$remark))
+      body <- str_remove(body, "T[PZ]\\d*(?:[:;]\\s*|\\s+).*$")
     }
     rr <- extract_refs(body); body <- rr$rest
     d <- parse_date(body)
@@ -343,22 +441,51 @@ parse_record <- function(fam, block) {
     if (is.null(persons[[prim_id]])) { # record without named primary
       put(new_person(prim_id, fam, "primary"))
     }
-    tz <- str_match(body, "T([PZ]):\\s*(.*)$")
+    tz <- str_match(body, "T([PZ])\\d*(?:[:;]\\s*|\\s+)(.*)$")
     if (!is.na(tz[1, 1])) {
-      nm <- str_split_1(tz[1, 3], ",\\s*") |> str_squish()
+      att <- split_attendants(tz[1, 3])
       p0 <- persons[[prim_id]]
-      if (tz[1, 2] == "P") p0$godparents <- c(p0$godparents, nm)
-      else p0$witnesses <- c(p0$witnesses, nm)
+      if (tz[1, 2] == "P") p0$godparents <- c(p0$godparents, att$names)
+      else p0$witnesses <- c(p0$witnesses, att$names)
+      if (!is.null(att$remark))
+        p0$notes <- c(p0$notes, paste0("T", tz[1, 2], " ", att$remark))
       persons[[prim_id]] <<- p0
-      body <- str_trim(str_remove(body, "T[PZ]:\\s*.*$"))
+      body <- str_trim(str_remove(body, "T[PZ]\\d*(?:[:;]\\s*|\\s+).*$"))
     }
     rr <- extract_refs(body); body <- rr$rest
     d <- parse_date(body)
     pl <- match_place(d$rest)
+    place_val <- pl$place
     rest <- pl$rest
+    # As in child_union(): don't fabricate a spouse out of leftover
+    # descriptive text (parenthetical remarks, sourcing notes, prepositions,
+    # ...) -- only treat the remainder as a spouse name if it contains a
+    # recognizable surname/given name/NN marker.
+    extra_detail <- NULL
+    sp_paren <- strip_trailing_paren(rest)
+    rest <- sp_paren$text
+    extra_detail <- sp_paren$detail
+    if (rest != "" ) {
+      toks2 <- str_split_1(rest, "\\s+")
+      if (!looks_like_name_seq(toks2)) {
+        hit <- which(str_to_upper(toks2) %in% names(surname_lookup) |
+                       toks2 %in% given_set | toks2 %in% c("NN.", "NN"))
+        hit <- if (length(hit) > 0) hit[1] else NA_integer_
+        if (is.na(hit)) {
+          extra_detail <- paste(c(extra_detail, rest), collapse = "; ")
+          rest <- ""
+        } else if (hit > 1) {
+          extra_detail <- paste(c(extra_detail,
+                                   paste(toks2[seq_len(hit - 1)], collapse = " ")),
+                                 collapse = "; ")
+          rest <- paste(toks2[hit:length(toks2)], collapse = " ")
+        }
+      }
+    }
     ev <- compact(list(
       type = type, date = d$date, date_qualifier = d$qualifier,
-      place = pl$place, union_number = union_no, raw = str_squish(line)
+      place = place_val, union_number = union_no, detail = extra_detail,
+      raw = str_squish(line)
     ))
     if (rest != "") {
       # inline spouse on the family union line (uncommon)
@@ -390,10 +517,10 @@ parse_record <- function(fam, block) {
     if (str_detect(body, "^wieder\\b")) {
       remarried <- TRUE; body <- str_squish(str_remove(body, "^wieder\\b"))
     }
-    tzm <- str_match(body, "T([PZ]):\\s*(.*)$")
+    tzm <- str_match(body, "T([PZ])\\d*(?:[:;]\\s*|\\s+)(.*)$")
     tz_txt <- NULL
     if (!is.na(tzm[1, 1])) {
-      tz_txt <- tzm; body <- str_remove(body, "T[PZ]:\\s*.*$")
+      tz_txt <- tzm; body <- str_remove(body, "T[PZ]\\d*(?:[:;]\\s*|\\s+).*$")
     }
     rr <- extract_refs(body); body <- rr$rest
     d <- parse_date(body)
@@ -437,11 +564,40 @@ parse_record <- function(fam, block) {
         name_txt <- pl$rest
       }
     }
+    # Guard against fabricating a surname out of stray leftover text
+    # (prepositions, leftover country/state codes, unrecognized place
+    # phrases, ...): scan the remainder for the first token that is a
+    # recognizable surname/given name/NN marker. Anything before it is kept
+    # as extra descriptive detail on the event instead of becoming a person.
+    extra_detail <- NULL
+    if (!is.null(name_txt) && name_txt != "") {
+      sp_paren <- strip_trailing_paren(name_txt)
+      name_txt <- sp_paren$text
+      extra_detail <- sp_paren$detail
+    }
+    if (!is.null(name_txt) && name_txt != "") {
+      toks2 <- str_split_1(name_txt, "\\s+")
+      if (!looks_like_name_seq(toks2)) {
+        hit <- which(str_to_upper(toks2) %in% names(surname_lookup) |
+                       toks2 %in% given_set | toks2 %in% c("NN.", "NN"))
+        hit <- if (length(hit) > 0) hit[1] else NA_integer_
+        if (is.na(hit)) {
+          extra_detail <- paste(c(extra_detail, name_txt), collapse = "; ")
+          name_txt <- ""
+        } else if (hit > 1) {
+          extra_detail <- paste(c(extra_detail,
+                                   paste(toks2[seq_len(hit - 1)], collapse = " ")),
+                                 collapse = "; ")
+          name_txt <- paste(toks2[hit:length(toks2)], collapse = " ")
+        }
+      }
+    }
     p <- persons[[child_id]]
     ev <- compact(list(
       type = type, date = d$date, date_qualifier = d$qualifier,
       place = place_val, union_number = n,
-      remarriage = if (remarried) TRUE else NULL, raw = str_squish(line)
+      remarriage = if (remarried) TRUE else NULL, detail = extra_detail,
+      raw = str_squish(line)
     ))
     spouse_id <- NULL
     if (name_txt != "") {
@@ -461,9 +617,11 @@ parse_record <- function(fam, block) {
     pending_child_spouse <<- if (is.null(spouse_id)) child_id else NULL
     p <- persons[[child_id]]
     if (!is.null(tz_txt)) {
-      nm <- str_split_1(tz_txt[1, 3], ",\\s*") |> str_squish()
-      if (tz_txt[1, 2] == "P") p$godparents <- c(p$godparents, nm)
-      else p$witnesses <- c(p$witnesses, nm)
+      att <- split_attendants(tz_txt[1, 3])
+      if (tz_txt[1, 2] == "P") p$godparents <- c(p$godparents, att$names)
+      else p$witnesses <- c(p$witnesses, att$names)
+      if (!is.null(att$remark))
+        p$notes <- c(p$notes, paste0("T", tz_txt[1, 2], " ", att$remark))
     }
     p$events <- c(p$events, list(ev))
     persons[[child_id]] <<- p
@@ -508,9 +666,28 @@ parse_record <- function(fam, block) {
     hm <- str_match(work, "^(.+?)\\s#\\s*(.*)$")
     if (!is.na(hm[1, 1])) { work <- hm[1, 2]; inline_note <- hm[1, 3] }
 
-    if (str_detect(work, paste0("^(\\d+)\\.\\s*(oo|o", DASH, "o)"))) {
-      m <- str_match(work, paste0("^(\\d+)\\.\\s*(oo|o", DASH, "o)\\s*(.*)$"))
-      n <- as.integer(m[1, 2]); tag <- m[1, 3]; body <- m[1, 4]
+    # a bare "NS oo ..."/"AS oo ..." line is a residence marker glued to the
+    # start of a marriage line (wrapped birth+residence+marriage), not an
+    # ALL-CAPS surname line -- attach the residence to the current person
+    # and let the rest of the line dispatch as an ordinary marriage line.
+    res_pref <- str_match(work, paste0("^(NS|AS)\\s+(oo|o", DASH, "o)\\b"))
+    if (!is.na(res_pref[1, 1]) && !is.null(cur) && !is.null(persons[[cur]])) {
+      p <- persons[[cur]]
+      p$residences <- c(p$residences, place_abbrev[[res_pref[1, 2]]])
+      persons[[cur]] <- p
+      work <- str_trim(str_remove(work, "^(NS|AS)\\s+"))
+    }
+
+    if (str_detect(work, paste0("^(\\d+)\\.\\s*(oo|o", DASH, "o)")) ||
+        str_detect(work, paste0("^(oo|o", DASH, "o)(\\d+)\\."))) {
+      # numbered union: usually "N.oo", but occasionally written "ooN."
+      if (str_detect(work, paste0("^(\\d+)\\.\\s*(oo|o", DASH, "o)"))) {
+        m <- str_match(work, paste0("^(\\d+)\\.\\s*(oo|o", DASH, "o)\\s*(.*)$"))
+        n <- as.integer(m[1, 2]); tag <- m[1, 3]; body <- m[1, 4]
+      } else {
+        m <- str_match(work, paste0("^(oo|o", DASH, "o)(\\d+)\\.\\s*(.*)$"))
+        tag <- m[1, 2]; n <- as.integer(m[1, 3]); body <- m[1, 4]
+      }
       type <- if (tag == "oo") "marriage" else "union_unmarried"
       if (!is.null(cur) && persons[[cur]]$role %in% c("child", "child_spouse")) {
         anchor <- if (persons[[cur]]$role == "child_spouse")
@@ -562,8 +739,8 @@ parse_record <- function(fam, block) {
       rr <- extract_refs(work, context = "remarriage")
       add_note(cur, paste("Remarriage:", rr$rest))
       add_refs(cur %||% paste0(fam, ".0"), rr$refs)
-    } else if (str_detect(work, "^T[PZ]:")) {
-      m <- str_match(work, "^T([PZ]):\\s*(.*)$")
+    } else if (str_detect(work, "^T[PZ]\\d*(?:[:;]|\\s)")) {
+      m <- str_match(work, "^T([PZ])\\d*[:;]?\\s*(.*)$")
       if (!is.null(cur)) {
         p <- persons[[cur]]
         nm <- str_split_1(m[1, 3], ",\\s*") |> str_squish()
@@ -649,6 +826,17 @@ parse_record <- function(fam, block) {
         "^(NN\\.|[\u00df\u00d6\u00dc\u00c4A-Z][\u00df\u00d6\u00dc\u00c4\u00f6\u00e4\u00fcA-Z",
         DASH, "-]+)\\s+(.*)$"))
       sur <- m[1, 2]; rest <- m[1, 3]
+      # a two-word ALL-CAPS surname (e.g. "VON SITOS", "VON BOLIZFAR"): only
+      # the first word is captured by the regex above, so check whether
+      # combining it with the next word matches a canonical multi-word
+      # surname before treating the second word as a given name.
+      rest_first <- str_extract(rest, "^[^\\s]+")
+      if (!is.na(rest_first) && sur != "NN." &&
+          rest_first == str_to_upper(rest_first) &&
+          str_to_upper(paste(sur, rest_first)) %in% names(surname_lookup)) {
+        sur <- paste(sur, rest_first)
+        rest <- str_trim(str_remove(rest, "^[^\\s]+\\s*"))
+      }
       pending_child_spouse <- NULL
       prim_id <- paste0(fam, ".0")
       if (is.null(persons[[prim_id]])) {

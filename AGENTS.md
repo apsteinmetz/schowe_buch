@@ -14,9 +14,9 @@ and converting that database to GEDCOM 5.5.5.
 | `data/unique_places.csv` | Canonical place names (contains some polluted compound entries, e.g. "Neu Pasua Popp" — see caveats) |
 | `data/unique_occupations.csv` | Canonical occupations (Title-case words, e.g. "Taglöhner") |
 | `R/parse_persons.R` | The parser. Run with `source("R/parse_persons.R"); result <- run_parser()` |
-| `data/persons.json` | Output: flat array of ~21.5k person objects |
+| `data/persons.json` | Output: flat array of 21,494 person objects |
 | `R/json_to_gedcom.R` | GEDCOM converter. `source(...); res <- convert_to_gedcom()` |
-| `data/persons.ged` | Output: GEDCOM 5.5.5, ~13.9k INDI / ~4.6k FAM after merging |
+| `data/persons.ged` | Output: GEDCOM 5.5.5, 13,861 INDI / 4,611 FAM after merging |
 | `data/qa_unresolved_refs.csv` | Parser-flagged cross-references (direction quirks / missing targets) |
 | `data/qa_note_lines.txt` | Lines kept as free-text notes (unstructured content) |
 | `data/qa_merge_unmatched.csv` | Converter: self-refs that could not be merged by name |
@@ -103,6 +103,14 @@ Parsing subtleties (bugs fixed; keep in mind when editing):
   `names(surname_lookup)`, not `surnames` directly.
 - **Trailing commas** on name-prefix tokens (`SURNAME Given, occupation`)
   are stripped in `apply_prefix()` before classification.
+- **TP/TZ attendant lists** are split by `split_attendants()`: a trailing
+  event-level remark (`(ohne weitere Angaben)`, `(beide Eheleute Ww.)`,
+  `(keine ...)`, `(dort ...)`, `(mit Text ...)`, `(Doppelhochzeit ...)`;
+  possibly with unbalanced parens) is detached into a note like
+  `TZ (ohne weitere Angaben)` instead of sticking to the last name.
+  Per-person annotations (`(geb. Hetzel)`, `(ev.)`, `(Witwe)`, ...) stay
+  attached to their witness/godparent string. Used at all three TP/TZ
+  sites: `add_event`, `family_union`, `child_union`.
 
 ## GEDCOM converter (R/json_to_gedcom.R)
 
@@ -154,6 +162,17 @@ targets with no record for the person, missing child records = book errata,
 later wives of the same husband). **If parser changes renumber person ids,
 this file must be re-checked.**
 
+Id remaps after the July 2026 parser fixes (fabricated-person guard +
+trailing-comma fix removed 4 phantom persons, 21498 → 21494): the Einz
+spouse in family 3145 moved from `3145.1m2` to `3145.2m1` (correctly
+attached to child 2, Maria Magdalena); both decision rows for the
+514 ↔ 3145 pair were remapped accordingly. Note: ref `331.0 < 274.3` was
+originally rejected when 331.0 parsed as `NN. /Brücker/`; the parser now
+recovers "Johann" so it auto-merges with `274.1 Johann Adam /Brücker/`
+(supported by the parents line) — this overrides the prior manual reject
+and stands unless the user objects. Current unmatched refs: 112, all
+covered by existing reject adjudications.
+
 ## Known caveats
 
 - ~250 refs flagged for direction mismatch (mostly `Witwe von`); ~14 refs
@@ -165,8 +184,9 @@ this file must be re-checked.**
   ("Neu Pasua Popp", "Neuwerbas Klein", "Grumbach Nikolaus # siehe
   Auswanderer") — the parser defends against them, but the list itself has
   not been cleaned.
-- Record 585.s2 is a phantom person parsed from the parenthetical
-  `(er Witwer, sie ledig)` (a marital-status note, not a name line) — known,
-  not yet fixed.
+- (Fixed July 2026) 585.s2 was once a phantom parsed from the parenthetical
+  `(er Witwer, sie ledig)`; it now parses as the real spouse Febel Eva with
+  the marital-status text kept as a note. Non-canonical leftover text can
+  never become a surname (`apply_prefix()` guard).
 - Cross-referenced duplicates are merged only in the GEDCOM output;
   `persons.json` still contains one record per Familienbuch entry.

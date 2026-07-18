@@ -9,7 +9,8 @@
       "sed *": "allow"
     },
     "edit": {
-      "*.R": "allow"
+      "*.R": "allow",
+      "*.md": "allow"
     }
   }
 }
