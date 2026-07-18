@@ -1,0 +1,13 @@
+{
+  "permission": {
+    "executeCode": {
+      "*": "allow"
+    },
+    "bash": {
+      "awk *": "allow"
+    },
+    "edit": {
+      "*.R": "allow"
+    }
+  }
+}

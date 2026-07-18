@@ -1,0 +1,259 @@
+person,ref,issues
+50.s1,<4110,direction mismatch
+55.s2,<2292,direction mismatch
+79.s1,<187,direction mismatch
+95.s2,< 517.1,direction mismatch
+95.s2,<2979,direction mismatch
+97.s2,<150,direction mismatch
+97.s3,<427,direction mismatch
+97.s4,<3129,direction mismatch
+106.s1,< 2979.6,direction mismatch
+107.s1,< 139.2,direction mismatch
+109.s1,<1444,direction mismatch
+142.s1,<3678,direction mismatch
+149.s2,<3218,direction mismatch
+150.s3,<3575,direction mismatch
+180.1m1,> 179,direction mismatch
+200.s2,<316,direction mismatch
+204.s2,<2840,direction mismatch
+219.0,< 205.5,target person not found
+244.2m1,> 238,direction mismatch
+244.3m1,> 241,direction mismatch
+249.s2,<1356,direction mismatch
+250.s1,<808,direction mismatch
+258.s1,< 416.1,direction mismatch
+263.1m1,> 202,direction mismatch
+266.0,< 306.1,direction mismatch
+293.2m1,> 280,direction mismatch
+309.s1,<4063,direction mismatch
+317.s2,<2902,direction mismatch
+321.s2,<2513,direction mismatch
+328.s1,< 1049.2,direction mismatch
+328.s3,<635,direction mismatch
+331.0,< 274.3,target person not found
+333.s2,<725,direction mismatch
+334.s3,<2609,direction mismatch
+340.s1,<1670,direction mismatch
+390.s1,<657,direction mismatch
+403.s1,< 1175.1,direction mismatch
+411.1m2,<1434,direction mismatch
+420.s1,< 3852.1,direction mismatch
+435.s2,<2428,direction mismatch
+447.s2,> 1602.3,target person not found
+462.s2,<2425,direction mismatch
+488.4m1,<1757,direction mismatch
+500.s1,<3973,direction mismatch
+514.s1,> 3145.2,target person not found
+519.s1,<1732,direction mismatch
+524.s1,<1494,direction mismatch
+533.s2,<651,direction mismatch
+577.s3,<3671,direction mismatch
+578.6,<1497,direction mismatch
+648.4m1,> 644,direction mismatch
+701.s2,<2993,direction mismatch
+714.s2,<3818,direction mismatch
+714.s3,<1391,direction mismatch
+734.1m1,> 44,direction mismatch
+736.0,< 735.2,target person not found
+741.s4,<1811,direction mismatch
+747.s3,<4059,direction mismatch
+748.s2,<1579,direction mismatch
+765.1m1,> 721,direction mismatch
+785.s2,<3738,direction mismatch
+786.s2,<1735,direction mismatch
+789.s1,<1510,direction mismatch
+792.1m1,> 211,direction mismatch
+809.s2,<3261,direction mismatch
+811.s1,<3906,direction mismatch
+820.s2,< 3648.7,direction mismatch
+821.0,<2628,direction mismatch
+842.s1,< 2557.3,direction mismatch
+866.s1,<3465,direction mismatch
+866.s2,<3465,direction mismatch
+875.0,<878,direction mismatch
+880.5m1,> 361,direction mismatch
+883.s1,<3428,direction mismatch
+896.s2,<2482,direction mismatch
+896.s3,<1437,direction mismatch
+902.s1,<3740,direction mismatch
+925.s2,<1823,direction mismatch
+926.s3,<3673,direction mismatch
+994.1m1,> 980,direction mismatch
+1001.1m1,> 706,direction mismatch
+1002.s1,<1564,direction mismatch
+1029.1m1,> 987,direction mismatch
+1031.s1,<2870,direction mismatch
+1058.s2,<3822,direction mismatch
+1067.s2,<3998,direction mismatch
+1072.s1,<3136,direction mismatch
+1098.s2,< 1875.3,direction mismatch
+1098.s2,<3905,direction mismatch
+1102.s3,<3185,direction mismatch
+1136.s1,<2546,direction mismatch
+1154.s1,> 1660.12,target person not found
+1167.1m1,> 758,direction mismatch
+1172.s2,<2398,direction mismatch
+1271.0,<1272,direction mismatch
+1271.0,<1275,direction mismatch
+1282.s2,< 1911.2,direction mismatch
+1363.s2,<3709,direction mismatch
+1394.s1,<3757,direction mismatch
+1395.s2,<1459,direction mismatch
+1430.s2,< 1623.1,direction mismatch
+1438.s1,<1705,direction mismatch
+1449.s1,<1820,direction mismatch
+1463.0,<1465,direction mismatch
+1466.s1,<3733,direction mismatch
+1476.0,> 1478.1,target person not found
+1481.2m1,> 1357,direction mismatch
+1482.s1,<4134,direction mismatch
+1482.5m2,> 789,direction mismatch
+1486.0,< 1483.3,target person not found
+1487.s2,<4186,direction mismatch
+1488.s2,<1859,direction mismatch
+1489.s2,<2516,direction mismatch
+1550.s1,< 3800.2,direction mismatch
+1553.s1,< 3910.1,direction mismatch
+1560.s1,<1561,direction mismatch
+1562.s2,<2965,direction mismatch
+1564.1m1,> 1563,direction mismatch
+1564.2,> 1002,direction mismatch
+1589.0,<1590,direction mismatch
+1604.s1,<3940,direction mismatch
+1651.s2,<2342,direction mismatch
+1660.1m1,> 1603,direction mismatch
+1674.s1,< 2255.1,direction mismatch
+1708.s1,< 1874.5,direction mismatch
+1730.s1,< 3941.4,direction mismatch
+1732.s1,<3917,direction mismatch
+1751.1m1,> 1738,direction mismatch
+1755.s2,<2922,direction mismatch
+1758.10,<1824,direction mismatch
+1760.s1,<3224,direction mismatch
+1763.4m1,> 1129,direction mismatch
+1769.s2,<2233,direction mismatch
+1785.s1,< 3065.1,direction mismatch
+1801.0,< 1799.3,target person not found
+1807.1m1,< 1808,direction mismatch
+1820.0,< 1821.1,direction mismatch
+1836.s2,<2669,direction mismatch
+1837.s1,<1913,direction mismatch
+1879.s1,<2222,direction mismatch
+1882.s2,<2540,direction mismatch
+1886.s1,< 3504.1,direction mismatch
+1886.s2,<3148,direction mismatch
+1892.s1,< 2916.1,direction mismatch
+1909.0,<1910,direction mismatch
+1917.0,< 1918.1,direction mismatch
+1919.s1,<3346,direction mismatch
+1933.s1,< 3948.1,direction mismatch
+1935.s1,<2283,direction mismatch
+1945.s2,<2089,direction mismatch
+1965.s2,< 2048.1,direction mismatch
+1966.s1,< 1980.1,direction mismatch
+1978.s1,< 3202.2,direction mismatch
+2000.s1,<2737,direction mismatch
+2004.s1,<2282,direction mismatch
+2011.2m1,> 1893,direction mismatch
+2015.s1,< 2905.6,target person not found; direction mismatch
+2040.s1,< 3993.2,direction mismatch
+2049.s1,<3574,direction mismatch
+2051.s2,<2816,direction mismatch
+2076.1m2,> 1560,direction mismatch
+2109.s2,<3863,direction mismatch
+2122.9m1,> 890,direction mismatch
+2144.s1,<3895,direction mismatch
+2156.1m1,> 2146,direction mismatch
+2159.1m1,> 2145,direction mismatch
+2159.2m1,> 2153,direction mismatch
+2163.s1,<2423,direction mismatch
+2199.s1,<2535,direction mismatch
+2199.2,<3180,direction mismatch
+2211.s2,<2290,direction mismatch
+2217.0,< 2218.2,direction mismatch
+2249.4m1,> 2160,direction mismatch
+2283.1m1,< 2284,direction mismatch
+2312.3m1,> 2100,direction mismatch
+2340.s2,<3986,direction mismatch
+2413.0,< 2417.1,direction mismatch
+2417.0,<2419,direction mismatch
+2433.s1,<2759,direction mismatch
+2443.s2,<3411,direction mismatch
+2455.s2,<2748,direction mismatch
+2461.s2,< 2456.1,target person not found
+2467.1m1,> 46,direction mismatch
+2485.0,< 2499.1,direction mismatch
+2488.0,< 2507.1,direction mismatch
+2492.8m1,> 1714,direction mismatch
+2499.1m1,> 2485,direction mismatch
+2525.6,<2906,direction mismatch
+2589.0,< 2592.1,direction mismatch
+2590.6m1,> 939,direction mismatch
+2591.1m1,> 1941,direction mismatch
+2626.0,< 2627.1,direction mismatch
+2638.2m2,> 1810,direction mismatch
+2659.s1,< 3942.5,direction mismatch
+2671.s1,<3946,direction mismatch
+2684.s3,<4152,direction mismatch
+2685.2m1,> 581,direction mismatch
+2695.s1,< 3736.1,direction mismatch
+2787.0,< 2788.3,direction mismatch
+2800.1m1,> 144,direction mismatch
+2834.1m1,> 2343,direction mismatch
+2844.s2,<4111,direction mismatch
+2862.s1,<3920,direction mismatch
+2870.s1,<2932,direction mismatch
+2885.s1,< 4014.1,direction mismatch
+2895.0,< 2901.2,direction mismatch
+2918.0,< 2920.1,direction mismatch
+2949.s1,< 3784.4,direction mismatch
+2963.s1,<3946,direction mismatch
+2972.2m1,> 612,direction mismatch
+2996.s1,<3604,direction mismatch
+3004.0,<3005,direction mismatch
+3008.s2,<3516,direction mismatch
+3024.s3,<3970,direction mismatch
+3055.s1,< 3355.1,direction mismatch
+3067.s1,< 4125.3,direction mismatch
+3070.1m1,> 1503,direction mismatch
+3072.1m1,> 404,direction mismatch
+3081.0,< 3129.1,direction mismatch
+3185.2m1,> 2926,direction mismatch
+3193.s1,< 3703.1,direction mismatch
+3199.4m1,> 814,direction mismatch
+3202.2m1,> 2292,direction mismatch
+3219.1m1,<3220,target family not found; direction mismatch
+3227.0,< 3220.1,target family not found
+3231.s1,< 3861.4,direction mismatch
+3261.s1,< 3902.4,direction mismatch
+3294.s1,< 3490.5,direction mismatch
+3294.s2,<4112,direction mismatch
+3339.1m1,> 542,direction mismatch
+3350.1m1,> 451,direction mismatch
+3363.10m1,> 2655,direction mismatch
+3383.0,< 3371.2,target person not found
+3400.0,< 3401.2,direction mismatch
+3402.2m1,> 1095,direction mismatch
+3403.s1,<3607,direction mismatch
+3408.0,< 3409.2,direction mismatch
+3432.s1,< 3602.3,direction mismatch
+3435.s2,< 3608.1,direction mismatch
+3439.s1,< 3614.5,direction mismatch
+3472.0,< 3475.1,direction mismatch
+3477.5m1,> 2548,direction mismatch
+3477.6m1,> 2772,direction mismatch
+3490.3m1,> 1728,direction mismatch
+3526.0,< 3515.6,target person not found
+3574.0,<3575,direction mismatch
+3604.s1,> 2996,direction mismatch
+3644.2m1,> 1753,direction mismatch
+3672.1m1,< 3675,direction mismatch
+3696.s2,<4109,direction mismatch
+3709.4m2,> 3504,direction mismatch
+3723.1m1,> 3721,direction mismatch
+3758.0,< 3760.1,direction mismatch
+3766.0,< 3767.1,direction mismatch
+3859.s2,<4077,direction mismatch
+3955.0,< 3957.1,direction mismatch
+3984.0,< 3985.1,direction mismatch
+4118.0,< 4124.3,direction mismatch

@@ -43598,7 +43598,9 @@ oo
 ARMBRÜSTER Katharina
 * 12.10.1819 † 26.09.1880 Kis Ker
 1. Schneider Jakob * 20.11.1861 Kis Ker
-oo 08.07.1883 Kis Ker Ries Elisabetha > 3232<3220>
+oo 08.07.1883 Kis Ker Ries Elisabetha > 3232
+
+<3220>
 SCHNEIDER Heinrich
 
 * 14.12.1812 Sekitsch † 25.02.1848 Feketitsch
