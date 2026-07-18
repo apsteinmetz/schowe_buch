@@ -263,6 +263,10 @@ parse_record <- function(fam, block) {
       prefix <- str_squish(str_remove_all(prefix, "\\bled\\."))
     }
     toks <- if (prefix == "") character() else str_split_1(prefix, "\\s+")
+    # "SURNAME Given, occupation" lines: a trailing comma must not block
+    # token classification (it made "Johann," fall through to notes)
+    toks <- str_remove(toks, ",$")
+    toks <- toks[toks != ""]
     if (is.null(surname_from_line) && is.null(p$surname) && !p$surname_unknown) {
       if (length(toks) > 0) { surname_from_line <- toks[1]; toks <- toks[-1] }
     }
@@ -393,23 +397,45 @@ parse_record <- function(fam, block) {
     }
     rr <- extract_refs(body); body <- rr$rest
     d <- parse_date(body)
-    # Try surname-first match before place matching:
-    # if the first token is a known surname (case-insensitive), treat the
-    # whole remainder as the spouse name rather than probing for a place.
     name_txt <- NULL
     place_val <- NULL
     rest_after_date <- str_trim(d$rest)
     first_tok <- str_extract(rest_after_date, "^[^\\s]+")
-    if (!is.na(first_tok) && str_to_upper(first_tok) %in% surnames) {
-      name_txt <- rest_after_date
-      place_val <- NULL
-    } else if (first_tok %in% c("NN.", "NN")) {
-      name_txt <- rest_after_date
-      place_val <- NULL
-    } else {
-      pl <- match_place(rest_after_date)
-      place_val <- pl$place
-      name_txt <- pl$rest
+    # A multi-token place followed by a known surname (or end of line) takes
+    # precedence over the surname shortcut below: "Neu" is both a surname
+    # and the first word of "Neu Werbas"/"Neu Pasua"/"Neu Banovzi", so
+    # "oo <date> Neu Werbas Müller Katharina" must not become a name.
+    # Ascending k so polluted compound entries in the place list (e.g.
+    # "Neu Pasua Popp") cannot swallow the spouse's surname.
+    toks <- str_split_1(rest_after_date, "\\s+")
+    if (length(toks) >= 2) {
+      for (k in 2:min(4, length(toks))) {
+        cand <- str_remove(paste(toks[1:k], collapse = " "), ",$")
+        after <- str_trim(paste(toks[-(1:k)], collapse = " "))
+        nxt <- str_extract(after, "^[^\\s]+")
+        if (cand %in% place_set &&
+            (after == "" || str_to_upper(nxt) %in% names(surname_lookup) ||
+               nxt %in% c("NN.", "NN"))) {
+          place_val <- if (cand %in% names(place_abbrev))
+            place_abbrev[[cand]] else cand
+          name_txt <- after
+          break
+        }
+      }
+    }
+    if (is.null(name_txt)) {
+      # Surname-first match before general place matching: if the first
+      # token is a known surname (case-insensitive), treat the whole
+      # remainder as the spouse name rather than probing for a place.
+      if (!is.na(first_tok) &&
+          (str_to_upper(first_tok) %in% names(surname_lookup) ||
+             first_tok %in% c("NN.", "NN"))) {
+        name_txt <- rest_after_date
+      } else {
+        pl <- match_place(rest_after_date)
+        place_val <- pl$place
+        name_txt <- pl$rest
+      }
     }
     p <- persons[[child_id]]
     ev <- compact(list(
@@ -795,3 +821,5 @@ run_parser <- function() {
   message("Wrote data/persons.json")
   invisible(list(persons = res$persons, unresolved = res$unresolved, qa = qa))
 }
+
+run_parser()

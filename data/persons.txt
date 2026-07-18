@@ -7796,11 +7796,11 @@ WEICHINGEL Margaretha > 3839.4
 † 01.03.1912 Cleveland, OH
 Eltern: Weichingel Jakob, Ilg Elisabetha
 # siehe Auswanderer nach USA
-2.oo 03.10.1912 Cuyahoga, OH (er Witwer, sie ledig)
+2.oo 03.10.1912 Cuyahoga, OH
 FEBEL Eva ref. < 580.3
-
 * 11.09.1887 NS ~ 13.9.1887 TP: Stefan Tauss, Eva Febel † 03.02.1946 Lager Jarek
 Eltern: Febel Georg, Wolf Rosina
+# Er Witwer, sie ledig
 # siehe Auswanderer nach USA
 
 
@@ -39403,7 +39403,7 @@ oo 17.11.1878 NS Schick Friedrich > 3064
 4. Rieth Rosina ref. * 02.01.1861 NS ~ 04.01.1861 TP: Johann Ludwig, Elisabetha Mohr
 5. Rieth Katharina ref. * 14.03.1863 NS † 30.03.1863 NS b. 31.03.1863 (†mit 15T)
 ~ 14.03.1863 TP: Christian Brücker, Katharina Rieth
-6.Rieth Theresia * 03.09.1864 NS
+6. Rieth Theresia * 03.09.1864 NS
 oo 17.10.1886 NS Krieger Jakob <2015
 7. Rieth Barbara ref. * 11.08.1867 NS ~ 13.08.1867 TP: Ludwig und Margaretha Brücker
 8. Rieth Adam ref. * 29.12.1869 NS † 12.01.1870 NS b. 13.01.1870 (†mit 12T)
@@ -42628,7 +42628,7 @@ KLEIN Elisabetha < 1857.1
 Eltern: Klein Michael, Harfmann Margaretha
 1. Schmidt Katharina Elisabetha * 10.12.1879 NS
 oo Gutwein Peter < 934
-2 Schmidt Maria Magdalena * 08.12.1882 NS
+2. Schmidt Maria Magdalena * 08.12.1882 NS
 oo Einz NN. < 514
 
 3. Schmidt Katharina ev. * 14.02.1885 NS ~ 19.02.1885 TP: Peter Haller, Katharina Harfmann
@@ -47595,7 +47595,7 @@ HINDENLANG Katharina
 oo 01.01.1882 NS Febel Philipp < 582
 5. Steinmetz Katharina * 21.02.1865 NS
 oo 13.04.1890 NS Hubing Heinrich < 1626
-6.Steinmetz Peter* 20.06.1867 NS
+6. Steinmetz Peter* 20.06.1867 NS
 oo 19.04.1891 NS Bastian Philippina > 3526
 7. Steinmetz Philipp ref. * 15.09.1869 NS † 08.04.1892 NS b. 10.04.1892 (†mit 23J)
 ~ 16.09.1869 TP: Peter Steinmetz, Katharina Sauer † ledig
@@ -51491,7 +51491,7 @@ oo
 BRÜCKER Katharina Elisabetha ev.
 
 * .03.1806 † 24.02.1871 NS b. 26.021871 (†mit 64J11M)
-1.Weber Johann Friedrich ref. *um 1827 † 23.07.1830 NS b. 25.07.1830 (†mit 3J)
+1. Weber Johann Friedrich ref. *um 1827 † 23.07.1830 NS b. 25.07.1830 (†mit 3J)
 2. Weber Philipp Jakob * 24.12.1829 NS
 oo 19.12.1848 NS Weinz Margaretha > 3822
 3. Weber Christian ref. * 18.04.1842 † 08.10.1856 NS b. 09.10.1856 (†mit 14J5M20T)

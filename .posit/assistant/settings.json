@@ -4,7 +4,9 @@
       "*": "allow"
     },
     "bash": {
-      "awk *": "allow"
+      "awk *": "allow",
+      "grep *": "allow",
+      "sed *": "allow"
     },
     "edit": {
       "*.R": "allow"
