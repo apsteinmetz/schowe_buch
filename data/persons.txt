@@ -14657,7 +14657,7 @@ Eltern: Portz Philipp, Lenz Philippina
 10. Haller Adam ref. * 29.05.1883 AS † 23.01.1892 AS b. 24.01.1892 (†mit 9J)
 ~ 31.05.1883 TP: Peter Schnur, Elisabetha Greifenstein
 11. Haller Philippina ref. * 10.02.1886 AS ~ 11.02.1886 TP: Michael Riegel, Elisabetha Portz
-12. Haller Magdalena ref. * 16.06.1888 AS ~ 19.06.1888 TP: Jakob Krutschnitt,
+12. Haller Magdalena ref. * 16.06.1888 AS ~ 19.06.1888 TP: Jakob Kruttschnitt,
 Barbara Greifenstein
 13. Haller Philipp ref. * 12.05.1891 AS ~ 15.05.1891 TP: Philipp Scherer,
 Barbara Greifenstein
@@ -17020,7 +17020,7 @@ oo 08.01.1884 NS Geist David < 764
 5. Hammel Karl ref.* 13.10.1856 NS † 04.12.1856 NS b. 05.12.1856 (†mit 2M)
 ~ 14.10.1856 TP: Karl Schock, Elisabetha Schmidt
 6. Hammel Daniel ref. * 17.07.1858 NS † 09.10.1858 NS b. 10.10.1858 (†mit 2 M22T)
-~ 18.07.1858 TP: Daniel Krutschnitt, Margaretha Geyer
+~ 18.07.1858 TP: Daniel Kruttschnitt, Margaretha Geyer
 7. Hammel Wilhelm ref. * 17.07.1858 NS † 03.10.1858 NS b. 04.10.1858 (†mit 2M15T)
 ~ 18.07.1858 TP: Wilhelm Haller, Elisabetha Becker
 8. Hammel Julianna ref. * 03.11.1859 NS † 24.04.1861 NS b. 25.04.1861 (†mit 1J5M14T)
@@ -17512,7 +17512,7 @@ NN. Magdalena *um 1785 † 03.12.1829 NS (†mit 44J)
 2.oo
 ZIMMER Barbara
 
-1. Hauer Elisabetha ev. * 16.05.1836 NS ~ 19.5.1836 TP: Gottfried Krutschnitt,
+1. Hauer Elisabetha ev. * 16.05.1836 NS ~ 19.5.1836 TP: Gottfried Kruttschnitt,
 Elisabetha Tessenyi
 
 <1281>
@@ -28132,7 +28132,7 @@ Ehe in Schowe angegeben
 oo .06.1845 Jarek TZ: Peter Klein, Ludwig Scheffel, Heinrich Zimmer
 KLEIN Elisabetha
 Witwe von Remich Mathias <2816
-KRUTTSCHNITT / KRUTSCHNITT
+KRUTTSCHNITT / Kruttschnitt
 
 <2052>
 KRUTTSCHNITT Gottfried Lehrer
@@ -28184,7 +28184,7 @@ oo 03.05.1908 Alt Ker Hess Jakob < 1454
 <2056>
 KRUTTSCHNITT Michael
 oo
-BOEST Elisa
+BASTIAN Elisabetha Boest < 45.8
 
 1. Kruttschnitt Elisabetha * 13.04.1896
 oo 07.12.1913 Cuyahoga, OH Kruttschnitt Karl > 2072
@@ -28465,7 +28465,7 @@ oo 07.12.1913 Cuyahoga, OH
 KRUTTSCHNITT Elisabetha < 2056.1
 
 * 13.04.1896 † 06.05.1992 Brunswick, Medina, OH
-Eltern: Kruttschnitt Michael, Boest Elisa
+Eltern: Kruttschnitt Michael, Bastian Elisabetha Boest
 # siehe Auswanderer nach USA
 
 KUNZ
@@ -29133,7 +29133,7 @@ oo Schmidt Julianna > 2133
 2. Lehr Peter Jakob ref. * 25.01.1887 NS ~ 28.01.1887 TP: Peter Lehr, Philippina Bastian
 3. Lehr Elisabetha ev. * 20.11.1888 AS † 02.02.1894 AS b. 03.02.1894 (†mit 5 ½J)
 ~ 22.11.1888 TP: Peter Krieger, Elisabetha Bastian
-4. Lehr Magdalena ref. * 25.10.1892 AS ~ 30.10.1892 TP: Michael Krutschnitt,
+4. Lehr Magdalena ref. * 25.10.1892 AS ~ 30.10.1892 TP: Michael Kruttschnitt,
 Magdalena Krieger
 
 <2128>
@@ -29156,7 +29156,7 @@ LEHR Wilhelm
 oo 21.04.1862 NS TZ: Philipp Haller, Christian Haller
 BASTIAN Katharina Elisabetha ev. < 37.4
 
-* 12.03.1837 NS ~ 13.03.1837 TP: Gottfried Krutschnitt, Katharina Jung
+* 12.03.1837 NS ~ 13.03.1837 TP: Gottfried Kruttschnitt, Katharina Jung
 Eltern: Bastian Adam, Haller Katharina Elisabetha
 1. Lehr Peter ref. * 30.06.1863 NS † 15.07.1943 Cleveland, OH
 ~ 01.07.1863 TP: Peter Fechter, Philippina Bastian
@@ -31661,7 +31661,7 @@ oo Keck Katharina > 2311
 <2310>
 LUDWIG Peter ref. Schneider < 2307.3
 
-* 04.09.1892 NS ~ 11.09.1892 TP: Peter Hillrich, Elisabetha Krutschnitt † 03.03.1983 Cleveland, OH
+* 04.09.1892 NS ~ 11.09.1892 TP: Peter Hillrich, Elisabetha Kruttschnitt † 03.03.1983 Cleveland, OH
 Eltern: Ludwig Adam, Weinz Margaretha
 # siehe Auswanderer nach USA
 oo 31.12.1916 Cuyahoga, OH
@@ -34445,8 +34445,8 @@ Eltern: Heinz Christian, Bauer Elisabetha
 4. Müller Christian ev. * 12.08.1870 AS † 24.10.1870 AS b. 26.10.1870 (†mit 2M)
 ~ 14.08.1870 TP: Adam Heiser, Susanna Müller
 5. Müller Johann ev. * 30.06.1873 AS † 21.07.1873 AS b. 22.07.1873 (†mit 20T)
-~ 30.06.1873 TP: Laurentius Krutschnitt, Katharina Becker
-6. Müller Katharina ev. * 30.06.1873 AS ~ 30.06.1873 TP: Laurentius Krutschnitt,
+~ 30.06.1873 TP: Laurentius Kruttschnitt, Katharina Becker
+6. Müller Katharina ev. * 30.06.1873 AS ~ 30.06.1873 TP: Laurentius Kruttschnitt,
 Katharina Becker
 2.oo 04.07.1875 NS TZ: Adam Häuser, Jakob Seil
 SEIL Eva ev. > 3363.5
@@ -43535,7 +43535,7 @@ oo 10.12.1877 Neuwerbas Riegel Sofia > 3230
 SCHNEIDER Friedrich ev.
 *um 1802 † 02.04.1866 NS b. 04.04.1866 (†mit 64J)
 oo
-HETZEL Maria Elisabeth ev.
+HETZEL Maria Elisabetha ev.
 *um 1807 † 15.03.1872 NS b. 17.03.1872 (†mit 65J)
 
 1. Schneider Margaretha
@@ -46174,7 +46174,7 @@ Ansiedler
 oo
 SCHMIDT Elisabetha
 
-1. Senkel Elisabeth
+1. Senkel Elisabetha
 oo um 1805 Barth Friedrich < 35
 2. Senkel Wilhelm
 oo Schaller Elisabetha < 3408
@@ -47160,7 +47160,7 @@ SPINNER
 <3486>
 SPINNER Jakob
 oo
-HALLER Maria Elisabeth
+HALLER Maria Elisabetha
 
 1. Spinner Georg ev. *um 1834 † 13.11.1848 NS b. 15.11.1848 (†mit 14J)
 2. Spinner Jakob ev. * 02.02.1836 NS ~ 04.02.1836 TP: Jakob Haller, Katharina Licht
@@ -47176,7 +47176,7 @@ oo 22.01.1871 NS Schmidt Philippina > 3489
 SPINNER Elisabetha ev. < 3486.3
 
 * 15.03.1837 AS ~ 16.3.1837 TP: Georg Hetzel
-Eltern: Spinner Jakob, Haller Maria Elisabeth
+Eltern: Spinner Jakob, Haller Maria Elisabetha
 o‐o
 1. Spinner Jakob ev. * 23.10.1863 NS ~ 24.10.1863 TP: Jakob Wolf, Magdalena Geyer
 uneheliches Kind, Vater ist nicht angegeben
@@ -47185,7 +47185,7 @@ uneheliches Kind, Vater ist nicht angegeben
 SPINNER Ludwig ev. < 3486.4
 
 * 12.07.1839 NS † 15.09.1892 Surcin
-Eltern: Spinner Jakob, Haller Maria Elisabeth
+Eltern: Spinner Jakob, Haller Maria Elisabetha
 oo 25.11.1866 NS TZ: Wilhelm Brücker, Ludwig Hetzel
 BIEBER Elisabetha < 162.1
 *um 1846 † 02.11.1898 Surcin
@@ -47205,7 +47205,7 @@ Philippina Spinner
 <3489>
 SPINNER Peter ev. < 3486.6
 *um 1846 † 04.02.1872 NS b. 05.02.1872 1871 (†mit 26J)
-Eltern: Spinner Jakob, Haller Maria Elisabeth
+Eltern: Spinner Jakob, Haller Maria Elisabetha
 oo 22.01.1871 NS TZ: Jakob Haller, Johann Hetzel
 SCHMIDT Philippina ev. < 3097.3
 
@@ -52474,7 +52474,7 @@ Witwe von Meder Andreas <2371
 <3874>
 WEINZ Daniel ev. < 3861.9
 
-* 04.07.1867 AS ~ 05.07.1867 TP: Georg Schmidt, Barbara Krutschnitt
+* 04.07.1867 AS ~ 05.07.1867 TP: Georg Schmidt, Barbara Kruttschnitt
 Eltern: Weinz Jakob, Kruttschnitt Rosalia
 oo 14.12.1890 NS TZ: Peter Haller, Josef Weinz
 BÖHM Elisabetha ev. < 435.3
@@ -53387,7 +53387,7 @@ HAUER Elisabetha ev. < 1282.6
 
 * 15.09.1850 NS † 21.06.1878 NS b.22.06.1878 (†mit 28J)
 ~17.09.1850 TP: Jakob Welker, Philippina Haller
-Eltern: Hauer Jakob, Zeiner Elisabeth
+Eltern: Hauer Jakob, Zeiner Elisabetha
 Witwe von Bolz Johann Philipp <207 < 207
 
 6. Welker Philipp ref. * 07.01.1875 NS † 10.10.1891 NS b. 12.10.1891 (†mit 16J)
